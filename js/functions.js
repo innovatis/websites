@@ -42,9 +42,9 @@ $(function(){
           $("#form_spinner").fadeOut();
           $("#form_success").fadeIn();
         },
-        error: function(data) {
+        failure: function(data) {
           $("#form_spinner").fadeOut();
-          $("#form_error").fadeIn();
+          $("#form_failure").fadeIn();
         }
       });
     }
