@@ -3,7 +3,8 @@ var Primal = Primal || {};
 (function(){
 
   Primal.form = form = {};
-  form.mailPath = '/_strobe/proxy/primalmailer.heroku.com/mail';
+  form.mailPath = 'http://primalmailer.heroku.com/mail';
+  //form.mailPath = 'http://127.0.0.1:9292/mail';
 
   form.validate = function(){
     var element = $(this),
@@ -35,18 +36,20 @@ $(function(){
       $('.actions').hide();
       $("#form_spinner").fadeIn(100);
       $.ajax({
-        type: 'POST',
         url: Primal.form.mailPath,
-        data: element.serialize(),
-        success: function(data) {
+        data: $('form').serialize(),
+        dataType: 'jsonp'
+      })
+        .success(function(data) {
           $("#form_spinner").fadeOut();
           $("#form_success").fadeIn();
-        },
-        error: function(data) {
+        }).
+
+        error(function(data) {
           $("#form_spinner").fadeOut();
           $("#form_error").fadeIn();
         }
-      });
+      );
     }
     return false;
   });
