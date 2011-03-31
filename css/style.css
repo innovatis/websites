@@ -733,6 +733,7 @@ a.sign-up:active {
 .person-detail a.email {
   display: block;
   padding-left: 36px;
+  text-decoration:none;
   background: url(../images/icon-email_25.png) top left no-repeat;
   font-size: 12px;
   height: 25px;
@@ -811,3 +812,12 @@ form input.submit {
    float: right;
 }
 
+
+
+.modal {
+		background-color:#fff;
+		display:none;
+		width:350px;
+		padding:15px;
+		text-align:left;
+}

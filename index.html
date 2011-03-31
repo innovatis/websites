@@ -16,9 +16,9 @@
         <div id="menu">
           <ul>
             <li class="first"><a href="about.html"     >About Us</a></li>
-            <li class="">     <a id="newsletter" href="newsletter.html">Newsletter</a></li>
+            <li class="">     <a class="modalInput" rel="#newsletter" href="#">Newsletter</a></li>
             <li class="">     <a href="services.html"  >Services</a></li>
-            <li class="last"> <a href="estimate.html"  >Estimate</a></li>
+            <li class="last"> <a class="modalInput" rel="#estimate" href="#"  >Estimate</a></li>
           </ul>
         </div>
         <br class="clear"/>
@@ -41,21 +41,21 @@
             CALL
           </div>
           <div class="content">
-            <span class="large-phone">(204) 222-2222</span><br/>
-            <p>List Store Hours Here?</p>
+            <span class="large-phone">(204) 771-2701</span><br/>
+            <p>7:00 A.M. to 5:00 P.M.&nbsp;&nbsp;Monday-Friday</p>
           </div>
           <div class="showcase-ribbon" id="apply-ribbon">
             <span class="number">2</span>
             APPLY
           </div>
           <div class="content">
-            <p>Tell us what you need, we will<br/>work with you if youare unsure.</p>
+            <p>Quick and Easy Application Process Keeps You Working and Not Waiting!</p>
           </div>
           <div class="showcase-ribbon" id="delivered-ribbon">
             <span class="number">3</span>
           </div>
           <div class="content">
-            <p>Delivered direct toyour site<br/>within X hours.</p>
+            <p>Get What You Need, When You Need &ndash; Delivered Direct To Your Site!</p>
           </div>
         </div>
         <div id="skyjack-list-column" class="column in-thirds">
@@ -141,7 +141,7 @@
               <img src="images/small-lift.jpg" style="float:right;margin-left: 2em;"></img>
               <h3>About Us</h3>
               <br/>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <p>Clearview Rentals is a local scissor lift rental agency serving the Manitoba region.  We rent our lifts to commercial and industrial contractors on a daily, weekly and monthly basis. Our fleet is made up of a range of high quality Skyjack machines, each suitable for various customer needs.  We provide electric, gas and propane models to accommodate requirements for specific jobs.  We offer the option of 2W and 4W drive and have machines with non-marking tires suitable for indoor use.  Our goal is to provide excellent service by doing whatever it takes to help you get what you need and when you need it.</p>
             </div>
             <div class="inner-pane">
               <div class="content" style="height: 182px;padding-top: 15px;padding-bottom: 0">
@@ -198,15 +198,66 @@
       <div class="innerBody">
         <h3 id="footer-logo">Clearview Rentals</h3>
         <ul>
-          <li class="first">12345 Long Name St.</li>
+          <li class="first">840 Bradford Street</li>
           <li>Winnipeg, MB</li>
-          <li class="last">Canada R2G 3K1</li>
+          <li class="last">Canada R3H 0N5</li>
         </ul>
-        <span class="phone">CALL TODAY: 204-SKY-JACK</span>
+        <span class="phone">CALL TODAY: 204-771-2701</span>
         <br class="clear"/>
         <br class="clear"/>
-        <div id="copyright" >Copyright 2011 Clearview Rentals.</cite>
+        <div id="copyright" >Copyright 2011 Clearview Rentals.</div>
       </div>
     </div>
+
+
+
+    <div class="modal" id="newsletter">
+      <div class="left">
+        <h4>Register for the</h4>
+        <h1>Clearview Rentals eNewsletter</h1>
+        <p><strong>Get instant updates</strong> on specials, new lifts, and availability!</p>
+        <label for="newsletter-email">Your Email</label>
+        <input id="newsletter-email" name="email" />
+        <input type="submit" value="Sign Me Up!" />
+      </div>
+
+      <div class="right">
+        <h3>What's Included?</h3>
+        <ul>
+          <li>Special Pricing</li>
+          <li>Availability / New Lifts</li>
+          <li>Safety and Training Info</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="modal" id="estimate">
+      <div class="left">
+        <h1>Get Your <span class="yellow">FREE Estimate</span></h1>
+        <h2>It's Quick and &ldquo;Easy as 1-2-3&rdquo;</h2>
+        <p>Just fill out your information below and we'll contact you to provide you an estimate on your project.</p>
+        <label for="estimate-name">Name</label>
+        <input name="name" id="estimate-name" />
+
+        <label for="estimate-email">Email</label>
+        <input name="email" id="estimate-email" />
+
+        <label>Phone</label>
+        <input name="phone1" />
+        <input name="phone2" />
+        <input name="phone3" />
+
+        <input type="submit" value="Request an Estimate" />
+      </div>
+
+      <div class="right">
+        <h3>Our Value Guarantee:</h3>
+        <p>Clearview Rentals guarantees that you will receive the best value when using our services.</p>
+        <p>Not only do we provide some of the lowest rates in the city, but we bring added value to each and every customer. We care about our customers and that means we want to ensure that you receive the right piece of equipment to suit your application needs every time.</p>
+        <p>Once we guarantee you've chosen the right lift, we carefully prepare the lift and send it out in excellent working condition: clean, fueled, and running efficiently to minimize downtime on the jobsite. If for some reason you have a problem with a lift, we will be there to fix it in no time.</p>
+        <p>We believe that although price is important, it means nothing if we haven't done our job right.</p>
+      </div>
+    </div>
+    
   </body>
 </html>

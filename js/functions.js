@@ -2,6 +2,7 @@ var Primal = Primal || {};
 
 (function(){
 
+
   Primal.form = form = {};
   form.mailPath = '/_strobe/proxy/primalmailer.heroku.com/mail';
 
@@ -28,9 +29,17 @@ var Primal = Primal || {};
 })();
 
 $(function(){
-  $("a#newsletter").click(function(e) {
-    alert("FOO");
-    e.preventDefault();
+
+  var triggers = $(".modalInput").overlay({
+
+    // some mask tweaks suitable for modal dialogs
+    mask: {
+      color: '#333333',
+      loadSpeed: 200,
+      opacity: 0.9
+    },
+
+    closeOnClick: false
   });
 
   $("#meetourteam li a").click(function(e) {
