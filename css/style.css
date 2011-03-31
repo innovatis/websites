@@ -489,6 +489,11 @@ div.linkbox .yellow {
   margin-left: 20px;
 }
 
+.about .visual-blurb {
+  margin-right: 11px;
+  margin-left: 11px;
+}
+
 .visual-blurb.first{
   margin-left: 0px;
 }
@@ -645,3 +650,165 @@ a.sign-up:active {
 #aboutus p {
 
 }
+
+
+#warehouse {
+   margin: 0 auto;
+   background: url(../images/warehouse.png) top left no-repeat;
+   width: 862px;
+   height: 315px;
+}
+
+#meetourteam {
+   height: 36px;
+}
+
+#meetourteam .label {
+   width: 141px;
+   height: 36px;
+   background: url(../images/meetourteam.png) top left no-repeat;
+   border: none;
+}
+
+#meetourteam li {
+   background: url(../images/team-tab-sprite.jpg) top left repeat-x;
+   height: 36px;
+   float: left;
+   border-left: 1px solid white;
+   border-bottom: 1px solid white;
+   font-family: helvetica, arial, sans;
+   color: #666
+   line-height: 36px;
+}
+
+#meetourteam .sales a,
+#meetourteam .customerservice a,
+#meetourteam .support a {
+   display: block;
+   height: 36px;
+   line-height: 36px;
+   text-decoration: none;
+   padding: 0 15px 0 36px;
+}
+
+#meetourteam .sales a {
+   background: url(../images/icon-sales.png) 10px 10px no-repeat;
+}
+#meetourteam .customerservice a {
+   background: url(../images/icon-customerservice.gif) 10px 10px no-repeat;
+}
+#meetourteam .support a {
+   background: url(../images/icon-support.png) 10px 10px no-repeat;
+}
+
+.person-detail {
+  position: absolute;
+  width: 522px;  
+}
+
+.person-detail h1 {
+  float: left;
+  padding-right: 15px;
+}
+
+.person-detail h2 {
+  float: left;
+  position: relative;
+  top: 7px;
+  color: #555;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.person-detail img.person {
+  float: right;
+  margin-left: 30px;
+}
+
+.person-detail p {
+  text-align: justify;
+}
+
+.person-detail a.email {
+  display: block;
+  padding-left: 36px;
+  background: url(../images/icon-email_25.png) top left no-repeat;
+  font-size: 12px;
+  height: 25px;
+  margin: 27px 0 0 5px;
+  line-height: 17px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.need-help {
+   color: #999;
+   text-align: center;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   font-style: italic;
+   margin-top: 50px;
+   padding: 5px 0 5px 0;
+   clear:both;
+}
+
+.need-help .call {
+   color: #222;
+   font-weight: bold;
+}
+
+body.about .innerBody {
+  width: 862px;
+}
+
+#contactus {
+  background: url(../images/divider.gif) 38px 0px no-repeat;
+}
+
+#contactus form {
+  width: 260px;
+}
+
+form label {
+   display: block;
+   font-size: 13px;
+   color: #666;
+   margin-bottom: 5px;
+}
+
+form input.text {
+   height: 30px;
+   font-size: 14px;
+}
+
+form input.text,
+form textarea {
+   margin-bottom: 12px;
+   width: 260px;
+   background: white;
+   border: 1px solid #ccc;
+}
+
+form select { 
+  margin-bottom: 12px;
+}
+
+form textarea { 
+   height: 140px;
+}
+
+form input.submit {
+   height: 33px;
+   background: url(../images/button-sprite.png) top right no-repeat;
+   color: #a88000;
+   font-style: italic;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 16px;
+   padding-right: 30px;
+   border: none;
+   border-left: 1px solid #deb326;
+   float: right;
+}
+

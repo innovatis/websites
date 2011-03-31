@@ -28,6 +28,18 @@ var Primal = Primal || {};
 })();
 
 $(function(){
+  $("a#newsletter").click(function(e) {
+    alert("FOO");
+    e.preventDefault();
+  });
+
+  $("#meetourteam li a").click(function(e) {
+    var person = $(this).attr('data-tab');
+    $(".person-detail").fadeOut();
+    $(".person-detail."+person).fadeIn();
+    e.preventDefault();
+  });
+
  $('#form form').submit(function(e){
     var element = $(this);
     if(Primal.form.validateAll()){
