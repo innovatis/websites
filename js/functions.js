@@ -34,9 +34,9 @@ $(function(){
 
     // some mask tweaks suitable for modal dialogs
     mask: {
-      color: '#333333',
+      color: '#000000',
       loadSpeed: 200,
-      opacity: 0.9
+      opacity: 0.6
     },
 
     closeOnClick: false

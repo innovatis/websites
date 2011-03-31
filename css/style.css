@@ -855,10 +855,7 @@ form input.submit {
 }
 
 .modal {
-		background-color:#fff;
 		display:none;
-		width:350px;
-		padding:15px;
 		text-align:left;
 }
 
@@ -881,3 +878,38 @@ form input.submit {
    height: 30px;
 }
 
+
+
+/* modal box styles */
+
+#newsletter {
+  width: 608px;
+  background: url(../images/modalbox-right.png) bottom right no-repeat transparent;
+}
+#newsletter .left {
+   float: left;
+   padding: 15px;
+   background: white;
+   width: 379px;
+}
+#newsletter .right {
+   float: left;
+   padding: 15px;
+   width: 169px;
+}
+
+#estimate {
+  width: 655px;
+  background: url(../images/modalbox-right.png) bottom right no-repeat transparent;
+}
+#estimate .left {
+   float: left;
+   padding: 15px;
+   background: white;
+   width: 363px;
+}
+#estimate .right {
+   float: left;
+   padding: 15px;
+   width: 222px;
+}
