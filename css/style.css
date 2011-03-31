@@ -98,11 +98,12 @@ body {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 18px;
 	line-height:22px;
-	color:black;
+	color:#333;
 	font-weight:800;
 	margin-bottom:7px;
+  text-shadow: 0 1px #fff;
 }
 h2 {
 	font-size:14px;
@@ -660,27 +661,55 @@ a.sign-up:active {
 }
 
 #meetourteam {
-   height: 36px;
+   height: 35px;
+   border:1px solid white;
 }
 
 #meetourteam .label {
-   width: 141px;
-   height: 36px;
-   background: url(../images/meetourteam.png) top left no-repeat;
-   border: none;
+   width: 116px;
+   height: 33px;
+   background: #444;
+   border:1px solid #000;
+   float:left;
+   line-height: 32px;
+   text-decoration: none;
+   font-weight:600;
+   font-size:15px;
+   padding: 0 15px;
+   color:#ffd523;
+   text-shadow:0 1px #000;
 }
-
+#meetourteam ul {
+   float:right;
+   height:33px;
+   width:371px;
+   background: url(../images/team-tab-sprite.jpg) top left repeat-x;  
+   border-left: 1px solid white;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+}
 #meetourteam li {
    background: url(../images/team-tab-sprite.jpg) top left repeat-x;
-   height: 36px;
-   float: left;
+   height: 33px;
+   float: right;
    border-left: 1px solid white;
-   border-bottom: 1px solid white;
+   border-right: 1px solid #ccc;
    font-family: helvetica, arial, sans;
-   color: #666
-   line-height: 36px;
+   color: #666;
 }
-
+#meetourteam li {
+   background-position:0 0;
+}
+#meetourteam li:hover {
+  background-position:0 -36px;
+}
+#meetourteam li:active, #meetourteam li.current {
+  background-position:0 -69px;
+  border-left:1px solid #999;
+}
+#meetourteam li.first {
+   border-left:none;
+}
 #meetourteam .sales a,
 #meetourteam .customerservice a,
 #meetourteam .support a {
@@ -688,21 +717,24 @@ a.sign-up:active {
    height: 36px;
    line-height: 36px;
    text-decoration: none;
-   padding: 0 15px 0 36px;
+   font-weight:600;
+   font-size:14px;
+   padding: 0 16px 0 36px;
+   text-shadow:0 1px #FFFFFF;
 }
 
 #meetourteam .sales a {
-   background: url(../images/icon-sales.png) 10px 10px no-repeat;
+   background: url(../images/icon-sales.png) 10px 9px no-repeat;
+   border-left:none;
 }
 #meetourteam .customerservice a {
-   background: url(../images/icon-customerservice.gif) 10px 10px no-repeat;
+   background: url(../images/icon-customerservice.gif) 10px 9px no-repeat;
 }
 #meetourteam .support a {
-   background: url(../images/icon-support.png) 10px 10px no-repeat;
+   background: url(../images/icon-support.png) 10px 9px no-repeat;
 }
 
 .person-detail {
-  position: absolute;
   width: 522px;  
 }
 
@@ -733,7 +765,6 @@ a.sign-up:active {
 .person-detail a.email {
   display: block;
   padding-left: 36px;
-  text-decoration:none;
   background: url(../images/icon-email_25.png) top left no-repeat;
   font-size: 12px;
   height: 25px;
@@ -742,20 +773,24 @@ a.sign-up:active {
   color: #777;
   text-transform: uppercase;
 }
+.need-help-wrapper {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
 
+}
 .need-help {
-   color: #999;
-   text-align: center;
-   border-top: 1px solid #ccc;
-   border-bottom: 1px solid #ccc;
-   font-style: italic;
-   padding: 5px 0 5px 0;
-   clear:both;
+  color: #999;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  font-style: italic;
+  padding: 10px 0;
+  clear:both;
 }
 
 .need-help .call {
-   color: #222;
-   font-weight: bold;
+  color: #222;
+  font-weight: bold;
 }
 
 body.about .innerBody {
@@ -769,7 +804,9 @@ body.about .innerBody {
 #contactus form {
   width: 260px;
 }
-
+#contactus form h1 {
+  margin-bottom:15px;
+}
 form label {
    display: block;
    font-size: 13px;
@@ -799,20 +836,23 @@ form textarea {
 }
 
 form input.submit {
-   height: 33px;
-   background: url(../images/button-sprite.png) top right no-repeat;
-   color: #a88000;
-   font-style: italic;
-   text-transform: uppercase;
-   font-weight: bold;
-   font-size: 16px;
-   padding-right: 30px;
-   border: none;
-   border-left: 1px solid #deb326;
-   float: right;
+  height: 33px;
+  background: url(../images/button-sprite.png) top right no-repeat;
+  color: #AB8400;
+  text-shadow: 0 1px #FFed44;
+  font-weight: bold;
+  font-size: 15px;
+  padding:0 32px 3px 15px;
+  border: none;
+  line-height:10px;
+  border-left: 1px solid #deb326;
+  float: right;
+  font-family:'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
-
+#tell-us-what-you-think .message p {
+  text-align:right;
+}
 
 .modal {
 		background-color:#fff;
@@ -821,3 +861,23 @@ form input.submit {
 		padding:15px;
 		text-align:left;
 }
+
+
+
+/* safety page styles */
+.checklist-top {
+   background: url(../images/checklist-top.png) top left repeat-x;
+   height: 108px;
+   width: 366px;
+   border: 1px solid #c6c6c6;
+}
+
+#checklist li {
+   background: url(../images/checklist-background.png) top left repeat-x white;
+   border: 1px solid #c6c6c6;
+   border-top: none;
+   width: 316px;
+   padding-left: 50px;
+   height: 30px;
+}
+
