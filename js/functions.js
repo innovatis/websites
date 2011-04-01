@@ -30,6 +30,15 @@ var Primal = Primal || {};
 
 $(function(){
 
+  $(".skyjack-list a").click(function(e) {
+    var rel=$(this).attr('rel');
+    $("#man-on-lift").fadeOut();
+    $("#skyjack-details-column .content").fadeOut();
+    $("#skyjack-details-column .content."+rel).fadeIn();
+
+    e.preventDefault();
+  });
+
   var triggers = $(".modalInput").overlay({
 
     // some mask tweaks suitable for modal dialogs
@@ -43,9 +52,9 @@ $(function(){
   });
 
   $("#meetourteam li a").click(function(e) {
-    var person = $(this).attr('data-tab');
-    $(".person-detail").fadeOut();
-    $(".person-detail."+person).fadeIn();
+    var cat = $(this).attr('data-tab');
+    $(".person-category").hide();
+    $(".person-category."+cat).fadeIn();
     e.preventDefault();
   });
 

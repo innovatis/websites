@@ -91,8 +91,16 @@ body {
 #logo{
   display: block;
   float: left;
+  width: 266px;
+  position: relative;
+  top: 5px;
+  height: 81px;
+}
+
+#logo a {
   background: url(../images/logo.jpg) no-repeat;
   text-indent: -999em;
+  display: block;
   width: 266px;
   height: 81px;
 }
@@ -435,6 +443,32 @@ div.linkbox .yellow {
 
 }
 
+#skyjack-details-column {
+  position: relative;
+}
+
+#man-on-lift {
+  background: url(../images/manonlift.png) top left no-repeat;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 396px;
+  height: 400px;
+}
+
+#skyjack-details-column .content {
+  position: absolute;
+  left: 0px;
+  top: 0px; 
+  display: none;
+}
+
+.skyjack-list li a img {
+  position: relative;
+  left: 8px;
+  top: 2px;
+}
+
 #showcase-body #skyjack-details-column .skyjack-details-header{
   height: 30px;
   line-height: 30px;
@@ -770,6 +804,11 @@ body.about div.column.first {
 
 .person-detail {
   width: 522px;  
+  margin-bottom: 80px;
+}
+
+.person-detail a {
+  text-decoration: none;
 }
 
 .person-detail h1 {
