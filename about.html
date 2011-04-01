@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Clearview Renetals - Winnipeg Skyjack Rentals | Skyjack Rentals Winnipeg</title>
+    <title>Clearview Rentals - Winnipeg Skyjack Rentals | Skyjack Rentals Winnipeg</title>
     <meta name="description" content=""/>
     <meta name="keywords"    content=""/>
-    <link href ='css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
     <script src="js/jquery.min.js"></script>
     <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
     <script src="js/functions.js"></script>
   </head>
+  <body class="about">
     <div id="header">
       <div class="innerBody">
         <h1 id="logo"><a href="/">Clearview Rentals</a></h1>
@@ -23,9 +24,7 @@
         <br class="clear">
       </div>
     </div>
-    <div id="warehouse">
-      
-    </div>
+    <div id="warehouse"></div>
     <div id="body">
       <div class="innerBody">
         <div class="content" style="padding-top: 45px;">
@@ -33,11 +32,9 @@
             <div id="meetourteam">
                 <div class="label">Meet our Team:</div>
               <ul>
- <li class="support last"><a href="#support" data-tab="stew">Support</a></li>
+ 								<li class="support last"><a href="#support" data-tab="stew">Support</a></li>
                 <li class="customerservice"><a href="#customerservice" data-tab="bruce">Customer&nbsp;Service</a></li>
                 <li class="sales first"><a href="#sales" data-tab="nikki">Sales</a></li>
-
-               
               </ul>
             </div>
             <br class="clear">
@@ -71,7 +68,7 @@
               <h1>Stew Simpson</h1>
               <h2>Lift &amp; Tool Technician</h2>
               <img class="person" src="images/stew.png">
-              <p style="clear:left;">Stew is our factory trained technician bringing a wealth of knowledge to the Clearview team with over thirty years of mechanical experience and a commitment to â€˜fixing it right the first timeâ€™.  Stewâ€™s diverse skill set helps fulfill the Companyâ€™s vision of committing to excellence by providing finely tuned equipment and continual customer support.</p>
+              <p style="clear:left;">Stew is our factory trained technician bringing a wealth of knowledge to the Clearview team with over thirty years of mechanical experience and a commitment to &ldquo;fixing it right the first time&rdquo;.  Stew&rsquo;s diverse skill set helps fulfill the Company&rsquo;s vision of committing to excellence by providing finely tuned equipment and continual customer support.</p>
               <a class="email">Email Stew</a>
               <br class="clear">
 							<div class="need-help-wrapper">
@@ -82,8 +79,8 @@
             </div>
             <br class="clear">
           </div>
-          <div class="column second" id="contactus" style="width: 300px; padding-left: 40px;">
-            <form id="contact" style="position:relative;left:40px;">
+          <div class="column second" id="contactus" style="width: 310px; padding-left: 40px;">
+            <form id="contact" style="position:relative;float:right;">
               <h1>Contact Us</h1>
               <label for="contact-name">Name:</label>
               <input class="text" id="contact-name" name="name">
@@ -110,24 +107,23 @@
             </form>
           </div>
           <br class="clear">
-          <br class="clear">
           <div id="specials-updates-availability" class="column first in-thirds visual-blurb">
             <div class="message">
-              <p><span class="yellow">Clearview Specials,<br> Updates, and<br>Availability</span> via Email</p><p>
-            </p></div>
-            <a href="#" class="sign-up">Sign-Up</a>
+              <p><span class="yellow" >Clearview Specials,<br/> Updates, and<br/>Availability</span> via Email<p>
+            </div>
+            <a href="#" class="sign-up">More Info</a>
           </div>
           <div id="tell-us-what-you-think" class="column in-thirds visual-blurb">
             <div class="message">
-              <p><span class="yellow">Tell Us What You Think!</span> customer feedback survey</p>
+              <p><span class="yellow">Tell Us What You Think!</span> <br>Customer Feedback<br>Survey</p>
             </div>
-            <a href="#" class="sign-up">Sign-Up</a>
+            <a href="#" class="sign-up">More Info</a>
           </div>
           <div id="safety-training-services" class="column last in-thirds visual-blurb">
             <div class="message">
-              <p>Clearview safety and<br>training services</p>
+              <p>Clearview safety and<br/>training services</p>
             </div>
-            <a href="#" class="sign-up">Sign-Up</a>
+            <a href="#" class="sign-up">More Info</a>
           </div>
           <br class="clear">
         </div>
@@ -137,14 +133,20 @@
       <div class="innerBody">
         <h3 id="footer-logo">Clearview Rentals</h3>
         <ul>
-          <li class="first">12345 Long Name St.</li>
+          <li class="first">840 Bradford Street</li>
           <li>Winnipeg, MB</li>
-          <li class="last">Canada R2G 3K1</li>
+          <li class="last">Canada R3H 0N5</li>
         </ul>
-        <span class="phone">CALL TODAY: 204-SKY-JACK</span>
-        <br class="clear">
-        <br class="clear">
-        <div id="copyright">Copyright 2011 Clearview Rentals.
+        <span class="phone">CALL TODAY: 204-771-2701</span>
+        <br class="clear"/>
+        <br class="clear"/>
+        <cite>
+	        &copy; Clearview Rentals | All Rights Reserved | 
+	        Design By
+	        <a href="http://jonharmondesign.com/">Jon Harmon Design</a>
+	        Implementation by 
+	        <a href="http://innovatisinc.ca">Innovatis Inc</a>
+      	</cite>
       </div>
     </div>
 
@@ -153,11 +155,12 @@
         <h4>Register for the</h4>
         <h1>Clearview Rentals eNewsletter</h1>
         <p><strong>Get instant updates</strong> on specials, new lifts, and availability!</p>
-        <label for="newsletter-email">Your Email</label>
-        <input id="newsletter-email" name="email" />
-        <input type="submit" value="Sign Me Up!" />
+        <form>
+	        <label for="newsletter-email">Your Email</label>
+	        <input id="newsletter-email" name="email">
+	        <input type="submit" value="Sign Me Up!" class="sign-up">
+        </form>
       </div>
-
       <div class="right">
         <h3>What's Included?</h3>
         <ul>
@@ -173,22 +176,26 @@
         <h1>Get Your <span class="yellow">FREE Estimate</span></h1>
         <h2>It's Quick and &ldquo;Easy as 1-2-3&rdquo;</h2>
         <p>Just fill out your information below and we'll contact you to provide you an estimate on your project.</p>
+    <form>
         <label for="estimate-name">Name</label>
-        <input name="name" id="estimate-name" />
+        <input id="estimate-name" name="name">
 
         <label for="estimate-email">Email</label>
-        <input name="email" id="estimate-email" />
+        <input id="estimate-email" name="email">
 
         <label>Phone</label>
-        <input name="phone1" />
-        <input name="phone2" />
-        <input name="phone3" />
+        <div class="form-group">
+          <input class="phone-input" name="phone1">
+          <input class="phone-input" name="phone2">
+          <input class="phone-input" name="phone3">
+        </div>
 
-        <input type="submit" value="Request an Estimate" />
+        <input type="submit" class="submit" value="Request an Estimate">
+        </form>
       </div>
 
-      <div class="right">
-        <h3>Our Value Guarantee:</h3>
+      <div class="right" id="modal-value">
+        <h1>Our Value Guarantee:</h1>
         <p>Clearview Rentals guarantees that you will receive the best value when using our services.</p>
         <p>Not only do we provide some of the lowest rates in the city, but we bring added value to each and every customer. We care about our customers and that means we want to ensure that you receive the right piece of equipment to suit your application needs every time.</p>
         <p>Once we guarantee you've chosen the right lift, we carefully prepare the lift and send it out in excellent working condition: clean, fueled, and running efficiently to minimize downtime on the jobsite. If for some reason you have a problem with a lift, we will be there to fix it in no time.</p>
@@ -196,7 +203,5 @@
       </div>
     </div>
 
-
-	</div>
   </body>
 </html>
