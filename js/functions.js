@@ -32,6 +32,8 @@ $(function(){
 
   $(".skyjack-list a").click(function(e) {
     var rel=$(this).attr('rel');
+    $(".skyjack-list li").removeClass("current");
+    $(this).parent().addClass("current");
     $("#man-on-lift").fadeOut();
     $("#skyjack-details-column .content").fadeOut();
     $("#skyjack-details-column .content."+rel).fadeIn();
