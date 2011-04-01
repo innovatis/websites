@@ -30,6 +30,13 @@ var Primal = Primal || {};
 
 $(function(){
 
+  $(".phone-input").change(function() {
+    var ph1 = $("#phone1").val(),
+        ph2 = $("#phone2").val(),
+        ph3 = $("#phone3").val();
+    $("#phone-real").val('' + ph1 + '-' + ph2 + '-' + ph3);
+  });
+
   $(".skyjack-list a").click(function(e) {
     var rel=$(this).attr('rel');
     $(".skyjack-list li").removeClass("current");

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -478,10 +479,25 @@
         <h4>Register for the</h4>
         <h1>Clearview Rentals eNewsletter</h1>
         <p><strong>Get instant updates</strong> on specials, new lifts, and availability!</p>
-        <form>
+        <form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="1958303798" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="clearview-main" />
+            <input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_c413cd24e5e2af52e074912a1c51c838" />
+            <input type="hidden" name="meta_adtracking" value="Newsletter" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="email" />
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
+         
 	        <label for="newsletter-email">Your Email</label>
-	        <input id="newsletter-email" name="email">
-	        <input type="submit" value="Sign Me Up!" class="sign-up">
+          <input class="text" id="newsletter-email" type="text" name="email" />
+
+	        <input type="submit" value="Sign Me Up!" class="sign-up" />
+          <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=jJysHMwMzOycHA==" alt="" /></div>
+        </form>
+        <form>
         </form>
       </div>
       <div class="right">
@@ -499,21 +515,35 @@
         <h1>Get Your <span class="yellow">FREE Estimate</span></h1>
         <h2>It's Quick and &ldquo;Easy as 1-2-3&rdquo;</h2>
         <p>Just fill out your information below and we'll contact you to provide you an estimate on your project.</p>
-    <form>
-        <label for="estimate-name">Name</label>
-        <input id="estimate-name" name="name">
 
-        <label for="estimate-email">Email</label>
-        <input id="estimate-email" name="email">
+        <form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="393669252" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="clearview-main" />
+            <input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_6045070f70d86d81aed4c8a2d47058cf" />
+            <input type="hidden" name="meta_adtracking" value="Request_Estimate" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="name,email" />
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
 
-        <label>Phone</label>
-        <div class="form-group">
-          <input class="phone-input" name="phone1">
-          <input class="phone-input" name="phone2">
-          <input class="phone-input" name="phone3">
-        </div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" type="text" name="name" value="" />
 
-        <input type="submit" class="submit" value="Request an Estimate">
+          <label for="estimate-email">Email</label>
+          <input id="estimate-email" name="email" />
+
+          <label>Phone</label>
+          <div class="form-group">
+            <input class="phone-input" name="phone1" id="phone1" />
+            <input class="phone-input" name="phone2" id="phone2" />
+            <input class="phone-input" name="phone3" id="phone3" />
+          </div>
+          <input type="hidden" id="phone-real" class="text" name="custom Phone" value=''  tabindex="502" />
+          
+          <input type="submit" class="submit" value="Request an Estimate" />
+          <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=zJzMbGycTKxM" alt="" /></div>
         </form>
       </div>
 

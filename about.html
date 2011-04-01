@@ -94,30 +94,49 @@
             <br class="clear"/>
           </div>
           <div class="column second" id="contactus" style="width: 310px; padding-left: 40px;">
-            <form id="contact" style="position:relative;float:right;">
+
+            <form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl" id="contact" style="position:relative;float:right;">
+              <div style="display: none;">
+                <input type="hidden" name="meta_web_form_id" value="624421491" />
+                <input type="hidden" name="meta_split_id" value="" />
+                <input type="hidden" name="listname" value="clearview-main" />
+                <input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_c4016a36f83d44055dc8cf8554250124" />
+                <input type="hidden" name="meta_adtracking" value="Contact_Us" />
+                <input type="hidden" name="meta_message" value="1" />
+                <input type="hidden" name="meta_required" value="name,email" />
+                <input type="hidden" name="meta_tooltip" value="" />
+              </div>
+
               <h1>Contact Us</h1>
               <label for="contact-name">Name:</label>
-              <input class="text" id="contact-name" name="name">
+              <input class="text" id="contact-name" name="name" />
               
               <label for="contact-company">Company:</label>
-              <input class="text" id="contact-company" name="company">
+              <input class="text" id="contact-company" name="custom Company" />
               
               <label for="contact-phone">Phone:</label>
-              <input class="text" id="contact-phone" name="phone">
+              <input class="text" id="contact-phone" name="custom Phone" />
               
               <label for="contact-email">Email:</label>
-              <input class="text" id="contact-email" name="email">
+              <input class="text" id="contact-email" name="email" />
               
               <label for="contact-interested">I'm interested in...</label>
-              <select id="contact-interested" name="interested">
-                <option></option>
+              <select id="contact-interested" name="custom Interested In">
+                <option class="multiChoice" value="Model 3219">Model 3219</option>
+                <option class="multiChoice" value="Model 3220">Model 3220</option>
+                <option class="multiChoice" value="Model 3226">Model 3226</option>
+                <option class="multiChoice" value="Model 4626">Model 4626</option>
+                <option class="multiChoice" value="Model 4632">Model 4632</option>
+                <option class="multiChoice" value="Model 7135">Model 7135</option>
+                <option class="multiChoice" value="Model 9250">Model 9250</option>
               </select>
-              
+              <input type="hidden" name="meta_preselected_awf_field-18900395" value=""/>
+
               <label for="contact-additional">Additional:</label>
-              <textarea id="contact-additional" name="additional"></textarea>
+              <textarea id="contact-additional" name="custom Additional"></textarea>
 
-              <input value="Send" class="submit" type="submit">
-
+              <input value="Send" class="submit" type="submit" />
+              <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=bEwsLEyMLJyM" alt="" /></div>
             </form>
           </div>
           <br class="clear">
@@ -169,10 +188,25 @@
         <h4>Register for the</h4>
         <h1>Clearview Rentals eNewsletter</h1>
         <p><strong>Get instant updates</strong> on specials, new lifts, and availability!</p>
-        <form>
+        <form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="1958303798" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="clearview-main" />
+            <input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_c413cd24e5e2af52e074912a1c51c838" />
+            <input type="hidden" name="meta_adtracking" value="Newsletter" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="email" />
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
+         
 	        <label for="newsletter-email">Your Email</label>
-	        <input id="newsletter-email" name="email">
-	        <input type="submit" value="Sign Me Up!" class="sign-up">
+          <input class="text" id="newsletter-email" type="text" name="email" />
+
+	        <input type="submit" value="Sign Me Up!" class="sign-up" />
+          <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=jJysHMwMzOycHA==" alt="" /></div>
+        </form>
+        <form>
         </form>
       </div>
       <div class="right">
@@ -190,21 +224,35 @@
         <h1>Get Your <span class="yellow">FREE Estimate</span></h1>
         <h2>It's Quick and &ldquo;Easy as 1-2-3&rdquo;</h2>
         <p>Just fill out your information below and we'll contact you to provide you an estimate on your project.</p>
-    <form>
-        <label for="estimate-name">Name</label>
-        <input id="estimate-name" name="name">
 
-        <label for="estimate-email">Email</label>
-        <input id="estimate-email" name="email">
+        <form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="393669252" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="clearview-main" />
+            <input type="hidden" name="redirect" value="http://www.aweber.com/thankyou.htm?m=default" id="redirect_6045070f70d86d81aed4c8a2d47058cf" />
+            <input type="hidden" name="meta_adtracking" value="Request_Estimate" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="name,email" />
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
 
-        <label>Phone</label>
-        <div class="form-group">
-          <input class="phone-input" name="phone1">
-          <input class="phone-input" name="phone2">
-          <input class="phone-input" name="phone3">
-        </div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" type="text" name="name" value="" />
 
-        <input type="submit" class="submit" value="Request an Estimate">
+          <label for="estimate-email">Email</label>
+          <input id="estimate-email" name="email" />
+
+          <label>Phone</label>
+          <div class="form-group">
+            <input class="phone-input" name="phone1" id="phone1" />
+            <input class="phone-input" name="phone2" id="phone2" />
+            <input class="phone-input" name="phone3" id="phone3" />
+          </div>
+          <input type="hidden" id="phone-real" class="text" name="custom Phone" value=''  tabindex="502" />
+          
+          <input type="submit" class="submit" value="Request an Estimate" />
+          <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=zJzMbGycTKxM" alt="" /></div>
         </form>
       </div>
 
@@ -216,6 +264,6 @@
         <p>We believe that although price is important, it means nothing if we haven't done our job right.</p>
       </div>
     </div>
-
+    
   </body>
 </html>
