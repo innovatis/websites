@@ -1062,12 +1062,11 @@ form input.submit {
     margin-top:10px;
 }
 #newsletter div.right ul {
-    width:180px;
+    width:169px;
     float:left;
     margin:10px 0;
 }
 #newsletter .right ul li {
-    float:left;
     margin:4px 0;
     padding:0;
     color: rgb(127,99,0);
