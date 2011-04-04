@@ -764,11 +764,14 @@ body.about div.column.first {
 #meetourteam {
    height: 35px;
    border:1px solid white;
+   position:relative;
 }
 
 #meetourteam .label {
-   width: 118px;
+   width: 120px;
    height: 33px;
+   position:absolute;
+   z-index:2;
    background: #444;
    border:1px solid #000;
    float:left;
@@ -776,14 +779,14 @@ body.about div.column.first {
    text-decoration: none;
    font-weight:600;
    font-size:15px;
-   padding: 0 12px;
+   padding: 0 8px;
    color:#ffd523;
    text-shadow:0 1px #000;
 }
 #meetourteam ul {
    float:right;
    height:33px;
-   width:373px;
+   width:400px;
    background: url(../images/team-tab-sprite.jpg) top left repeat-x;  
    border-left: 1px solid white;
    border-top: 1px solid #ccc;
@@ -1071,7 +1074,6 @@ form input.submit {
     font-size:13px;
 }
 .modal .left label {
-    float:left;
     margin:5px 0;
     font-size:13px;
     color:#666;
@@ -1084,8 +1086,7 @@ form input.submit {
     margin-top:20px;
 }
 .modal .left input {
-  clear:both;
-  float:left;
+
   width:230px;
   height:22px;
   font-size:14px;
