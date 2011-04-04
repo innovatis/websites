@@ -366,15 +366,17 @@ div.linkbox .yellow {
   background: -moz-linear-gradient(top, #FFCB00, #DBAB0A);
   background: linear-gradient(top, #FFCB00, #DBAB0A);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCB00', endColorstr='#DBAB0A');
+  border-bottom:1px solid #aB7B0A;
 }
 #showcase-body .skyjack-list li a{
   border-top:1px solid #e1e1e1;
   border-bottom:1px solid #ffffff;
   display: block;
-  width: 100%;
+  position:relative;
+  width: 302px;
   background: #FBFBFB;
-  height: 26px;
-  line-height: 26px;
+  height: 30px;
+  line-height: 30px;
   text-decoration: none;
   text-shadow:0 1px #FFFFFF;
   font-size: 13px;
@@ -386,16 +388,41 @@ div.linkbox .yellow {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#f1f1f1');
 }
 #showcase-body .skyjack-list li a:hover{
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#eaeaea));
-  background: -moz-linear-gradient(top, #f5f5f5, #dadada);
-  background: linear-gradient(top, #FFFFFF, #f1f1f1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#f1f1f1');
-  border-bottom:1px solid #e1e1e1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#d1d1d1));
+  background: -moz-linear-gradient(top, #f5f5f5, #d1d1d1);
+  background: linear-gradient(top, #f5f5f5, #d1d1d1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#d1d1d1');
+  border-bottom:1px solid #b6b6b6;
   border-top:1px solid #dddddd;
 }
+#showcase-body .skyjack-list li a:active{
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#c1c1c1));
+  background: -moz-linear-gradient(top, #eaeaea, #c1c1c1);
+  background: linear-gradient(top, #eaeaea, #c1c1c1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#c1c1c1');
+  border-bottom:1px solid #bababa;
+  border-top:1px solid #cccccc;
+}
+#showcase-body .skyjack-list li a.current{
+  background: -webkit-gradient(linear, left top, left bottom, from(#bababa), to(#a1a1a1));
+  background: -moz-linear-gradient(top, #bababa, #a1a1a1);
+  background: linear-gradient(top, #bababa, #a1a1a1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bababa', endColorstr='#a1a1a1');
+  border-bottom:1px solid #a1a1a1;
+  border-top:1px solid #bababa;
+}
+#showcase-body .skyjack-list li a img.arrow {
+	position:absolute;
+	top:11px;
+	left:275px;
+}
+
 #showcase-body a#download-spec-sheet{
+	position:absolute;
+	bottom:41px;
+	left:307px;
   display: block;
-  width: 100%;
+  width: 304px;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -407,6 +434,7 @@ div.linkbox .yellow {
   text-decoration: none;
   text-shadow: 0 -1px 1px black;
   font-weight: bold;
+  text-shadow: 0 1px 2px black;
 }
 #showcase-body a#download-spec-sheet:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#535353), to(#121212));
@@ -425,7 +453,11 @@ div.linkbox .yellow {
   background: linear-gradient(top, #424242, #121212);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#424242', endColorstr='#121212');
 }
-
+#showcase-body a#download-spec-sheet img.downloadarrow {
+	position:absolute;
+	top:10px;
+	left:38px;
+}
 #showcase-body .skyjack-list li a b{
   font-weight: bold;
   color: #3C3C3C;
@@ -435,7 +467,7 @@ div.linkbox .yellow {
  font-size:24px;
  margin-top:18px;
  line-height:26px;
- margin-bottom:17px;
+ margin-bottom:14px;
  font-weight:800;
 }
 
@@ -450,7 +482,7 @@ div.linkbox .yellow {
 #man-on-lift {
   background: url(../images/manonlift.png) top left no-repeat;
   position: absolute;
-  left: 2px;
+  left: 1px;
   top: 1px;
   width: 396px;
   height: 400px;
@@ -458,9 +490,10 @@ div.linkbox .yellow {
 
 #skyjack-details-column .content {
   position: absolute;
-  left: 0px;
-  top: 0px; 
+  left: -10px;
+  top: -10px; 
   display: none;
+  width:250px;
 }
 
 .skyjack-list li a img {
@@ -476,11 +509,11 @@ div.linkbox .yellow {
   padding-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #9D9D9D;
+  color: #DBAB0A;
 }
 
 #skyjack-details-column .skyjack-details-header b{
-  color: #646464;
+  color: #252525;
 }
 
 #skyjack-details-column .skyjack-details-content ul li{
@@ -825,7 +858,9 @@ body.about div.column.first {
   font-weight: normal;
   font-size: 14px;
 }
-
+.customerservice {
+    height:620px;
+}
 .person-detail img.person {
   float: right;
   margin-left: 30px;
@@ -982,6 +1017,7 @@ form input.submit {
 
 
 /* modal box styles */
+.modal { -moz-box-shadow: 0 0 9px #000;-webkit-box-shadow: 0 0 9px #000; box-shadow: 0 0 9px #000;}
 .modal .left {
    float: left;
    padding: 20px;
@@ -1107,6 +1143,17 @@ form input.submit {
  height:18px;
 }
 .form-group {
-    clear:both;
-    float:left;
+  clear:both;
+  float:left;
 }
+a.close {
+  position:absolute;
+	top:0px;
+	right:0px;
+	width:28px;
+	height:28px;
+	background: url(../images/close_sprite.jpg) no-repeat;
+	cursor:pointer;
+}
+a.close:hover {background-position: 0 -28px;}
+a.close:active {background-position: 0 -56px;}
