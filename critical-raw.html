@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="excel/critical.js"></script>
+    <link rel="stylesheet" href="excel/style.css" type="text/css" media="screen, projection">
+    <style>
+      body { color: #222; font-family: 'helvetica'; }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <form data-excel-sheet="sheet1" class="excel-sheet">
+        <table class="fields">
+          <tr class="field text">
+            <td>What is your monthly take home paycheque?</td>
+            <td><input class="input excel-cell" data-cell="G8" name="take_home" id="take_home"/></td>
+          </tr>
+          <tr class="field text">
+            <td>How many month's income would you need?</td>
+            <td><input class="input excel-cell" data-cell="G10" name="needed_months" id="needed_months"/></td>
+          </tr>
+          <tr class="field text">
+            <td>How many month's do you want your mortgage paid?</td>
+            <td><input class="input excel-cell" data-cell="G12" name="months_left" id="months_left"/></td>
+          </tr>
+          <tr class="field text">
+            <td>What is your monthly mortgage payment?</td>
+            <td><input class="input excel-cell" data-cell="G14" name="payment_amount" id="payment_amount"/></td>
+          </tr>
+          <tr class="field text">
+            <td>How much consumer/credit card debt?</td>
+            <td><input class="input excel-cell" data-cell="G16" name="credit_card_debt" id="credit_card_debt"/></td>
+          </tr>
+          <tr class="field text">
+            <td>How much for unforseen expenses?</td>
+            <td><input class="input excel-cell" data-cell="G18" name="unforseen_expenses" id="unforseen_expenses"/></td>
+          </tr>
+          <tr class="field text">
+            <td>Recovery: vacation cost</td>
+            <td><input class="input excel-cell" data-cell="G20" name="vacation_cost" id="vacation_cost"/></td>
+          </tr>
+          <tr class="field text">
+            <td>Other</td>
+            <td><input class="input excel-cell" data-cell="G22" name="other" id="other"/></td>
+          </tr>
+          <tr class="field text">
+            <td>Needed Coverage</td>
+            <td><input data-formula="SUM((G8*G10)+(G12*G14)+G16+G18+G20+G22)" class="excel-cell output" data-cell="G24" name="needed_coverage" id="needed_coverage" disabled/></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
+
