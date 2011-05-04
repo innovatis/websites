@@ -15,6 +15,7 @@
   <link rel="canonical" href=
   "http://www.thorvaldson.ca/contact.html">
   <link href="thorvaldson.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://stark-ocean-735.heroku.com/0.0.1/js/all.js"></script>
   <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -138,9 +139,11 @@ try {
 
                         <tr>
                           <td style=
-                          "padding-left:5px;padding-right:20px;padding-top:5px;">
-                          <form name="_ctl0" method="post"
-                            action="contact.html" id="_ctl0">
+                            "padding-left:5px;padding-right:20px;padding-top:5px;">
+                            <div id="mailform-complete"></div>
+                            <div id="error-messages"></div>
+                          <form name="_ctl0" data-mailform="true" id="mailform"
+                             id="_ctl0">
                               <input type="hidden" name=
                               "__VIEWSTATE" value=
                               "dDwtMTgwNjAzNjM4OTs7PlPEN+7YCM2lJxGSOZmGRVLUyGPG">
@@ -151,14 +154,14 @@ try {
                                   <td align="right">First
                                   Name:</td>
 
-                                  <td><input name="txtFname" type=
+                                  <td><input name="first_name" type=
                                   "text" id="txtFname"></td>
                                 </tr>
 
                                 <tr>
                                   <td align="right">Last Name:</td>
 
-                                  <td><input name="txtLname" type=
+                                  <td><input name="last_name" type=
                                   "text" id="txtLname"></td>
                                 </tr>
 
@@ -166,7 +169,7 @@ try {
                                   <td align="right">E-mail
                                   Address:</td>
 
-                                  <td><input name="txtEmail" type=
+                                  <td><input name="email" type=
                                   "text" id="txtEmail"></td>
                                 </tr>
 
@@ -175,7 +178,7 @@ try {
                                   Comments:</td>
 
                                   <td>
-                                  <textarea name="txtComments" id=
+                                  <textarea name="comments" id=
                                   "txtComments">
 </textarea></td>
                                 </tr>
