@@ -1,0 +1,107 @@
+html, body, div, span, a, img,
+h1, h2, h3, h4, h5, h6, hgroup, p,
+dl, dialog, dt, dd, ol, ul, li,
+abbr, acronym, address, b, big, blockquote,
+cite, code, del, dfn, em, i, ins, kbd, pre, q,
+samp, tt, var, small, strong, sub, sup,
+object, iframe, form, fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section,
+figure, menu, time, mark, audio, video {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  background: transparent; 
+}
+
+body {
+	text-align:center;
+	background: #e1e3f0 url(../images/map.jpg) center 240px no-repeat;
+}
+#wrapper {
+	width:100%;
+	height:535px;
+	background: url(../images/bkg.png) repeat-x;
+}
+#content {
+	position:relative;
+	width:600px;
+	margin:auto;
+	padding-top:50px;
+	height:412px;
+}
+#logo {
+	position:absolute;
+	top:45px;
+	left:0px;
+}
+#arrow {
+	margin:13px auto;
+
+}
+#getdirections {
+	display:block;
+	width:171px;
+	height:35px;
+	margin:auto;
+	text-indent:-9999em;
+	background: url(../images/getdirections_button_sprite.png) no-repeat;
+}
+	#getdirections:hover {
+		background-position-y:-36px;
+	
+	}
+ul {
+	position:absolute;
+	top:140px;
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+}
+li {
+	text-align:center;
+	padding:20px 0;
+	margin:0;
+	background:url(../images/divider.png) bottom center no-repeat;
+}
+li.last {background:none;}
+h1 {
+	font-size:38px;
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:bold;
+  font-style:italic;
+  letter-spacing:-.05em;
+  color:#5963a9;
+}
+h2 {
+	font-size:24px;
+	color:#9477af;
+  font-weight:bold;
+  line-height:26px;
+  font-family: "garamond-premier-pro-1","garamond-premier-pro-2",serif;
+  letter-spacing:-.02em;
+}
+h3 {
+	font-size:33px;
+  color:#5963a9;
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:bold;
+  font-style:italic;
+  letter-spacing:-.05em;
+}
+em {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+	font-size:18px;
+	padding:0 10px;
+  color:#5963a9;
+}
+span {font-size:15px;font-style:italic;}
