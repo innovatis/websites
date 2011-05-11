@@ -1,0 +1,96 @@
+TYPOGRAPHY
+-------------------------------
+
+
+h1 {
+	font-family: 'TeXGyrePagellaBold', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
+	font-size: 18px;
+	text-shadow: 0 1px rgb(11,26,45);
+}
+
+h1 span.frstltr {font-size:20px;}
+
+
+.ltblue {color: rgb(169,203,231);}
+.dkblue {color: rgb(40,62,83);}
+.yellow {color: rgb(241,239,158);}
+
+
+p {
+	font-family: 'Georgia', Palatino, Book Antiqua, times, serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	margin:10px 0 20px;
+}
+
+blockquote {
+	font-size:13px;
+	font-style:italic;
+	font-weight:bold;
+	text-indent: -6px;
+	color: rgb(241,239,158);
+}
+
+
+#nav li a {
+	font-size: 14px;
+	color: rgb(40,62,83);
+	text-shadow: 0 1px 2px #FFFFFF;
+}
+
+#banner h1 {
+	font-family: 'TeXGyrePagellaRegular', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
+	font-size: 22px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 2px rgb(11,26,45);
+}
+	#banner h1 span.yellow {
+		font-family: 'TeXGyrePagellaBold', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
+		color: rgb(241,239,158);
+	}
+	
+	
+.listing h2 {
+	font-family: 'TeXGyrePagellaRegular', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
+	font-size: 16px;
+	color: rgb(40,70,92);
+}
+
+.listing p {
+	font-family: arial, helvetica, sans-serif;
+	color: rgb(111,111,111);
+	font-size: 12px;
+	line-height: 16px;
+	margin-top:10px;
+}
+.listing table.specs td {
+	font-family: arial, helvetica, sans-serif;
+	color: rgb(0,28,64);
+}
+	td.label {
+		font-size:11px;
+		text-align:left;
+	}
+	td.spec {
+		font-size:12px;
+		text-align:right;
+		font-weight:bold;
+	}
+
+#footer h1 {
+	font-size:16px;
+	color: rgb(40,62,83);
+	text-shadow:none;
+}
+#footer h1 span.frstltr {font-size:18px;}
+
+#footer p {
+	font-family: arial, helvetica, sans-serif;
+	color: rgb(46,70,92);
+	font-size: 12px;
+	line-height: 16px;
+	margin:8px 0 16px;
+}
+
+
