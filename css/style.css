@@ -1,96 +1,68 @@
-TYPOGRAPHY
--------------------------------
+/* http://meyerweb.com/eric/tools/css/reset/
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
 
-
-h1 {
-	font-family: 'TeXGyrePagellaBold', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
-	font-size: 18px;
-	text-shadow: 0 1px rgb(11,26,45);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, caption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,  blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-h1 span.frstltr {font-size:20px;}
+/* Site Styles */
 
-
-.ltblue {color: rgb(169,203,231);}
-.dkblue {color: rgb(40,62,83);}
-.yellow {color: rgb(241,239,158);}
-
-
-p {
-	font-family: 'Georgia', Palatino, Book Antiqua, times, serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: #FFFFFF;
-	margin:10px 0 20px;
+html{
+  background: url(../images/background_tile.jpg);
+}
+body{
+  background: url(../images/background_lighting.jpg) no-repeat top center;
 }
 
-blockquote {
-	font-size:13px;
-	font-style:italic;
-	font-weight:bold;
-	text-indent: -6px;
-	color: rgb(241,239,158);
+.content{
+  width: 960px;
+  margin: 0 auto;
 }
-
-
-#nav li a {
-	font-size: 14px;
-	color: rgb(40,62,83);
-	text-shadow: 0 1px 2px #FFFFFF;
+#header{
 }
-
-#banner h1 {
-	font-family: 'TeXGyrePagellaRegular', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
-	font-size: 22px;
-	color: #FFFFFF;
-	text-shadow: 0 1px 2px rgb(11,26,45);
+#body{
 }
-	#banner h1 span.yellow {
-		font-family: 'TeXGyrePagellaBold', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
-		color: rgb(241,239,158);
-	}
-	
-	
-.listing h2 {
-	font-family: 'TeXGyrePagellaRegular', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
-	font-size: 16px;
-	color: rgb(40,70,92);
+#footer{
 }
-
-.listing p {
-	font-family: arial, helvetica, sans-serif;
-	color: rgb(111,111,111);
-	font-size: 12px;
-	line-height: 16px;
-	margin-top:10px;
-}
-.listing table.specs td {
-	font-family: arial, helvetica, sans-serif;
-	color: rgb(0,28,64);
-}
-	td.label {
-		font-size:11px;
-		text-align:left;
-	}
-	td.spec {
-		font-size:12px;
-		text-align:right;
-		font-weight:bold;
-	}
-
-#footer h1 {
-	font-size:16px;
-	color: rgb(40,62,83);
-	text-shadow:none;
-}
-#footer h1 span.frstltr {font-size:18px;}
-
-#footer p {
-	font-family: arial, helvetica, sans-serif;
-	color: rgb(46,70,92);
-	font-size: 12px;
-	line-height: 16px;
-	margin:8px 0 16px;
-}
-
-
