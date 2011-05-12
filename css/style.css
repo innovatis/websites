@@ -148,6 +148,7 @@ html{
 }
 body{
   background: url(../images/background_lighting.jpg) no-repeat top center;
+  padding-top: 50px;
 }
 .clear{
   clear: both;
@@ -161,8 +162,10 @@ body{
 }
 
 ul#main-menu{
-  height:144px;
+  height:148px;
   width: 933px;
+  margin-bottom: -43px;
+  background: url(../images/nav_background.png) no-repeat top center;
 }
 
 ul#main-menu li{
@@ -171,12 +174,36 @@ ul#main-menu li{
   text-align: center;
 }
 
+ul#main-menu li a {
+  background: url(../images/nav_divider.png) no-repeat top right;
+  height: 59px;
+  display: block;
+  margin-top:81px;
+  line-height:61px;
+}
+ul#main-menu li a.last{
+  background: none;
+}
+
+ul#main-menu li h1#logo a{
+  margin-top: 0px;
+  height: 148px;
+  text-indent: -9999em;
+  background: none;
+}
+
 #main-showcase{
-  height: 320px;
+  height: 364px;
+  width: 938px;
+  background: url(../images/showcase_bkg.png) no-repeat top center;
 }
 
 #main-showcase-footer{
-  height: 55px;
+  height: 63px;
+  width: 937px;
+  margin-top:-22px;
+  line-height: 63px;
+  background: url(../images/banner.png) no-repeat top center;
 }
 
 #the-meyer-team{
@@ -216,6 +243,11 @@ ul#main-menu li{
 
 .list-view-person{
   padding: 0px 2em 2em 0px;
+}
+
+.list-view-person img.portrait{
+  float: left;
+  margin: 0px 1em 1em 0px;
 }
 
 form#contact-us-form{
