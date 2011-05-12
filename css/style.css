@@ -205,9 +205,43 @@ ul#main-menu li{
 }
 
 #footer{
+  padding: 35px 0px 70px 0px;
+  background: #A5C1D9 url(../images/footer_topline_tile.jpg) repeat-x top center;
 }
 
 .two-column{
   float: left;
   width: 50%;
+}
+
+.list-view-person{
+  padding: 0px 2em 2em 0px;
+}
+
+form#contact-us-form{
+  background: url(../images/footer_form_background.png) no-repeat;
+  width:  271px;
+  height: 502px;
+  padding: 40px;
+  display: block;
+}
+
+form#contact-us-form label{
+  padding-top: 1em;
+  display: block;
+}
+
+form#contact-us-form input{
+  border: 1px solid #7A7A64;
+  background: #BABD70;
+  line-height: 24px;
+  height: 24px;
+  width: 185px;
+}
+form#contact-us-form textarea{
+  border: 1px solid #7A7A64;
+  background: #BABD70;
+  line-height: 16px;
+  height: 150px;
+  width: 185px;
 }
