@@ -39,6 +39,7 @@ body {
 	height:412px;
 }
 #logo {
+  margin-left: -80px;
 }
 #arrow {
 	margin:13px auto;
