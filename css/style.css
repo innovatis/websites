@@ -15,13 +15,34 @@ body {
   background-image:url(../images/body_bkg.jpg);
   }
 p {
-  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+  font-family: arial,sans-serif;
+  color:rgb(89,80,80);
+  font-size: 12px;
+  margin: 18px 0 0 0;
+  line-height:18px ;
   }
 h1 {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   }
-
-
+h3 {
+  font-family: arial,sans-serif; 
+  font-size: 16px;
+  font-weight: bold;
+  color:rgb(7,121,191);
+  line-height: 20px;
+}
+h4 {
+  font-family: arial,sans-serif; 
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(30,30,30);
+  text-shadow: 1px 1px 1px rgba(200,200,200,.4);
+  line-height: 18px;
+}
+h4.locations {
+  font-style: italic;
+  text-transform: uppercase;
+}
 
 #container {
   width:930px;
@@ -32,7 +53,9 @@ h1 {
   width:930px;
   margin:40px 0;
   }
-  
+
+
+/*********Header Styles****************/
 #header-background {
   width:930px;
   margin: auto;
@@ -72,6 +95,107 @@ h1 {
       color:rgb(7,121,191);
       }
   
+
+#header-logo {
+  float: left;
+  width: 312px;
+  height: 156px;
+  margin:10px 20px 0 0;
+  }
+/*********END OF Header Styles****************/
+
+
+#home-message {
+  text-indent: -9999em;
+  background-image: url(../images/headline_home.png);
+  width: 915px;
+  height:45px;
+  margin: 50px auto 20px auto;
+}
+
+#columns {
+  width:930px;
+  margin: 27px 0 27px 0;
+  clear: both;
+}
+
+#left-column {
+  width:666px;
+  margin:0 27px 0 0;
+  float: left;
+}
+#left-column-left {
+  width:305px;
+  margin:27px 27px 0 0;
+  float: left;
+}
+
+#left-column-right {
+  width:315px;
+  margin: 27px 0;
+  float: left;
+}
+
+#right-column {
+  width:234px;
+  margin: 0;
+  float: left;
+
+}
+
+#receive-updates {
+  height:105px;
+  width:235px;
+  background-image: url(../images/newsletter_bkg.jpg);
+  margin:27px 0 0 0;
+}
+
+a.receive-updates-button {
+  background: url(../images/button_signup.png) no-repeat 0 0;
+  width: 109px;
+  height: 23px;
+  display: block;
+  text-indent: -9999px;
+  margin:auto;
+  position: relative;
+  bottom:-67px;
+}
+
+a.receive-updates-button:hover {
+  background-position: 0 -24px;
+  }
+
+#associations{
+  font-family: arial,sans-serif;
+  font-size: 11px;
+  color:rgb(89,80,80);
+  margin: 16px 0 0 0;
+}
+
+ul#associations {
+  list-style: none;
+}
+
+.association-list {
+  text-decoration: underline;
+  line-height: 22px;
+}
+
+.note li{
+  font-style: italic;
+}
+
+/*Footer styles*/
+#footer {
+  background-image: url(../images/footer-background.png);
+  width:100%;
+  height:345px;
+  padding: 95px 0 0 0;
+  }
+#footer-container {
+  width: 930px;
+  margin: auto;
+  }
 #footer-menu {
   font: .91em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-style:italic;
@@ -99,34 +223,64 @@ h1 {
       color:rgb(7,121,191);
       }
 
-#header-logo {
-  float: left;
-  width: 312px;
-  height: 156px;
-  margin:10px 20px 0 0;
-  }
-
-#footer {
-  background-image: url(../images/footer-background.png);
-  width:100%;
-  height:345px;
-  padding: 95px 0 0 0;
-  }
-#footer-container {
-  width: 930px;
-  margin: auto;
-  }
-
 a.orderform-download {
   background: url(../images/button_download.png) no-repeat 0 0;
   width: 230px;
   height: 31px;
   display: block;
   text-indent: -9999px;
-  margin-left: 85px;
+  margin: 3px 0 0 85px;
   float:right;
 }
 
 a.orderform-download:hover {
   background-position: 0 -32px;
   }
+  
+#footer-logo {
+  background-image: url(../images/footer_logo.png);
+  width:205px;
+  height:110px;
+  float:left;
+  margin: 0 0 0 -40px;
+}
+
+.float-left {
+  float:left;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+#locations {
+  float:right;
+  margin: 25px -20px 0 0;
+  width:775px;
+
+}
+
+.locations ul{
+  list-style: none;
+}
+
+.locations li{
+  float:left;
+  font-family: arial,sans-serif; 
+  font-size: 12px;
+  margin: 12px 15px 0 0;
+  color:rgb(30,30,30);
+  text-shadow: 1px 1px 1px rgba(200,200,200,.4);
+}
+
+#to-order-message {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color:rgb(30,30,30);
+  text-shadow: 1px 1px 1px rgba(200,200,200,.4);
+  text-align: center;
+  clear: both;
+  padding: 25px 0 0 0;
+}
