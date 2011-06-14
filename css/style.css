@@ -9,6 +9,9 @@ ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {  content: '';content: none;}
 table {  border-collapse: collapse;  border-spacing: 0;}
+input, textarea, select {
+   -webkit-appearance: none;
+ }
 
 /*********END OF CSS RESET****************/
 body {
@@ -152,6 +155,46 @@ h4.locations {
   float: left;
 }
 
+#search-parts {
+  height:204px; /* image height (259) minus padding (65)*/
+  width:235px;
+  background-image: url(../images/search-parts-form-background.png);
+  background-repeat: no-repeat;
+  margin:0 0 0 0;
+  padding: 55px 0 0 0;
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+}
+
+
+select {
+ border: 1px solid #555;
+ padding: 5px;
+ font-size: 12px;
+ line-height: 1em;
+ margin: 10px 0 0 0;
+ width: 90%;
+ background: url("../images/dropdown.png") no-repeat center center;
+ -webkit-appearance: none;
+ -webkit-box-shadow: 1px 1px 1px #fff;
+ -webkit-border-radius: 0.5em;
+ }
+ 
+ a.find-auto-parts {
+  background: url(../images/find-auto-parts.png) no-repeat 0 0;
+  width: 216px;
+  height: 56px;
+  display: block;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+
+a.find-auto-parts:hover {
+  background-position: 0 -56px;
+  }
+
 #receive-updates {
   height:105px;
   width:235px;
@@ -200,6 +243,9 @@ ul#associations {
 .note li{
   font-style: italic;
 }
+
+ 
+ 
 /*********END OF INDEX STYLES************************/
 
 
@@ -211,7 +257,7 @@ ul#associations {
   background-repeat: no-repeat;
   height: 29px;
   width: 930px;
-  margin: 27px 0 27px 0;
+  margin: 32px 0 27px 0;
 }
 
 #service-facility-map {
