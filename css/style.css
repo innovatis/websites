@@ -330,7 +330,13 @@ a.email-contact:hover {
   font-size: 12px;
 }
 
-hr.map-line {
+hr.map-line-recycling {
+  width: 200px;
+  margin: 20px 0 -2px 0;
+  border:1px solid #225a8e;
+}
+
+hr.map-line-service {
   width: 200px;
   margin: 20px 0 -2px 0;
   border:1px solid #225a8e;

@@ -1,0 +1,35 @@
+#main-menu {
+  margin: 3px 0 0 325px;
+}
+
+#search-parts {
+  padding:75px 0 0 0;
+}
+
+#home-message {
+  margin-top: 15px;
+}
+
+#contact-us-message {
+  margin-top: -8px;
+}
+
+a.orderform-download {
+  margin-top: -14px;
+}
+
+a.email-contact {
+  margin-top: -22px;
+}
+
+hr.map-line-service {
+  margin-left: -330px;
+}
+
+.map-info {
+  padding-left: 10px;
+}
+
+.hours-recycling {
+  bottom:-15px;
+}
