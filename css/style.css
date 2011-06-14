@@ -16,7 +16,7 @@ body {
   }
 p {
   font-family: arial,sans-serif;
-  color:rgb(89,80,80);
+  /* color:rgb(89,80,80); */
   font-size: 12px;
   margin: 18px 0 0 0;
   line-height:18px ;
@@ -24,6 +24,16 @@ p {
 h1 {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   }
+h2 {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 18px;
+}
+h2.blue {
+  color:rgb(33,91,139);
+  margin: 0 0 10px 0;
+}
 h3 {
   font-family: arial,sans-serif; 
   font-size: 16px;
@@ -104,7 +114,7 @@ h4.locations {
   }
 /*********END OF Header Styles****************/
 
-
+/*********INDEX STYLES************************/
 #home-message {
   text-indent: -9999em;
   background-image: url(../images/headline_home.png);
@@ -140,7 +150,6 @@ h4.locations {
   width:234px;
   margin: 0;
   float: left;
-
 }
 
 #receive-updates {
@@ -177,13 +186,146 @@ ul#associations {
 }
 
 .association-list {
-  text-decoration: underline;
   line-height: 22px;
+}
+
+.association-list a{
+  color:rgb(89,80,80);
+}
+
+.association-list a:hover{
+  color:rgb(7,121,191);
 }
 
 .note li{
   font-style: italic;
 }
+/*********END OF INDEX STYLES************************/
+
+
+/*********CONTACT US STYLES*******************/
+
+#contact-us-message {
+  text-indent: -9999em;
+  background-image: url(../images/stop-in-at-one-of-our-two-locations.png);
+  background-repeat: no-repeat;
+  height: 29px;
+  width: 930px;
+  margin: 27px 0 27px 0;
+}
+
+#service-facility-map {
+  width:666px;
+  height:260px;
+  background-image: url(../images/map_service.jpg);
+  margin: 0 25px 25px 0;
+  overflow: hidden;
+}
+
+#recycling-facility-map {
+  width:666px;
+  height:260px;
+  background-image: url(../images/map_recycle.jpg);
+  margin: 0px 25px 25px 0;
+  overflow:hidden;
+}
+
+a.email-contact {
+  background: url(../images/button_email.png) no-repeat 0 0;
+  width: 56px;
+  height: 17px;
+  display: block;
+  text-indent: -9999px;
+  margin: 3px 0 0 0;
+  float:right;
+}
+
+a.email-contact:hover {
+  background-position: 0 -18px;
+  }
+  
+.contact {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-size: 12px;
+  color: rgb(55,55,55);
+  line-height: 26px;
+  width: 108px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+#our-sales-team {
+  width:234px;
+  clear: both;
+}
+
+.map-titles {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-weight: 600;
+  color: rgb(256,256,256);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+.map-white {
+  color:rgb(256,256,256);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.map-black {
+  color:rgb(0,0,0);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+hr.map-line {
+  width: 200px;
+  margin: 20px 0 -2px 0;
+  border:1px solid #225a8e;
+}
+
+.closed {
+  font-family: arial,sans-serif; 
+  font-size: 10px;
+  font-style: italic;
+}
+
+.map-info {
+  padding:10px 0 0 23px;
+}
+
+.map-info p{
+  margin:10px 0 0 0;
+}
+
+.hours-second-line {
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  margin: 0 0 0 40px;
+}
+
+.hours-service {
+  position:relative;
+  left:0px;
+  bottom:0px;
+}
+
+.hours-recycling {
+  position:relative;
+  left:0px;
+  bottom:-25px;
+  width:200px;
+}
+
+/*********END OF CONTACT US STYLES************************/
+
+
 
 /*Footer styles*/
 #footer {
@@ -221,6 +363,7 @@ ul#associations {
       }
     ul#footer-menu a:hover {
       color:rgb(7,121,191);
+      text-shadow: 0px 0px 3px rgba(256,256,256,.1);
       }
 
 a.orderform-download {
