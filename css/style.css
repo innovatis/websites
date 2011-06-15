@@ -19,7 +19,6 @@ body {
   }
 p {
   font-family: arial,sans-serif;
-  /* color:rgb(89,80,80); */
   font-size: 12px;
   margin: 18px 0 0 0;
   line-height:18px ;
@@ -88,17 +87,20 @@ h4.locations {
   }
 
 #main-menu {
-  font: .91em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font: 1.1em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-style:italic;
-  font-weight: bolder;
+  font-weight: 800;
+  text-transform:uppercase;
+  text-shadow: 0 1px rgb(159,173,185);
   }
   
     ul#main-menu {
+      float:right;
       list-style: none;
       }
     ul#main-menu li{
       float:left;
-      margin: 10px 43px 0 0;
+      margin: 10px 15px 0 45px;
       }
     ul#main-menu a {
       text-decoration: none;
@@ -375,6 +377,20 @@ hr.map-line-service {
   width:200px;
 }
 
+a.orderform-download-contact {
+  background: url(../images/button_download.png) no-repeat 0 0;
+  width: 230px;
+  height: 31px;
+  display: block;
+  text-indent: -9999px;
+  margin: -7px 0 0 138px;
+  float:right;
+}
+
+a.orderform-download-contact:hover {
+  background-position: 0 -32px;
+}
+
 /*********END OF CONTACT US STYLES************************/
 
 
@@ -391,31 +407,30 @@ hr.map-line-service {
   margin: auto;
   }
 #footer-menu {
-  font: .91em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font: 1.1em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-style:italic;
-  font-weight: bolder;
+  font-weight: 800;
   background-image:url(../images/footer-menu-background.png);
   height:48px;
+  text-transform:uppercase;
   width:100%;
   }
     ul#footer-menu {
       list-style: none;
       }
     ul#footer-menu li{
-      margin:0;
-      }
-    .links{
-      margin: 10px 43px 0 0;
+      margin: 10px 53px 0 10px;;
       float:left;
+      display: inline;
       }
     ul#footer-menu a {
       text-decoration: none;
-      color:rgb(0,0,0);
-      text-shadow: 0px 0px 3px rgba(256,256,256,.4);
+      color:rgb(20,20,20);
+      text-shadow: 0px 1px rgb(70,70,70);
       }
     ul#footer-menu a:hover {
       color:rgb(7,121,191);
-      text-shadow: 0px 0px 3px rgba(256,256,256,.1);
+      text-shadow: 0px 0px 15px rgba(7,121,191,.8);
       }
 
 a.orderform-download {
@@ -424,13 +439,13 @@ a.orderform-download {
   height: 31px;
   display: block;
   text-indent: -9999px;
-  margin: 3px 0 0 85px;
+  margin: -2px 0 0 0px;
   float:right;
 }
 
 a.orderform-download:hover {
   background-position: 0 -32px;
-  }
+}
   
 #footer-logo {
   background-image: url(../images/footer_logo.png);
@@ -438,6 +453,15 @@ a.orderform-download:hover {
   height:110px;
   float:left;
   margin: 0 0 0 -40px;
+}
+
+#footer h4 {
+  font-family: arial,sans-serif; 
+  font-size: 14px;
+  font-weight: bold;
+  color:#191919;
+  text-shadow: 0 1px #666;
+  line-height: 18px;
 }
 
 .float-left {
@@ -464,17 +488,17 @@ a.orderform-download:hover {
   font-family: arial,sans-serif; 
   font-size: 12px;
   margin: 12px 15px 0 0;
-  color:rgb(30,30,30);
-  text-shadow: 1px 1px 1px rgba(200,200,200,.4);
+  color:#191919;
+  text-shadow: 0 1px #696969;
 }
 
 #to-order-message {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 26px;
   text-transform: uppercase;
-  color:rgb(30,30,30);
-  text-shadow: 1px 1px 1px rgba(200,200,200,.4);
+  color:#191919;
+  text-shadow: 0 1px #696969;
   text-align: center;
   clear: both;
   padding: 25px 0 0 0;
