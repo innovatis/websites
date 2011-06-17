@@ -9,19 +9,19 @@ ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {  content: '';content: none;}
 table {  border-collapse: collapse;  border-spacing: 0;}
-input, textarea, select {
-   -webkit-appearance: none;
- }
+input, textarea, select {-webkit-appearance: none;}
 
 /*********END OF CSS RESET****************/
+
 body {
   background-image:url(../images/body_bkg.jpg);
   }
 p {
-  font-family: arial,sans-serif;
-  font-size: 12px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
   margin: 18px 0 0 0;
-  line-height:18px ;
+  line-height:19px ;
+  color:#333;
   }
 h1 {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
@@ -55,23 +55,31 @@ h4.locations {
   font-style: italic;
   text-transform: uppercase;
 }
-
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:36px;
+  color:#444;
+  text-shadow: 0 1px #fff;
+  text-align:center;
+  margin-top:50px;
+  font-weight:800;
+}
 #container {
   width:930px;
   margin: auto;
-  }
+}
   
 #content {
   width:930px;
   margin:40px 0;
-  }
-
+}
 
 /*********Header Styles****************/
+
 #header-background {
   width:930px;
   margin: auto;
-  }
+}
 
 #header {
   background: url(../images/header_bkg.png) repeat-x;
@@ -87,7 +95,7 @@ h4.locations {
   }
 
 #main-menu {
-  font: 1.1em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font: .9em "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style:italic;
   font-weight: 800;
   text-transform:uppercase;
@@ -100,7 +108,7 @@ h4.locations {
       }
     ul#main-menu li{
       float:left;
-      margin: 10px 15px 0 45px;
+      margin: 12px 15px 0 35px;
       }
     ul#main-menu a {
       text-decoration: none;
@@ -140,13 +148,13 @@ h4.locations {
   float: left;
 }
 #left-column-left {
-  width:305px;
-  margin:27px 27px 0 0;
+  width:315px;
+  margin:27px 45px 0 0;
   float: left;
 }
 
 #left-column-right {
-  width:315px;
+  width:300px;
   margin: 27px 0;
   float: left;
 }
@@ -169,33 +177,40 @@ h4.locations {
   font-weight: bold;
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
 }
-
+#search-parts p {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  font-style:italic;
+  color:#0f2437;
+  text-shadow: 0 1px #8fa4b7;
+}
 
 select {
- border: 1px solid #555;
- padding: 5px;
- font-size: 12px;
- line-height: 1em;
- margin: 10px 0 0 0;
- width: 90%;
- background: url("../images/dropdown.png") no-repeat center center;
- -webkit-appearance: none;
- -webkit-box-shadow: 1px 1px 1px #fff;
- -webkit-border-radius: 0.5em;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1em;
+  margin: 10px 0 0 0;
+  width: 205px;
+  background: url("../images/dropdown.png") no-repeat center center;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 1px 1px 1px #fff;
+  -webkit-border-radius: 0.5em;
  }
  
- a.find-auto-parts {
+ .find-auto-parts {
   background: url(../images/find-auto-parts.png) no-repeat 0 0;
   width: 216px;
   height: 56px;
   display: block;
   text-indent: -9999px;
-  margin: 0 auto;
+  margin: 5px auto 0;
+  outline:none;
+  border:none;
+  cursor:pointer;
 }
-
-a.find-auto-parts:hover {
-  background-position: 0 -56px;
-  }
+  .find-auto-parts:hover {background-position: 0 -56px;opacity:.95;}
+  .find-auto-parts:active {margin: 6px auto 0;opacity:.85;}
 
 #receive-updates {
   height:105px;
@@ -213,12 +228,18 @@ a.receive-updates-button {
   margin:auto;
   position: relative;
   bottom:-67px;
+  box-shadow: 0 1px 5px rgb(22,22,22);
+  -webkit-box-shadow: 0 1px 5px rgb(22,22,22);
+  -moz-box-shadow: 0 1px 5px rgb(22,22,22);
 }
-
-a.receive-updates-button:hover {
-  background-position: 0 -24px;
+  a.receive-updates-button:hover {background-position: 0 -24px;}
+  a.receive-updates-button:active {
+    box-shadow: 0 1px 2px rgb(55,55,55);
+    -webkit-box-shadow: 0 1px 2px rgb(55,55,55);
+    -moz-box-shadow: 0 1px 2px rgb(55,55,55);
+    bottom:-68px;
   }
-
+  
 #associations{
   font-family: arial,sans-serif;
   font-size: 11px;
@@ -246,8 +267,43 @@ ul#associations {
   font-style: italic;
 }
 
- 
- 
+.link-button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  display:block;
+  padding:9px 16px 9px 16px;
+  font-weight:800;
+  border-radius:8px;
+  background: url(../images/footer_shadow.png) 0 -10px repeat-x;
+  margin:26px 0 0;
+  color:#555;
+  text-shadow: 0 1px white;
+  clear:left;
+  float:left;
+  text-decoration:none;
+  border-top:1px solid white;
+  border-left:1px solid white;
+  border-right:1px solid #777;
+  border-bottom:1px solid #777;
+  box-shadow: 0 1px 4px #888;
+  -moz-box-shadow: 0 1px 4px #888;
+  -webkit-box-shadow: 0 1px 4px #888;  
+}
+.link-button:hover {
+  background-position:0 -14px;
+  color:#444;
+}
+.link-button:active {
+  box-shadow: 0 1px 2px #bbb;
+  -moz-box-shadow: 0 1px 2px #bbb;
+  -webkit-box-shadow: 0 1px 2px #bbb;  
+}
+
+img.arrow {
+  float:right;
+  margin-left:15px;
+}
+
 /*********END OF INDEX STYLES************************/
 
 
@@ -259,7 +315,8 @@ ul#associations {
   background-repeat: no-repeat;
   height: 29px;
   width: 930px;
-  margin: 32px 0 27px 0;
+  margin: 65px 0 27px 0;
+  text-shadow: 0 -1px white;
 }
 
 #service-facility-map {
@@ -293,7 +350,7 @@ a.email-contact:hover {
   }
   
 .contact {
-  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: rgb(55,55,55);
   line-height: 26px;
@@ -308,8 +365,8 @@ a.email-contact:hover {
 }
 
 .map-titles {
-  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
-  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   color: rgb(256,256,256);
   text-transform: uppercase;
   font-style: italic;
@@ -323,13 +380,23 @@ a.email-contact:hover {
 .map-white {
   color:rgb(256,256,256);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
+
 }
 
-.map-black {
+.map-black{
   color:rgb(0,0,0);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
+
+}
+.map-info p.map-address {
+  color:rgb(0,0,0);
+  font-weight: bold;
+  font-size: 13px;
+  margin-top:4px;
+  line-height:16px;
+  padding-top:0px;
 }
 
 hr.map-line-recycling {
@@ -344,9 +411,10 @@ hr.map-line-service {
   border:1px solid #225a8e;
 }
 
-.closed {
-  font-family: arial,sans-serif; 
-  font-size: 10px;
+.map-info .closed {
+  font-family: arial, sans-serif; 
+  font-size: 11px;
+  font-weight:normal;
   font-style: italic;
 }
 
@@ -361,13 +429,15 @@ hr.map-line-service {
 .hours-second-line {
   font-family: arial,sans-serif;
   font-size: 12px;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 50px;
 }
 
 .hours-service {
   position:relative;
   left:0px;
   bottom:0px;
+  font-size:12px;
+  font-weight:bold;
 }
 
 .hours-recycling {
@@ -376,50 +446,77 @@ hr.map-line-service {
   bottom:-25px;
   width:200px;
 }
-
+.hours-recycling p, .hours-service p {
+  font-size:12px;
+  font-weight:bold;
+  color:black;
+}
 a.orderform-download-contact {
   background: url(../images/button_download.png) no-repeat 0 0;
   width: 230px;
   height: 31px;
   display: block;
   text-indent: -9999px;
-  margin: -7px 0 0 138px;
-  float:right;
+  margin: 20px 0 0 0px;
+  float:left;
+  box-shadow: 0 1px 4px #555;
+  -moz-box-shadow: 0 1px 4px #555;
+  -webkit-box-shadow: 0 1px 4px #555;  
 }
 
 a.orderform-download-contact:hover {
   background-position: 0 -32px;
 }
+a.orderform-download-contact:active {
+  box-shadow: 0 1px 2px #888;
+  -moz-box-shadow: 0 1px 2px #888;
+  -webkit-box-shadow: 0 1px 2px #888;  
+}
+
 
 /*********END OF CONTACT US STYLES************************/
 
-
-
+#header-shadow {
+  position:absolute;
+  top:130px;
+  left:0;
+  background:url(../images/header_shadow.png) 0 0 repeat-x;
+  height:51px;
+  width:100%;
+  z-index:-20;
+}
+#footer-shadow { 
+  background:url(../images/footer_shadow.png) 0 0 repeat-x;
+  width:100%;
+  height:51px;
+  border-bottom: 1px solid #999;
+}
 /*Footer styles*/
 #footer {
-  background-image: url(../images/footer-background.png);
+  background: url(../images/footer-background.png) 0 -90px repeat-x;
   width:100%;
   height:345px;
-  padding: 95px 0 0 0;
+  padding-top:5px;
   }
 #footer-container {
   width: 930px;
   margin: auto;
   }
 #footer-menu {
-  font: 1.1em "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font: .9em "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style:italic;
   font-weight: 800;
   background-image:url(../images/footer-menu-background.png);
   height:48px;
   text-transform:uppercase;
-  width:100%;
+  width:660px;
   }
     ul#footer-menu {
       list-style: none;
+      float:left;
       }
     ul#footer-menu li{
-      margin: 10px 53px 0 10px;;
+      margin: 12px 43px 0 10px;
       float:left;
       display: inline;
       }
@@ -439,20 +536,19 @@ a.orderform-download {
   height: 31px;
   display: block;
   text-indent: -9999px;
-  margin: -2px 0 0 0px;
+  margin: 3px 5px 0 0;
   float:right;
+  opacity:1;
 }
-
-a.orderform-download:hover {
-  background-position: 0 -32px;
-}
-  
+  a.orderform-download:hover {background-position: 0 -32px; opacity:.9;}
+  a.orderform-download:active {margin:6px 5px 0 0;opacity:.8;}
 #footer-logo {
+  clear:both;
   background-image: url(../images/footer_logo.png);
   width:205px;
   height:110px;
   float:left;
-  margin: 0 0 0 -40px;
+  margin: 10px 0 0 -36px;
 }
 
 #footer h4 {
@@ -474,9 +570,8 @@ a.orderform-download:hover {
 
 #locations {
   float:right;
-  margin: 25px -20px 0 0;
-  width:775px;
-
+  margin: 35px -20px 0 6px;
+  width:760px;
 }
 
 .locations ul{
@@ -489,17 +584,61 @@ a.orderform-download:hover {
   font-size: 12px;
   margin: 12px 15px 0 0;
   color:#191919;
-  text-shadow: 0 1px #696969;
+  text-shadow: 0 1px #777;
 }
+  .locations li.last {margin-right:0;}
 
 #to-order-message {
-  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
   text-transform: uppercase;
   color:#191919;
-  text-shadow: 0 1px #696969;
+  text-shadow: 0 1px #777;
   text-align: center;
   clear: both;
   padding: 25px 0 0 0;
 }
+
+/*****************TYPEKIT FALLBACKS******************/
+
+.wf-loading #main-menu, .wf-loading #footer-menu, .wf-loading .map-titles {display:none;}
+
+.wf-active #main-menu {
+  font: 1.1em "myriad-pro-condensed-1", "myriad-pro-condensed-2", sans-serif;
+  font-weight:800;
+  font-style:italic;
+}
+  .wf-active ul#main-menu li{
+    margin: 10px 15px 0 45px;
+  }
+
+.wf-active #footer-menu {
+  font: 1.1em "myriad-pro-condensed-1", "myriad-pro-condensed-2", sans-serif;
+  font-weight:800;
+  font-style:italic;
+}
+  .wf-active ul#footer-menu li {
+    margin: 10px 53px 0 10px;
+    float: left;
+    display: inline;
+  }
+
+.wf-active #to-order-message {
+  font-family: "myriad-pro-condensed-1", "myriad-pro-condensed-2", sans-serif;
+  font-size: 26px;
+}
+
+.wf-active ul.contact {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-size: 15px;
+}
+.wf-active h2.blue {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  line-height: 24px;
+  font-size:22px;
+}
+
+.wf-active p.map-titles {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-size: 24px;
