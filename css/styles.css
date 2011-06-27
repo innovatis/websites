@@ -36,12 +36,13 @@ h1 {
   clear:both;
   width:930px;
   height:93px;
+  margin-top:80px;
 }
 
 #header-info {
   float:left;
   width:290px;
-  background-color:yellow;
+  text-align:center;
 }
 
 #ginos {
@@ -61,11 +62,13 @@ h1 {
 
 #eNews-box {
   background-color:rgb(215,224,234);
-  height:35px;
-  width:170px;
+  height:50px;
+  width:180px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   float:left;
+  padding:10px;
+  overflow:hidden;
 }
 
 .eNews-title {
@@ -78,23 +81,28 @@ h1 {
 
 .eNews-message {
   font-family:arial,sans-serif;
-  font-size:.95em;
+  font-size:.7em;
   color:rgb(94,105,120);
   font-style:italic;
+  width:80px;
+  float:left;
+  margin:5px 0 0 0;
 }
 
 a.sign-up {
   background: url(../images/button_white_sprite.png) no-repeat 0 0;
   width: 82px;
-  height: 27px;
+  height: 20px;
   display: block;
-  margin: 0 auto;
+  margin: 5px auto 0 auto;
   text-decoration: none;
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   font-weight:600;
-  font-size:1em;
+  font-size:.9em;
   color:rgb(79,79,79);
   text-align:center;
+  padding:7px 0 0 0;
+  float:right;
 }
 
 a.sign-up:hover {
@@ -119,7 +127,7 @@ a.sign-up:active {
 .header-tagline {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   font-weight:500;
-	font-size:1.3em;
+	font-size:1.1em;
 	color:rgb(33,44,61);  
 }
 
