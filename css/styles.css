@@ -22,23 +22,113 @@ body {
 	background:url(../images/bkg_house.jpg)  top center no-repeat;
 }
 
-h1 {font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;}
+h1 {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  }
 
 #container {
   width:930px;
   margin:0 auto;
 }
 
-/*LOGO*/
+/*TOP INFO*/
+#top-bar {
+  clear:both;
+  width:930px;
+  height:93px;
+}
+
+#header-info {
+  float:left;
+  width:290px;
+  background-color:yellow;
+}
+
+#ginos {
+  height:27px;
+  width:62px;
+  background-color:rgb(225,229,235);
+  float:left;
+  font-weight:600;
+  font-size:1em;
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  text-transform:uppercase;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align:centre;
+  padding:15px;
+}
+
+#eNews-box {
+  background-color:rgb(215,224,234);
+  height:35px;
+  width:170px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float:left;
+}
+
+.eNews-title {
+  font-family:arial,sans-serif;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+  font-style:italic;
+  font-weight:700;
+}
+
+.eNews-message {
+  font-family:arial,sans-serif;
+  font-size:.95em;
+  color:rgb(94,105,120);
+  font-style:italic;
+}
+
+a.sign-up {
+  background: url(../images/button_white_sprite.png) no-repeat 0 0;
+  width: 82px;
+  height: 27px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1em;
+  color:rgb(79,79,79);
+  text-align:center;
+}
+
+a.sign-up:hover {
+  background-position: 0 -27px;
+  }
+
+a.sign-up:active {
+  background-position: 0 -54px;
+  }
+
 #header-logo {
   background-image:url(../images/header_logo.png);
   width:302px;
   height:93px;
   text-indent:-9999em;
+  float:left;
 }
-/*END OF LOGO*/
+/*END OF TOP INFO*/
 
 /*MENU*/
+
+.header-tagline {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:500;
+	font-size:1.3em;
+	color:rgb(33,44,61);  
+}
+
+.header-phone-number {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:700;
+	font-size:1.4em;
+	color:rgb(33,44,61);  
+}
 
 #main-menu {
   width:930px;
