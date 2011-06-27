@@ -1,0 +1,143 @@
+/*********START OF CSS RESET****************/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126  License: none (public domain)*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {  content: '';content: none;}
+table {  border-collapse: collapse;  border-spacing: 0;}
+input, textarea, select {
+   -webkit-appearance: none;
+ }
+/*********END OF CSS RESET****************/
+
+body {
+	background-image:url(../images/bkg_house.jpg);
+}
+
+h1 {font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;}
+
+#container {
+  width:930px;
+  margin:0 auto;
+}
+
+/*LOGO*/
+#header-logo {
+  background-image:url(../images/header_logo.png);
+  width:302px;
+  height:93px;
+  text-indent:-9999em;
+}
+/*END OF LOGO*/
+
+/*MENU*/
+
+#main-menu {
+  width:930px;
+  margin:0 auto;
+  }
+
+ul#main-menu {
+  list-style: none;
+  text-align:center;
+}
+ul#main-menu li{
+  float:left;
+  margin: 0;
+}
+
+page-title {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-size:16px;  /*1.3em*/
+}
+
+page-sub-title a{
+  font-family:arial,sans-serif;
+  font-size:11px; /*.9em*/
+}
+
+ a.active-listings {
+  background: url(../images/nav_activelistings_sprite.png) no-repeat 0 0;
+  width: 178px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+a.active-listings:hover {
+  background-position: 0 -57px;
+  }
+
+a.active-listings:active {
+  background-position: 0 -114px;
+  }
+
+ a.communities {
+  background: url(../images/nav_communities_sprite.png) no-repeat 0 0;
+  width: 178px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.communities:hover {
+  background-position: 0 -57px;
+  }
+
+a.communities:active {
+  background-position: 0 -114px;
+  }
+
+ a.buying-a-home {
+  background: url(../images/nav_buyhome_sprite.png) no-repeat 0 0;
+  width: 178px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.buying-a-home:hover {
+  background-position: 0 -57px;
+  }
+
+a.buying-a-home:active {
+  background-position: 0 -114px;
+  }
+
+ a.selling-a-home {
+  background: url(../images/nav_sellhome_sprite.png) no-repeat 0 0;
+  width: 178px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.selling-a-home:hover {
+  background-position: 0 -57px;
+  }
+
+a.selling-a-home:active {
+  background-position: 0 -114px;
+  }
+
+ a.contact-us {
+  background: url(../images/nav_contact_sprite.png) no-repeat 0 0;
+  width: 178px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.contact-us:hover {
+  background-position: 0 -57px;
+  }
+
+a.contact-us:active {
+  background-position: 0 -114px;
+  }
+
+/*END OF MENU*/
