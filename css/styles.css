@@ -13,8 +13,13 @@ input, textarea, select {
  }
 /*********END OF CSS RESET****************/
 
+html{
+  height: 100%;
+  background: url(../images/bkg_tile.jpg) repeat-x rgb(222,230,241);
+}
 body {
-	background-image:url(../images/bkg_house.jpg);
+  height: 100%;
+	background:url(../images/bkg_house.jpg)  top center no-repeat;
 }
 
 h1 {font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;}
@@ -49,94 +54,107 @@ ul#main-menu li{
   margin: 0;
 }
 
-page-title {
+ul#main-menu li a .page-title{
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
-  font-size:16px;  /*1.3em*/
+	font-size:1.2em;
+	text-transform:uppercase;
+	color:rgb(255,255,255);
 }
 
-page-sub-title a{
+ul#main-menu li a .page-sub-title {
   font-family:arial,sans-serif;
-  font-size:11px; /*.9em*/
+  font-size:.8em;
+  color:rgb(195,168,153);
+  font-style:italic;
 }
 
- a.active-listings {
+ul#main-menu li a.active-listings {
   background: url(../images/nav_activelistings_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 56px;
+  height: 41px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
-
+  text-decoration: none;
+  padding: 15px 0 0 0;
 }
 
-a.active-listings:hover {
+ul#main-menu li a.active-listings:hover {
   background-position: 0 -57px;
   }
 
-a.active-listings:active {
+ul#main-menu li a.active-listings:active {
   background-position: 0 -114px;
   }
 
- a.communities {
+ul#main-menu li a.communities {
   background: url(../images/nav_communities_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 56px;
+  height: 41px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
+  text-decoration: none;
+  padding: 15px 0 0 0;
 }
 
-a.communities:hover {
+ul#main-menu li a.communities:hover {
   background-position: 0 -57px;
   }
 
-a.communities:active {
+ul#main-menu li a.communities:active {
   background-position: 0 -114px;
   }
 
- a.buying-a-home {
+ul#main-menu li a.buying-a-home {
   background: url(../images/nav_buyhome_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 56px;
+  height: 41px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
+  text-decoration: none;
+  padding: 15px 0 0 0;
 }
 
-a.buying-a-home:hover {
+ul#main-menu li a.buying-a-home:hover {
   background-position: 0 -57px;
   }
 
-a.buying-a-home:active {
+ul#main-menu li a.buying-a-home:active {
   background-position: 0 -114px;
   }
 
- a.selling-a-home {
+ul#main-menu li a.selling-a-home {
   background: url(../images/nav_sellhome_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 56px;
+  height: 41px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
+  text-decoration: none;
+  padding: 15px 0 0 0;
 }
 
-a.selling-a-home:hover {
+ul#main-menu li a.selling-a-home:hover {
   background-position: 0 -57px;
   }
 
-a.selling-a-home:active {
+ul#main-menu li a.selling-a-home:active {
   background-position: 0 -114px;
   }
 
- a.contact-us {
+ul#main-menu li a.contact-us {
   background: url(../images/nav_contact_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 56px;
+  height: 41px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
+  text-decoration: none;
+  padding: 15px 0 0 0;  
 }
 
-a.contact-us:hover {
+ul#main-menu li a.contact-us:hover {
   background-position: 0 -57px;
   }
 
-a.contact-us:active {
+ul#main-menu li a.contact-us:active {
   background-position: 0 -114px;
   }
 
