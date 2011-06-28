@@ -57,7 +57,8 @@ h1 {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   font-weight:500;
 	font-size:1.1em;
-	color:rgb(33,44,61);  
+	color:rgb(33,44,61);
+	font-style:italic;
 }
 
 .header-phone-number {
@@ -78,7 +79,7 @@ h1 {
   text-transform:uppercase;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  text-align:centre;
+  text-align:center;
   padding:15px;
   margin:18px 0 0 0;
 }
@@ -271,7 +272,7 @@ ul#main-menu li a.contact-us:active {
 /*FOOTER*/
 #footer {
   width:890px;
-  margin:0 auto 0 auto;
+  margin:28px auto 0 auto;
   height:200px;
 }
 
@@ -343,16 +344,46 @@ ul#footer-menu li a{
   text-decoration:none;
 }
 
-ul#footer-menu li a:hover;{
+ul#footer-menu li a:hover {
   color:rgb(107,40,2);
 }
 /*END OF FOOTER*/
 
 /*PAGES*/
-#content {
+#page_content {
   width:930px;
 /*  height:640px;*/
 }
+
+#content-wrapper {
+  width:904px;
+  height:700px;
+}
+
+#content-top {
+  width:904px;
+  height:34px;
+  margin:0 auto;
+  background:url(../images/content_top.png);
+  background-color:yellow;
+}
+
+#content {
+  width:904px;
+  height:300px;
+  margin:0 auto;
+  background:url(../images/content_middle.jpg);
+  background-color:purple;
+}
+
+#content-bottom {
+  width:904px;
+  height:34px;
+  margin:0 auto;  
+  background:url(../images/content_bottom.png);
+  background-color:red;
+}
+
 /*END OF PAGES*/
 
 /*HOME*/
@@ -433,34 +464,63 @@ ul#home-finder label {
 }
 
 #ticker {
-  width:948px;
+  float:left;
+  width:902px;
+  margin:38px 0 0 37px;
+  padding:11px 0 0 0;
   clear:both;
-  border:1px solid blue;
-  height:12px;
-  position:relative;
+  height:19px;
+  background-image:url(../images/ticker_bkg.jpg);
+}
+
+#ticker-listing {
+/*  border:1px solid green;*/
+/*  height:12px;*/
+  width:930px;
+/*  position:relative;
   bottom:-39px;
-  right:-53px;
+  right:-55px;*/
 }
 
-.ticker-new-listings{
-  
-}
-
-.ticker-title {
-  
-}
-
-.ticker-features {
-  
-}
-
-ul#ticker {
+ul#ticker-listing {
   list-style:none;
 }
 
-ul#ticker li{
+ul#ticker-listing li{
   float:left;
-  margin:0 0 0 23px;
+  margin:0 0 0 15px;
+}
+
+.ticker-new-listings{
+  font-family:arial,sans-serif;
+  font-size:.8em;
+  font-weight:700;  
+  text-transform:uppercase;
+  color:rgb(0,78,111);
+  font-style:italic;
+}
+
+.ticker-title {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-size:.9em;
+  font-weight:600;  
+  text-transform:uppercase;
+  color:rgb(107,40,2);
+}
+
+.ticker-features {
+  font-family:arial,sans-serif;
+  font-size:.8em;
+  color:rgb(0,78,111);
+  font-style:italic;
+}
+
+.ticker-price {
+  font-family:arial,sans-serif;
+  font-size:.8em;
+  font-weight:700;  
+  text-transform:uppercase;
+  color:rgb(32,71,101);
 }
 
 a.view-details {
@@ -475,7 +535,8 @@ a.view-details {
   font-weight:700;
   font-size:.8em;
   text-transform:uppercase;
-  color:rgb(93.120,133);
+  color:rgb(93,120,133);
+  float:right;
 }
 
 a.view-details:hover {
