@@ -43,6 +43,29 @@ h1 {
   float:left;
   width:290px;
   text-align:center;
+  margin:30px 0 0 0;
+}
+
+#header-logo {
+  background-image:url(../images/header_logo.png);
+  width:302px;
+  height:93px;
+  text-indent:-9999em;
+  float:left;
+}
+
+.header-tagline {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:500;
+	font-size:1.1em;
+	color:rgb(33,44,61);  
+}
+
+.header-phone-number {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:700;
+	font-size:1.4em;
+	color:rgb(33,44,61);  
 }
 
 #ginos {
@@ -58,6 +81,7 @@ h1 {
   border-radius: 5px;
   text-align:centre;
   padding:15px;
+  margin:18px 0 0 0;
 }
 
 #eNews-box {
@@ -69,6 +93,10 @@ h1 {
   float:left;
   padding:10px;
   overflow:hidden;
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  margin:10px 0 0 15px;
 }
 
 .eNews-title {
@@ -84,7 +112,7 @@ h1 {
   font-size:.7em;
   color:rgb(94,105,120);
   font-style:italic;
-  width:80px;
+  width:95px;
   float:left;
   margin:5px 0 0 0;
 }
@@ -94,7 +122,7 @@ a.sign-up {
   width: 82px;
   height: 20px;
   display: block;
-  margin: 5px auto 0 auto;
+  margin: 8px 0 0 0;
   text-decoration: none;
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   font-weight:600;
@@ -113,39 +141,21 @@ a.sign-up:active {
   background-position: 0 -54px;
   }
 
-#header-logo {
-  background-image:url(../images/header_logo.png);
-  width:302px;
-  height:93px;
-  text-indent:-9999em;
-  float:left;
-}
 /*END OF TOP INFO*/
 
 /*MENU*/
 
-.header-tagline {
-  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
-  font-weight:500;
-	font-size:1.1em;
-	color:rgb(33,44,61);  
-}
-
-.header-phone-number {
-  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
-  font-weight:700;
-	font-size:1.4em;
-	color:rgb(33,44,61);  
-}
-
 #main-menu {
   width:930px;
-  margin:0 auto;
+  margin:30px auto 0 auto;
+  background-color:blue;
   }
 
 ul#main-menu {
   list-style: none;
   text-align:center;
+  width:890px;
+  margin:0 auto;
 }
 ul#main-menu li{
   float:left;
@@ -257,3 +267,20 @@ ul#main-menu li a.contact-us:active {
   }
 
 /*END OF MENU*/
+
+/*FOOTER*/
+/*.facebook {
+  background-image:url(../images/facebook.png);
+}
+.twitter {
+  background-image:url(../images/twitter.png);  
+}
+.youtube {
+  background-image:url(../images/youtube.png);
+}*/
+.connect {
+/*  text-indent:-9999em;*/
+}
+
+/*END OF FOOTER*/
+
