@@ -37,7 +37,7 @@ h1 {
   clear:both;
   width:930px;
   height:93px;
-  margin-top:80px;
+  margin-top:60px;
 }
 
 #header-info {
@@ -320,7 +320,6 @@ ul#connectlist li {
 
 #footer-menu {
   list-style:none;
-/*  width:675px;*/
   width:100%;
   float:right;
   text-transform:uppercase;
@@ -432,5 +431,59 @@ ul#home-finder label {
   color:rgb(32,71,101);
   background:yellow;
 }
+
+#ticker {
+  width:948px;
+  clear:both;
+  border:1px solid blue;
+  height:12px;
+  position:relative;
+  bottom:-39px;
+  right:-53px;
+}
+
+.ticker-new-listings{
+  
+}
+
+.ticker-title {
+  
+}
+
+.ticker-features {
+  
+}
+
+ul#ticker {
+  list-style:none;
+}
+
+ul#ticker li{
+  float:left;
+  margin:0 0 0 23px;
+}
+
+a.view-details {
+  background: url(../images/button_details_sprite.png) no-repeat 0 0;
+  width: 118px;
+  height: 10px;
+  display: block;
+  margin: -9px auto 0 auto;
+  padding:10px;
+  text-decoration: none;
+  font-family:arial,sans-serif;
+  font-weight:700;
+  font-size:.8em;
+  text-transform:uppercase;
+  color:rgb(93.120,133);
+}
+
+a.view-details:hover {
+  background-position: 0 -31px;
+  }
+
+a.view-details:active {
+  background-position: 0 -62px;
+  }
 /*END OF HOME*/
 
