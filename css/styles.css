@@ -20,6 +20,7 @@ html{
 body {
   height: 100%;
 	background:url(../images/bkg_house.jpg)  top center no-repeat;
+	font-size:100%;
 }
 
 h1 {
@@ -163,14 +164,14 @@ ul#main-menu li{
 
 ul#main-menu li a .page-title{
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
-	font-size:1.2em;
+	font-size:1.1em;
 	text-transform:uppercase;
 	color:rgb(255,255,255);
 }
 
 ul#main-menu li a .page-sub-title {
   font-family:arial,sans-serif;
-  font-size:.8em;
+  font-size:.7em;
   color:rgb(195,168,153);
   font-style:italic;
 }
@@ -270,7 +271,7 @@ ul#main-menu li a.contact-us:active {
 /*FOOTER*/
 #footer {
   width:890px;
-  margin:500px auto 0 auto;
+  margin:0 auto 0 auto;
   height:200px;
 }
 
@@ -335,12 +336,63 @@ ul#footer-menu li{
   margin:0 0 0 20px;
 }
 
-ul#footer-menu a{
+ul#footer-menu li a{
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   color:rgb(125,146,157);
   font-weight:500;
   font-size:.9em;
   text-decoration:none;
 }
+
+ul#footer-menu li a:hover;{
+  color:rgb(107,40,2);
+}
 /*END OF FOOTER*/
+
+/*PAGES*/
+#content {
+  width:930px;
+/*  height:640px;*/
+}
+/*END OF PAGES*/
+
+/*HOME*/
+#showcase {
+  background:url(../images/home_showcase.png);
+  height:456px;
+  width:948px;
+  margin:auto;
+}
+
+#left-showcase {
+  width:578px;
+  height:345px;
+  overflow:hidden;
+  margin: 40px 0px 0px 29px;
+  float:left;
+}
+
+#right-showcase {
+  float:right;
+  margin: 40px 25px 0px 29px;
+  border:1px solid red;
+  width:275px;
+}
+
+.relax-title {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  color:rgb(107,40,2);  
+  font-weight:700;
+  font-size:2em;
+  text-transform:uppercase;
+}
+
+.relax-sub {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;  
+  color:rgb(32,71,101);  
+  font-weight:700;
+  font-size:1.5em;
+}
+
+/*END OF HOME*/
 
