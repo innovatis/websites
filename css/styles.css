@@ -47,10 +47,8 @@ h1 {
 }
 
 #header-logo {
-  background-image:url(../images/header_logo.png);
   width:302px;
   height:93px;
-  text-indent:-9999em;
   float:left;
 }
 
@@ -272,13 +270,14 @@ ul#main-menu li a.contact-us:active {
 /*FOOTER*/
 #footer {
   width:890px;
-  margin:auto;
+  margin:500px auto 0 auto;
+  height:200px;
 }
 
 #connect{
   background:url(../images/connect-bkg.png) no-repeat;
   height:53px;
-  padding:15px 0 0 0;
+  padding:17px 0 0 0;
 }
 
 ul#connectlist {
@@ -316,6 +315,32 @@ ul#connectlist li {
   font-size:1.1em;
   color:rgb(107,40,2);
   font-style:italic;
+}
+
+#footer-menu {
+  list-style:none;
+/*  width:675px;*/
+  width:100%;
+  float:right;
+  text-transform:uppercase;
+  background:url(../images/footer-menu-bar.png) bottom right no-repeat;
+}
+
+.footer-links {
+  margin:22px 0 0 20px !important;
+}
+
+ul#footer-menu li{
+  float:left;
+  margin:0 0 0 20px;
+}
+
+ul#footer-menu a{
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  color:rgb(125,146,157);
+  font-weight:500;
+  font-size:.9em;
+  text-decoration:none;
 }
 /*END OF FOOTER*/
 
