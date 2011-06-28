@@ -147,8 +147,9 @@ a.sign-up:active {
 
 #main-menu {
   width:930px;
+  height:70px;
   margin:30px auto 0 auto;
-  background-color:blue;
+  background:url(../images/nav_shadow.png)  bottom center no-repeat;
   }
 
 ul#main-menu {
@@ -269,18 +270,52 @@ ul#main-menu li a.contact-us:active {
 /*END OF MENU*/
 
 /*FOOTER*/
-/*.facebook {
-  background-image:url(../images/facebook.png);
-}
-.twitter {
-  background-image:url(../images/twitter.png);  
-}
-.youtube {
-  background-image:url(../images/youtube.png);
-}*/
-.connect {
-/*  text-indent:-9999em;*/
+#footer {
+  width:890px;
+  margin:auto;
 }
 
+#connect{
+  background:url(../images/connect-bkg.png) no-repeat;
+  height:53px;
+  padding:15px 0 0 0;
+}
+
+ul#connectlist {
+  list-style:none;
+}
+
+ul#connectlist li {
+  float:left;
+  margin:0 0 0 15px;
+}
+
+.connect-message {
+  font-family:arial,sans-serif;
+  font-size:.9em;
+  color:rgb(51,51,51);
+  font-weight:700;
+  padding:3px 0 0 0;
+}
+
+.footer-tag {
+  float:right;
+}
+
+.connect-grey {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:700;  
+  font-size:1em;
+  color:rgb(51,51,51);
+  font-style:italic;
+}
+
+.connect-red {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;  
+  font-weight:700;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+  font-style:italic;
+}
 /*END OF FOOTER*/
 
