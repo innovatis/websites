@@ -66,11 +66,37 @@
  			    <div id ="right-showcase">
  			     <p class="relax-title">Relax.</p>
  			     <p class="relax-sub">Your Dream Home is just a few clicks away.</p>
- 			     <p>Price Range:</p>
- 			     <p>Home Type:</p>
- 			     <p>Bedrooms:</p>
- 			     <p>Location:</p>
- 			     <p>Search Homes</p>
+ 			     <form action=""> 
+           						<ul id="home-finder">
+           						  <li>
+                          <label for="price-range">Price Range:</label> 
+           						    <!-- Price Range: --><select id="price-range">
+           						  	  <option value="default" selected="selected">$100K-$250K</option> 
+           						    </select> 
+           						  </li>
+           						  <li>
+                          <label for="home-type">Home Type:</label> 
+           						    <!-- Home Type: --><select name="home-type"> 
+           						    	<option value="default" selected="selected">CONDOMINIUM</option> 
+           						    </select> 
+           						  </li>
+           						  <li>
+                         <label for="bedrooms">Bedrooms:</label> 
+                         <!-- Bedrooms: -->
+           					     <select name="bedrooms"> 
+           					     	<option value="default" selected="selected">2 BEDROOMS</option> 
+           					     </select>
+           					     </li>
+           						  <li>
+                          <label for="location">Location:</label> 
+                          <!-- Location: -->
+           						    <select name="location"> 
+           						    	<option value="default" selected="selected">Amber Trails</option> 
+           						    </select>
+           						    </li>
+           						  <ul>
+           						<a href="#" class="search-homes">Search Homes</a> 
+           					</form>
  			    </div>
  			  </div>
  			</div>
