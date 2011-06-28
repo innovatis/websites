@@ -355,34 +355,20 @@ ul#footer-menu li a:hover {
 /*  height:640px;*/
 }
 
-#content-wrapper {
-  width:904px;
-  height:700px;
-}
-
-#content-top {
-  width:904px;
-  height:34px;
+#infobox {
+  width:914px;
+  height:331px;
   margin:0 auto;
-  background:url(../images/content_top.png);
-  background-color:yellow;
+  background:url(../images/infobox_bkg.png);
 }
 
-#content {
-  width:904px;
-  height:300px;
-  margin:0 auto;
-  background:url(../images/content_middle.jpg);
-  background-color:purple;
+.infobox_col {
+  width:24.7%;
+  border:1px solid black;
+  height:331px;
+  float:left;
 }
 
-#content-bottom {
-  width:904px;
-  height:34px;
-  margin:0 auto;  
-  background:url(../images/content_bottom.png);
-  background-color:red;
-}
 
 /*END OF PAGES*/
 
@@ -548,3 +534,47 @@ a.view-details:active {
   }
 /*END OF HOME*/
 
+
+/*
+************************************************************************
+#content-wrapper {
+  width:904px;
+  height:700px;
+}
+
+#content-top {
+  width:904px;
+  height:34px;
+  margin:0 auto;
+  background:url(../images/content_top.png);
+  background-color:yellow;
+}
+
+#content {
+  width:904px;
+  height:300px;
+  margin:0 auto;
+  background:url(../images/content_middle.jpg);
+  background-color:purple;
+}
+
+#content-bottom {
+  width:904px;
+  height:34px;
+  margin:0 auto;  
+  background:url(../images/content_bottom.png);
+  background-color:red;
+}
+
+
+HTML
+
+<div id="content-wrapper">
+  <div id="content-top">
+  </div>
+  <div id="content">
+  </div>
+  <div id ="content-bottom">
+</div>
+
+*************************************************************************/
