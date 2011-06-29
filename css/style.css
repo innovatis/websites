@@ -40,14 +40,14 @@ h2.blue {
   margin: 0 0 10px 0;
 }
 h3 {
-  font-family: arial,sans-serif; 
+  font-family: arial,sans-serif;
   font-size: 16px;
   font-weight: bold;
   color:rgb(7,121,191);
   line-height: 20px;
 }
 h4 {
-  font-family: arial,sans-serif; 
+  font-family: arial,sans-serif;
   font-size: 14px;
   font-weight: bold;
   color:rgb(30,30,30);
@@ -71,7 +71,7 @@ h6 {
   width:930px;
   margin: auto;
 }
-  
+
 #content {
   width:930px;
   margin:40px 0;
@@ -104,7 +104,7 @@ h6 {
   text-transform:uppercase;
   text-shadow: 0 1px rgb(159,173,185);
   }
-  
+
     ul#main-menu {
       float:right;
       list-style: none;
@@ -120,7 +120,7 @@ h6 {
     ul#main-menu a:hover {
       color:rgb(7,121,191);
       }
-  
+
 
 #header-logo {
   float: left;
@@ -202,7 +202,7 @@ select {
   -webkit-box-shadow: 1px 1px 1px #fff;
   -webkit-border-radius: 0.5em;
  }
- 
+
  .find-auto-parts {
   background: url(../images/find-auto-parts.png) no-repeat 0 0;
   width: 216px;
@@ -244,7 +244,7 @@ a.receive-updates-button {
     -moz-box-shadow: 0 1px 2px rgb(55,55,55);
     bottom:-68px;
   }
-  
+
 #associations{
   font-family: arial,sans-serif;
   font-size: 11px;
@@ -292,7 +292,8 @@ ul#associations {
   border-bottom:1px solid #777;
   box-shadow: 0 1px 4px #888;
   -moz-box-shadow: 0 1px 4px #888;
-  -webkit-box-shadow: 0 1px 4px #888;  
+  -webkit-box-shadow: 0 1px 4px #888;
+  width: 255px;
 }
 .link-button:hover {
   background-position:0 -14px;
@@ -301,7 +302,7 @@ ul#associations {
 .link-button:active {
   box-shadow: 0 1px 2px #bbb;
   -moz-box-shadow: 0 1px 2px #bbb;
-  -webkit-box-shadow: 0 1px 2px #bbb;  
+  -webkit-box-shadow: 0 1px 2px #bbb;
 }
 
 img.arrow {
@@ -354,7 +355,7 @@ a.email-contact {
 a.email-contact:hover {
   background-position: 0 -18px;
   }
-  
+
 .contact {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -418,7 +419,7 @@ hr.map-line-service {
 }
 
 .map-info .closed {
-  font-family: arial, sans-serif; 
+  font-family: arial, sans-serif;
   font-size: 11px;
   font-weight:normal;
   font-style: italic;
@@ -467,7 +468,7 @@ a.orderform-download-contact {
   float:left;
   box-shadow: 0 1px 4px #555;
   -moz-box-shadow: 0 1px 4px #555;
-  -webkit-box-shadow: 0 1px 4px #555;  
+  -webkit-box-shadow: 0 1px 4px #555;
 }
 
 a.orderform-download-contact:hover {
@@ -476,52 +477,52 @@ a.orderform-download-contact:hover {
 a.orderform-download-contact:active {
   box-shadow: 0 1px 2px #888;
   -moz-box-shadow: 0 1px 2px #888;
-  -webkit-box-shadow: 0 1px 2px #888;  
+  -webkit-box-shadow: 0 1px 2px #888;
 }
 /*********NEW ARRIVALS STYLES************************/
 
 ul.new {
-	list-style:none;
-	width:666px;
+  list-style:none;
+  width:666px;
 }
 ul.new li {
-	display:block;
-	width:190px;
-	height:240px;
-	margin:15px;
-	float:left;
+  display:block;
+  width:190px;
+  height:240px;
+  margin:15px;
+  float:left;
 }
 ul.new li img {
-	width:190px;
-	height:150px;
-	border:1px solid #2388c7;
+  width:190px;
+  height:150px;
+  border:1px solid #2388c7;
 }
 .caption h1 {
-	font-size:14px;
-	font-weight:800;
-	line-height:16px;
-	color:#222;
-	margin:5px 0;
-	text-shadow: 0 1px white;
+  font-size:14px;
+  font-weight:800;
+  line-height:16px;
+  color:#222;
+  margin:5px 0;
+  text-shadow: 0 1px white;
 }
 .caption p {
-	margin: 3px 0;
-	font-size:12px;
-	color:#333;
+  margin: 3px 0;
+  font-size:12px;
+  color:#333;
 }
 
 #wpgengine {margin:25px 0;  float:right;
 }
 #wpgengine h2 {
-	float:left;
-	padding-top:3px;
-	width:100px;
-	font-size:13px;
-	line-height:14px;
+  float:left;
+  padding-top:3px;
+  width:100px;
+  font-size:13px;
+  line-height:14px;
 }
 
 #wpgengine img {
-	float:right;
+  float:right;
 }
 
 /*********END OF NEW ARRIVALS STYLES************************/
@@ -530,32 +531,32 @@ ul.new li img {
 /*********FAQ STYLES************************/
 
 .main-headline {
-	display:block;
-	font-size:24px;
-	color:#222;
-	padding-bottom:20px;
-	text-shadow:0 1px white;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:800;
-	font-style:italic;
+  display:block;
+  font-size:24px;
+  color:#222;
+  padding-bottom:20px;
+  text-shadow:0 1px white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:800;
+  font-style:italic;
 }
 
 .questions h1 {
-	font-size:18px;
-	color:#215B8B;
-	text-shadow: 0 1px white;
-	line-height:16px;
-	margin:15px 0 5px;
-	font-weight:800;
-	padding:0;
+  font-size:18px;
+  color:#215B8B;
+  text-shadow: 0 1px white;
+  line-height:16px;
+  margin:15px 0 5px;
+  font-weight:800;
+  padding:0;
 }
 .questions p {
-	margin-top:10px;
-	padding-bottom:20px;
-	font-size:14px;
-	line-height:17px;
-	color:#333;
-	border-bottom:1px solid #ccc;
+  margin-top:10px;
+  padding-bottom:20px;
+  font-size:14px;
+  line-height:17px;
+  color:#333;
+  border-bottom:1px solid #ccc;
 }
 
 
@@ -574,7 +575,7 @@ ul.new li img {
   width:100%;
   z-index:-20;
 }
-#footer-shadow { 
+#footer-shadow {
   background:url(../images/footer_shadow.png) 0 0 repeat-x;
   width:100%;
   height:51px;
@@ -641,7 +642,7 @@ a.orderform-download {
 }
 
 #footer h4 {
-  font-family: arial,sans-serif; 
+  font-family: arial,sans-serif;
   font-size: 16px;
   font-weight: bold;
   color:#2388c7;
@@ -674,7 +675,7 @@ ul.locations {
 }
 
 ul.locations li {
-  font-family: arial,sans-serif; 
+  font-family: arial,sans-serif;
   font-size: 12px;
   margin-bottom:4px;
   font-weight:800;
@@ -758,16 +759,16 @@ span.blue {color:#2388c7;text-shadow: 0 1px #333;  font-size: 22px;margin-bottom
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-size: 22px;
   font-weight:700;
-  
+
 }
 
 .wf-active .caption h1 {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
-	font-size:18px;
-	margin-top:12px;
+  font-size:18px;
+  margin-top:12px;
 }
 .wf-active #wpgengine h2 {
-	width:100px;
-	font-size:15px;
-	line-height:15px;
+  width:100px;
+  font-size:15px;
+  line-height:15px;
 }
