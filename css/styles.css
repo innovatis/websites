@@ -389,7 +389,6 @@ ul#footer-menu li a:hover {
 
 .infobox-col {
   width:185px;
-  border:1px solid black;
   height:280px;
   float:left;
   padding:20px 20px;
@@ -408,6 +407,17 @@ ul#footer-menu li a:hover {
 #infobox p{
   font-size:.75em;
   margin: 15px auto;
+}
+
+#infobox p.tweet {
+  margin:0;
+}
+
+#infobox p.tweet-time {
+  font-family:arial,sans-serif;
+  font-style:italic;
+  color:rgb(38,152,190);
+  margin:15px auto 5px auto;
 }
 
 a.red-button {
@@ -463,8 +473,14 @@ a.follow-button:active {
   color:rgb(32,71,101);
   float:right;
   margin:3px -8px 0 0;
-  
-}    
+}
+
+.tweet-bubble {
+  background:url(../images/tweet-bubble.png);
+  height:55px;
+  width:162px;
+  padding:15px;
+}
 
 /*END OF PAGES*/
 
