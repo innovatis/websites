@@ -34,7 +34,6 @@ hr.map-line-service {
   bottom:-15px;
 }
 
-
 .link-button {
   position:relative;
   font-size:14px;
@@ -48,4 +47,7 @@ img.arrow {
   top:10px;
   right:15px;
   float:none;
+}
+ul.locations {
+  margin-left:20px;
 }

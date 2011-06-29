@@ -16,6 +16,9 @@ input, textarea, select {-webkit-appearance: none;}
 body {
   background-image:url(../images/body_bkg.jpg);
   }
+#slidewrapper {  background:url(../images/slidebkg.jpg) no-repeat;width:666px;height:260px;}
+.slideshow {float:right;}
+
 p {
   font-family: arial, sans-serif;
   font-size: 14px;
@@ -51,7 +54,7 @@ h4 {
   text-shadow: 1px 1px 1px rgba(200,200,200,.4);
   line-height: 18px;
 }
-h4.locations {
+#locations h4{
   font-style: italic;
   text-transform: uppercase;
 }
@@ -138,7 +141,7 @@ h6 {
 
 #columns {
   width:930px;
-  margin: 27px 0 27px 0;
+  margin: 40px 0 27px 0;
   clear: both;
 }
 
@@ -148,15 +151,17 @@ h6 {
   float: left;
 }
 #left-column-left {
-  width:315px;
-  margin:27px 45px 0 0;
+  width:290px;
+  margin:27px 30px 0 0;
   float: left;
 }
-
+.linkspg #left-column-left {width:310px;}
+.linkspg #left-column-right {width:280px;}
+.home #left-column-right p {font-size:10px;line-height:12px;}
 #left-column-right {
   width:300px;
-  margin: 27px 0;
-  float: left;
+  margin: 27px 23px 0;
+  float: right;
 }
 
 #right-column {
@@ -215,8 +220,8 @@ select {
 #receive-updates {
   height:105px;
   width:235px;
+  float:right;
   background-image: url(../images/newsletter_bkg.jpg);
-  margin:27px 0 0 0;
 }
 
 a.receive-updates-button {
@@ -308,6 +313,7 @@ img.arrow {
 
 
 /*********CONTACT US STYLES*******************/
+
 
 #contact-us-message {
   text-indent: -9999em;
@@ -472,6 +478,89 @@ a.orderform-download-contact:active {
   -moz-box-shadow: 0 1px 2px #888;
   -webkit-box-shadow: 0 1px 2px #888;  
 }
+/*********NEW ARRIVALS STYLES************************/
+
+ul.new {
+	list-style:none;
+	width:666px;
+}
+ul.new li {
+	display:block;
+	width:190px;
+	height:240px;
+	margin:15px;
+	float:left;
+}
+ul.new li img {
+	width:190px;
+	height:150px;
+	border:1px solid #2388c7;
+}
+.caption h1 {
+	font-size:14px;
+	font-weight:800;
+	line-height:16px;
+	color:#222;
+	margin:5px 0;
+	text-shadow: 0 1px white;
+}
+.caption p {
+	margin: 3px 0;
+	font-size:12px;
+	color:#333;
+}
+
+#wpgengine {margin:25px 0;  float:right;
+}
+#wpgengine h2 {
+	float:left;
+	padding-top:3px;
+	width:100px;
+	font-size:13px;
+	line-height:14px;
+}
+
+#wpgengine img {
+	float:right;
+}
+
+/*********END OF NEW ARRIVALS STYLES************************/
+
+
+/*********FAQ STYLES************************/
+
+.main-headline {
+	display:block;
+	font-size:24px;
+	color:#222;
+	padding-bottom:20px;
+	text-shadow:0 1px white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:800;
+	font-style:italic;
+}
+
+.questions h1 {
+	font-size:18px;
+	color:#215B8B;
+	text-shadow: 0 1px white;
+	line-height:16px;
+	margin:15px 0 5px;
+	font-weight:800;
+	padding:0;
+}
+.questions p {
+	margin-top:10px;
+	padding-bottom:20px;
+	font-size:14px;
+	line-height:17px;
+	color:#333;
+	border-bottom:1px solid #ccc;
+}
+
+
+/*********END OF FAQ STYLES************************/
+
 
 
 /*********END OF CONTACT US STYLES************************/
@@ -541,7 +630,7 @@ a.orderform-download {
   opacity:1;
 }
   a.orderform-download:hover {background-position: 0 -32px; opacity:.9;}
-  a.orderform-download:active {margin:6px 5px 0 0;opacity:.8;}
+  a.orderform-download:active {margin:4px 5px 0 0;opacity:.8;}
 #footer-logo {
   clear:both;
   background-image: url(../images/footer_logo.png);
@@ -553,11 +642,14 @@ a.orderform-download {
 
 #footer h4 {
   font-family: arial,sans-serif; 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  color:#191919;
-  text-shadow: 0 1px #666;
-  line-height: 18px;
+  color:#2388c7;
+  text-shadow: 0 1px #222;
+  line-height: 19px;
+  display:block;
+  float:left;
+  width:160px;
 }
 
 .float-left {
@@ -574,30 +666,48 @@ a.orderform-download {
   width:760px;
 }
 
-.locations ul{
+ul.locations {
   list-style: none;
+  float:left;
+  width:200px;
+  margin:0 20px;
 }
 
-.locations li{
-  float:left;
+ul.locations li {
   font-family: arial,sans-serif; 
   font-size: 12px;
-  margin: 12px 15px 0 0;
+  margin-bottom:4px;
+  font-weight:800;
   color:#191919;
   text-shadow: 0 1px #777;
 }
-  .locations li.last {margin-right:0;}
+  .locations li.last {padding-left:50px;}
 
+#footer ul.locations li span.strong {
+  color:white;
+  line-height:18px;
+  font-size:14px;
+}
+span.stronglabel {
+  color:#bcbcbc;
+  text-shadow: 0 1px #333;
+  display:block;
+  width:50px;
+  float:left;
+}
 #to-order-message {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
+  line-height:25px;
   text-transform: uppercase;
   color:#191919;
   text-shadow: 0 1px #777;
-  text-align: center;
-  clear: both;
-  padding: 25px 0 0 0;
+  text-align: left;
+  float:right;
+  width:260px;
+}
+span.blue {color:#2388c7;text-shadow: 0 1px #333;  font-size: 22px;margin-bottom:5px;
 }
 
 /*****************TYPEKIT FALLBACKS******************/
@@ -642,3 +752,22 @@ a.orderform-download {
 .wf-active p.map-titles {
   font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
   font-size: 24px;
+}
+
+.wf-active .questions h1 {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+  font-size: 22px;
+  font-weight:700;
+  
+}
+
+.wf-active .caption h1 {
+  font-family: "myriad-pro-condensed-1","myriad-pro-condensed-2",sans-serif;
+	font-size:18px;
+	margin-top:12px;
+}
+.wf-active #wpgengine h2 {
+	width:100px;
+	font-size:15px;
+	line-height:15px;
+}
