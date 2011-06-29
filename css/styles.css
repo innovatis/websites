@@ -379,26 +379,56 @@ ul#footer-menu li a:hover {
 #infobox {
   width:914px;
   height:331px;
-  margin:0 auto;
+  margin:30px auto 0 32px;
   background:url(../images/infobox_bkg.png);
 }
 
 .infobox-col {
-  width:24.7%;
+  width:185px;
   border:1px solid black;
-  height:331px;
+  height:261px;
   float:left;
+  padding:35px 20px;
 }
 
 .infobox-pics {
   height:119px;
   width:184px;
-  margin:auto;
+  margin:15px auto;
   border:3px solid white;
   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
    box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
 }
+
+#infobox p{
+  font-size:.75em;
+  margin: 15px auto;
+}
+
+a.red-button {
+  background: url(../images/button_red_sprite.png) no-repeat 0 0;
+  width: 104px;
+  height: 21px;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-decoration: none;
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  color:rgb(256,256,256);  
+  font-weight:700;
+  font-size:.8em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:10px 0 0 0;
+}
+
+a.red-button:hover {
+  background-position: 0 -31px;
+  }
+
+a.red-button:active {
+  background-position: 0 -62px;
+  }
 
 /*END OF PAGES*/
 
