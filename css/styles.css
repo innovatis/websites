@@ -54,6 +54,11 @@ h3 {
   font-size:.9em;
 }
 
+.bold {
+  color:rgb(33,44,61);
+  font-weight:700;
+}
+
 #container {
   width:930px;
   margin:0 auto;
@@ -695,21 +700,21 @@ ul#listing-bar img{
 
 #listings {
   width:904px;
-  height:300px;
+  height:373px;
   margin:0 auto;
   background:url(../images/listing-background.png);
 }
 
 .listing-column {
   width:198px;
-  height:287px;
+  height:373px;
   float:left;
   padding:0px 13px 13px 13px;
 }
 
 .listing-divider {
   width:1px;
-  height:298px;
+  height:371px;
   background:url(../images/listing-divider.png);
   float:left;
   margin:0;
@@ -731,6 +736,17 @@ ul#listing-bar img{
   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
    box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+}
+
+.listing-button-centre {
+  width:150px;
+  margin:15px auto;
+  position:relative;
+  bottom:-25px;
+}
+
+.listing-spacing {
+  margin:15px 0 25px 0;
 }
 
 /*END OF LISTINGS*/
