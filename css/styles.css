@@ -43,6 +43,10 @@ h2 {
   color:rgb(107,40,2);
 }
 
+.blue {
+  color:rgb(32,71,101);
+}
+
 h3 {
   font-family:arial,sans-serif;
   font-weight:700;
@@ -386,9 +390,9 @@ ul#footer-menu li a:hover {
 .infobox-col {
   width:185px;
   border:1px solid black;
-  height:261px;
+  height:280px;
   float:left;
-  padding:35px 20px;
+  padding:20px 20px;
 }
 
 .infobox-pics {
@@ -420,6 +424,9 @@ a.red-button {
   text-transform:uppercase;
   text-align:center;
   padding:10px 0 0 0;
+  position:relative;
+  bottom:7px;
+  right:-44px;
 }
 
 a.red-button:hover {
@@ -429,6 +436,35 @@ a.red-button:hover {
 a.red-button:active {
   background-position: 0 -62px;
   }
+  
+a.follow-button {
+  background: url(../images/button_twitter_sprite.png) no-repeat 0 0;
+  width: 92px;
+  height: 32px;
+  display: block;
+  margin: 0 auto 0 auto;
+  position:relative;
+  bottom:0px;
+  right:0px;
+  text-indent:-9999em;
+}
+
+a.follow-button:hover {
+  background-position: 0 -32px;
+  }
+
+a.follow-button:active {
+  background-position: 0 -64px;
+  }
+    
+.twitter-link {
+  font-family:arial,sans-serif;
+  font-size:.8em;
+  color:rgb(32,71,101);
+  float:right;
+  margin:3px -8px 0 0;
+  
+}    
 
 /*END OF PAGES*/
 
