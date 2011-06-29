@@ -373,17 +373,11 @@ ul#footer-menu li a{
 ul#footer-menu li a:hover {
   color:rgb(107,40,2);
 }
-/*END OF FOOTER*/
-
-/*PAGES*/
-#page-content {
-  width:930px;
-}
 
 #infobox {
   width:914px;
   height:331px;
-  margin:30px auto 0 32px;
+  margin:30px auto 0 auto;
   background:url(../images/infobox_bkg.png);
 }
 
@@ -481,6 +475,13 @@ a.follow-button:active {
   width:162px;
   padding:15px;
 }
+/*END OF FOOTER*/
+
+/*PAGES*/
+#page-content {
+  width:930px;
+  border:1px solid black;
+}
 
 /*END OF PAGES*/
 
@@ -522,9 +523,8 @@ a.follow-button:active {
   font-size:1.5em;
 }
 
-select {
+ul#home-finder.select {
  font-size: 12px;
-/* line-height: 1em;*/
  margin: 10px 0 0 0;
  width: 60%;
  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
@@ -646,47 +646,70 @@ a.view-details:active {
   }
 /*END OF HOME*/
 
-
-/*
-************************************************************************
-#content-wrapper {
+/*LISTINGS*/
+ul#listing-bar {
+  list-style:none;
+  clear:both;
   width:904px;
-  height:700px;
+  height:45px;
+  margin: 0 0 0 16px;
 }
 
-#content-top {
+ul#listing-bar li{
+  float:left;
+  margin:10px 15px 0 0;
+}
+
+ul#listing-bar.select {
+ font-size: 12px;
+ margin: 0 0 0 0;
+ width: 60%;
+ -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+ -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+ box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+ float:right;
+}
+
+.bold-red {
+  font-family:arial,sans-serif;
+  font-size:.8em;
+  font-weight:700;
+  color:rgb(107,40,2);
+}
+
+ul#listing-bar img{
+  margin:-7px 0 0 18px;
+}
+
+#listings-wrapper {
+  width:930px;
+}
+
+#listings-top {
   width:904px;
   height:34px;
   margin:0 auto;
   background:url(../images/content_top.png);
-  background-color:yellow;
 }
 
-#content {
+#listings {
   width:904px;
   height:300px;
   margin:0 auto;
   background:url(../images/content_middle.jpg);
-  background-color:purple;
 }
 
-#content-bottom {
+#listings-bottom {
   width:904px;
   height:34px;
   margin:0 auto;  
   background:url(../images/content_bottom.png);
-  background-color:red;
 }
 
+/*END OF LISTINGS*/
 
-HTML
+/*
+************************************************************************
 
-<div id="content-wrapper">
-  <div id="content-top">
-  </div>
-  <div id="content">
-  </div>
-  <div id ="content-bottom">
-</div>
 
 *************************************************************************/
