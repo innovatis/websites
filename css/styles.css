@@ -506,11 +506,15 @@ a.follow-button:active {
   width:253px;
 }
 
+#right-showcase form {
+  margin:35px 0 0 0;
+}
+
 .relax-title {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   color:rgb(107,40,2);  
   font-weight:700;
-  font-size:2em;
+  font-size:2.6em;
   text-transform:uppercase;
 }
 
@@ -518,7 +522,7 @@ a.follow-button:active {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;  
   color:rgb(32,71,101);  
   font-weight:700;
-  font-size:1.5em;
+  font-size:1.4em;
 }
 
 ul#home-finder.select {

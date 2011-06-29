@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tab Test</title>
+	<link rel="stylesheet" href="tabtest.css">
+</head>
+<body>
+  <div id="property-info" class="property-panes">
+    <div id="property1">
+      <div id="property-control">
+        <ul class="property-tabs" data-model="details">
+          <li><a data-id="photos" class="left-tab current" href="#" data-pane="#property1-photos">Photo Gallery</a></li>
+          <li><a data-id="info" href="#" data-pane="#property1-information">Specifications</a></li>
+          <li><a data-id="map" href="#" data-pane="#property1-map" class="">Map / Directions</a></li>
+        </ul>
+      </div>
+      <div class="info-pages">
+        <div id="property1-photos" class="pane photos" style="display: block; ">
+          <p>Photos</p>
+        </div>
+    	  <div id="property1-specifications" class="pane specifications" style="display: none; ">
+    	 		<p>Specifications</p>
+        </div>
+    	  <div id="property1-map" class="pane map" style="display: none; ">
+    			<p>Map</p>
+    	  </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
