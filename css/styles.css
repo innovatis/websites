@@ -185,6 +185,8 @@ ul#main-menu {
 ul#main-menu li{
   float:left;
   margin: 0;
+  width: 178px;
+  height: 44px; 
 }
 
 ul#main-menu li a .page-title{
@@ -192,6 +194,7 @@ ul#main-menu li a .page-title{
 	font-size:1.1em;
 	text-transform:uppercase;
 	color:rgb(255,255,255);
+	text-align:center;
 }
 
 ul#main-menu li a .page-sub-title {
@@ -199,16 +202,15 @@ ul#main-menu li a .page-sub-title {
   font-size:.7em;
   color:rgb(195,168,153);
   font-style:italic;
+	text-align:center;
 }
 
 ul#main-menu li a.active-listings {
   background: url(../images/nav_activelistings_sprite.png) no-repeat 0 0;
-  width: 178px;
-  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px 0 0 0;
+  padding: 12px 0 16px 0;
 }
 
 ul#main-menu li a.active-listings:hover {
@@ -221,12 +223,12 @@ ul#main-menu li a.active-listings:active {
 
 ul#main-menu li a.communities {
   background: url(../images/nav_communities_sprite.png) no-repeat 0 0;
-  width: 178px;
-  height: 44px; /*56px minus padding*/
+/*  width: 178px;
+  height: 44px; */
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px 0 0 0;
+  padding: 12px 0 16px 0;
 }
 
 ul#main-menu li a.communities:hover {
@@ -239,12 +241,12 @@ ul#main-menu li a.communities:active {
 
 ul#main-menu li a.buying-a-home {
   background: url(../images/nav_buyhome_sprite.png) no-repeat 0 0;
-  width: 178px;
-  height: 44px; /*56px minus padding*/
+/*  width: 178px;
+  height: 44px; */
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px 0 0 0;
+  padding: 12px 0 16px 0;
 }
 
 ul#main-menu li a.buying-a-home:hover {
@@ -257,12 +259,12 @@ ul#main-menu li a.buying-a-home:active {
 
 ul#main-menu li a.selling-a-home {
   background: url(../images/nav_sellhome_sprite.png) no-repeat 0 0;
-  width: 178px;
-  height: 44px; /*56px minus padding*/
+/*  width: 178px;
+  height: 44px; */
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px 0 0 0;
+  padding: 12px 0 16px 0;
 }
 
 ul#main-menu li a.selling-a-home:hover {
@@ -275,12 +277,12 @@ ul#main-menu li a.selling-a-home:active {
 
 ul#main-menu li a.contact-us {
   background: url(../images/nav_contact_sprite.png) no-repeat 0 0;
-  width: 178px;
-  height: 44px; /*56px minus padding*/
+/*  width: 178px;
+  height: 44px; */
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 12px 0 0 0;  
+  padding: 12px 0 16px 0;
 }
 
 ul#main-menu li a.contact-us:hover {
