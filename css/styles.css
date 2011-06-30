@@ -488,7 +488,7 @@ a.follow-button:active {
   background:url(../images/home_showcase.png);
   height:456px;
   width:948px;
-  margin:0 auto;
+  margin:0 0 0 -23px;
 }
 
 #left-showcase {
@@ -572,11 +572,10 @@ a.search-homes:active {
 #ticker {
   float:left;
   width:910px;
-  margin:29px 0 0 37px;
+  margin:29px 0 0 32px;
   padding:11px 0 0 0;
   height:27px;
   background:url(../images/ticker_bkg.png);
-  border:1px dashed gray;
 }
 
 #ticker-listing {
@@ -629,7 +628,7 @@ a.view-details {
   width: 118px;
   height: 14px;
   display: block;
-  margin: -9px 0 0 20px;
+  margin: -8px 0 0 24px;
   padding:8px 0;
   text-align:center;
   text-decoration: none;
@@ -763,14 +762,13 @@ ul#listing-bar img{
   height:344px;
   width:189px;
   float:left;
-  border:2px dotted blue;
   padding:15px;
 }
 
 .detail-pics {
   height:115px;
   width:185px;
-/*  margin:15px;*/
+  margin: 15px 0;
   border:3px solid white;
   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
@@ -789,16 +787,33 @@ ul#listing-bar img{
 
 #feature-form {
   height:374px;
-  width:275px;
+  width:245px;
   float:left;
-  border:2px dotted yellow;
+  padding:15px;
+}
+
+#feature-form label{
+  display:block;
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+}
+
+#feature-form .input{
+  margin:15px 0;
+}
+
+#feature-form input{
+ width:220px;
+ height:26px;
+ border: 1px solid rgb(179,179,179);
+ margin:3px 0 0 0;  
 }
 
 #property-info {
   position:relative;
-	width:402px;
+	width:407px;
 	float:left;
-	border:2px solid gree;
 }
 div.pane {
 	position:relative;
@@ -814,6 +829,7 @@ div.property-panes #property-control {
 ul.property-tabs {
 	float:left;
  	list-style:none;
+	margin:2px 0 0 0;
 }
 ul.property-tabs li {
 	float:left;
@@ -821,17 +837,17 @@ ul.property-tabs li {
 }
 ul.property-tabs li a {
 	display:block;
-	width:132px;
+	width:134px;
 	font-family: Arial, sans-serif;
 	text-decoration:none;
 	font-size:12px;
 	color:rgb(72,87,102);
-  margin-right:0px;
+  margin-right:-1px;
   text-align:center;
 	text-shadow: 0 1px #ece9e0;
 	border-left:1px solid rgb(154,168,178);
 	border-right:1px solid rgb(154,168,178);
-	border-top:1px solid rgb(154,168,178);
+/*  border-top:1px solid rgb(154,168,178);*/
 	padding:7px 0 6px 0;
   background:#d2cbb6;
 	background: url(../images/tab-background.png);
@@ -845,13 +861,12 @@ ul.property-tabs li a:active, ul.property-tabs li a.current {
 }
 div.info-pages {
 	float:left;
-	width:400px;
-	height:349px;
+	width:405px;
+	height:348px;
 	margin:0;
 	background:white;
 	border-left:1px solid rgb(154,168,178);
 	border-right:1px solid rgb(154,168,178);
-	border-bottom:1px solid rgb(154,168,178);
 }
 .overview-bold {
 	font-weight:bold;
