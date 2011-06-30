@@ -488,7 +488,7 @@ a.follow-button:active {
   background:url(../images/home_showcase.png);
   height:456px;
   width:948px;
-  margin:auto;
+  margin:0 auto;
 }
 
 #left-showcase {
@@ -502,12 +502,29 @@ a.follow-button:active {
 #right-showcase {
   float:right;
   margin: 40px 25px 0px 29px;
-  border:1px solid red;
+/*  border:1px solid red;*/
   width:253px;
 }
 
 #right-showcase form {
-  margin:35px 0 0 0;
+  margin:0;
+}
+
+#right-showcase label {
+  font-family:arial,sans-serif;
+  font-weight:700;
+  font-size:.8em;
+  display:block;
+  float:left;
+  width:100px;
+  margin:4px 0 0 0;
+}
+
+#right-showcase select {
+  display:block;
+  float:right;
+  width:153px;
+  text-align:center;
 }
 
 .relax-title {
@@ -525,20 +542,12 @@ a.follow-button:active {
   font-size:1.4em;
 }
 
-ul#home-finder.select {
- font-size: 12px;
- margin: 10px 0 0 0;
- width: 60%;
- -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
- -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
- box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
- float:right;
-}
-
 .home-finder-divider {
- height:2px;
- width:325px;
- background:url(../images/home-finder-divider.png); 
+  height:2px;
+  width:321px;
+  background:url(../images/home-finder-divider.png);
+  float:right;
+  margin:11px -16px 11px 0;
 }
 
 a.search-homes {
@@ -546,7 +555,7 @@ a.search-homes {
   width: 253px;
   height: 48px;
   display: block;
-  margin: 25px auto 0 auto;
+  margin: 0 auto;
   text-decoration: none;
   text-indent:-9999em;
   float:right;
@@ -560,32 +569,18 @@ a.search-homes:active {
   background-position: 0 -98px;
   }
 
-ul#home-finder label {
-  float:left;
-  font-family:arial,sans-serif;
-  font-weight:700;
-  font-size:.8em;
-  color:rgb(32,71,101);
-  background:yellow;
-}
-
 #ticker {
   float:left;
-  width:902px;
-  margin:38px 0 0 37px;
+  width:910px;
+  margin:29px 0 0 37px;
   padding:11px 0 0 0;
-  clear:both;
-  height:19px;
-  background-image:url(../images/ticker_bkg.jpg);
+  height:27px;
+  background:url(../images/ticker_bkg.png);
+  border:1px dashed gray;
 }
 
 #ticker-listing {
-/*  border:1px solid green;*/
-/*  height:12px;*/
   width:930px;
-/*  position:relative;
-  bottom:-39px;
-  right:-55px;*/
 }
 
 ul#ticker-listing {
@@ -632,10 +627,11 @@ ul#ticker-listing li{
 a.view-details {
   background: url(../images/button_details_sprite.png) no-repeat 0 0;
   width: 118px;
-  height: 10px;
+  height: 14px;
   display: block;
-  margin: -9px auto 0 auto;
-  padding:10px;
+  margin: -9px 0 0 20px;
+  padding:8px 0;
+  text-align:center;
   text-decoration: none;
   font-family:arial,sans-serif;
   font-weight:700;
@@ -764,10 +760,21 @@ ul#listing-bar img{
 }
 
 #feature-details {
-  height:374px;
-  width:219px;
+  height:344px;
+  width:189px;
   float:left;
   border:2px dotted blue;
+  padding:15px;
+}
+
+.detail-pics {
+  height:115px;
+  width:185px;
+/*  margin:15px;*/
+  border:3px solid white;
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
 }
 
 .feature-pics {
@@ -861,10 +868,6 @@ div.information p {
 	color:#555;
 	line-height:20px;
 }
+
+
 /*END OF TABS*/
-
-/*
-************************************************************************
-
-
-*************************************************************************/
