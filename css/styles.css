@@ -19,7 +19,7 @@ html{
 }
 
 body, select, input, textarea {
-font: 1em;
+  font-size: 1em;
 }
 
 body {
@@ -204,11 +204,11 @@ ul#main-menu li a .page-sub-title {
 ul#main-menu li a.active-listings {
   background: url(../images/nav_activelistings_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 41px; /*56px minus padding*/
+  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 15px 0 0 0;
+  padding: 12px 0 0 0;
 }
 
 ul#main-menu li a.active-listings:hover {
@@ -222,11 +222,11 @@ ul#main-menu li a.active-listings:active {
 ul#main-menu li a.communities {
   background: url(../images/nav_communities_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 41px; /*56px minus padding*/
+  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 15px 0 0 0;
+  padding: 12px 0 0 0;
 }
 
 ul#main-menu li a.communities:hover {
@@ -240,11 +240,11 @@ ul#main-menu li a.communities:active {
 ul#main-menu li a.buying-a-home {
   background: url(../images/nav_buyhome_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 41px; /*56px minus padding*/
+  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 15px 0 0 0;
+  padding: 12px 0 0 0;
 }
 
 ul#main-menu li a.buying-a-home:hover {
@@ -258,11 +258,11 @@ ul#main-menu li a.buying-a-home:active {
 ul#main-menu li a.selling-a-home {
   background: url(../images/nav_sellhome_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 41px; /*56px minus padding*/
+  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 15px 0 0 0;
+  padding: 12px 0 0 0;
 }
 
 ul#main-menu li a.selling-a-home:hover {
@@ -276,11 +276,11 @@ ul#main-menu li a.selling-a-home:active {
 ul#main-menu li a.contact-us {
   background: url(../images/nav_contact_sprite.png) no-repeat 0 0;
   width: 178px;
-  height: 41px; /*56px minus padding*/
+  height: 44px; /*56px minus padding*/
   display: block;
   margin: 0 auto;
   text-decoration: none;
-  padding: 15px 0 0 0;  
+  padding: 12px 0 0 0;  
 }
 
 ul#main-menu li a.contact-us:hover {
@@ -420,7 +420,7 @@ a.red-button {
   margin: 0 auto 0 auto;
   text-decoration: none;
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
-  color:rgb(256,256,256);  
+  color:rgb(255,255,255);  
   font-weight:700;
   font-size:.8em;
   text-transform:uppercase;
@@ -628,7 +628,7 @@ a.view-details {
   width: 118px;
   height: 14px;
   display: block;
-  margin: -8px 0 0 24px;
+  margin: -8px 0 0 30px;
   padding:8px 0;
   text-align:center;
   text-decoration: none;
@@ -652,7 +652,6 @@ a.view-details:active {
 /*LISTINGS*/
 ul#listing-bar {
   list-style:none;
-  clear:both;
   width:904px;
   height:45px;
   margin: 0 0 0 16px;
@@ -680,8 +679,15 @@ ul#listing-bar.select {
   color:rgb(107,40,2);
 }
 
-ul#listing-bar img{
-  margin:-7px 0 0 18px;
+ul#listing-bar select{
+  margin:-6px 0 0 0;
+}
+
+.update-list-button{
+  margin:3px 2px 0 0;
+  float:right;
+  width:112px;
+  height:30px;
 }
 
 #listings-wrapper {
@@ -799,6 +805,13 @@ ul#listing-bar img{
 	color:rgb(102,102,102);
 }
 
+#feature-form p{
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:19px 0 0 0;
+}
+
 #feature-form .input{
   margin:15px 0;
 }
@@ -808,6 +821,10 @@ ul#listing-bar img{
  height:26px;
  border: 1px solid rgb(179,179,179);
  margin:3px 0 0 0;  
+}
+
+#feature-form h2 {
+  font-size:1.5em;
 }
 
 #property-info {
