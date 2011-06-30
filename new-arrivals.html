@@ -6,7 +6,18 @@
   <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://use.typekit.com/art5kpe.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> -->
+  <!--<script type="text/javascript" src="/da/js/site.js"></script>-->
+<!--  <script type="text/javascript">
+    $(function(){
+      $.get("http://localhost:4567", "", function(data){
+        $("#left-column.pictures").html(data);
+      });
+    });
+  </script> -->
   <!--[if IE 7]><link href='css/ie.css' media='screen' rel='stylesheet' type='text/css' /><![endif]-->
+
+
 </head>
 <body>
   <div id="header">
@@ -33,15 +44,9 @@
         <h2>We supply new, recycled, and rebuilt car and truck parts</h2>
       </div>
       <div id="columns">
-        <div id="left-column">
-          <ul class='new'>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-            <li><img src='#'/><div class='caption'><h1>Title goes here</h1><p>description goes here.</p></div></li>
-          </ul>
+        <div id="left-column" class="pictures">
+          <h1 class="main-headline" style="margin-left:22px;">New Arrivals</h1>
+          <iframe src="http://daimages.directauto.ca" width="670" height="550"></iframe>
         </div>
         <div id="right-column">
           <h2 class="blue">Our Sales Team</h2>
@@ -63,7 +68,7 @@
           </ul>
           <br clear="both">
         <div id='wpgengine'>
-           <h2 class="blue">Looking for<br>Rebuilt Engines and Transmissions?</h2><a target='_blank' href='http://www.winnipegengine.com'><img src='images/wpgengine.png' alt='Winnipeg Engines and Transmissions'/></a>
+           <h2 class="blue">Looking for<br>Rebuilt Engines and Transmissions?</h2><a target='_blank' href='http://www.winnipegengine.com'><img src='images/wpgengine.png' alt='Winnipeg Engines and Transmissions'/></a>
         </div>
         <div id="receive-updates">
           <a href="#" target="_blank" class="receive-updates-button">receive updates on new parts via email!</a>
