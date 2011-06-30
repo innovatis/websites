@@ -753,6 +753,116 @@ ul#listing-bar img{
 
 /*END OF LISTINGS*/
 
+/*DETAILS/TABS*/
+
+#details-box {
+  width:904px;
+  height:409px;
+  margin:0 auto;
+  padding:32px 0 0 0;
+  background:url(../images/details-box.png);
+}
+
+#feature-details {
+  height:374px;
+  width:219px;
+  float:left;
+  border:2px dotted blue;
+}
+
+.feature-pics {
+  height:215px;
+  width:310px;
+  margin:15px 0 0 33px;
+  border:3px solid white;
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+}
+
+#feature-form {
+  height:374px;
+  width:275px;
+  float:left;
+  border:2px dotted yellow;
+}
+
+#property-info {
+  position:relative;
+	width:402px;
+	float:left;
+	border:2px solid gree;
+}
+div.pane {
+	position:relative;
+	width:350px;
+	padding: 15px 10px;
+	background:white;
+	display: none;
+}
+div.property-panes #property-control {
+	float:left;
+	margin:0;
+}
+ul.property-tabs {
+	float:left;
+ 	list-style:none;
+}
+ul.property-tabs li {
+	float:left;
+	list-style:none;
+}
+ul.property-tabs li a {
+	display:block;
+	width:132px;
+	font-family: Arial, sans-serif;
+	text-decoration:none;
+	font-size:12px;
+	color:rgb(72,87,102);
+  margin-right:0px;
+  text-align:center;
+	text-shadow: 0 1px #ece9e0;
+	border-left:1px solid rgb(154,168,178);
+	border-right:1px solid rgb(154,168,178);
+	border-top:1px solid rgb(154,168,178);
+	padding:7px 0 6px 0;
+  background:#d2cbb6;
+	background: url(../images/tab-background.png);
+}
+ul.property-tabs li a:hover {
+	color:rgb(107,40,2);
+}
+ul.property-tabs li a:active, ul.property-tabs li a.current {
+	background:white;
+	text-shadow:none;
+}
+div.info-pages {
+	float:left;
+	width:400px;
+	height:349px;
+	margin:0;
+	background:white;
+	border-left:1px solid rgb(154,168,178);
+	border-right:1px solid rgb(154,168,178);
+	border-bottom:1px solid rgb(154,168,178);
+}
+.overview-bold {
+	font-weight:bold;
+}
+div.information {
+}
+div.information ul {
+	float:left;
+}
+div.information p {
+	float:left;
+	font-size:14px;
+	margin:5px 15px;
+	color:#555;
+	line-height:20px;
+}
+/*END OF TABS*/
+
 /*
 ************************************************************************
 
