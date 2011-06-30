@@ -796,11 +796,81 @@ ul#listing-bar select {
   background:url(../images/details-box.png);
 }
 
+#details-box p.right{
+  margin:8px 12px 0 0;
+  font-family: Times, serif;
+	font-size:.9em;
+	color:rgb(33,44,61);
+	float:right;
+}
+
+#details-box em{
+	font-style:italic;
+}
+
+#details-box strong{
+  font-weight:700;
+}
+
+#details-top-bar {
+  width:100%;
+  height:32px;
+  float:left;
+  margin: -31px auto;
+}
+
+#details-bottom-bar {
+  width:100%;
+  height:32px;
+  float:left;
+  margin: -29px auto;
+}
+
+#bottom-bar-message {
+  float:left;
+  margin: 7px 0 0 101px;
+}
+
+#bottom-bar-message p {
+  font-family: Times, serif;
+	font-size:.9em;
+	color:rgb(33,44,61);
+}
+
+#bottom-bar-message a{
+  text-decoration:underline;
+  color:rgb(33,44,61);
+  font-weight:700;
+}
+
+#details-bottom-bar a.previous-page {
+  background: url(../images/button_page_sprite.png) no-repeat 0 0;
+  width: 106px;
+  height: 32px;
+  display: block;
+  text-indent:-9999em;
+  float:left;
+}
+
+#details-bottom-bar a.previous-page:hover {
+  background-position: 0 -33px;
+  }
+
+#details-bottom-bar a.previous-page:active {
+  background-position: 0 -66px;
+  }
+
 #feature-details {
   height:344px;
   width:189px;
   float:left;
   padding:15px;
+}
+
+#feature-details p {
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
 }
 
 .detail-pics {
