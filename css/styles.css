@@ -524,7 +524,6 @@ a.follow-button:active {
   display:block;
   float:right;
   width:153px;
-  text-align:center;
 }
 
 .relax-title {
@@ -662,13 +661,10 @@ ul#listing-bar li{
   margin:10px 15px 0 0;
 }
 
-ul#listing-bar.select {
- font-size: 12px;
+ul#listing-bar select {
+ font-size: .8em;
+ font-family:arial,sans-serif;
  margin: 0 0 0 0;
- width: 60%;
- -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
- -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
- box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
  float:right;
 }
 
@@ -677,10 +673,6 @@ ul#listing-bar.select {
   font-size:.8em;
   font-weight:700;
   color:rgb(107,40,2);
-}
-
-ul#listing-bar select{
-  margin:-6px 0 0 0;
 }
 
 .update-list-button{
@@ -731,6 +723,44 @@ ul#listing-bar select{
   background:url(../images/content_bottom.png);
 }
 
+#listings-bottom a.previous-page {
+  background: url(../images/button_page_sprite.png) no-repeat 0 0;
+  width: 106px;
+  height: 32px;
+  display: block;
+  margin: -13px auto;
+  text-indent:-9999em;
+  float:left;
+}
+
+#listings-bottom a.previous-page:hover {
+  background-position: 0 -33px;
+  }
+
+#listings-bottom a.previous-page:active {
+  background-position: 0 -66px;
+  }
+
+#listings-bottom a.next-page {
+  background: url(../images/button_page_sprite.png) no-repeat 0 0;
+  width: 106px;
+  height: 32px;
+  display: block;
+  margin: -13px auto;
+  text-indent:-9999em;
+  float:right;
+  background-position: -106px 0;
+}
+
+#listings-bottom a.next-page:hover {
+  background-position: -106px -33px;
+  }
+
+#listings-bottom a.next-page:active {
+  background-position: -106px -66px;
+  }
+
+
 .listing-pics {
   height:115px;
   width:185px;
@@ -751,6 +781,8 @@ ul#listing-bar select{
 .listing-spacing {
   margin:15px 0 25px 0;
 }
+
+
 
 /*END OF LISTINGS*/
 
