@@ -93,6 +93,63 @@ input, textarea, select {-webkit-appearance: none;}
    margin-left: 110px;
    background: yellow;
 }
+#main-area .upper .left h2{
+   color: #5D0010;
+   font-size: 20px;
+   display: block;
+   text-align: center;
+   margin: 16px 20px;
+}
+#main-area .upper .left h3{
+   color: #5D0010;
+   font-size: 16px;
+   display: block;
+   text-align: center;
+   margin: 0 16px;
+   margin-bottom: 20px;
+}
+
+#main-area .upper .left h4{
+   display:block;
+   color: #23211E;
+   font-size: 14px;
+   font-style: italic;
+   text-align: center;
+   margin: 0 16px;
+   margin-bottom: 20px;
+}
+#main-area .upper .left .bottom{
+   margin-bottom: 10px;
+}
+#main-area .upper .left span{
+   color: #5D0010;
+   font-size: 12px;
+   text-align: center;
+   display: block;
+   margin: 0 16px;
+}
+#main-area .upper .left a{
+   display: block;
+   background: #5D0010;
+   text-align: center;
+   margin: 20px auto;
+   width: 216px;
+   height: 60px;
+   line-height: 60px;
+   font-size: 16px;
+   color: #FFFFFF;
+   border: 1px solid #521F14;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+#main-area .upper .left p{
+   color: #1A1A1A;
+   font-size: 12px;
+   text-align: center;
+   margin: 0 16px;
+   margin-bottom: 105px;
+}
 #main-area .upper .right{
    width:765px;
    height:100%;
@@ -131,12 +188,47 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .lower ul h3{
    color: #5D0010;
-   font-size: 20px;
+   font-size: 24px;
    display: block;
-   margin-top: 16px;
-   margin-left: 16px;
-}
 
+   margin: 16px 100px 10px 16px;
+
+}
+#main-area .lower ul p{
+   font-size: 14px;
+   color: #5C4E42;
+   margin: 0 100px 10px 16px;
+}
+#main-area .lower ul a{
+   margin-left: 16px;
+   display: block;
+   text-align: center;
+   font-size: 16px;
+   font-style: italic;
+   text-decoration: none;
+   width: 152px;
+   height: 33px;
+   line-height: 33px;
+   border: 1px solid black;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+#main-area .lower #honeymoons a{
+   background: #B0D778;
+   border-color: #4F8500;
+   color: #284201;
+}
+#main-area .lower #birthdays a{
+   background: #EACD84;
+   border-color: #AB9153;
+   color: #3E341D;
+}
+#main-area .lower #anniversaries a{
+   background: #772737;
+   border-color: #30030B;
+   color: #FEFDFD;
+}
 #main-area .lower #anniversaries{
    margin-right:0;
 }
