@@ -34,3 +34,9 @@ ul#listing-bar li{
 ul#listing-bar select {
  float:left; 
 }
+
+.search-homes {
+  font-size: 0; 
+  display:block; 
+  line-height: 0;
+}

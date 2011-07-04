@@ -69,16 +69,35 @@
  			    <div id="listings-wrapper">
             <div id="listings-top">
      			    <form action="listings.html" method="get"> 
+   			        <div class="update-inputs">
+             	    <p class="bold-red">Show only:<p>
+             	    <div class="update-input">
+             	 	    <select name="show-bedrooms">
+             	 	  	  <option>bedrooms</option> 
+             	 	    </select>
+             	 	  </div>
+             	 	  <div class="update-input">
+             	 	    <select name="show-price">
+             	 	  	  <option>any price</option> 
+             	 	    </select>
+             	 	  </div>
+             	 	  <div class="update-input">
+             	 	    <select name="show-proprty">
+             	 	  	  <option>property type</option> 
+             	 	    </select>
+             	 	  </div>
+             	 	  <div class="update-input">
+             	 	    <select name="show-location">
+             	 	  	  <option>any location</option> 
+             	 	    </select>
+             	 	  </div>
+             	 	  <div class="update-input">
+             	 	    <select name="show-sort-by">
+             	 	  	  <option>sort by price</option> 
+             	 	    </select>
+             	 	  </div>
+             	 	</div>
    			        <input type="submit" class="update-list-button" value="Submit"/>
-                <!-- <a href ="#"><img src="images/update-list-button.png" alt="Update List" class="update-list-button"/></a> -->
-                <ul id="listing-bar">
-     			        <li class="bold-red">Show only:</li>
-     			        <li><select id="show-bedrooms"><option value="default" selected="selected">Bedrooms</option></select></li>
-     			        <li><select id="show-price"><option value="default" selected="selected">Any Price</option></select></li>
-     			        <li><select id="show-property"><option value="default" selected="selected">Property Type</option></select></li>
-     			        <li><select id="show-location"><option value="default" selected="selected">Any Location</option></select></li>
-     			        <li><select id="show-sort-by"><option value="default" selected="selected">Sort By Price</option></select></li>
-     			      </ul>
      			    </form>
             </div>
             <div id="listings">

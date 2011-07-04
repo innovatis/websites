@@ -439,25 +439,10 @@ a.red-button:active {
   background-position: 0 -62px;
   }
   
-a.follow-button {
-  background: url(../images/button_twitter_sprite.png) no-repeat 0 0;
-  width: 92px;
-  height: 32px;
-  display: block;
-  margin: 0 auto 0 auto;
-  position:relative;
-  bottom:0px;
-  right:0px;
-  text-indent:-9999em;
+.new-twitter-follow-button {
+  width:140px;
+  margin:13px 5px 5px 34px;
 }
-
-a.follow-button:hover {
-  background-position: 0 -32px;
-  }
-
-a.follow-button:active {
-  background-position: 0 -64px;
-  }
     
 .twitter-link {
   font-family:arial,sans-serif;
@@ -523,6 +508,7 @@ a.follow-button:active {
   display:block;
   float:right;
   width:153px;
+  font-size:.8em;
 }
 
 .relax-title {
@@ -674,6 +660,8 @@ ul#listing-bar select {
   font-size:.8em;
   font-weight:700;
   color:rgb(107,40,2);
+  float:left;
+  margin:10px;
 }
 
 .update-list-button{
@@ -685,6 +673,12 @@ ul#listing-bar select {
   text-indent:-9999em;
   border:none;
   cursor:pointer;
+}
+
+#listings-top .update-inputs select {
+  float:left;
+  margin: 7px 5px 5px 15px;
+  font-size:.8em;
 }
 
 #listings-wrapper {
