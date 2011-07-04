@@ -1,6 +1,7 @@
 a.view-details {
   margin: -8px 0 0 15px;
 }
+
 .connect-grey {  
   font-size:1.1em;
 }
@@ -11,4 +12,12 @@ a.view-details {
 
 .footer-links {
   margin:22px 0 0 15px !important;
+}
+
+.header-tagline {
+	font-size:.9em;
+}
+
+.header-phone-number {
+	font-size:1.2em;  
 }

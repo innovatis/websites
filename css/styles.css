@@ -391,7 +391,7 @@ ul#footer-menu li a:hover {
 .infobox-pics {
   height:119px;
   width:180px;
-  margin:15px 0 0 -13px;
+  margin:0px 0 0 -13px;
   padding:14px 16px 24px 19px;
   background:url(../images/photo_bkg.png) left bottom no-repeat;
 }
@@ -548,7 +548,7 @@ a.follow-button:active {
   margin:11px -16px 11px 0;
 }
 
-a.search-homes {
+.search-homes {
   background: url(../images/button_search_sprite.png) no-repeat 0 0;
   width: 253px;
   height: 48px;
@@ -557,13 +557,15 @@ a.search-homes {
   text-decoration: none;
   text-indent:-9999em;
   float:right;
+  cursor:pointer;
+  border:none;
 }
 
-a.search-homes:hover {
+.search-homes:hover {
   background-position: 0 -49px;
   }
 
-a.search-homes:active {
+.search-homes:active {
   background-position: 0 -98px;
   }
 
@@ -679,6 +681,10 @@ ul#listing-bar select {
   float:right;
   width:112px;
   height:30px;
+  background:url(../images/update-list-button.png);
+  text-indent:-9999em;
+  border:none;
+  cursor:pointer;
 }
 
 #listings-wrapper {

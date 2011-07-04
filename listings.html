@@ -68,15 +68,18 @@
  			  <div>
  			    <div id="listings-wrapper">
             <div id="listings-top">
-     			    <a href ="#"><img src="images/update-list-button.png" alt="Update List" class="update-list-button"/></a>
-              <ul id="listing-bar">
-     			      <li class="bold-red">Show only:</li>
-     			      <li><select id="show-bedrooms"><option value="default" selected="selected">Bedrooms</option></select></li>
-     			      <li><select id="show-price"><option value="default" selected="selected">Any Price</option></select></li>
-     			      <li><select id="show-property"><option value="default" selected="selected">Property Type</option></select></li>
-     			      <li><select id="show-location"><option value="default" selected="selected">Any Location</option></select></li>
-     			      <li><select id="show-sort-by"><option value="default" selected="selected">Sort By Price</option></select></li>
-     			    </ul>
+     			    <form action="listings.html" method="get"> 
+   			        <input type="submit" class="update-list-button" value="Submit"/>
+                <!-- <a href ="#"><img src="images/update-list-button.png" alt="Update List" class="update-list-button"/></a> -->
+                <ul id="listing-bar">
+     			        <li class="bold-red">Show only:</li>
+     			        <li><select id="show-bedrooms"><option value="default" selected="selected">Bedrooms</option></select></li>
+     			        <li><select id="show-price"><option value="default" selected="selected">Any Price</option></select></li>
+     			        <li><select id="show-property"><option value="default" selected="selected">Property Type</option></select></li>
+     			        <li><select id="show-location"><option value="default" selected="selected">Any Location</option></select></li>
+     			        <li><select id="show-sort-by"><option value="default" selected="selected">Sort By Price</option></select></li>
+     			      </ul>
+     			    </form>
             </div>
             <div id="listings">
               <div class="listing-column">
