@@ -6,6 +6,8 @@
 		<meta name="keywords" content="winnipeg real estate, winnipeg new homes, new homes, new home sales, real estate, new real estate, real estate winnipeg, winnipeg, winnipeg homes for sale, ginos homes, winnipeg home builders, custom built homes, sage creek, bridgwater forest, royalwood, waverley west, winnipeg, manitoba">
 		<script type="text/javascript" src="http://use.typekit.com/fng7qcj.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
+		<script type="text/javascript" src="js/jquery.live.tabs.js"></script>
  		<link rel="stylesheet" href="css/styles.css">
  		<!--[if IE 7]>
       <link href='css/ie7.css'       media='screen' rel='stylesheet' type='text/css' />
@@ -80,31 +82,31 @@
  			      </div>
  			      <p>The Brand New 3400 custom Gino's to be built at 127 Park Valley Road!</p>
  			    </div>
- 			    <div id="property-info" class="property-panes">
-            <div id="property1">
-              <div id="property-control">
-                <ul class="property-tabs" data-model="details">
-                  <li><a data-id="photos" class="left-tab current" href="#" data-pane="#property1-photos">Photo Gallery</a></li>
-                  <li><a data-id="info" href="#" data-pane="#property1-information">Specifications</a></li>
-                  <li><a data-id="map" href="#" data-pane="#property1-map" class="">Map / Directions</a></li>
-                </ul>
-              </div>
-              <div class="info-pages">
-                <div id="property1-photos" class="pane photos" style="display: block; ">
+ 			    <div id="tabs">
+ 			      <div>
+              <ul class="tab-bar">
+                <li><a class="tab" href="#photos">Photo Gallery</a></li>
+                <li><a class="tab" href="#specs">Specifications</a></li>
+                <li><a class="tab" href="#map">Map/Directions</a></li>
+              </ul>
+            </div>
+            <div class="tab-body">
+              <div class="panes">
+                <div class="pane" id="photos">
                   <img src="images/photo_large.jpg" alt="Featured House" class="feature-pics"/>
                   <div style="width:338px;margin:-15px 0 0 22px;">
                     <img src="images/fake-controls.png"/>
                   </div>
                 </div>
-            	  <div id="property1-specifications" class="pane specifications" style="display: none; ">
-            	 		<p>Specifications</p>
+                <div class="pane" id="specs">
+                  <h1> Specs</h1>
                 </div>
-            	  <div id="property1-map" class="pane map" style="display: none; ">
-            			<p>Map</p>
-            	  </div>
+                <div class="pane" id="map">
+                  <h1> Map/Directions</h1>
+                </div>
               </div>
             </div>
-          </div>
+ 			    </div>
           <div id="feature-form">
  			      <h2>DO YOU WANT TO SEE THIS HOUSE?</h2>
  			      <p>Fill out your information below:</p>
