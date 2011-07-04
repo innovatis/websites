@@ -40,3 +40,8 @@ ul#listing-bar select {
   display:block; 
   line-height: 0;
 }
+
+ul.tab-bar {
+  display:inline;
+  margin:0px;
+}

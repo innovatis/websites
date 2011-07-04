@@ -942,6 +942,11 @@ ul.tab-bar li{
   float:left;
 }
 
+ul.tab-bar a.state-current {
+  border-bottom:none;
+  background:none;
+}
+
 ul.tab-bar li a{
   display:block;
   width:92px;
@@ -955,6 +960,10 @@ ul.tab-bar li a{
   font-size:.9em;
   color:rgb(72,87,102);
   text-align:center;
+}
+
+ul.tab-bar li a:hover {
+  color:rgb(107,40,2);
 }
 
 #feature-form {
