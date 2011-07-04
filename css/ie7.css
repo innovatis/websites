@@ -1,3 +1,44 @@
 #main-menu {
   display:inline;
 }
+
+ul#main-menu li{
+  margin-bottom:20px;
+}
+
+.home-finder-divider {
+  position:relative;
+  right:52px;
+}
+
+.header-tagline {
+	font-size:.9em;
+}
+
+.header-phone-number {
+	font-size:1.2em;  
+}
+
+.twitter-link {
+  margin-top:-17px;
+}
+
+#listings-bottom a.previous-page {
+  margin: 0px auto;
+}
+
+#listings-bottom a.next-page {
+  margin: 0px auto;
+}
+
+ul#listing-bar {
+  display:inline;
+}
+
+ul#listing-bar li{
+ margin-left:15px; 
+}
+
+ul#listing-bar select {
+ float:left; 
+}
