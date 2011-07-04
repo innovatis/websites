@@ -390,12 +390,10 @@ ul#footer-menu li a:hover {
 
 .infobox-pics {
   height:119px;
-  width:184px;
-  margin:15px auto;
-  border:3px solid white;
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  width:180px;
+  margin:15px 0 0 -13px;
+  padding:14px 16px 24px 19px;
+  background:url(../images/photo_bkg.png) left bottom no-repeat;
 }
 
 #infobox p{
@@ -763,20 +761,22 @@ ul#listing-bar select {
 
 
 .listing-pics {
-  height:115px;
-  width:185px;
-  margin:15px auto;
+  height:119px;
+  width:180px;
+  margin:15px 0 0 -13px;
+  padding:14px 16px 24px 19px;
+  background:url(../images/photo_bkg.png) left bottom no-repeat;
+}
+
+.listing-pics img{
   border:3px solid white;
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
 }
 
 .listing-button-centre {
   width:150px;
   margin:15px auto;
   position:relative;
-  bottom:-25px;
+  bottom:-10px;
 }
 
 .listing-spacing {
@@ -906,23 +906,19 @@ ul#listing-bar select {
 }
 
 .detail-pics {
-  height:115px;
-  width:185px;
-  margin: 15px 0;
-  border:3px solid white;
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  height:119px;
+  width:180px;
+  margin:15px 0 0 -13px;
+  padding:14px 16px 24px 19px;
+  background:url(../images/photo_bkg.png) left bottom no-repeat;
 }
 
 .feature-pics {
-  height:215px;
-  width:310px;
-  margin:15px 0 0 33px;
-  border:3px solid white;
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+  height:214px;
+  width:311px;
+  margin:0px auto 0 auto;
+  padding:22px 32px 41px 32px;
+  background:url(../images/photo_bkg_large.png) center bottom no-repeat;
 }
 
 #feature-form {
