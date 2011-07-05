@@ -20,7 +20,7 @@ input, textarea, select {-webkit-appearance: none;}
 
 #top-band{
   height: 56px;
-  background: #404040;
+  background: rgba(0, 0, 0, 0.5);
 }
 #top-band div{
    width: 820px;
@@ -100,11 +100,11 @@ input, textarea, select {-webkit-appearance: none;}
 }
 
 #main-area .upper{
-  height:530px;
-  background: red;
+  height:675px;
+   background: red;
 }
 #main-area .upper .left{
-   height:100%;
+   height:530px;
    width:275px;
    float: left;
    margin-left: 110px;
@@ -168,7 +168,9 @@ input, textarea, select {-webkit-appearance: none;}
    margin: 0 16px;
    margin-bottom: 10px;
 }
-.dayspa #main-area .upper .left .reserve{
+.dayspa      #main-area .upper .left .reserve,
+.tablefortwo #main-area .upper .left .reserve,
+.contact     #main-area .upper .left .reserve{
    margin-top: 125px;
 }
 .dayspa #main-area .upperx .left .reserve{
@@ -176,13 +178,12 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .upper .right{
    width:765px;
-   height:100%;
-   background: purple;
+   height:530px;
+   background: rgba(25,0,100,0.5);
    float:left;
 }
 .history #main-area .upper .right div{
    margin: 45px 130px 0px 150px;
-   background: red;
 }
 .history #main-area .upper .right h2{
    font-size: 18px;
@@ -190,7 +191,7 @@ input, textarea, select {-webkit-appearance: none;}
    display: block;
    margin-bottom: 10px;
 }
-.history #main-area .upper .right h3{
+.history #main-area .upper .right h3,{
    font-size: 14px;
    color: #5E0010;
    display: block;
