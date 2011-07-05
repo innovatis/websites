@@ -2,6 +2,11 @@
   display:inline;
 }
 
+ul#main-menu {
+  float:left;
+  margin-left:23px !important;
+}
+
 ul#main-menu li{
   margin-bottom:20px;
 }
@@ -48,4 +53,10 @@ ul.tab-bar li {
 ul.tab-bar li a{
   display:inline;
   margin:10px 0 0 0;
+}
+
+.update-list-button{
+  font-size: 0; 
+  display:block; 
+  line-height: 0;
 }
