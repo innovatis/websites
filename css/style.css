@@ -80,7 +80,7 @@ h6 {
 /*********Header Styles****************/
 
 #header-background {
-  width:930px;
+  width:983px;
   margin: auto;
 }
 
@@ -91,7 +91,7 @@ h6 {
   }
 
 #call-toll-free {
-  width:930px;
+  width:983px;
   height:90px;
   background-image: url(../images/checkered-flag.png);
   background-repeat:no-repeat;
