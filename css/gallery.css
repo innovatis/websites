@@ -1,0 +1,99 @@
+.scrollable-container {
+	position:relative;
+	width: 352px;
+	height: 55px;
+/*  padding:10px;*/
+  margin:15px auto 0px;
+  background: url(../images/thumbbox.jpg) no-repeat;
+}
+.viewer {
+    padding-top:3px;
+    height:215px;
+    width: 310px;
+    overflow: hidden;
+	  margin:0 auto;
+}
+.viewer img {
+	display:block;
+	text-align:center;
+  position: absolute;
+  margin: 0 auto;
+  -moz-box-shadow: 0px 1px 4px #8f7a8a;
+	-webkit-box-shadow: 0px 1px 4px #8f7a8a;
+  box-shadow: 0px 1px 4px #8f7a8a;
+  border: 2px solid #fff;
+  cursor:pointer;
+}
+
+.thumbnails {
+  width:352px;
+}
+
+.scrollable {
+	width:340px;
+	height: 55px;
+	position:relative;
+	overflow: hidden;
+	float: left;
+	margin-left:21px;
+}
+.scrollable-menu {
+	float: left;
+	width: 100px;
+}
+.scrollable-menu a.prev {
+  position:absolute;
+  top:12px;
+  left:-5px;
+  height:29px;
+  width:28px;
+  text-indent:-999em;
+  cursor:pointer;
+  background: url(../images/arrows.png) no-repeat 0 0;
+}
+.scrollable-menu a.next {
+  position:absolute;
+  top:12px;
+  right:-27px;
+  height:29px;
+  width:28px;
+  text-indent:-999em;
+  cursor:pointer;
+  background: url(../images/arrows.png) no-repeat -28px 0;
+}
+
+.scrollable-menu a.next:active {
+	top:12px;
+}
+.scrollable-menu a.prev:active {
+	top:12px;
+}
+.item {
+  float: left;
+  width: 445px;
+}
+.item img {
+  margin: 0 4px;
+  -moz-box-shadow: 0px 1px 4px #8f7a8a;
+	-webkit-box-shadow: 0px 1px 4px #8f7a8a;
+  box-shadow: 0px 1px 4px #8f7a8a;
+  border: 2px solid #fff;
+  cursor:pointer;
+  opacity:.7;
+}
+.item img:hover, .item img.current {
+  border: 2px solid #fff;
+  opacity:1;
+}
+.items {
+  float: left;
+  position:relative;
+  width: 20000em;
+  height: 75px;
+}
+.fade-in {
+  display: none;
+}
+.hidden {
+  display: none;
+}

@@ -8,7 +8,10 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 		<script type="text/javascript" src="js/jquery.live.tabs.js"></script>
+    <script src='js/jquery.tools.min.js'></script>
+    <script type='text/javascript' src='js/jquery.live.gallery.js'></script>
  		<link rel="stylesheet" href="css/styles.css">
+ 		<link rel="stylesheet" href="css/gallery.css">
  		<!--[if IE 7]>
       <link href='css/ie7.css'       media='screen' rel='stylesheet' type='text/css' />
     <![endif]-->
@@ -93,10 +96,48 @@
             <div class="tab-body">
               <div class="panes">
                 <div class="pane" id="photos">
-                  <img src="images/photo_large.jpg" alt="Featured House" class="feature-pics"/>
-                  <div style="width:338px;margin:-15px 0 0 22px;">
-                    <img src="images/fake-controls.png"/>
+                  <div class='gallery'>
+                    <div class='viewer'>
+                      <img class='hidden' src='images/big.png'/>
+                    </div>
+                    <div class='thumbnails'>
+                      <div class='scrollable-container'>
+                        <div class='scrollable'>
+                          <div class='items'>
+                            <div class='item'>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/photo_large.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/415997603_54d4f43d55_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/474514530_545688914e_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/2434405362_ff9b2ae375_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/3862328155_67f8bd3a10_b.jpg'/>
+                              </div>
+                              <div class='item'>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/photo_large.jpg'/>                                
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/415997603_54d4f43d55_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/474514530_545688914e_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/2434405362_ff9b2ae375_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/3862328155_67f8bd3a10_b.jpg'/>
+                              </div>
+                              <div class='item'>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/photo_large.jpg'/>                                
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/415997603_54d4f43d55_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/474514530_545688914e_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/2434405362_ff9b2ae375_b.jpg'/>
+                                <img class='fade-in' src='images/placeholder/thumb.png' data-src='images/placeholder/3862328155_67f8bd3a10_b.jpg'/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='scrollable-menu'>
+                          <a href='#' class='prev'>Prev</a>
+                          <a href='#' class='next'>Next</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <!-- <img src="images/photo_large.jpg" alt="Featured House" class="feature-pics"/>
+                                    <div style="width:338px;margin:-15px 0 0 22px;">
+                                      <img src="images/fake-controls.png"/>
+                                    </div> -->
                 </div>
                 <div class="pane" id="specs">
                   <h1> Specs</h1>
