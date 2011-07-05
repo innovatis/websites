@@ -7,6 +7,7 @@
 		<script type="text/javascript" src="http://use.typekit.com/fng7qcj.js"></script>
 		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="/js/listings.js"></script> 
  		<link rel="stylesheet" href="css/styles.css">
  		<!--[if IE 7]>
       <link href='css/ie7.css'       media='screen' rel='stylesheet' type='text/css' />
@@ -73,47 +74,47 @@
    			        <div class="update-inputs">
              	    <p class="bold-red">Show only:<p>
              	    <div class="update-input">
-             	 	    <select name="show-bedrooms">
+             	 	    <select name="show-bedrooms" id="show-bedrooms">
              	 	  	  <option>bedrooms</option>
-             	 	  	  <option>1</option>
-             	 	  	  <option>2</option>
-             	 	  	  <option>3</option>
-             	 	  	  <option>4+</option> 
+             	 	  	  <option value="1-bedroom">1</option>
+             	 	  	  <option value="2-bedroom">2</option>
+             	 	  	  <option value="3-bedroom">3</option>
+             	 	  	  <option value="4+bedroom">4+</option> 
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
-             	 	    <select name="show-price">
+             	 	    <select name="show-price" id="show-price">
              	 	  	  <option>any price</option>
-             	 	  	  <option>$0-$150,000</option> 
-             	 	  	  <option>$150-$200,000</option>
-             	 	  	  <option>$200-$350,000</option>  
-             	 	  	  <option>$350,000+</option>  
+             	 	  	  <option value="0-150k">$0-$150,000</option> 
+             	 	  	  <option value="150-200k">$150-$200,000</option>
+             	 	  	  <option value="200-350k">$200-$350,000</option>  
+             	 	  	  <option value="350k+">$350,000+</option>  
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
-             	 	    <select name="show-proprty">
+             	 	    <select name="show-proprty" id="show-proprty">
              	 	  	  <option>property type</option>
-             	 	  	  <option>split level</option>
-             	 	  	  <option>townhouse</option>
-             	 	  	  <option>bungalow</option>
-             	 	  	  <option>condo</option>
+             	 	  	  <option value="split-level">split level</option>
+             	 	  	  <option value="townhouse">townhouse</option>
+             	 	  	  <option value="bungalow">bungalow</option>
+             	 	  	  <option value="condo">condo</option>
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
-             	 	    <select name="show-location">
+             	 	    <select name="show-location" id="show-location">
              	 	  	  <option>any location</option>
-             	 	  	  <option>Osbourne</option>
-             	 	  	  <option>St. Vital</option>
-             	 	  	  <option>River Heights</option>
-             	 	  	  <option>Transcona</option>
+             	 	  	  <option value="osbourne">Osbourne</option>
+             	 	  	  <option value="st-vital">St. Vital</option>
+             	 	  	  <option value="river-heights">River Heights</option>
+             	 	  	  <option value="transcona">Transcona</option>
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
-             	 	    <select name="show-sort-by">
-             	 	  	  <option>sort by bedrooms</option>
-             	 	  	  <option>sort by price</option>
-             	 	  	  <option>sort by type</option>
-             	 	  	  <option>sort by location</option>
+             	 	    <select name="show-sort-by" id="show-sort-by">
+             	 	  	  <option value="sort-by-bedrooms">sort by bedrooms</option>
+             	 	  	  <option value="sort-by-price">sort by price</option>
+             	 	  	  <option value="sort-by-type">sort by type</option>
+             	 	  	  <option value="sort-by-location">sort by location</option>
              	 	    </select>
              	 	  </div>
              	 	</div>
@@ -123,7 +124,7 @@
             <div id="listings">
               <div class="listing-column listing" data-bedrooms="2" data-list-price="$200,000" data-type="condo" data-location ="St. Vital">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
-                <h2>New Ginos 3400</h2>
+                <h2>New Ginos 3400-1</h2>
                 <div class="listing-spacing">
      			        <p class="bold">MLS&reg;</p>
      			        <p><span class="bold">List Price:</span> Call For Pricing</p>
@@ -137,7 +138,7 @@
      			    <div class="listing-divider"></div>
      			    <div class="listing-column listing" data-bedrooms="1" data-list-price="$145,000" data-type="townhouse" data-location ="Osbourne Village">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
-                <h2>New Ginos 3400</h2>
+                <h2>New Ginos 3400-2</h2>
                 <div class="listing-spacing">
      			        <p class="bold">MLS&reg;</p>
      			        <p><span class="bold">List Price:</span> Call For Pricing</p>
@@ -151,7 +152,7 @@
      			    <div class="listing-divider"></div>
      			    <div class="listing-column listing" data-bedrooms="4" data-list-price="$300,000" data-type="Bungalow" data-location ="River Heights">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
-                <h2>New Ginos 3400</h2>
+                <h2>New Ginos 3400-3</h2>
                 <div class="listing-spacing">
      			        <p class="bold">MLS&reg;</p>
      			        <p><span class="bold">List Price:</span> Call For Pricing</p>
@@ -165,7 +166,7 @@
      			    <div class="listing-divider"></div>
      			    <div class="listing-column listing" data-bedrooms="3" data-list-price="$235,000" data-type="Split Level" data-location ="Transcona">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
-                <h2>New Ginos 3400</h2>
+                <h2>New Ginos 3400-4</h2>
                 <div class="listing-spacing">
      			        <p class="bold">MLS&reg;</p>
      			        <p><span class="bold">List Price:</span> Call For Pricing</p>
@@ -178,8 +179,8 @@
      			    </div>
             </div>
             <div id ="listings-bottom">
-              <a href="#" class="previous-page">Previous Page</a>
-              <a href="#" class="next-page">Next Page</a>
+              <!-- <a href="#" class="previous-page">Previous Page</a>
+                            <a href="#" class="next-page">Next Page</a> -->
             </div>
           </div>
         </div>
