@@ -41,7 +41,11 @@ ul#listing-bar select {
   line-height: 0;
 }
 
-ul.tab-bar {
+ul.tab-bar li {
+  padding-top:10px;
+}
+
+ul.tab-bar li a{
   display:inline;
-  margin:0px;
+  margin:10px 0 0 0;
 }

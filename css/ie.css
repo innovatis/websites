@@ -1,7 +1,3 @@
-a.view-details {
-  margin: -8px 0 0 15px;
-}
-
 .connect-grey {  
   font-size:1.1em;
 }
@@ -20,4 +16,8 @@ a.view-details {
 
 .header-phone-number {
 	font-size:1.2em;  
+}
+
+ul#ticker-listing {
+  margin-top:-15px;
 }
