@@ -5,6 +5,7 @@
 		<title>PhilMosher.com - Winnipeg New Homes | Winnipeg Real Estate | Ginos Homes - New Homes for Sale</title> 
 		<meta name="keywords" content="winnipeg real estate, winnipeg new homes, new homes, new home sales, real estate, new real estate, real estate winnipeg, winnipeg, winnipeg homes for sale, ginos homes, winnipeg home builders, custom built homes, sage creek, bridgwater forest, royalwood, waverley west, winnipeg, manitoba">
 		<script type="text/javascript" src="http://use.typekit.com/fng7qcj.js"></script>
+		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  		<link rel="stylesheet" href="css/styles.css">
  		<!--[if IE 7]>
@@ -73,27 +74,46 @@
              	    <p class="bold-red">Show only:<p>
              	    <div class="update-input">
              	 	    <select name="show-bedrooms">
-             	 	  	  <option>bedrooms</option> 
+             	 	  	  <option>bedrooms</option>
+             	 	  	  <option>1</option>
+             	 	  	  <option>2</option>
+             	 	  	  <option>3</option>
+             	 	  	  <option>4+</option> 
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
              	 	    <select name="show-price">
-             	 	  	  <option>any price</option> 
+             	 	  	  <option>any price</option>
+             	 	  	  <option>$0-$150,000</option> 
+             	 	  	  <option>$150-$200,000</option>
+             	 	  	  <option>$200-$350,000</option>  
+             	 	  	  <option>$350,000+</option>  
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
              	 	    <select name="show-proprty">
-             	 	  	  <option>property type</option> 
+             	 	  	  <option>property type</option>
+             	 	  	  <option>split level</option>
+             	 	  	  <option>townhouse</option>
+             	 	  	  <option>bungalow</option>
+             	 	  	  <option>condo</option>
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
              	 	    <select name="show-location">
-             	 	  	  <option>any location</option> 
+             	 	  	  <option>any location</option>
+             	 	  	  <option>Osbourne</option>
+             	 	  	  <option>St. Vital</option>
+             	 	  	  <option>River Heights</option>
+             	 	  	  <option>Transcona</option>
              	 	    </select>
              	 	  </div>
              	 	  <div class="update-input">
              	 	    <select name="show-sort-by">
-             	 	  	  <option>sort by price</option> 
+             	 	  	  <option>sort by bedrooms</option>
+             	 	  	  <option>sort by price</option>
+             	 	  	  <option>sort by type</option>
+             	 	  	  <option>sort by location</option>
              	 	    </select>
              	 	  </div>
              	 	</div>
@@ -101,7 +121,7 @@
      			    </form>
             </div>
             <div id="listings">
-              <div class="listing-column">
+              <div class="listing-column listing" data-bedrooms="2" data-list-price="$200,000" data-type="condo" data-location ="St. Vital">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
                 <h2>New Ginos 3400</h2>
                 <div class="listing-spacing">
@@ -115,7 +135,7 @@
      			      </div>
      			    </div>
      			    <div class="listing-divider"></div>
-     			    <div class="listing-column">
+     			    <div class="listing-column listing" data-bedrooms="1" data-list-price="$145,000" data-type="townhouse" data-location ="Osbourne Village">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
                 <h2>New Ginos 3400</h2>
                 <div class="listing-spacing">
@@ -129,7 +149,7 @@
      			      </div>
      			    </div>
      			    <div class="listing-divider"></div>
-     			    <div class="listing-column">
+     			    <div class="listing-column listing" data-bedrooms="4" data-list-price="$300,000" data-type="Bungalow" data-location ="River Heights">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
                 <h2>New Ginos 3400</h2>
                 <div class="listing-spacing">
@@ -143,7 +163,7 @@
      			      </div>
      			    </div>
      			    <div class="listing-divider"></div>
-     			    <div class="listing-column">
+     			    <div class="listing-column listing" data-bedrooms="3" data-list-price="$235,000" data-type="Split Level" data-location ="Transcona">
                 <img src="images/photo_medium.jpg" class="listing-pics"/>
                 <h2>New Ginos 3400</h2>
                 <div class="listing-spacing">

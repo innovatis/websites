@@ -403,6 +403,7 @@ ul#footer-menu li a:hover {
 
 #infobox p.tweet {
   margin:0;
+  font-size:.7em;
 }
 
 #infobox p.tweet-time {
@@ -455,8 +456,8 @@ a.red-button:active {
 .tweet-bubble {
   background:url(../images/tweet-bubble.png);
   height:55px;
-  width:162px;
-  padding:15px;
+  width:165px;
+  padding:12px;
 }
 /*END OF FOOTER*/
 
