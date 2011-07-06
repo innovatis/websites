@@ -29,7 +29,8 @@
            filteredlistings.
              fadeIn('fast'); 
            if(masterQuery.length === 0){
-             // display "No results"
+             $('#no-results').
+              css( {'height': '65px','width': '100%'})
            }
            
          },500);
