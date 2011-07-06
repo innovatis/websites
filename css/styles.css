@@ -665,17 +665,6 @@ ul#listing-bar select {
   margin:10px;
 }
 
-/*.update-list-button{
-  margin:3px 2px 0 0;
-  float:right;
-  width:112px;
-  height:30px;
-  background:url(../images/update-list-button.png);
-  text-indent:-9999em;
-  border:none;
-  cursor:pointer;
-}*/
-
 .update-list-button{
   margin:3px 2px 0 0;
   float:right;
@@ -714,16 +703,7 @@ ul#listing-bar select {
   width:198px;
   height:373px;
   float:left;
-  padding:0px 13px 13px 13px;
-}
-
-.listing-divider {
-  width:1px;
-  height:371px;
-  background:url(../images/listing-divider.png);
-  float:left;
-  margin:0;
-  padding:0;
+  padding:0px 12px 13px 16px;
 }
 
 #listings-bottom {
@@ -785,7 +765,7 @@ ul#listing-bar select {
 
 .listing-button-centre {
   width:150px;
-  margin:15px auto;
+  margin:15px auto 15px auto;
   position:relative;
   bottom:-10px;
 }
@@ -794,7 +774,9 @@ ul#listing-bar select {
   margin:15px 0 25px 0;
 }
 
-
+.listing-details {
+  height:275px;
+}
 
 /*END OF LISTINGS*/
 
