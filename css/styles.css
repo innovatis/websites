@@ -1003,6 +1003,11 @@ ul.tab-bar li a:hover {
   font-size:1.5em;
 }
 
+#feature-form .actions {
+  float:right;
+  margin: 0 20px 0 0;
+}
+
 div.info-pages {
 	float:left;
 	width:405px;

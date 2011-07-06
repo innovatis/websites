@@ -1,23 +1,18 @@
 $(function(){
   $("#show-price").change(function(e){
-    var target =$(e.target);
-    var value = target.val();
-    $(".listing").not("[data-type=value]").hide()
-    $(".listing").e("[data-type=value]").show()
+    var target   = $(e.target),
+        value    = target.val(),
+        selector =  value === "" ? "[data-price-range]" : "[data-price-range="+value+"]",
+        listings = $('.listing'); 
+    
+    console.log(value,selector);
+    
+    listings.
+      not(selector).
+      hide();
+      
+    listings.
+       filter(selector).
+       show();
   })
 });
-
-
-// 
-// $(".listing").not("[data-type=condo]").hide()
-//
-
-
-// $(function(){
-//   $("#show-price").change(function(e){
-//     var target =$(e.target);
-//     var value = target.val();
-//     (".listing").not("[data-type=value]").hide()
-//     (".listing").e("[data-type=value]").show()
-//   })
-// });
