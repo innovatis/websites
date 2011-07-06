@@ -5,7 +5,7 @@ $(function(){
         selector =  value === "" ? "[data-bedrooms]" : "[data-bedrooms="+value+"]",
         listings = $('.listing'); 
     
-    console.log(value,selector);
+    // console.log(value,selector);
     
     listings.
       not(selector).
@@ -25,7 +25,7 @@ $(function(){
         selector =  value === "" ? "[data-price-range]" : "[data-price-range="+value+"]",
         listings = $('.listing'); 
     
-    console.log(value,selector);
+    // console.log(value,selector);
     
     listings.
       not(selector).
@@ -45,7 +45,7 @@ $(function(){
         selector =  value === "" ? "[data-location]" : "[data-location="+value+"]",
         listings = $('.listing'); 
     
-    console.log(value,selector);
+    // console.log(value,selector);
     
     listings.
       not(selector).
@@ -65,7 +65,7 @@ $(function(){
           selector =  value === "" ? "[data-type]" : "[data-type="+value+"]",
           listings = $('.listing'); 
   
-      console.log(value,selector);
+      // console.log(value,selector);
   
       listings.
         not(selector).
@@ -75,4 +75,17 @@ $(function(){
          filter(selector).
          show();
     })
+});
+
+
+$(function(){
+  
+  //reset the list
+  $('.update-list-button').click(function(){
+    $("#show-bedrooms").val("");
+    $("#show-price").val("");
+    $("#show-location").val("");
+    $("#show-property").val("");
+    $("#listings").show();
+  })
 });

@@ -665,7 +665,7 @@ ul#listing-bar select {
   margin:10px;
 }
 
-.update-list-button{
+/*.update-list-button{
   margin:3px 2px 0 0;
   float:right;
   width:112px;
@@ -674,6 +674,16 @@ ul#listing-bar select {
   text-indent:-9999em;
   border:none;
   cursor:pointer;
+}*/
+
+.update-list-button{
+  margin:3px 2px 0 0;
+  float:right;
+  width:112px;
+  height:30px;
+  background:url(../images/reset-list-button.png);
+  text-indent:-9999em;
+  border:none;
 }
 
 #listings-top .update-inputs select {
