@@ -18,19 +18,28 @@
         masterQuery = selectorBedroom + selectorPrice + selectorProperty + selectorLocation,
         
         listings         = $('.listing'), 
-        filteredlistings = listings.filter(masterQuery);
+        filteredListings = listings.filter(masterQuery),
+        message          = $('#message');
   
      listings.
        stop().
        fadeOut('fast',function(){
-         
+                
          setTimeout(function(){
+           var length = filteredListings.length;
            
-           filteredlistings.
+           filteredListings.
              fadeIn('fast'); 
-           if(masterQuery.length === 0){
-             $('#no-results').
-              css( {'height': '65px','width': '100%'})
+             
+           if(length === 0 && message.hasClass("results")){
+             message.
+              removeClass("results").
+              addClass("no-results");
+              
+           }else if(length > 0 && message.hasClass("no-results")){
+              message.
+                addClass("results").
+                removeClass("no-results");
            }
            
          },500);
