@@ -15,7 +15,7 @@ table {  border-collapse: collapse;  border-spacing: 0;}
 
 html{
   height: 100%;
-  background: url(../images/bkg_tile.jpg) repeat-x rgb(222,230,241);
+  background: url(../images/bkg_tile.jpg) repeat-x rgb(244,244,242);
 }
 
 body, select, input, textarea {
@@ -56,6 +56,16 @@ h3 {
   font-family:arial,sans-serif;
   font-weight:700;
   font-size:.9em;
+}
+
+h4 {
+  font-family:arial,sans-serif;
+  font-weight:700;
+  font-size:.9em;
+}
+
+strong {
+  font-weight:700;
 }
 
 .bold {
@@ -1008,10 +1018,12 @@ ul.tab-bar li a:hover {
 }
 
 #feature-form input{
- width:220px;
- height:26px;
- border: 1px solid rgb(179,179,179);
- margin:3px 0 0 0;  
+  width:220px;
+  height:26px;
+  border: 1px solid rgb(179,179,179);
+  margin:3px 0 0 0;
+ 	font-family: Arial, sans-serif;
+	font-size:.9em;
 }
 
 #feature-form h2 {
@@ -1067,7 +1079,7 @@ div.information p {
 
 #content-middle {
   width:854px;
-  min-height:600px;
+  min-height:650px;
   padding:25px;
   margin:0 auto;
   background:url(../images/page-content-background.png);
@@ -1085,6 +1097,30 @@ div.information p {
 
 #content-middle .sidebanner {
   float:right;
+  -moz-box-shadow:    3px 3px 2px #888;
+  -webkit-box-shadow: 3px 3px 2px #888;
+  box-shadow:         3px 3px 2px #888;
+}
+
+#content-middle em {
+	font-style:italic;
+}
+
+#content-middle a {
+  text-decoration:none;
+  color:rgb(107,40,2);
+}
+
+#content-middle a:hover {
+  border-bottom:1px dotted;
+}
+
+#content-middle img {
+  margin:25px auto 0 auto;
+  border:1px solid rgb(116,116,107);
+  -moz-box-shadow:    3px 3px 2px #888;
+  -webkit-box-shadow: 3px 3px 2px #888;
+  box-shadow:         3px 3px 2px #888;
 }
 
 #content-bottom {
@@ -1095,3 +1131,56 @@ div.information p {
 }
 
 /*END OF SELLING*/
+
+/*CONTACT US*/
+
+#contact-form {
+/*  height:345px;*/
+  width:345px;
+  float:left;
+  padding:15px;
+}
+
+#contact-form label{
+  display:block;
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+}
+
+#contact-form p{
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:19px 0 0 0;
+}
+
+#contact-form .input{
+  margin:15px 0;
+}
+
+#contact-form input{
+  width:345px;
+  height:26px;
+  border: 1px solid rgb(179,179,179);
+  margin:3px 0 0 0;
+ 	font-family: Arial, sans-serif;
+	font-size:.9em;
+}
+
+#contact-form input.required-field{
+ border: 1px solid rgb(107,40,2);
+}
+
+#contact-form h2 {
+  font-size:1.5em;
+}
+
+#contact-form .actions {
+  float:right;
+  margin: 0 0 0 0;
+}
+
+/*END OF CONTACT US*/#content-middle a:hover {
+  border-bottom:1px dotted;
+}
