@@ -19,8 +19,10 @@ input, textarea, select {-webkit-appearance: none;}
 }
 
 #top-band{
-  height: 56px;
-  background: rgba(0, 0, 0, 0.5);
+   height: 56px;
+   background: rgb(0,0,0);
+   background: rgba(0, 0, 0, 0.5);
+
 }
 #top-band .content div{
    width: 850px;
@@ -93,6 +95,16 @@ input, textarea, select {-webkit-appearance: none;}
    float: left;
    background: url(images/nav_divider.jpg) 0px 7px no-repeat;
 }
+#main-menu ul li a .arrow{
+   width: 10px;
+   height: 6px;
+   margin: 0 auto;
+   margin-top: 10px;
+   background: url(images/nav_dropdownarrow.png) 0px 0px no-repeat;
+}
+#main-menu ul li a:hover .arrow{
+   background: url(images/nav_dropdownarrow.png) 0px -6px no-repeat;
+}
 #main-menu #logo{
    width:296px;
    height: 91px;
@@ -101,14 +113,18 @@ input, textarea, select {-webkit-appearance: none;}
    float:left;
    display: block;
 }
+#main-menu ul li{
+   float: left;
+   display: block;
+   width: 158px;
+   height: 90px;
+}
 #main-menu ul li a{
    font-family: myriad-pro-condensed, sans-serif;
    font-style: italic;
    line-height: 1.25em;
    text-shadow: 0 1px #ffffff;
 
-
-   float: left;
    display:block;
    width:158px;
    height: 90px;
@@ -219,6 +235,7 @@ input, textarea, select {-webkit-appearance: none;}
 #main-area .upper .right{
    width:765px;
    height:530px;
+   background: rgb(25,0,100);
    background: rgba(25,0,100,0.5);
    float:left;
 }
