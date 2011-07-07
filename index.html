@@ -76,30 +76,46 @@
            	  <div class="home-finder-divider"></div>
            	  <div class="inputs">
            	    <div class="input">
-           	      <label for="price-range">Price Range:</label> 
-           	 	    <select name="price-range">
-           	 	  	  <option>$100K-$250K</option> 
-           	 	    </select>
-           	 	  </div>
-           	 	  <div class="home-finder-divider"></div>
-           	 	  <div class="input">
-           	 	    <label for="home-type">Home Type:</label> 
-           	 	    <select name="home-type"> 
-           	 	    	<option>CONDOMINIUM</option> 
-           	 	    </select>
-           	 	  </div>
-           	 	  <div class="home-finder-divider"></div>
-           	 	  <div class="input">
-           	 	    <label for="bedrooms">Bedrooms:</label> 
-           	      <select name="bedrooms"> 
-           	      	<option>2 BEDROOMS</option> 
+           	 	    <label for="show-bedrooms">Bedrooms:</label> 
+           	      <select name="show-bedrooms"> 
+           	      	<option value="">bedrooms</option>
+           	 	  	  <option value="1-bedroom">1</option>
+           	 	  	  <option value="2-bedroom">2</option>
+           	 	  	  <option value="3-bedroom">3</option>
+           	 	  	  <option value="4-bedroom">4+</option> 
            	      </select>
            	    </div>
            	    <div class="home-finder-divider"></div>
            	    <div class="input">
-           	      <label for="location">Location:</label> 
-           	 	    <select name="location"> 
-           	 	    	<option>Amber Trails</option> 
+           	      <label for="show-price">Price Range:</label> 
+           	 	    <select name="show-price">
+           	 	  	  <option value="">any price</option>
+           	 	  	  <option value="0-150k">$0-$150,000</option> 
+           	 	  	  <option value="150-200k">$150-$200,000</option>
+           	 	  	  <option value="200-350k">$200-$350,000</option>  
+           	 	  	  <option value="350k-plus">$350,000+</option> 
+           	 	    </select>
+           	 	  </div>
+           	 	  <div class="home-finder-divider"></div>
+           	 	  <div class="input">
+           	 	    <label for="show-property">Property Type:</label> 
+           	 	    <select name="show-property"> 
+           	 	    	<option value="">property type</option>
+           	 	  	  <option value="split-level">split level</option>
+           	 	  	  <option value="townhouse">townhouse</option>
+           	 	  	  <option value="bungalow">bungalow</option>
+           	 	  	  <option value="condo">condo</option> 
+           	 	    </select>
+           	 	  </div>
+           	 	  <div class="home-finder-divider"></div>
+           	 	  <div class="input">
+           	      <label for="show-location">Location:</label> 
+           	 	    <select name="show-location"> 
+           	 	    	<option value="">any location</option>
+           	 	  	  <option value="osbourne">Osbourne</option>
+           	 	  	  <option value="st-vital">St. Vital</option>
+           	 	  	  <option value="river-heights">River Heights</option>
+           	 	  	  <option value="transcona">Transcona</option> 
            	 	    </select>
            	    </div>
            	    <div class="home-finder-divider"></div>

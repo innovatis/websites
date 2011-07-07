@@ -1,4 +1,8 @@
-(function(){
+$(function(){
+  $("#show-bedrooms").val($.query.get('show-bedrooms'));
+  $("#show-price").val($.query.get('show-price'));
+  $("#show-property").val($.query.get('show-property'));
+  $("#show-location").val($.query.get('show-location'));
   var wait;
   
   // Code/logic
@@ -60,10 +64,10 @@
    
   // Attach listeners once document is ready.
   $(function(){
-    $(".home-selector").change(filterListings);
+    $(".home-selector").change(filterListings).trigger('change');
     // quick UX adjustment for IE, maybe UA sniff if it causes trouble on others
     $(".home-selector").keyup(filterListings);
     $('.update-list-button').click(reset);
   });
     
-})();
+});

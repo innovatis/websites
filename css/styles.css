@@ -789,6 +789,7 @@ ul#listing-bar select {
   background-color:rgba(10,10,10,.3);
   float:left;
   visibility:visible;
+  text-align:center;
 }
 
 .no-results h2{
