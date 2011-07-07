@@ -35,6 +35,10 @@ p {
 
 h1 {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:700;
+  font-size:1.3em;
+  color:rgb(32,71,101);
+  line-height:1.95em;
   }
 
 h2 {
@@ -1046,3 +1050,48 @@ div.information p {
 
 
 /*END OF TABS*/
+
+/*SELLING*/
+
+#content-wrapper {
+  width:904px;
+  margin:0 auto;
+}
+
+#content-top {
+  width:904px;
+  height:33px;
+  margin:0 auto;
+  background:url(../images/page-content-top.png);
+}
+
+#content-middle {
+  width:854px;
+  min-height:600px;
+  padding:25px;
+  margin:0 auto;
+  background:url(../images/page-content-background.png);
+}
+
+#content-middle p{
+  margin:15px 0;
+  width:558px;
+  line-height:1.125em;
+}
+
+#content-middle h2{
+  line-height:1.65em;
+}
+
+#content-middle .sidebanner {
+  float:right;
+}
+
+#content-bottom {
+  width:904px;
+  height:33px;
+  margin:0 auto;
+  background:url(../images/page-content-bottom.png);
+}
+
+/*END OF SELLING*/
