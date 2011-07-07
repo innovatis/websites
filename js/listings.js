@@ -1,6 +1,14 @@
 (function(){
+  var wait;
   
   // Code/logic
+  if(jQuery.support.opacity){
+    wait = 500;
+  }else{
+    jQuery.fx.off = true;
+    wait = 0;
+  }
+  
   var filterListings = function(e){
     var target   = $(e.target),
         value    = target.val(),
@@ -8,7 +16,7 @@
         value_bedroom   = $("#show-bedrooms").val(),
         value_price     = $("#show-price"   ).val(),
         value_location  = $("#show-location").val(),
-        value_property  = $("#show-property").val();
+        value_property  = $("#show-property").val(),
         
         selectorBedroom   =  value_bedroom  === "" ? "[data-bedrooms]"    : "[data-bedrooms="+value_bedroom+"]",
         selectorPrice     =  value_price    === "" ? "[data-price-range]" : "[data-price-range="+value_price+"]",
@@ -42,7 +50,7 @@
                 removeClass("no-results");
            }
            
-         },500);
+         },wait);
      });
    },
    
@@ -53,6 +61,8 @@
   // Attach listeners once document is ready.
   $(function(){
     $(".home-selector").change(filterListings);
+    // quick UX adjustment for IE, maybe UA sniff if it causes trouble on others
+    $(".home-selector").keyup(filterListings);
     $('.update-list-button').click(reset);
   });
     
