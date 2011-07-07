@@ -91,7 +91,7 @@ input, textarea, select {-webkit-appearance: none;}
    height: 91px;
    display: block;
    float: left;
-   background: url(images/nav_divider.jpg) 0px -7px no-repeat;
+   background: url(images/nav_divider.jpg) 0px 7px no-repeat;
 }
 #main-menu #logo{
    width:296px;
