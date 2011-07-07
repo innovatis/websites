@@ -3,7 +3,7 @@
   <head>
     <title>Mariaggis</title>
     <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="http://use.typekit.com/art5kpe.js"></script>
+    <script type="text/javascript" src="http://use.typekit.com/ozi4dvb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   </head>
@@ -14,10 +14,10 @@
           <div id="top-band">
             <div class="content">
               <div>
-                <h2> <span>RESERVE YOUR GETAWAY TODAY!</span> CALL TOLL FREE (866) 947-9190 OR (204) 947-9447</h2>
+                <h2> <span class="reserve">RESERVE YOUR GETAWAY TODAY!</span> CALL TOLL FREE <span class="phone-number">(866) 947-9190</span> OR <span class="phone-number">(204) 947-9447</span></h2>
                 <ul>
                   <li><a href="#">CORPORATE EVENTS</a></li>
-                  <li><a href="#">CONTACT US</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
               </div>
             </div> <!-- END .content -->
@@ -26,8 +26,7 @@
 
           <div id="main-menu">
             <div class="content">
-              <div id="logo">
-              </div>
+              <img src="images/nav_logo.jpg" id="logo" />
               <ul>
                 <li><a href="#">
                   <h3>Select your Theme</h3>
@@ -84,10 +83,24 @@
               </div>
               <div class="right">
                 <h3>Nightly Rates</h3>
-                <span class="panel">$185 - $245* Monday - Thursday (Except Holidays)</span>
-                <span class="panel">$205 - $285* Weekends (Friday, Saturday, Sunday, Holidays)</span>
+                <div class="panel first">
+                  <span class="money">$185 - $245*</span>
+                  <span class="days">Monday - Thursday</span>
+                  <span class="parens">(Except Holidays)</span>
+                </div>
+                <div class="panel last">
+                  <span class="money">$205 - $285*</span>
+                  <span class="days">Weekends</span>
+                  <span class="parens">(Friday, Saturday, Sunday, Holidays)</span>
+                </div>
+                <span class="asterisk">Special Discounted Room Rates for longer stays</span>
                 <h3>Daily Rates</h3>
-                <span class="panel">$185 Noon - 10pm</span>
+                <div class="panel daily">
+                  <span class="money">$185</span>
+                  <span class="days">Noon - 10pm</span>
+                </div>
+                <span class="call"><span class="prompt">Please call toll free:</span> 1-8666-947-9190 or 204-947-9447</span>
+                <span class="asterisk">*Room rates vary based on availability. Please call hotel for exact roomrate.</span>
               </div>
             </div>
             <ul class="reservations-list">
@@ -156,8 +169,8 @@
               <div class="submenu" id="events-specials">
                 <h3>Events &amp; Specials</h3>
                 <ul>
-                  <li><a href="#">Table for Two</a></li>
-                  <li><a href="#">Day Spa Getaway</a></li>
+                  <li><a href="tablefortwo.html">Table for Two</a></li>
+                  <li><a href="dayspagetaway.html">Day Spa Getaway</a></li>
                   <li><a href="#">Holidays</a></li>
                   <li><a href="#">Weddings</a></li>
                   <li><a href="#">Corporate Events</a></li>
@@ -167,9 +180,9 @@
                 <h3>About Mariaggi's</h3>
                 <ul>
                   <li><a href="#">Rates</a></li>
-                  <li><a href="#">History</a></li>
+                  <li><a href="history.html">History</a></li>
                   <li><a href="#">Location</a></li>
-                  <li><a href="#">Contact Info</a></li>
+                  <li><a href="contact.html">Contact Info</a></li>
                 </ul>
               </div>
             </div><!-- end .upper -->
