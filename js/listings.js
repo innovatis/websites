@@ -75,6 +75,31 @@ $(function(){
    
   // Attach listeners once document is ready.
   $(function(){
+    
+    function dateHumanize(date){
+      return date;
+    }
+
+    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name=philmosher&count=2&callback=?",
+      function(data){
+
+        var tweets = $('#twitter-feed .tweets');
+        tweets.empty()
+
+        $.each(data, function(i,item){
+          //$("#twitter-feed").append("<li>"+item.text+"</li>");
+          tweets.append(   
+            '<div class="tweet-bubble">'+
+              '<p class="tweet-time">About <span class="timeago">'+dateHumanize(item.created_at)+'</span> ago</p>'+
+              '<div class="tweet-bubble-top"></div>'+
+              '<div class="tweet-bubble-middle">'+
+                '<p class="tweet">'+item.text+'</p>'+
+              '</div>'+
+              '<div class="tweet-bubble-bottom"></div>'+
+            '</div>');
+        });
+    });
+
     $(".home-selector").change(filterListings).trigger('change');
     // quick UX adjustment for IE, maybe UA sniff if it causes trouble on others
     $(".home-selector").keyup(filterListings);
