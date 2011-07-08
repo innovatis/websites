@@ -32,17 +32,28 @@ $(function(){
         listings         = $('.listing'), 
         filteredListings = listings.filter(masterQuery),
         message          = $('#message');
+        // loading          = $('#loading')
   
      listings.
        stop().
-       fadeOut('fast',function(){
-                
+       fadeOut('fast',function(){         
          setTimeout(function(){
            var length = filteredListings.length;
            
+           // if ($("#loading").is("loading")) {
+           //              $("#loading").removeClass("loading");
+           //            } else {
+           //              $("#loading").addClass("loading-complete");
+           //            }
+           
+           // $("#loading").
+           //             removeClass("loading").
+           //             addClass("loading-complete");
+           
            filteredListings.
-             fadeIn('fast'); 
-             
+            // delay(400).
+            fadeIn('fast'); 
+           
            if(length === 0 && message.hasClass("results")){
              message.
               removeClass("results").

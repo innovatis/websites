@@ -415,18 +415,6 @@ ul#footer-menu li a:hover {
   margin: 15px auto;
 }
 
-#infobox p.tweet {
-  margin:0;
-  font-size:.7em;
-}
-
-#infobox p.tweet-time {
-  font-family:arial,sans-serif;
-  font-style:italic;
-  color:rgb(38,152,190);
-  margin:15px auto 5px auto;
-}
-
 a.red-button {
   background: url(../images/button_red_sprite.png) no-repeat 0 0;
   width: 104px;
@@ -453,10 +441,17 @@ a.red-button:hover {
 a.red-button:active {
   background-position: 0 -62px;
   }
-  
+
 .new-twitter-follow-button {
   width:140px;
-  margin:13px 5px 5px 34px;
+  margin:0px 5px 5px 34px;
+  position:relative;
+  bottom:0px;
+}
+
+#infobox p.tweet {
+  margin:0;
+  font-size:.7em;
 }
     
 .twitter-link {
@@ -468,11 +463,42 @@ a.red-button:active {
 }
 
 .tweet-bubble {
-  background:url(../images/tweet-bubble.png);
   height:55px;
-  width:165px;
-  padding:12px;
+  width:192px;
+  margin:0px 0 65px 0;
 }
+
+#infobox p.tweet-time {
+  font-family:arial,sans-serif;
+  font-style:italic;
+  color:rgb(38,152,190);
+  margin:10px 0 0 0;
+}
+
+.tweet-bubble-top {
+  background:url(../images/tweet-bubble-top.png);
+  height:8px;
+  width:192px;
+  margin:0;
+}
+
+.tweet-bubble-middle {
+  background:url(../images/tweet-bubble-middle.png);
+  width:192px;
+  margin:0;
+}
+
+.tweet-bubble-middle p{
+  padding:7px 17px;
+}
+
+.tweet-bubble-bottom {
+  background:url(../images/tweet-bubble-bottom.png);
+  height:23px;
+  width:192px;
+  margin:0 0 20px 0;
+}
+
 /*END OF FOOTER*/
 
 /*PAGES*/
@@ -811,6 +837,21 @@ ul#listing-bar select {
   color:#fff;
 }
 
+#loading {
+  width:32px;
+  height:32px;
+  position:absolute;
+  float:left;
+}
+
+.loading {
+  visibility:visible;
+}
+
+.loading-complete {
+  visibility:hidden;
+}
+
 /*END OF LISTINGS*/
 
 /*DETAILS/TABS*/
@@ -1115,7 +1156,7 @@ div.information p {
   border-bottom:1px dotted;
 }
 
-#content-middle img {
+#content-middle .photo {
   margin:25px auto 0 auto;
   border:1px solid rgb(116,116,107);
   -moz-box-shadow:    3px 3px 2px #888;
