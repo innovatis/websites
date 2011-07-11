@@ -31,27 +31,29 @@ $(function(){
         
         listings         = $('.listing'), 
         filteredListings = listings.filter(masterQuery),
-        message          = $('#message');
-        // loading          = $('#loading')
+        message          = $('#message'),
+        loading          = $('#loading');
   
+     loading.removeClass("loading-complete").addClass("loading").fadeIn();
+     
      listings.
        stop().
        fadeOut('fast',function(){         
          setTimeout(function(){
            var length = filteredListings.length;
            
-           // if ($("#loading").is("loading")) {
-           //              $("#loading").removeClass("loading");
-           //            } else {
-           //              $("#loading").addClass("loading-complete");
-           //            }
-           
-           // $("#loading").
-           //             removeClass("loading").
-           //             addClass("loading-complete");
+           setTimeout(function(){
+            
+              loading.
+                removeClass("loading").
+                fadeOut(function(){
+                  loading.addClass("loading-complete");
+                });
+             
+           },500);
            
            filteredListings.
-            // delay(400).
+            delay(400).
             fadeIn('fast'); 
            
            if(length === 0 && message.hasClass("results")){
@@ -71,8 +73,18 @@ $(function(){
    
    reset = function(){
      $(".home-selector").val("").trigger("change");
-   };
+   },
    
+   cleanDate = function(date){
+     // IE Fix, seems IE wont parse the date without GMT specification...
+     if(!$.browser.msie || /GMT/i.test(date)){
+       // maybe twitter adds this
+       return date;
+     }else{
+       // otherwise lets role with a hotfix.
+       return date.replace(/([+-]\d{4}\s\d{4})/,"GMT $1");
+    }
+   }; 
   // Attach listeners once document is ready.
   $(function(){
     
@@ -90,7 +102,7 @@ $(function(){
           //$("#twitter-feed").append("<li>"+item.text+"</li>");
           tweets.append(   
             '<div class="tweet-bubble">'+
-              '<p class="tweet-time"><span class="timeago" title="'+item.created_at+'"></span></p>'+
+              '<p class="tweet-time"><span class="timeago" title="'+cleanDate(item.created_at)+'">test</span></p>'+
               '<div class="tweet-bubble-top"></div>'+
               '<div class="tweet-bubble-middle">'+
                 '<p class="tweet">'+item.text+'</p>'+
@@ -110,15 +122,20 @@ $(function(){
     $('.update-list-button').click(reset);
   });
       
-  // //contact form submit
-  // var val         = $.trim(element.val()),
-  //     empty       = val === "";
-  // $('.submit-form').click(function(){
-  //   if($("requiredField" && empty)){
-  //         contact-form.span.addClass("error");
-  //       }else{
-  //         contact-form.span.removeClass("error");
-  //       }
-  // });
+  //contact form submit
+ $('.submit-form').click(function(){
+    if($("requiredField").val()){
+      
+    }else{
+
+    }
+    
+    //$('contactForm.span').addClass("error");
+    // if($("requiredField" && empty)){
+    //           contactForm.span.addClass("error");
+    //         }else{
+    //           contactForm.span.removeClass("error");
+    //         }
+  });
   
 });

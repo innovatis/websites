@@ -60,3 +60,7 @@ ul.tab-bar li a{
   display:block; 
   line-height: 0;
 }
+
+.no-results {
+  background-color:rgb(10,10,10);
+}

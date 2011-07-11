@@ -472,7 +472,10 @@ a.red-button:active {
   font-family:arial,sans-serif;
   font-style:italic;
   color:rgb(38,152,190);
-  margin:10px 0 0 0;
+  margin:10px 15px 0 0;
+  text-align:right;
+  display: block;
+  height: 1em;
 }
 
 .tweet-bubble-top {
@@ -1253,13 +1256,17 @@ div.information p {
   color:rgb(107,40,2);
 }
 
+#contact-form span.no-error{
+	display:none;
+}
+
 #contact-form span.error{
   font-family: Arial, sans-serif;
 	font-size:.8em;
   color:rgb(107,40,2);
 	margin:19px 0 0 0;
 	font-weight:700;
-	display:none;
+	display:block;
 }
 
 /*END OF CONTACT US*/
