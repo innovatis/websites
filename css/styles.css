@@ -1256,15 +1256,15 @@ div.information p {
   color:rgb(107,40,2);
 }
 
-#contact-form span.no-error{
-	display:none;
+.error-message {
+  display:none;
 }
 
-#contact-form span.error{
+.error .error-message {
   font-family: Arial, sans-serif;
 	font-size:.8em;
   color:rgb(107,40,2);
-	margin:19px 0 0 0;
+	margin:0;
 	font-weight:700;
 	display:block;
 }
