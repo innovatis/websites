@@ -90,14 +90,18 @@ $(function(){
           //$("#twitter-feed").append("<li>"+item.text+"</li>");
           tweets.append(   
             '<div class="tweet-bubble">'+
-              '<p class="tweet-time">About <span class="timeago">'+dateHumanize(item.created_at)+'</span> ago</p>'+
+              '<p class="tweet-time"><span class="timeago" title="'+item.created_at+'"></span></p>'+
               '<div class="tweet-bubble-top"></div>'+
               '<div class="tweet-bubble-middle">'+
                 '<p class="tweet">'+item.text+'</p>'+
               '</div>'+
               '<div class="tweet-bubble-bottom"></div>'+
             '</div>');
-        });
+          });
+        
+        tweets.
+          find('.timeago').
+          timeago();
     });
 
     $(".home-selector").change(filterListings).trigger('change');

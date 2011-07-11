@@ -7,8 +7,9 @@
 		<script type="text/javascript" src="http://use.typekit.com/fng7qcj.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
 		<script src="js/jquery.query.js"></script>
-		<script src="js/date.js"></script> 
+		<script src="js/jquery.timeago.js"></script> 
 		<script src="js/listings.js"></script>
  		<link rel="stylesheet" href="css/styles.css">
  		<!--[if IE 7]>
@@ -78,11 +79,16 @@
  			      <p>Please complete the information below and we will respond as soon as possible.</p>
  			      <p><em>Note: the red boxes are required</em></p>
             <div id="contact-form">
-   			      <form> 
+              <div id="mailform-complete" style="display:none;">
+                    <h2>Message Has been Successfully Sent</h2>
+                  </div>
+   			      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
+   			        <div id="error-messages">
+                      </div>
                 <div class="inputs">
                   <div class="input">
                     <label for="contact-inquiry">How can I help you?</label> 
-               	    <input name="contact-inquiry" class="required-field"/>
+               	    <input name="contact-inquiry" required='true' class="required-field"/>
                	  </div>
                   <div class="input">
                     <label for="contact-name">Name</label> 
@@ -90,7 +96,7 @@
                	  </div>
                	  <div class="input">
                     <label for="contact-e-mail">E-mail</label> 
-               	    <input name="contact-e-mail" class="required-field"/>
+               	    <input name="email" class="required-field"/>
                	  </div>
                   <div class="input">
                     <label for="contact-phone">Phone</label> 
@@ -102,6 +108,7 @@
                	  </div> 	   	  
                 </div>
                 <div class="actions">
+                  <input type="submit">
                   <a href ="#"><img src="images/red-submit.png" alt="Submit"/></a>
                 </div>
               </form>
@@ -137,7 +144,7 @@
  			    </div>
 		    <div class="infobox-col">
 		    <h2 class="blue">About Phil Mosher</h2>
-		    <!-- <img src="images/phil-mosher.jpg" alt="Phil Mosher" style="float:right;margin: 10px 0px 10px 10px;"/> -->
+		    <img src="images/phil-mosher.png" alt="Phil Mosher" style="float:right;margin: 10px 0px 10px 10px;"/>
 		    <p>I have been helping families build new homes in Winnipeg for over twelve years, and have been the number one new home sales consultant in the Winnipeg area for more than half that time.</p>
         <h3 class="blue">Your satisfaction is my top priority.</h3>
         <p>I will take the time to listen to your needs and help you find your dream home.</p>
