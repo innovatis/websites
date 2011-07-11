@@ -80,36 +80,34 @@
  			      <p><em>Note: the red boxes are required</em></p>
             <div id="contact-form">
               <div id="mailform-complete" style="display:none;">
-                    <h2>Message Has been Successfully Sent</h2>
+                    <h2>Thank you, your message has been successfully sent</h2>
                   </div>
    			      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
-   			        <div id="error-messages">
+   			        <div id="error-messages" class="error-message">
                       </div>
                 <div class="inputs">
                   <div class="input">
-                    <label for="contact-inquiry">How can I help you?</label> 
-               	    <input name="contact-inquiry" required='true' class="required-field"/>
+                    <label for="inquiry">How can I help you?</label> 
+               	    <input name="inquiry" required='true' class="required-field"/>
+               	    <span class="error">What is your inquiry?</span>
                	  </div>
                   <div class="input">
-                    <label for="contact-name">Name</label> 
-               	    <input name="contact-name" class="required-field"/>
+                    <label for="name">Name</label> 
+               	    <input name="name" class="required-field"/>
+               	    <span class="error">What is your name?</span>
                	  </div>
                	  <div class="input">
-                    <label for="contact-e-mail">E-mail</label> 
+                    <label for="e-mail">E-mail</label> 
                	    <input name="email" class="required-field"/>
+               	    <span class="error">What is your e-mail address?</span>
                	  </div>
                   <div class="input">
-                    <label for="contact-phone">Phone</label> 
-               	    <input name="contact-phone"/>
-               	  </div>
-               	  <div class="input">
-                    <label for="contact-captcha">Please enter the code</label> 
-               	    <input name="contact-captcha" class="required-field"/>
-               	  </div> 	   	  
+                    <label for="phone">Phone</label> 
+               	    <input name="phone"/>
+               	  </div>	   	  
                 </div>
                 <div class="actions">
-                  <input type="submit">
-                  <a href ="#"><img src="images/red-submit.png" alt="Submit"/></a>
+                  <input type="submit" class="submit-form">
                 </div>
               </form>
    			    </div>
@@ -144,7 +142,7 @@
  			    </div>
 		    <div class="infobox-col">
 		    <h2 class="blue">About Phil Mosher</h2>
-		    <img src="images/phil-mosher.png" alt="Phil Mosher" style="float:right;margin: 10px 0px 10px 10px;"/>
+		    <img src="images/phil-mosher.png" alt="Phil Mosher" class="footer-Phil-photo"/>
 		    <p>I have been helping families build new homes in Winnipeg for over twelve years, and have been the number one new home sales consultant in the Winnipeg area for more than half that time.</p>
         <h3 class="blue">Your satisfaction is my top priority.</h3>
         <p>I will take the time to listen to your needs and help you find your dream home.</p>

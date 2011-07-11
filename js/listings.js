@@ -109,5 +109,16 @@ $(function(){
     $(".home-selector").keyup(filterListings);
     $('.update-list-button').click(reset);
   });
-    
+      
+  // //contact form submit
+  // var val         = $.trim(element.val()),
+  //     empty       = val === "";
+  // $('.submit-form').click(function(){
+  //   if($("requiredField" && empty)){
+  //         contact-form.span.addClass("error");
+  //       }else{
+  //         contact-form.span.removeClass("error");
+  //       }
+  // });
+  
 });

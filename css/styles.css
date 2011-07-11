@@ -499,6 +499,11 @@ a.red-button:active {
   margin:0 0 20px 0;
 }
 
+.footer-Phil-photo {
+  float:right;
+  margin: 10px -15px -10px 0px;
+}
+
 /*END OF FOOTER*/
 
 /*PAGES*/
@@ -1176,10 +1181,16 @@ div.information p {
 /*CONTACT US*/
 
 #contact-form {
-/*  height:345px;*/
   width:345px;
   float:left;
   padding:15px;
+}
+
+#contact-form .error-message {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1.1em;
+  color:rgb(107,40,2);
 }
 
 #contact-form label{
@@ -1222,6 +1233,37 @@ div.information p {
   margin: 0 0 0 0;
 }
 
-/*END OF CONTACT US*/#content-middle a:hover {
+#contact-form .submit-form {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
+#mailform-complete {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+}
+
+#contact-form span.error{
+  font-family: Arial, sans-serif;
+	font-size:.8em;
+  color:rgb(107,40,2);
+	margin:19px 0 0 0;
+	font-weight:700;
+	display:none;
+}
+
+/*END OF CONTACT US*/
+
+#content-middle a:hover {
   border-bottom:1px dotted;
 }
