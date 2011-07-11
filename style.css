@@ -12,7 +12,9 @@ table {  border-collapse: collapse;  border-spacing: 0;}
 input, textarea, select {-webkit-appearance: none;}
 
 /*********END OF CSS RESET****************/
-
+#container{
+   min-width: 1150px;
+}
 .content {
    width: 1150px;
    margin: 0 auto;
@@ -118,17 +120,14 @@ input, textarea, select {-webkit-appearance: none;}
    display: block;
    width: 158px;
    height: 90px;
+   line-height: 1.25em;
+   background: pink;
 }
 #main-menu ul li a{
    font-family: myriad-pro-condensed, sans-serif;
    font-style: italic;
-   line-height: 1.25em;
    text-shadow: 0 1px #ffffff;
 
-   display:block;
-   width:158px;
-   height: 90px;
-   background: pink;
    text-decoration: none;
 }
 #main-menu ul li a h3{
@@ -234,7 +233,7 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .upper .right{
    width:765px;
-   height:530px;
+   height:528px;
    background: rgb(25,0,100);
    background: rgba(25,0,100,0.5);
    float:left;
@@ -262,22 +261,39 @@ input, textarea, select {-webkit-appearance: none;}
 }
 
 #main-area .lower{
-  height:358px;
-  background: green;
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  height:340px;
+  background: url(images/content_background_tile.jpg) repeat;
 }
 
+#main-area .lower #banner{
+   margin: 0 auto;
+   position: relative;
+   top: -12px;
+   width: 964px;
+   height: 58px;
+   background: url(images/banner_background.png) center no-repeat;
+}
+
+#main-area .upper-bg{
+   height: 100%;
+   background: url(images/content_background_toptile.jpg) top repeat-x;
+}
+#main-area .lower-bg{
+   height: 100%;
+   background: url(images/content_background_bottomtile.jpg) bottom repeat-x;
+}
+
+
 .safari #main-area .lower{
-   height: 630px;
+   height: 695px;
 }
 #main-area .lower h2{
    display: block;
    width:805px;
    font-size: 36px;
    color: #5E0010;
+   padding-top: 65px;
    margin: 0 auto;
-   margin-top: 65px;
    margin-bottom: 40px;
 }
 
@@ -405,7 +421,15 @@ input, textarea, select {-webkit-appearance: none;}
    margin-right: 16px;
    display:block;
    float:left;
-   background: pink;
+}
+#main-area .lower .reservations-list #anniversaries{
+   background: url(images/box_anniversaries.png) center no-repeat;
+}
+#main-area .lower .reservations-list #birthdays{
+   background: url(images/box_birthdays.png) center no-repeat;
+}
+#main-area .lower .reservations-list #weddings{
+   background: url(images/box_wedding.png) center no-repeat;
 }
 #main-area .lower .reservations-list h3{
    color: #5D0010;
@@ -427,49 +451,62 @@ input, textarea, select {-webkit-appearance: none;}
    font-size: 16px;
    font-style: italic;
    text-decoration: none;
-   width: 152px;
-   height: 33px;
+   width: 150px;
+   height: 34px;
    line-height: 33px;
-   border: 1px solid black;
-   border-radius: 5px;
-   -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;
 }
-#main-area .lower #honeymoons a{
-   background: #B0D778;
-   border-color: #4F8500;
-   color: #284201;
+#main-area .lower #weddings a{
+   background: url(images/box_button_sprite.png) 0px 0px no-repeat;
+}
+#main-area .lower #weddings a:hover{
+   background: url(images/box_button_sprite.png) 0px -35px no-repeat;
+}
+#main-area .lower #weddings a:active{
+   background: url(images/box_button_sprite.png) 0px -70px no-repeat;
 }
 #main-area .lower #birthdays a{
-   background: #EACD84;
-   border-color: #AB9153;
-   color: #3E341D;
+   background: url(images/box_button_sprite.png) -150px 0px no-repeat;
+}
+#main-area .lower #birthdays a:hover{
+   background: url(images/box_button_sprite.png) -150px -35px no-repeat;
+}
+#main-area .lower #birthdays a:active{
+   background: url(images/box_button_sprite.png) -150px -70px no-repeat;
 }
 #main-area .lower #anniversaries a{
-   background: #772737;
-   border-color: #30030B;
-   color: #FEFDFD;
+   background: url(images/box_button_sprite.png) -300px 0px no-repeat;
+}
+#main-area .lower #anniversaries a:hover{
+   background: url(images/box_button_sprite.png) -300px -35px no-repeat;
+}
+#main-area .lower #anniversaries a:active{
+   background: url(images/box_button_sprite.png) -300px -70px no-repeat;
 }
 #main-area .lower #anniversaries{
    margin-right:0;
 }
 #footer{
-  height: 335px;
+   height: 467px;
+   background: url(images/footer_background_tile.jpg) repeat-x;
+}
+#footer .content{
+   background: url(images/footer_background.jpg) center no-repeat;
+   height: 100%;
+   width: 1300px;
 }
 #footer #panel{
-   width: 265px;
-   height: 270px;
+   width: 285px;
+   height: 281px;
    margin-left: 120px;
-   background: darkred;
+   background: url(images/footer_infobox.png) center no-repeat;
    float:left;
 }
-#footer #panel .TMP-pic-placeholder{
-   height: 95px;
-   width: 265px;
-   background: green;
-}
-#footer #panel div{
-   border-bottom: 1px solid magenta;
+
+#footer #panel .logo{
+   display: block;
+   margin: 0 auto;
+   width: 249px;
+   height: 67px;
 }
 #footer #panel h3{
    font-size: 12px;
@@ -491,12 +528,10 @@ input, textarea, select {-webkit-appearance: none;}
    float: left;
    width: 765px;
    height:335px;
-   background: purple;
 }
 #footer .upper{
    height: 170px;
    width: 765px;
-   background: red;
 }
 #footer .upper div{
    padding-top: 20px;
@@ -540,7 +575,6 @@ input, textarea, select {-webkit-appearance: none;}
    padding-top: 16px;
    width: 160px;
    height: 60px;
-   background: green;
    float: left;
 }
 #footer .lower div h3{
@@ -556,7 +590,6 @@ input, textarea, select {-webkit-appearance: none;}
    padding-top: 16px;
    width: 180px;
    height: 65px;
-   background: green;
    float: left;
 }
 
