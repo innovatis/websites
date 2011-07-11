@@ -1136,7 +1136,7 @@ div.information p {
 
 #content-middle p{
   margin:15px 0;
-  width:558px;
+  width:508px;
   line-height:1.125em;
 }
 
@@ -1177,6 +1177,38 @@ div.information p {
   height:33px;
   margin:0 auto;
   background:url(../images/page-content-bottom.png);
+}
+
+#content-middle a:hover {
+  border-bottom:1px dotted;
+}
+
+.content-green {
+  width:508px;
+  background-color:rgb(238,245,237);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding:25px;
+  margin:25px 0;
+}
+
+.content-green h2 {
+  color:rgb(63,106,77);
+}
+
+.content-blue {
+  width:508px;
+  background-color:rgb(234,240,242);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding:25px;
+  margin:25px 0;
+}
+
+.content-blue h2 {
+  color:rgb(0,59,83);
 }
 
 /*END OF SELLING*/
@@ -1270,7 +1302,3 @@ div.information p {
 }
 
 /*END OF CONTACT US*/
-
-#content-middle a:hover {
-  border-bottom:1px dotted;
-}
