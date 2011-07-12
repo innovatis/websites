@@ -19,7 +19,6 @@ task :deploy do
     git checkout #{BRANCH}      &&
     rm -rf Rakefile             &&
     rm -rf .git                 &&
-    chown -R stefan:www #{PATH} &&
     chmod -R g+w #{PATH}"
   END
   puts "finished"
