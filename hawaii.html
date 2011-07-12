@@ -2,29 +2,47 @@
 <html>
   <head>
     <title>Mariaggis</title>
-    <link   href='style.css  '  media='screen' rel='stylesheet' type='text/css' />
+    <link href='style.css' media='screen' rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="http://use.typekit.com/ozi4dvb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.slideshow').cycle({
+          fx:     'fade',
+          timeout:  10000,
+          speed: 1500
+        });
+      });
+    </script>
   </head>
   <body>
-    <div id="container" class="contact">
-
+    <div id="container" class="safari">
+      <div class="slideshow">
+        <img src="images/hawaii1.jpg" alt='Hawaiian Themed Hotel Suite'/>
+        <img src="images/hawaii2.jpg" alt='Hawaiian Themed Hotel Suite'/>
+        <img src="images/hawaii3.jpg" alt='Hawaiian Themed Hotel Suite'/>
+        <img src="images/hawaii4.jpg" alt='Hawaiian Themed Hotel Suite'/>
+        <img src="images/hawaii5.jpg" alt='Hawaiian Themed Hotel Suite'/>
+        <img src="images/hawaii6.jpg" alt='Hawaiian Themed Hotel Suite'/>
+      </div>
       <div id="main-area">
         <div class="upper">
-
           <div id="top-band">
             <div class="content">
               <div>
                 <h2> <span class="reserve">RESERVE YOUR GETAWAY TODAY!</span> CALL TOLL FREE <span class="phone-number">(866) 947-9190</span> OR <span class="phone-number">(204) 947-9447</span></h2>
                 <ul>
                   <li><a href="#">CORPORATE EVENTS</a></li>
-                  <li><a href="#">CONTACT US</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
               </div>
             </div> <!-- END .content -->
           </div> <!-- END #top-band -->
+
 
           <div id="main-menu">
             <div class="content">
@@ -42,7 +60,7 @@
                         <li><a href="#">Acapulco, Mexico</a></li>
                         <li><a href="#">Hawaii</a></li>
                         <li><a href="#">Rome</a></li>
-                        <li><a href="africansafari2.html">African Safari</a></li>
+                        <li><a href="#">African Safari</a></li>
                         <li><a href="#">Sahara - Morocco</a></li>
                         <li><a href="#">Japan Samurai</a></li>
                         <li><a href="#">India</a></li>
@@ -107,20 +125,14 @@
                 </li>
                 <li class='divider'></li>
               </ul>
-h            </div> <!-- END .content -->
+            </div> <!-- END .content -->
           </div> <!-- END #main-menu -->
-
           <div id="main" class="content">
             <div class="left">
-              <h2>Table for Two</h2>
-              <h4 style="margin-top: 16px;">Enjoy a Tropical Fiesta Dinner for 2 in one of our Romantic Theme Rooms</h4>
-              <p style="margin-top: 16px;">Created for couples only who would like to celebrate a birthday, anniversary, honeymoon, or just a vacation away from the kids</p>
-              <h3 style="margin-top: 125px;">RESERVE YOUR GETAWAY TODAY</h3>
-              <h4 style="margin-top: 16px;">CALL TOLL FREE <span class="phone-number">(866) 947-9190</span></h4>
-              <h4>LOCAL <span class="phone-number">(204) 947-9447</span> </h4>
-              <h3 class="bottom" style="margin-top: 16px;">E-mail us with Questions/Comments</h3>
-              <span class="info">info@mariaggis.com</span>
-              <a>BOOK ONLINE NOW!</a>
+              <h2>African Safari</h2>
+              <h4 style="margin-top: 16px;">Don't be surprised if you hear tribal drums or even a lion's call.</h4>
+              <p style="margin-top: 16px;">Intricate stonework is formed around the jacuzzi hot tub, creating the mood of an African jungle. A grass thatched hut overhangs the bed area and extends over the hot tub. Handcrafted statues and artwork from Nairobi and Kenya hang on the wall and are placed on shelves around the room, creating a sense of earth and jungle. Open the door to your large ivory white steam/shower unit with stereo marine speakers inside, billowing hot steam immediately soothing tense muscles. Listen and enjoy your favourite music on our 200 AMP Stereo with CD player or snuggle up to a movie with our 50" Flat Screen TV with DVD player.</p>
+              <a style="margin-top: 91px;">BOOK ONLINE NOW!</a>
 
             </div> <!-- END .left -->
             <div class="right">
@@ -128,13 +140,72 @@ h            </div> <!-- END .content -->
           </div> <!-- END #main.content -->
         </div> <!-- END .upper -->
 
-        <div class="lower">
+        <div class="lower suite">
           <div class="upper-bg">
             <div class="lower-bg">
-              <div class='content'>
+              <div class="content">
                 <div id="banner">
+                  <div class="prev">
+                    <a href="#">
+                      <img class="arrow" src="images/banner_left_arrow.png" />
+                      <span class="text">PREVIOUS PHOTO</span>
+                      <span class="divider"></span>
+                    </a>
+                  </div>
+                  <div class="middle">
+                    <a class="foo" href="#">
+                      VIEW ROOM AMENITIES AND RATES
+                    </a>
+                  </div>
+                  <div class="next">
+                    <a href="#">
+                      <span class="divider"></span>
+                      <span class="text">NEXT PHOTO</span>
+                      <img class="arrow" src="images/banner_right_arrow.png" />
+                    </a>
+                  </div>
                 </div>
-                <h2> "Get Away Without Going Away" at Mariaggi's </h2>
+
+                <div id="room-info">
+                  <div class="left">
+                    <ul>
+                      <li><h3>Room Amenities:</h3></li>
+                      <li>Large Whirlpool Tub</li>
+                      <li>Fireplace</li>
+                      <li>Dining Table</li>
+                      <li>Microwave</li>
+                      <li>Fridge</li>
+                      <li>Coffee Machine</li>
+                      <li>Hair Dryer</li>
+                    </ul>
+                    <div class="fakeimage"></div>
+                    <div class="fakeimage"></div>
+                    <br clear="both" />
+                    <h3>Atmosphere:</h3>
+                    <p>Mood Lighting with all switches on Dimmers and a Deluxe California Queen Bed all make for a great stay in the African suite.</p>
+                  </div>
+                  <div class="right">
+                    <h3>Nightly Rates</h3>
+                    <div class="panel first">
+                      <span class="money">$185 - $245*</span>
+                      <span class="days">Monday - Thursday</span>
+                      <span class="parens">(Except Holidays)</span>
+                    </div>
+                    <div class="panel last">
+                      <span class="money">$205 - $285*</span>
+                      <span class="days">Weekends</span>
+                      <span class="parens">(Friday, Saturday, Sunday, Holidays)</span>
+                    </div>
+                    <span class="asterisk">Special Discounted Room Rates for longer stays</span>
+                    <h3>Daily Rates</h3>
+                    <div class="panel daily">
+                      <span class="money">$185</span>
+                      <span class="days">Noon - 10pm</span>
+                    </div>
+                    <span class="call"><span class="prompt">Please call toll free:</span> 1-8666-947-9190 or 204-947-9447</span>
+                    <span class="asterisk">*Room rates vary based on availability. Please call hotel for exact roomrate.</span>
+                  </div>
+                </div>
                 <ul class="reservations-list">
                   <li id="weddings">
                     <h3>Romantic Weddings</h3>
@@ -146,17 +217,18 @@ h            </div> <!-- END .content -->
                     <p>Placeholder text goes here and can be this long or a little bit longer than this</p>
                     <a href="#">Make Reservations</a>
                   </li>
-                  <li id="anniversaries">
+                  <li id="anniversaries" class='last'>
                     <h3>Great for Anniversaries</h3>
                     <p>Placeholder text goes here and can be this long or a little bit longer than this</p>
                     <a href="#">Make Reservations</a>
                   </li>
                 </ul>
-              </div><!-- END .content -->
+              </div> <!-- END .content -->
+
             </div> <!-- END .lower-bg -->
-          </div> <!-- END .upper-bg -->
-        </div> <!-- END .lower    -->
-      </div> <!-- END #main-area  -->
+          </div <!-- END .upper-bg -->
+        </div> <!-- END .lower -->
+      </div> <!-- END #main-area -->
 
       <div id="footer">
         <div class="content">
@@ -180,7 +252,7 @@ h            </div> <!-- END .content -->
               <div class="submenu" id="themed-suites">
                 <h3>Themed Suites</h3>
                 <ul class="left">
-                  <li><a href="africansafari2.html">African Safari</a></li>
+                  <li><a href="#">African Safari</a></li>
                   <li><a href="#">Hawaii</a></li>
                   <li><a href="#">India</a></li>
                   <li><a href="#">Jakarta Tropical Penthouse</a></li>
@@ -216,21 +288,21 @@ h            </div> <!-- END .content -->
                   <li><a href="#">Rates</a></li>
                   <li><a href="history.html">History</a></li>
                   <li><a href="#">Location</a></li>
-                  <li><a href="#">Contact Info</a></li>
+                  <li><a href="contact.html">Contact Info</a></li>
                 </ul>
               </div>
             </div><!-- end .upper -->
             <div class="lower">
               <div id="connect">
                 <h3>Connect with Mariaggi's</h3>
-                <img src="images/facebook.png"/>
-                <img src="images/youtube.png"/>
-                <img src="images/twitter.png"/>
-                <img src="images/email.png"/>
+                <a href='#' target='blank'><img src="images/facebook.png"/></a>
+                <a href='#' target='blank'><img src="images/youtube.png"/></a>
+                <a href='#' target='blank'><img src="images/twitter.png"/></a>
+                <a href='#' target='blank'><img src="images/email.png"/></a>
               </div>
               <div id="reviews">
                 <h3>Read the reviews...</h3>
-                <a href="#" target="_blank"><img src="images/footer_tripadvisor.png" /></a>
+                <a href='#' target='blank'><img src="images/footer_tripadvisor.png"/></a>
               </div>
               <div id="reserve">
                 <h3> RESERVE YOUR GETAWAY TODAY </h3>
