@@ -129,13 +129,14 @@ $(function(){
     }else{
 
     }
-    
-    //$('contactForm.span').addClass("error");
-    // if($("requiredField" && empty)){
-    //           contactForm.span.addClass("error");
-    //         }else{
-    //           contactForm.span.removeClass("error");
-    //         }
   });
+  
+  //eNews form lightbox
+  $("a#show-panel").click(function(){  
+    $("#lightbox, #lightbox-panel").fadeIn(300);  
+  })  
+  $("a#close-panel").click(function(){  
+  $("#lightbox, #lightbox-panel").fadeOut(300);  
+  })
   
 });
