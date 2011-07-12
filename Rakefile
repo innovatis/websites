@@ -2,7 +2,7 @@ SERVER     = "og"
 BRANCH     = "philmosher.com"
 ROOT       = "/srv/http/inno/static.innovatisinc.ca/htdocs"
 PATH       = "#{ROOT}/philmosher"
-REPO_ROOT  = "git@github.com:innovatis"
+REPO_ROOT  = "http://github.com/innovatis"
 REPO       = "websites"
 TMP        = "#{BRANCH}_tmp"
 
