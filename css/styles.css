@@ -1350,4 +1350,17 @@ div.information p {
   border-bottom:1px dotted;
 }
 
+#contact-form .submit-enews-signup {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
 /*end eNews form*/

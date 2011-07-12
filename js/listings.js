@@ -130,13 +130,30 @@ $(function(){
 
     }
   });
-  
+     
   //eNews form lightbox
   $("a#show-panel").click(function(){  
     $("#lightbox, #lightbox-panel").fadeIn(300);  
   })  
   $("a#close-panel").click(function(){  
     $("#lightbox, #lightbox-panel").fadeOut(300);  
-  })
+  });
+  
+  $('.submit-enews-signup').click(function(){
+     // var input = $(this),
+     // val         = $.trim(input.val()),
+     // empty       = val === "";
+     // if($("requiredField") && empty) {
+     //   alert("empty")
+     if($("requiredField").val()){
+       
+     }else{
+     }
+   });
+   
+   $('[data-mailform]').live('mailform.success',function(){
+     $("#lightbox, #lightbox-panel").delay(2000).fadeOut(300);      
+   });
+  
   
 });
