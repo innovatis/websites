@@ -6,9 +6,25 @@
     <script type="text/javascript" src="http://use.typekit.com/ozi4dvb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.slideshow').cycle({
+          fx:     'fade',
+          timeout:  10000,
+          speed: 1500
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="container" class="safari">
+      <div class="slideshow">
+        <img src="images/africa1.jpg" alt='African Themed Hotel Suite'/>
+        <img src="images/africa2.jpg" alt='African Themed Hotel Suite'/>
+        <img src="images/africa3.jpg" alt='African Themed Hotel Suite'/>
+      </div>
       <div id="main-area">
         <div class="upper">
           <div id="top-band">
@@ -58,9 +74,9 @@
           <div id="main" class="content">
             <div class="left">
               <h2>African Safari</h2>
-              <h4>Don't be surprised if you hear tribal drums or even a lion's call.</h4>
-              <p>Intricate stonework is formed around the jacuzzi hot tub, creating the mood of an African jungle. A grass thatched hut overhangs the bed area and extends over the hot tub. Handcrafted statues and artwork from Nairobi and Kenya hang on the wall and are placed on shelves around the room, creating a sense of earth and jungle. Open the door to your large ivory white steam/shower unit with stereo marine speakers inside, billowing hot steam immediately soothing tense muscles. Listen and enjoy your favourite music on our 200 AMP Stereo with CD player or snuggle up to a movie with our 50" Flat Screen TV with DVD player.</p>
-              <a>BOOK ONLINE NOW!</a>
+              <h4 style="margin-top: 16px;">Don't be surprised if you hear tribal drums or even a lion's call.</h4>
+              <p style="margin-top: 16px;">Intricate stonework is formed around the jacuzzi hot tub, creating the mood of an African jungle. A grass thatched hut overhangs the bed area and extends over the hot tub. Handcrafted statues and artwork from Nairobi and Kenya hang on the wall and are placed on shelves around the room, creating a sense of earth and jungle. Open the door to your large ivory white steam/shower unit with stereo marine speakers inside, billowing hot steam immediately soothing tense muscles. Listen and enjoy your favourite music on our 200 AMP Stereo with CD player or snuggle up to a movie with our 50" Flat Screen TV with DVD player.</p>
+              <a style="margin-top: 91px;">BOOK ONLINE NOW!</a>
 
             </div> <!-- END .left -->
             <div class="right">
@@ -145,7 +161,7 @@
                     <p>Placeholder text goes here and can be this long or a little bit longer than this</p>
                     <a href="#">Make Reservations</a>
                   </li>
-                  <li id="anniversaries">
+                  <li id="anniversaries" class='last'>
                     <h3>Great for Anniversaries</h3>
                     <p>Placeholder text goes here and can be this long or a little bit longer than this</p>
                     <a href="#">Make Reservations</a>
@@ -223,13 +239,14 @@
             <div class="lower">
               <div id="connect">
                 <h3>Connect with Mariaggi's</h3>
-                <img src="fb.png"/>
-                <img src="fb.png"/>
-                <img src="fb.png"/>
-                <img src="fb.png"/>
+                <a href='#' target='blank'><img src="images/facebook.png"/></a>
+                <a href='#' target='blank'><img src="images/youtube.png"/></a>
+                <a href='#' target='blank'><img src="images/twitter.png"/></a>
+                <a href='#' target='blank'><img src="images/email.png"/></a>
               </div>
               <div id="reviews">
                 <h3>Read the reviews...</h3>
+                <a href='#' target='blank'><img src="images/footer_tripadvisor.png"/></a>
               </div>
               <div id="reserve">
                 <h3> RESERVE YOUR GETAWAY TODAY </h3>

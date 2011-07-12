@@ -12,17 +12,29 @@ table {  border-collapse: collapse;  border-spacing: 0;}
 input, textarea, select {-webkit-appearance: none;}
 
 /*********END OF CSS RESET****************/
+body {background:black;}
 #container{
-   min-width: 1150px;
+  position:relative;
+  min-width: 1150px;
 }
 .content {
    width: 1150px;
    margin: 0 auto;
 }
-
+.slideshow {
+  width:100%;
+  min-height:800px;
+  position:absolute;
+  top:0;
+  z-index:-100;
+  text-align:center;
+}
+.slideshow img {
+  margin:0 auto;
+}
 #top-band{
    height: 56px;
-   background: rgb(0,0,0);
+   background: rgb(35,35,35);
    background: rgba(0, 0, 0, 0.5);
 
 }
@@ -46,6 +58,7 @@ input, textarea, select {-webkit-appearance: none;}
 #top-band h2 .reserve{
    font-size: 18px;
    color: #D8C579;
+   padding-right:15px;
 }
 #top-band h2 .phone-number{
    font-size:22px;
@@ -102,10 +115,10 @@ input, textarea, select {-webkit-appearance: none;}
    height: 6px;
    margin: 0 auto;
    margin-top: 10px;
-   background: url(images/nav_dropdownarrow.png) 0px 0px no-repeat;
+   background: url(images/nav_dropdownarrow.png) 0px -6px no-repeat;
 }
 #main-menu ul li a:hover .arrow{
-   background: url(images/nav_dropdownarrow.png) 0px -6px no-repeat;
+   background: url(images/nav_dropdownarrow.png) 0px 0px no-repeat;
 }
 #main-menu #logo{
    width:296px;
@@ -119,7 +132,7 @@ input, textarea, select {-webkit-appearance: none;}
    display: block;
    width: 158px;
    height: 90px;
-   line-height: 1.25em;
+   line-height: 1.15em;
 }
 #main-menu ul li a{
    font-family: myriad-pro-condensed, sans-serif;
@@ -129,69 +142,80 @@ input, textarea, select {-webkit-appearance: none;}
    text-decoration: none;
 }
 #main-menu ul li a h3{
-   font-weight: 800;
+   font-weight: 700;
    font-size: 18px;
-   line-height: 1.25em;
-   color: #66383E;
-
+   line-height: 1em;
+   color: #53493B;
    display: block;
    text-align: center;
-   margin-top: 1em;
+   margin-top: 1.2em;
 }
+#main-menu ul li:hover a h3{color:#66383E;}
 #main-menu ul li a span{
-   font-weight: 400;
+   font-weight: 500;
    font-style: italic;
-   font-size: 16px;
+   font-size: 15px;
    color: #73695B;
-
    display: block;
    text-align: center;
-   font-size: 14px;
-   color: #796859;
-   margin-top: 5px;
+   margin-top: 3px;
    font-style: italic;
 }
+#main-menu ul li:hover a span {color: #63594B;}
 
 #main-area .upper{
-   height:675px;
-   background: red;
+   height:650px;
 }
 #main-area .upper .left{
-   height:523px;
+   height:500px;
    width:275px;
    float: left;
    margin-left: 110px;
-   background: #E6C46D;
+   background: rgba(230,193,109,.8);
+   border-left:1px solid white;
+   border-right:1px solid white;
+   box-shadow: 0 0 10px #000;
 }
 #main-area .upper .left h2{
+   font-family: trajan-pro, Trajan Pro, Trajan, serif;
    color: #5D0010;
-   font-size: 20px;
+   font-size: 24px;
+    font-weight:800;
    display: block;
-   text-align: center;
-   margin: 16px 20px;
+   text-align: left;
+   margin: 16px 20px 0;
 }
+span.african1 {color:#4b3a2c;}
+span.african2 {color:#ffffff;}
+
 #main-area .upper .left h3{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-weight: 800;
+   font-style: italic;
    color: #5D0010;
    font-size: 16px;
    display: block;
-   text-align: center;
+   text-align: left;
    margin: 0 16px;
-   margin-bottom: 20px;
 }
 
 #main-area .upper .left h4{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-weight: 800;
+   font-style: italic;
    display:block;
    color: #23211E;
    font-size: 14px;
+   line-height:16px;
    font-style: italic;
-   text-align: center;
+    font-weight:bold;
+   text-align: left;
    margin: 0 16px;
-   margin-bottom: 10px;
 }
-#main-area .upper .left .bottom{
-   margin-bottom: 10px;
+#main-area .upper .left .phone-number{
+   font-size: 22px;
 }
-#main-area .upper .left span{
+#main-area .upper .left .info{
    color: #5D0010;
    font-size: 12px;
    text-align: center;
@@ -215,25 +239,17 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .upper .left p{
    display:block;
-   color: #1A1A1A;
-   font-size: 12px;
-   text-align: center;
+   font-family: Arial, sans-serif;
+   color: #383631;
+   font-size: 13px;
+   line-height:14px;
+   text-align: left;
    margin: 0 16px;
    margin-bottom: 10px;
 }
-.dayspa      #main-area .upper .left .reserve,
-.tablefortwo #main-area .upper .left .reserve,
-.contact     #main-area .upper .left .reserve{
-   margin-top: 125px;
-}
-.dayspa #main-area .upper .left .reserve{
-   margin-top: 75px;
-}
 #main-area .upper .right{
-   width:765px;
-   height:528px;
-   background: rgb(25,0,100);
-   background: rgba(25,0,100,0.5);
+   width:660px;
+   height:500px;
    float:left;
 }
 .history #main-area .upper .right div{
@@ -383,23 +399,22 @@ input, textarea, select {-webkit-appearance: none;}
    width:805px;
    font-size: 36px;
    color: #5E0010;
-   padding-top: 65px;
    margin: 0 auto;
    margin-bottom: 40px;
+
 }
 
 #main-area .lower #room-info{
    height: 290px;
-   width: 935px;
-   background: slategray;
-   margin: 90px auto 65px auto;
+   width: 925px;
+   margin: 50px auto 35px auto;
 }
 
 #main-area .lower #room-info .left{
    float: left;
-   width: 475px;
+   width: 455px;
    height: 285px;
-   background: darkred;
+
 }
 #main-area .lower #room-info .left ul {
    width: 145px;
@@ -407,14 +422,25 @@ input, textarea, select {-webkit-appearance: none;}
    float: left;
    margin-bottom: 20px;
 }
-#main-area .lower #room-info .left ul li{
+#main-area .lower #room-info .left ul li, #main-area .lower #room-info .left p{
+   font-family: arial, sans-serif;
    display: block;
    text-align: left;
+   color:#79716c;
+   font-size:13px;
+   line-height:15px;
    margin-bottom: 8px;
+   text-shadow: 0 1px #ededed;
 }
 #main-area .lower #room-info .left ul li h3{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
+   font-weight:700;
    font-size: 20px;
+   color:#560013;
+   text-shadow: 0 1px #ededed;
    margin-bottom: 16px;
+
 }
 #main-area .lower #room-info .left .fakeimage{
    width: 125px;
@@ -427,27 +453,39 @@ input, textarea, select {-webkit-appearance: none;}
    width: 400px;
    height: 285px;
    float: right;
-   background: darkorange;
+
+
 }
 
-#main-area .lower #room-info .right h3{
-   font-size: 18px;
-   font-style: italic;
-   margin-bottom: 5px;
+#main-area .lower #room-info h3{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
+   font-weight:700;
+   font-size: 20px;
+   color:#560013;
+   text-shadow: 0 1px #ededed;
+   margin-bottom: 12px;
+   padding-top:0;
 }
 #main-area .lower #room-info .right .asterisk{
-   font-size: 12px;
-   text-align: right;
+   font-size: 10px;
+   font-family:arial, sans-serif;
+   text-align: left;
+   font-style:italic;
+   padding-left:3px;
    color: #81776C;
    display: block;
    margin-top: 5px;
-   margin-bottom: 10px;
+   margin-bottom: 30px;
 }
 #main-area .lower #room-info .right .call{
    display: block;
    margin-top: 16px;
    margin-bottom: 10px;
-   font-size: 16px;
+   font-size: 20px;
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
+   font-weight:700;
 }
 #main-area .lower #room-info .right .prompt{
    color: #560013;
@@ -461,11 +499,16 @@ input, textarea, select {-webkit-appearance: none;}
    line-height: 39px;
    font-size: 12px;
    padding-left: 10px;
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
+   font-weight:700;
+   color:#4c483f;
 }
 
 #main-area .lower #room-info .right .panel .money{
    font-size: 18px;
    font-style: italic;
+   padding-right:10px;
 }
 #main-area .lower #room-info .right .panel .days{
    font-size: 18px;
@@ -473,6 +516,9 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .lower #room-info .right .panel .parens{
    color: #81776C;
+   font-family:arial, sans-serif;
+   font-size:10px;
+   padding-left:8px;
 }
 #main-area .lower #room-info .right .panel.daily{
    height: 39px;
@@ -480,38 +526,48 @@ input, textarea, select {-webkit-appearance: none;}
    border-radius: 5px;
    border-radius: 5px;
    -moz-border-radius: 5px;
+   border: 1px solid #fff;
+   border-bottom: 1px solid #dcdcce;
+   border-right: 1px solid #dcdcce;
+   box-shadow: 0 1px 1px #acac9e;
 }
 #main-area .lower #room-info .right .panel.first{
-   border-bottom: 1px solid #FFFFFF;
+   border: 1px solid #fff;
+   border-bottom: 1px solid #dcdcce;
+   border-right: 1px solid #dcdcce;
    border-top-left-radius: 5px;
    -moz-border-top-left-radius: 5px;
    -webkit-border-top-left-radius: 5px;
    border-top-right-radius: 5px;
    -moz-border-top-right-radius: 5px;
    -webkit-border-top-right-radius: 5px;
+   box-shadow: 0 1px 1px #acac9e;
 }
 #main-area .lower #room-info .right .panel.last{
-   border-top: 1px solid #BCBCAE;
+   border: 1px solid #fff;
+   border-bottom: 1px solid #dcdcce;
+   border-right: 1px solid #dcdcce;
    border-bottom-left-radius: 5px;
    -moz-border-bottom-left-radius: 5px;
    -webkit-border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
    -moz-border-bottom-right-radius: 5px;
    -webkit-border-bottom-right-radius: 5px;
+   box-shadow: 0 1px 1px #acac9e;
 }
 
 #main-area .lower .reservations-list{
-   width: 950px;
+   width: 980px;
+   height:340px;
    display: block;
-   margin: 0 auto;
-
+   margin: 10px auto;
 }
 #main-area .lower .reservations-list li{
-   width:305px;
-   height:170px;
-   margin-right: 16px;
+   width:316px;
+   height:190px;
    display:block;
    float:left;
+   margin-right:5px;
 }
 #main-area .lower .reservations-list #anniversaries{
    background: url(images/box_anniversaries.png) center no-repeat;
@@ -526,28 +582,38 @@ input, textarea, select {-webkit-appearance: none;}
    color: #5D0010;
    font-size: 24px;
    display: block;
-
-   margin: 16px 100px 10px 16px;
+   font-family: trajan-pro, Trajan Pro, Trajan, serif;
+   font-weight:700;
+   margin: 20px 110px 10px 20px;
 
 }
 #main-area .lower .reservations-list p{
-   font-size: 14px;
+   font-family: arial, sans-serif;
+   font-size: 13px;
+   line-height:15px;
    color: #5C4E42;
-   margin: 0 100px 10px 16px;
+   margin: 0 115px 10px 21px;
 }
 #main-area .lower .reservations-list a{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style: italic;
+   text-shadow: 0 1px #ffffff;
    margin-left: 16px;
    display: block;
    text-align: center;
-   font-size: 16px;
+   font-size: 18px;
+   font-weight:600;
    font-style: italic;
    text-decoration: none;
    width: 150px;
    height: 34px;
    line-height: 33px;
 }
+
 #main-area .lower #weddings a{
    background: url(images/box_button_sprite.png) 0px 0px no-repeat;
+   color:#304209;
+   text-shadow: 0 1px #d7e4ab;
 }
 #main-area .lower #weddings a:hover{
    background: url(images/box_button_sprite.png) 0px -35px no-repeat;
@@ -557,6 +623,8 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .lower #birthdays a{
    background: url(images/box_button_sprite.png) -150px 0px no-repeat;
+   color:#37331e;
+   text-shadow: 0 1px #ebe5c4;
 }
 #main-area .lower #birthdays a:hover{
    background: url(images/box_button_sprite.png) -150px -35px no-repeat;
@@ -566,6 +634,8 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #main-area .lower #anniversaries a{
    background: url(images/box_button_sprite.png) -300px 0px no-repeat;
+   color:#fff;
+   text-shadow: 0 -1px #000;
 }
 #main-area .lower #anniversaries a:hover{
    background: url(images/box_button_sprite.png) -300px -35px no-repeat;
@@ -586,22 +656,23 @@ input, textarea, select {-webkit-appearance: none;}
    width: 1300px;
 }
 #footer #panel{
+   font-family: arial, sans-serif;
    width: 285px;
    height: 281px;
-   margin-left: 120px;
+   margin-left: 140px;
    background: url(images/footer_infobox.png) center no-repeat;
    float:left;
 }
-
 #footer #panel .logo{
    display: block;
-   margin: 0 auto;
+   margin: 13px auto;
    width: 249px;
    height: 67px;
 }
 #footer #panel h3{
    font-size: 12px;
    color: #E7C56D;
+  font-weight:800;
    text-align: center;
    display: block;
    margin-top: 10px;
@@ -612,9 +683,8 @@ input, textarea, select {-webkit-appearance: none;}
    color: #FFFFFF;
    text-align: center;
    display: block;
-   margin-bottom: 10px;
+   margin-bottom: 25px;
 }
-
 #footer .wrapper{
    float: left;
    width: 765px;
@@ -626,79 +696,95 @@ input, textarea, select {-webkit-appearance: none;}
 }
 #footer .upper div{
    padding-top: 20px;
+   margin-right:18px;
 }
 #footer .upper div h3{
    color: #E7C56D;
-   font-size: 18px;
-   margin-bottom: 1em;
+   font-size: 20px;
+   font-weight:700;
+   margin-bottom: 15px;
+   text-shadow: 0 1px 4px #111;
 }
 #footer .upper ul li a{
-   font-size: 14px;
+   font-size: 16px;
    color: #FFFFFF;
    display: block;
+   font-weight:600;
    text-decoration: none;
-   margin-bottom: 5px;
+   margin-bottom: 8px;
+   opacity:.9;
 }
+    #footer .upper ul li a:hover{opacity:1;text-shadow: 0 0 6px #fff;}
 #footer .upper #themed-suites ul.left{
-   width: 110px;
+   width: 125px;
    display: block;
    float: left;
 }
 #footer .upper #themed-suites ul.right{
-   width: 110px;
+   width: 90px;
    display: block;
    float: left;
 }
 #footer .upper .submenu{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
    float: left;
    margin-left: 32px;
 }
-
 #footer .lower{
    height: 133px;
-   padding-top: 32px;
+   padding-top: 28px;
 }
-
 #footer .lower div{
    margin-left: 32px;
 }
 #footer .lower #connect{
-   padding-top: 16px;
+   padding-top: 8px;
    width: 160px;
    height: 60px;
    float: left;
 }
 #footer .lower div h3{
+   font-family: myriad-pro-condensed, sans-serif;
    color: #E7C56D;
-   font-size: 16px;
-   margin-bottom: 10px;
+   font-size: 18px;
+   margin-bottom: 12px;
+   font-style:italic;
+   font-weight:700;
+   text-shadow: 0 1px 4px #111;
 }
 #footer .lower #connect img{
-   margin-left: 10px;
+   margin-right: 10px;
 }
-
 #footer .lower #reviews{
-   padding-top: 16px;
-   width: 180px;
+   padding-top: 8px;
+   width: 170px;
    height: 65px;
    float: left;
 }
-
 #footer .lower #reserve{
-   width: 310px;
+   width: 255px;
    height: 81px;
-   background: green;
    float: left;
 }
 #footer .lower #reserve h3{
-   font-size: 18px;
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style:italic;
+   font-weight:700;
+   font-size: 22px;
+   margin-bottom:5px;;
    text-align: right;
    display: block;
+   text-shadow: 0 1px 4px #111;
 }
 #footer .lower #reserve h4{
+   font-family: myriad-pro-condensed, sans-serif;
    color: #ffffff;
-   font-size: 14px;
+   font-size: 18px;
    text-align: right;
+   font-style:italic;
+   font-weight:700;
    display: block;
-   margin-bottom: 10px;
+   margin-bottom: 6px;
+   text-shadow: 0 1px 4px #111;
 }
