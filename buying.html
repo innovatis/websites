@@ -7,6 +7,7 @@
 		<script type="text/javascript" src="http://use.typekit.com/fng7qcj.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
 		<script src="js/jquery.query.js"></script>
 		<script src="js/jquery.timeago.js"></script> 
 		<script src="js/listings.js"></script>
@@ -159,6 +160,40 @@
  			    <li class="footer-links"><a href ="contact.html">Contact Us     </a></li> 			     			    
  			  </ul>
  			</div>
-		</div> 
+		</div>
+		<div id="lightbox-panel">    
+    <p align="center">
+      <a id="close-panel" href="#" style="float:right;">Close</a>  
+      <h1>eNews and Updates</h1>
+      <h2>Sign-up to receive property listings!</h2>
+      <p>Please complete the information below.</p>
+      <p><em>Note: the red boxes are required</em></p>
+      <div id="contact-form">
+        <div id="mailform-complete" style="display:none;">
+              <h2>Thank you, for signing up!</h2>
+            </div>
+	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
+	        <div id="error-messages" class="error-message">
+                </div>
+          <div class="inputs">
+            <div class="input">
+              <label for="name">Name</label> 
+         	    <input name="name" required='true' class="required-field"/>
+         	    <span class="error-message">What is your name?</span>
+         	  </div>
+         	  <div class="input">
+              <label for="e-mail">E-mail</label> 
+         	    <input name="email" required='true' class="required-field"/>
+         	    <span class="error-message">What is your e-mail address?</span>
+         	  </div>	   	  
+          </div>
+          <div class="actions">
+            <input type="submit" class="submit-form">
+          </div>
+        </form>
+	    </div>
+    </p>  
+    </div><!-- /lightbox-panel -->  
+    <div id="lightbox"> </div><!-- /lightbox -->
 	</body>
 </html>
