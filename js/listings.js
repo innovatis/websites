@@ -152,8 +152,6 @@ $(function(){
   
   // listings lightbox
   $(".request-viewing").click(function(e){ 
-    console.log(e.target);
-    // console.log('[data-address]');
     var target = $(e.target),
     listing    = target.closest('.listing'),
     address    = listing.data('address');
@@ -186,12 +184,17 @@ $(function(){
    });
    
   
-   // $('[data-mailform]').live('mailform.success',function(e){
-   //     console.log(e.target)
-   //     var target = $(e.target);
-   //     
-   //     $("#lightbox, #lightbox-panel").delay(2000).fadeOut(300);      
-   //   });
-   //  
-  
+   //lazy load maps
+    $('.map-tab').live('click',function() { 
+      var element  = $(this),
+      paneSelector = element.attr("href"),
+      pane         = $(paneSelector),
+      iframe       = pane.find('iframe'),
+      oldSrc       = iframe.attr('src'),
+      newSrc       = iframe.data('lazy-src');
+
+      if(!oldSrc){
+        iframe.attr('src',newSrc);
+      }
+    });  
 });
