@@ -77,7 +77,7 @@
  			<div id="page_content">
  			  <div id="details-box">
  			    <div id="details-top-bar">
- 			      <a href="/listings.html" class="breadcrumb-first">Active Listings</a>
+ 			      <a href="listings.html" class="breadcrumb-first">Active Listings</a>
  			      <a href="#" class="breadcrumb-second">New Ginos 3400</a>
  			      <p class="right"><em>Specializing in New Home Sales for over 20 years!</em></p>
  			    </div>
@@ -151,31 +151,48 @@
  			    </div>
           <div id="feature-form">
  			      <h2>DO YOU WANT TO SEE THIS HOUSE?</h2>
- 			      <p>Fill out your information below:</p>
- 			      <form> 
-              <div class="inputs">
-                <div class="input">
-                  <label for="name">Name</label> 
-             	    <input name="name"/>
-             	  </div>
-                <div class="input">
-                  <label for="phone">Phone</label> 
-             	    <input name="phone"/>
-             	  </div>
-                <div class="input">
-                  <label for="e-mail">E-mail</label> 
-             	    <input name="e-mail"/>
-             	  </div> 	   	  
+            <!-- <p>Fill out your information below:</p> -->
+ 			      <div id="mailform-complete" style="display:none;">
+              <h2>Thank you, your message has been successfully sent</h2>
+            </div>
+            <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="#error-messages" method="get"  novalidate='true'> 
+              <div class="hidden mailform-error"> 
+                default error
               </div>
-              <div class="actions">
-                <a href ="#"><img src="images/red-submit.png" alt="Submit"/></a>
+              <div class="hidden mailform-success"> 
+                default success
+              </div> 
+              <div class="hidden mailform-loading"> 
+                <img src="images/ajax-loader.gif" alt="loading"/>
               </div>
+              <div id="error-messages"> 
+              </div> 
+              <div class="inputs"> 
+              <div class="input">
+                <label for="name">Name</label> 
+                <input name="name" required='true' class="required-field"/>
+                <span class="error-message">What is your name?</span>
+              </div>
+              <div class="input">
+                <label for="phone">Phone</label> 
+                <input name="phone"/>
+              </div>
+              <input type="hidden" name="Property" value="New Ginos 3400">
+              <div class="input">
+                <label for="e-mail">E-mail</label> 
+                <input name="email" required='true' class="required-field"/>
+                <span class="error-message">What is your e-mail address?</span>
+              </div>
+              </div> 
+                <div class="actions"> 
+                <input class="submit-form button" type="submit" value="Sign-up"> 
+              </div> 
             </form>
  			    </div>
  			    <div id="details-bottom-bar">
             <a href="javascript:history.go(-1)" class="previous-page" alt="previous page">Previous Page</a>
             <div id="bottom-bar-message">
-              <p><em>For More Information or to Schedule a Viewing</em> <strong>Call 204-333-5759</strong> <em>or</em> <a href ="#">Send an E-mail</a></p>  
+              <p><em>For More Information or to Schedule a Viewing</em> <strong>Call 204-333-5759</strong> <em>or</em> <a href ="mailto:info@philmosher.com">Send an E-mail</a></p>  
             </div>
  			    </div>
  			  </div>

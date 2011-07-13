@@ -1046,6 +1046,7 @@ ul.tab-bar li a:hover {
   width:245px;
   float:left;
   padding:15px;
+  overflow:hidden;
 }
 
 #feature-form label{
@@ -1082,6 +1083,23 @@ ul.tab-bar li a:hover {
 #feature-form .actions {
   float:right;
   margin: 0 20px 0 0;
+}
+
+#feature-form .submit-form{
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
+#feature-form input.required-field{
+ border: 1px solid rgb(107,40,2);
 }
 
 div.info-pages {
@@ -1282,6 +1300,13 @@ div.information p {
 }
 
 #mailform-complete {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+}
+
+.mailform-error {
   font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
   font-weight:600;
   font-size:1.1em;
