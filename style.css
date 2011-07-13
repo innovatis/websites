@@ -187,6 +187,7 @@ body {background:black;}
 }
 #main-menu .dropdown ul{
    border: 1px solid #808080;
+   border-bottom: none;
    width: 158px;
    display: block;
 }
@@ -200,8 +201,9 @@ body {background:black;}
 }
 #main-menu .dropdown ul li a{
    display: block;
-   height: 24px;
-   padding-top: 5px;
+   height: 29px;
+   line-height: 29px;
+   padding-top: 0;
    padding-left: 16px;
    width: 143px;
    float: none;
@@ -313,26 +315,71 @@ span.african2 {color:#ffffff;}
    height:500px;
    float:left;
 }
-.history #main-area .upper .right div{
-   margin: 45px 130px 0px 150px;
+.contact #main-area .upper .right div{
+   margin: 29px 0 0 114px;
 }
+.contact #main-area .upper .right .map{
+   display: block;
+}
+.contact #main-area .upper .right .location{
+   display: block;
+   text-align: right;
+   margin-right: 20px;
+   margin-top: 10px;
+   color: #433B33;
+   font-size: 14px;
+   font-family: Arial, sans-serif;
+}
+.contact #main-area .upper .right .location em{
+   color: #5D0010;
+   font-weight: 800;
+}
+.contact #main-area .upper .right a{
+   font-family: myriad-pro-condensed, sans-serif;
+   font-style: italic;
+   font-weight: 600;
+   text-align: center;
+   width: 134px;
+   height: 33px;
+   float: right;
+   margin-right: 20px;
+   margin-top: 20px;
+   display: block;
+   background: #E4CC8C;
+   line-height: 33px;
+   text-decoration: none;
+   color: #37331E;
+}
+.history #main-area .upper .right div{
+   margin: 45px 130px 0px 100px;
+}
+
 .history #main-area .upper .right h2{
-   font-size: 18px;
+   font-family: trajan-pro, Trajan Pro, Trajan, serif;
+
+   font-size: 20px;
+   font-weight: 800;
    color: #3D342D;
    display: block;
    margin-bottom: 10px;
 }
-.history #main-area .upper .right h3,{
+.history #main-area .upper .right h3{
+
+   color:#66383E;
+   font-style: italic;
    font-size: 14px;
-   color: #5E0010;
+   font-weight: 800;
+   font-family: Arial, sans-serif;
    display: block;
    margin-bottom: 10px;
 }
 .history #main-area .upper .right p{
    font-size: 14px;
+   font-family: Arial, sans-serif;
+   line-height: 16px;
    color: #3A311B;
    display: block;
-   margin-bottom: 5px;
+   margin: 10px 0;
 }
 
 #main-area .lower{
