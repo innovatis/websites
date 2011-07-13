@@ -212,11 +212,18 @@ body {background:black;}
 #main-area .upper{
    height:650px;
 }
-#main-area .upper .left{
-   height:500px;
-   width:275px;
+#main-area .upper .left-wrapper{
+   height: 500px;
+   width: 275px;
    float: left;
    margin-left: 110px;
+
+}
+#main-area .upper .left{
+   height: 500px;
+   width: 275px;
+   position: absolute;
+   z-index: -1;
    background: rgba(230,193,109,.8);
    border-left:1px solid white;
    border-right:1px solid white;
