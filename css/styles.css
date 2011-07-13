@@ -860,6 +860,64 @@ ul#listing-bar select {
   visibility:hidden;
 }
 
+#lightbox-listings {  
+  display:none;  
+  background:#000000;  
+  opacity:0.9;  
+  filter:alpha(opacity=90);  
+  position:absolute;  
+  top:0px;  
+  left:0px;  
+  min-width:100%;  
+  min-height:100%;  
+  z-index:1000;  
+}  
+
+#lightbox-panel-listings {  
+  display:none;  
+  position:fixed;  
+  top:100px;  
+  left:50%;  
+  margin-left:-200px;  
+  width:400px;  
+  background:#FFFFFF;  
+  padding:10px 15px 10px 15px;  
+  border:2px solid #CCCCCC;  
+  z-index:1001;  
+}
+
+#lightbox-panel-listings p{
+  margin:15px 0;
+  width:400px;
+  line-height:1.125em;
+}
+
+#lightbox-panel-listings h2{
+  line-height:1.65em;
+}
+
+#lightbox-panel-listings a {
+  text-decoration:none;
+  color:rgb(107,40,2);
+}
+
+#lightbox-panel-listings a:hover {
+  border-bottom:1px dotted;
+}
+
+#contact-form .viewing-request {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
 /*END OF LISTINGS*/
 
 /*DETAILS/TABS*/
@@ -1401,7 +1459,73 @@ div.information p {
   border-bottom:1px dotted;
 }
 
-#contact-form .submit-enews-signup {
+#enews-form {
+  width:345px;
+  float:left;
+  padding:15px;
+}
+
+#enews-form .error-message {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+}
+
+#enews-form label{
+  display:block;
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+}
+
+#enews-form p{
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:19px 0 0 0;
+}
+
+#enews-form .input{
+  margin:15px 0;
+}
+
+#enews-form input{
+  width:345px;
+  height:26px;
+  border: 1px solid rgb(179,179,179);
+  margin:3px 0 0 0;
+ 	font-family: Arial, sans-serif;
+	font-size:.9em;
+}
+
+#enews-form input.required-field{
+ border: 1px solid rgb(107,40,2);
+}
+
+#enews-form h2 {
+  font-size:1.5em;
+}
+
+#enews-form .actions {
+  float:right;
+  margin: 0 0 0 0;
+}
+
+#enews-form .submit-form {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
+#enews-form .submit-enews-signup {
   background: url(../images/red-submit.png) no-repeat 0 0;
   width: 104px;
   height: 31px;
