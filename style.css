@@ -21,7 +21,7 @@ body {background:black;}
    width: 1150px;
    margin: 0 auto;
 }
-.slideshow {
+.slideshow-wrapper {
   width:100%;
   min-height:800px;
   position:absolute;
@@ -29,6 +29,12 @@ body {background:black;}
   z-index:-100;
   text-align:center;
 }
+.slideshow{
+   width:1200px;
+   height: 800px;
+   margin: 0 auto;
+}
+
 .slideshow img {
   margin:0 auto;
 }
@@ -199,6 +205,7 @@ body {background:black;}
    padding-left: 16px;
    width: 143px;
    float: none;
+   background: rgb(16,16,16);
    background: rgba(32,32,32,0.75);
    text-decoration: none;
    color: #FFFFFF;
@@ -224,6 +231,7 @@ body {background:black;}
    width: 275px;
    position: absolute;
    z-index: -1;
+   background: rgb(230,193,109);
    background: rgba(230,193,109,.8);
    border-left:1px solid white;
    border-right:1px solid white;
@@ -788,7 +796,8 @@ span.african2 {color:#ffffff;}
 }
 #footer .lower{
    height: 133px;
-   padding-top: 28px;
+   margin-top: 50px;
+/*   padding-top: 28px;*/
 }
 #footer .lower div{
    margin-left: 32px;

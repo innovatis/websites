@@ -6,14 +6,28 @@
     <script type="text/javascript" src="http://use.typekit.com/ozi4dvb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type='text/javascript' src="js/site.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.slideshow').cycle({
+        fx: 'fade',
+        timeout: 10000,
+        speed: 1500
+        });
+      });
+    </script>
   </head>
   <body>
-    <div id="container" class="history">
-      <div class="slideshow">
-        <img src="images/africa1.jpg" />
-      </div> <!-- END .slideshow -->
-      <div id="main-area">
+    <div id="container">
+      <div class="slideshow-wrapper">
+       <div class="slideshow">
+         <img src="images/africa1.jpg" />
+         <img src="images/africa2.jpg" />
+       </div> <!-- END .slideshow -->
+      </div>
+    <div id="main-area">
         <div class="upper">
 
           <div id="top-band">
@@ -31,7 +45,7 @@
 
           <div id="main-menu">
             <div class="content">
-              <a href="/"><img src="images/nav_logo.jpg" id="logo" /></a>
+              <a href="index.html"><img src="images/nav_logo.jpg" id="logo" /></a>
               <ul class="main-nav">
                 <li>
                   <a href="#">
@@ -42,14 +56,14 @@
                   <div class="dropdown-wrapper">
                     <div class="dropdown">
                       <ul>
-                        <li><a href="#">Acapulco, Mexico</a></li>
-                        <li><a href="#">Hawaii</a></li>
-                        <li><a href="#">Rome</a></li>
+                        <li><a href="acapulco.html">Acapulco, Mexico</a></li>
+                        <li><a href="hawaii.html">Hawaii</a></li>
+                        <li><a href="rome.html">Rome</a></li>
                         <li><a href="africansafari2.html">African Safari</a></li>
-                        <li><a href="#">Sahara - Morocco</a></li>
-                        <li><a href="#">Japan Samurai</a></li>
-                        <li><a href="#">India</a></li>
-                        <li><a href="#">Tropical Penthouse</a></li>
+                        <li><a href="saharamorocco.html">Sahara - Morocco</a></li>
+                        <li><a href="japan.html">Japan Samurai</a></li>
+                        <li><a href="india.html">India</a></li>
+                        <li><a href="jakarta.html">Tropical Penthouse</a></li>
                       </ul>
                     </div>
                   </div>
@@ -170,15 +184,15 @@
                 <h3>Themed Suites</h3>
                 <ul class="left">
                   <li><a href="africansafari2.html">African Safari</a></li>
-                  <li><a href="#">Hawaii</a></li>
-                  <li><a href="#">India</a></li>
-                  <li><a href="#">Jakarta Tropical Penthouse</a></li>
+                  <li><a href="hawaii.html">Hawaii</a></li>
+                  <li><a href="india.html">India</a></li>
+                  <li><a href="jakarta.html">Jakarta Tropical Penthouse</a></li>
                 </ul>
                 <ul class="right">
-                  <li><a href="#">Japan - Samurai</a></li>
-                  <li><a href="#">Acapulco - Mexico</a></li>
-                  <li><a href="#">Sahara - Morocco</a></li>
-                  <li><a href="#">Rome</a></li>
+                  <li><a href="japan.html">Japan - Samurai</a></li>
+                  <li><a href="acapulco.html">Acapulco - Mexico</a></li>
+                  <li><a href="saharamorocco.html">Sahara - Morocco</a></li>
+                  <li><a href="rome.html">Rome</a></li>
                 </ul>
               </div>
               <div class="submenu" id="day-spa">
