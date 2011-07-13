@@ -1127,6 +1127,23 @@ div.information p {
 	line-height:20px;
 }
 
+#map a {
+  text-decoration:none;
+  color:rgb(107,40,2) !important;
+  font-size:0.8em;
+  float:right;
+}
+
+#map a:hover {
+  border-bottom:1px dotted;
+}
+
+#specs li{
+  font-family:arial,sans-serif;
+  color:rgb(116,116,107);
+  font-size:.75em;
+  margin:0 0 5px 5px;
+}
 
 /*END OF TABS*/
 
