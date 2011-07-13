@@ -918,6 +918,85 @@ ul#listing-bar select {
   text-indent:-9999em;
 }
 
+#listings-form {
+  width:345px;
+  float:left;
+  padding:15px;
+}
+
+#listings-form .error-message {
+  font-family: "garamond-premier-pro-caption-1","garamond-premier-pro-caption-2",serif;
+  font-weight:600;
+  font-size:1.1em;
+  color:rgb(107,40,2);
+}
+
+#listings-form label{
+  display:block;
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+}
+
+#listings-form p{
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:19px 0 0 0;
+}
+
+#listings-form .input{
+  margin:15px 0;
+}
+
+#listings-form input{
+  width:345px;
+  height:26px;
+  border: 1px solid rgb(179,179,179);
+  margin:3px 0 0 0;
+ 	font-family: Arial, sans-serif;
+	font-size:.9em;
+}
+
+#listings-form input.required-field{
+ border: 1px solid rgb(107,40,2);
+}
+
+#listings-form h2 {
+  font-size:1.5em;
+}
+
+#listings-form .actions {
+  float:right;
+  margin: 0 0 0 0;
+}
+
+#listings-form .submit-form {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  border:none;
+  text-decoration: none;
+  text-indent:-9999em;
+}
+
+#listings-form .viewing-request {
+  background: url(../images/red-submit.png) no-repeat 0 0;
+  width: 104px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  float:right;
+  cursor:pointer;
+  text-decoration: none;
+  text-indent:-9999em;
+  border:0px;
+}
+
 /*END OF LISTINGS*/
 
 /*DETAILS/TABS*/
@@ -1516,7 +1595,7 @@ div.information p {
   margin: 0 0 0 0;
 }
 
-#enews-form .submit-form {
+#enews-form .submit-enews-signup {
   background: url(../images/red-submit.png) no-repeat 0 0;
   width: 104px;
   height: 31px;
@@ -1527,19 +1606,6 @@ div.information p {
   border:none;
   text-decoration: none;
   text-indent:-9999em;
-}
-
-#enews-form .viewing-request {
-  background: url(../images/red-submit.png) no-repeat 0 0;
-  width: 104px;
-  height: 31px;
-  display: block;
-  margin: 0 auto;
-  float:right;
-  cursor:pointer;
-  text-decoration: none;
-  text-indent:-9999em;
-  border:0px;
 }
 
 .mailform-loading {

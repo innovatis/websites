@@ -68,3 +68,9 @@ ul.tab-bar li a{
 .pane {
   margin:-5px 0px 0px 0px;
 }
+
+.viewing-request {
+  font-size: 0; 
+  display:block; 
+  line-height: 0;
+}
