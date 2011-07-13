@@ -15,6 +15,11 @@
   <meta http-equiv="Content-Type" content=
   "text/html; charset=us-ascii">
   <link href="thorvaldson.css" rel="stylesheet" type="text/css">
+  <style>
+    .hidden{
+      display: none;
+    }
+  </style>
   <script type="text/javascript" src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
   <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -128,11 +133,10 @@ try {
                     <!-- Content -->
 
                     <td id="cont-bg" valign="top">
-                            <div id="mailform-complete"></div>
-                            <div id="error-messages"></div>
                       <form novalidate name="_ctl0" data-mailform="da3444ca4bdba22e093df9dcfd85ae54a2605fc8" id="_ctl0">
                         <input type="hidden" name="__EVENTTARGET"
-                        value=""> <input type="hidden" name=
+                        value=""> 
+                          <input type="hidden" name=
                         "__EVENTARGUMENT" value=""> <input type=
                         "hidden" name="__VIEWSTATE" value=
                         "dDwtNzU4Mjk0MzE7dDw7bDxpPDQ+Oz47bDx0PDtsPGk8Mz47PjtsPHQ8O2w8aTw0NT47aTw0Nz47aTw0OT47PjtsPHQ8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+Oz4+Oz4+Oz4+Oz6hO/Gzrp9eGJUTMyejRYCxhqFawA==">
@@ -157,8 +161,16 @@ try {
                         <table cellpadding="0" cellspacing="0"
                         width="438px" class="content">
                           <tr>
-                            <td><span class="blue">GET A</span>
-                            <span class="black">QUOTE</span></td>
+                            <td>
+                              <span class="blue">GET A</span>
+                              <span class="black">QUOTE</span>
+                              <div class="hidden mailform-success">
+                                 Success
+                              </div>
+                              <div class="hidden mailform-error">
+                                Something Went Wrong
+                              </div>
+                            </td>
                           </tr>
 
                           <tr>
@@ -168,421 +180,425 @@ try {
                               <font color="#FF0000" size=
                               "+2"><span id=
                               "lblStatus"></span></font>
-
-                              <table id="pnlQuote" cellpadding="0"
-                              cellspacing="0" border="0" width=
-                              "100%">
-                                <tr>
-                                  <td>
-                                    <table class="content">
-                                      <tr>
-                                        <td colspan="2">
-                                          <div align="left">
-                                            <font color=
-                                            "#FF0000">*</font>
-                                            Required
-                                          </div>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <td>&nbsp;</td>
-
-                                        <td><select name="Title"
-                                        id="ddlTitle">
-                                          <option value="Mr.">
-                                            Mr.
-                                          </option>
-
-                                          <option value="Mrs.">
-                                            Mrs.
-                                          </option>
-
-                                          <option value="Miss.">
-                                            Miss.
-                                          </option>
-
-                                          <option value="Ms.">
-                                            Ms.
-                                          </option>
-
-                                          <option value="Dr.">
-                                            Dr.
-                                          </option>
-                                        </select></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>First
-                                        Name:</td>
-
-                                        <td><input required='true' name="first_name"
-                                        type="text" id=
-                                        "txtFname"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Last
-                                        Name:</td>
-
-                                      <td><input name="last_name" required='true'
-                                        type="text" id=
-                                        "txtLname"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Address</td>
-
-                                        <td><input required='true' name=
-                                        "address_1" type="text"
-                                        id="txtPaddress"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Address
-                                        2</td>
-
-                                        <td><input name=
-                                        "addres_2" type="text"
-                                        id="txtPaddress2"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>City</td>
-
-                                        <td><input required='true' name="city"
-                                        type="text" id=
-                                        "txtPcity"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Province</td>
-
-                                        <td><input required='true' name=
-                                        "province" type="text"
-                                        id="txtPprovince"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Postal
-                                        Code</td>
-
-                                        <td><input required='true' name=
-                                        "postalcode" type=
-                                        "text" id=
-                                        "txtPpostalcode"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Business
-                                        Phone:</td>
-
-                                        <td><input required='true' name="phone"
-                                        type="text" id=
-                                        "txtBphone"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Other
-                                        Phone:</td>
-
-                                        <td><input name="phone"
-                                        type="text" id=
-                                        "txtHphone"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Fax:</td>
-
-                                        <td><input name="phone"
-                                        type="text" id=
-                                        "txtOphone"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        <font color=
-                                        "#FF0000">*</font>Email:</td>
-
-                                        <td><input required='true' name="email"
-                                        type="text" id=
-                                        "txtEmail"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td>&nbsp;</td>
-                                      </tr>
-
-                                      <tr>
-                                        <td colspan="2">Number of
-                                        Properties to be appraised:
-                                        <select name="propnum"
-                                        onchange=
-                                        "__doPostBack('lstPropNum','')"
-                                        language="javascript" id=
-                                        "lstPropNum">
-                                          <option value="1">
-                                            1
-                                          </option>
-
-                                          <option value="2">
-                                            2
-                                          </option>
-
-                                          <option value="3">
-                                            3
-                                          </option>
-
-                                          <option value="4">
-                                            4
-                                          </option>
-                                        </select></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td class="content"
-                                        colspan="2"><b>Property To
-                                        Be Appraised</b></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        Address:</td>
-
-                                        <td><input name=
-                                        "property_address_1" type="text"
-                                        id="txtAddress1"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Address
-                                        2:</td>
-
-                                        <td><input name=
-                                        "property_address_2" type="text"
-                                        id="txtAddress2"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Legal
-                                        Description:</td>
-
-                                        <td><input name="legal_description"
-                                        type="text" id=
-                                        "txtLegal"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Legal
-                                        Description 2:</td>
-
-                                        <td><input name="lega_description_2"
-                                        type="text" id=
-                                        "txtLegal2"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">City or
-                                        Town:</td>
-
-                                        <td><input name="city"
-                                        type="text" id=
-                                        "txtCity"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        Municipality:</td>
-
-                                        <td><input name=
-                                        "province" type="text"
-                                        id="txtProvince"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">
-                                        Province:</td>
-
-                                        <td><input name=
-                                        "postal_code" type="text"
-                                        id="txtPostalCode"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Building
-                                        Size (Sq. Ft.):</td>
-
-                                        <td><input name=
-                                        "building_size" type=
-                                        "text" id=
-                                        "txtBuildingSize"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Lot
-                                        Size:</td>
-
-                                        <td><input name=
-                                        "lot_size" type="text"
-                                        id="txtLotSize"></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td>&nbsp;</td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Property
-                                        Type:</td>
-
-                                        <td><select name=
-                                        "property_type" id=
-                                        "ddlPropertyType">
-                                          <option value=
-                                          "Commercial">
-                                            Commercial
-                                          </option>
-
-                                          <option value="Retail">
-                                            Retail
-                                          </option>
-
-                                          <option value="Office">
-                                            Office
-                                          </option>
-
-                                          <option value=
-                                          "Industrial">
-                                            Industrial
-                                          </option>
-
-                                          <option value=
-                                          "Multi-Family">
-                                            Multi-Family
-                                          </option>
-
-                                          <option value=
-                                          "Vacant Land">
-                                            Vacant Land
-                                          </option>
-
-                                          <option value=
-                                          "Agricultural">
-                                            Agricultural
-                                          </option>
-
-                                          <option value=
-                                          "Commercial Lots">
-                                            Commercial Lots
-                                          </option>
-
-                                          <option value=
-                                          "Recreational Properties">
-                                          Recreational Properties
-                                          </option>
-
-                                          <option value="Lodges">
-                                            Lodges
-                                          </option>
-
-                                          <option value=
-                                          "Historic Sites">
-                                            Historic Sites
-                                          </option>
-
-                                          <option value=
-                                          "Riding Mountain National Park Commercial Properties">
-                                          Riding Mountain National
-                                          Park Commercial
-                                          Properties
-                                          </option>
-                                        </select></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Appraisal
-                                        Purpose:</td>
-
-                                        <td><select name=
-                                        "appraisal_purpose" id=
-                                        "ddlAppraisalPurpose">
-                                          <option value="Buying">
-                                            Buying
-                                          </option>
-
-                                          <option value="Selling">
-                                            Selling
-                                          </option>
-
-                                          <option value=
-                                          "Refinancing">
-                                            Refinancing
-                                          </option>
-
-                                          <option value=
-                                          "Market Study">
-                                            Market Study
-                                          </option>
-
-                                          <option value=
-                                          "Expert Witness">
-                                            Expert Witness
-                                          </option>
-
-                                          <option value=
-                                          "Assessment">
-                                            Assessment
-                                          </option>
-
-                                          <option value=
-                                          "Tax Purposes">
-                                            Tax Purposes
-                                          </option>
-
-                                          <option value=
-                                          "Estate Settlement">
-                                            Estate Settlement
-                                          </option>
-                                        </select></td>
-                                      </tr>
-
-                                      <tr>
-                                        <td align="right">Other
-                                        Information:</td>
-
-                                        <td>
-                                        <textarea name="other_info"
-                                        rows="5" cols="30" id=
-                                        "txtOinfo">
+                              <div class="inputs">
+                                <table id="pnlQuote" cellpadding="0"
+                                cellspacing="0" border="0" width=
+                                "100%">
+                                  <tr>
+                                    <td>
+                                      <table class="content">
+                                        <tr>
+                                          <td colspan="2">
+                                            <div align="left">
+                                              <font color=
+                                              "#FF0000">*</font>
+                                              Required
+                                            </div>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>&nbsp;</td>
+
+                                          <td><select name="Title"
+                                          id="ddlTitle">
+                                            <option value="Mr.">
+                                              Mr.
+                                            </option>
+
+                                            <option value="Mrs.">
+                                              Mrs.
+                                            </option>
+
+                                            <option value="Miss.">
+                                              Miss.
+                                            </option>
+
+                                            <option value="Ms.">
+                                              Ms.
+                                            </option>
+
+                                            <option value="Dr.">
+                                              Dr.
+                                            </option>
+                                          </select></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>First
+                                          Name:</td>
+
+                                          <td><input required='true' name="first_name"
+                                          type="text" id=
+                                          "txtFname"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Last
+                                          Name:</td>
+
+                                        <td><input name="last_name" required='true'
+                                          type="text" id=
+                                          "txtLname"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Address</td>
+
+                                          <td><input required='true' name=
+                                          "address_1" type="text"
+                                          id="txtPaddress"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Address
+                                          2</td>
+
+                                          <td><input name=
+                                          "addres_2" type="text"
+                                          id="txtPaddress2"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>City</td>
+
+                                          <td><input required='true' name="city"
+                                          type="text" id=
+                                          "txtPcity"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Province</td>
+
+                                          <td><input required='true' name=
+                                          "province" type="text"
+                                          id="txtPprovince"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Postal
+                                          Code</td>
+
+                                          <td><input required='true' name=
+                                          "postalcode" type=
+                                          "text" id=
+                                          "txtPpostalcode"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Business
+                                          Phone:</td>
+
+                                          <td><input required='true' name="phone"
+                                          type="text" id=
+                                          "txtBphone"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Other
+                                          Phone:</td>
+
+                                          <td><input name="phone"
+                                          type="text" id=
+                                          "txtHphone"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Fax:</td>
+
+                                          <td><input name="phone"
+                                          type="text" id=
+                                          "txtOphone"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          <font color=
+                                          "#FF0000">*</font>Email:</td>
+
+                                          <td><input required='true' name="email"
+                                          type="text" id=
+                                          "txtEmail"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                          <td colspan="2">Number of
+                                          Properties to be appraised:
+                                          <select name="propnum"
+                                          onchange=
+                                          "__doPostBack('lstPropNum','')"
+                                          language="javascript" id=
+                                          "lstPropNum">
+                                            <option value="1">
+                                              1
+                                            </option>
+
+                                            <option value="2">
+                                              2
+                                            </option>
+
+                                            <option value="3">
+                                              3
+                                            </option>
+
+                                            <option value="4">
+                                              4
+                                            </option>
+                                          </select></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td class="content"
+                                          colspan="2"><b>Property To
+                                          Be Appraised</b></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          Address:</td>
+
+                                          <td><input name=
+                                          "property_address_1" type="text"
+                                          id="txtAddress1"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Address
+                                          2:</td>
+
+                                          <td><input name=
+                                          "property_address_2" type="text"
+                                          id="txtAddress2"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Legal
+                                          Description:</td>
+
+                                          <td><input name="legal_description"
+                                          type="text" id=
+                                          "txtLegal"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Legal
+                                          Description 2:</td>
+
+                                          <td><input name="lega_description_2"
+                                          type="text" id=
+                                          "txtLegal2"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">City or
+                                          Town:</td>
+
+                                          <td><input name="city"
+                                          type="text" id=
+                                          "txtCity"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          Municipality:</td>
+
+                                          <td><input name=
+                                          "province" type="text"
+                                          id="txtProvince"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">
+                                          Province:</td>
+
+                                          <td><input name=
+                                          "postal_code" type="text"
+                                          id="txtPostalCode"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Building
+                                          Size (Sq. Ft.):</td>
+
+                                          <td><input name=
+                                          "building_size" type=
+                                          "text" id=
+                                          "txtBuildingSize"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Lot
+                                          Size:</td>
+
+                                          <td><input name=
+                                          "lot_size" type="text"
+                                          id="txtLotSize"></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Property
+                                          Type:</td>
+
+                                          <td><select name=
+                                          "property_type" id=
+                                          "ddlPropertyType">
+                                            <option value=
+                                            "Commercial">
+                                              Commercial
+                                            </option>
+
+                                            <option value="Retail">
+                                              Retail
+                                            </option>
+
+                                            <option value="Office">
+                                              Office
+                                            </option>
+
+                                            <option value=
+                                            "Industrial">
+                                              Industrial
+                                            </option>
+
+                                            <option value=
+                                            "Multi-Family">
+                                              Multi-Family
+                                            </option>
+
+                                            <option value=
+                                            "Vacant Land">
+                                              Vacant Land
+                                            </option>
+
+                                            <option value=
+                                            "Agricultural">
+                                              Agricultural
+                                            </option>
+
+                                            <option value=
+                                            "Commercial Lots">
+                                              Commercial Lots
+                                            </option>
+
+                                            <option value=
+                                            "Recreational Properties">
+                                            Recreational Properties
+                                            </option>
+
+                                            <option value="Lodges">
+                                              Lodges
+                                            </option>
+
+                                            <option value=
+                                            "Historic Sites">
+                                              Historic Sites
+                                            </option>
+
+                                            <option value=
+                                            "Riding Mountain National Park Commercial Properties">
+                                            Riding Mountain National
+                                            Park Commercial
+                                            Properties
+                                            </option>
+                                          </select></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Appraisal
+                                          Purpose:</td>
+
+                                          <td><select name=
+                                          "appraisal_purpose" id=
+                                          "ddlAppraisalPurpose">
+                                            <option value="Buying">
+                                              Buying
+                                            </option>
+
+                                            <option value="Selling">
+                                              Selling
+                                            </option>
+
+                                            <option value=
+                                            "Refinancing">
+                                              Refinancing
+                                            </option>
+
+                                            <option value=
+                                            "Market Study">
+                                              Market Study
+                                            </option>
+
+                                            <option value=
+                                            "Expert Witness">
+                                              Expert Witness
+                                            </option>
+
+                                            <option value=
+                                            "Assessment">
+                                              Assessment
+                                            </option>
+
+                                            <option value=
+                                            "Tax Purposes">
+                                              Tax Purposes
+                                            </option>
+
+                                            <option value=
+                                            "Estate Settlement">
+                                              Estate Settlement
+                                            </option>
+                                          </select></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td align="right">Other
+                                          Information:</td>
+
+                                          <td>
+                                          <textarea name="other_info"
+                                          rows="5" cols="30" id=
+                                          "txtOinfo">
 </textarea></td>
-                                      </tr>
+                                        </tr>
+                                        <tr>
+                                          <td>&nbsp;</td>
 
-                                      <tr>
-                                        <td>&nbsp;</td>
-
-                                        <td><input type="submit"
-                                        name="btnSubmit" value=
-                                        "Submit request" id=
-                                        "btnSubmit"></td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
+                                          <td>
+                                            <div class="hidden mailform-error">
+                                              Something Went Wrong
+                                            </div>
+                                            <input type="submit"
+                                          name="btnSubmit" value=
+                                          "Submit request" id=
+                                          "btnSubmit"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                             </td>
                           </tr>
 
