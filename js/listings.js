@@ -102,7 +102,7 @@ $(function(){
           //$("#twitter-feed").append("<li>"+item.text+"</li>");
           tweets.append(   
             '<div class="tweet-bubble">'+
-              '<p class="tweet-time"><span class="timeago" title="'+cleanDate(item.created_at)+'">test</span></p>'+
+              '<p class="tweet-time"><span class="timeago" title="'+cleanDate(item.created_at)+'"></span></p>'+
               '<div class="tweet-bubble-top"></div>'+
               '<div class="tweet-bubble-middle">'+
                 '<p class="tweet">'+item.text+'</p>'+
