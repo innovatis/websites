@@ -82,34 +82,43 @@
               <div id="mailform-complete" style="display:none;">
                     <h2>Thank you, your message has been successfully sent</h2>
                   </div>
-   			      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
-   			        <div id="error-messages" class="error-message">
-                      </div>
-                <div class="inputs">
-                  <div class="input">
-                    <label for="inquiry">How can I help you?</label> 
-               	    <input name="inquiry" required='true' class="required-field"/>
-               	    <span class="error-message">What is your inquiry?</span>
-               	  </div>
-                  <div class="input">
-                    <label for="name">Name</label> 
-               	    <input name="name" required='true' class="required-field"/>
-               	    <span class="error-message">What is your name?</span>
-               	  </div>
-               	  <div class="input">
-                    <label for="e-mail">E-mail</label> 
-               	    <input name="email" required='true' class="required-field"/>
-               	    <span class="error-message">What is your e-mail address?</span>
-               	  </div>
-                  <div class="input">
-                    <label for="phone">Phone</label> 
-               	    <input name="phone"/>
-               	  </div>	   	  
-                </div>
-                <div class="actions">
-                  <input type="submit" class="submit-form">
-                </div>
-              </form>
+   			          <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="#error-messages" method="get"  novalidate='true'> 
+                        <div class="hidden mailform-error"> 
+                          default error
+                        </div>
+                        <div class="hidden mailform-success"> 
+                          default success
+                        </div> 
+                        <div class="hidden mailform-loading"> 
+                          <img src="images/ajax-loader.gif" alt="loading"/>
+                        </div>
+                        <div id="error-messages"> 
+                        </div> 
+                        <div class="inputs"> 
+                          <div class="input">
+                            <label for="inquiry">How can I help you?</label> 
+                       	    <input name="inquiry" required='true' class="required-field"/>
+                       	    <span class="error-message">What is your inquiry?</span>
+                       	  </div>
+                          <div class="input">
+                            <label for="name">Name</label> 
+                       	    <input name="name" required='true' class="required-field"/>
+                       	    <span class="error-message">What is your name?</span>
+                       	  </div>
+                       	  <div class="input">
+                            <label for="e-mail">E-mail</label> 
+                       	    <input name="email" required='true' class="required-field"/>
+                       	    <span class="error-message">What is your e-mail address?</span>
+                       	  </div>
+                          <div class="input">
+                            <label for="phone">Phone</label> 
+                       	    <input name="phone"/>
+                       	  </div> 
+                        </div> 
+                        <div class="actions"> 
+                          <input class="submit-form" type="submit" value="Sign-up"> 
+                        </div> 
+                      </form>
    			    </div>
             
  			    </div>
@@ -177,28 +186,32 @@
       <p>Please complete the information below.</p>
       <p><em>Note: the red boxes are required</em></p>
       <div id="contact-form">
-        <div id="mailform-complete" style="display:none;">
-              <h2>Thank you, for signing up!</h2>
-            </div>
-	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
-	        <div id="error-messages" class="error-message">
-                </div>
-          <div class="inputs">
-            <div class="input">
-              <label for="name">Name</label> 
-         	    <input name="name" required='true' class="required-field"/>
-         	    <span class="error-message">What is your name?</span>
-         	  </div>
-         	  <div class="input">
-              <label for="e-mail">E-mail</label> 
-         	    <input name="email" required='true' class="required-field"/>
-         	    <span class="error-message">What is your e-mail address?</span>
-         	  </div>	   	  
-          </div>
-          <div class="actions">
-            <input type="submit" class="submit-enews-signup">
-          </div>
-        </form>
+        <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" method="get" novalidate='true'> 
+              <div class="hidden mailform-error"> 
+                default error
+              </div>
+              <div class="hidden mailform-success"> 
+                default success
+              </div> 
+              <div class="hidden mailform-loading"> 
+                <img src="images/ajax-loader.gif" alt="loading"/>
+              </div> 
+              <div class="inputs"> 
+                <div class="input">
+                  <label for="name">Name</label> 
+             	    <input name="name" required='true' class="required-field"/>
+             	    <span class="error-message">What is your name?</span>
+             	  </div>
+             	  <div class="input">
+                  <label for="e-mail">E-mail</label> 
+             	    <input name="email" required='true' class="required-field"/>
+             	    <span class="error-message">What is your e-mail address?</span>
+             	  </div> 
+              </div> 
+              <div class="actions"> 
+                <input class="submit-enews-signup button" type="submit" value="Sign-up"> 
+              </div> 
+            </form>
 	    </div>
     </p>  
     </div><!-- /lightbox-panel -->  

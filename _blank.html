@@ -145,28 +145,32 @@
       <p>Please complete the information below.</p>
       <p><em>Note: the red boxes are required</em></p>
       <div id="contact-form">
-        <div id="mailform-complete" style="display:none;">
-              <h2>Thank you, for signing up!</h2>
-            </div>
-	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" novalidate='true'> 
-	        <div id="error-messages" class="error-message">
-                </div>
-          <div class="inputs">
-            <div class="input">
-              <label for="name">Name</label> 
-         	    <input name="name" required='true' class="required-field"/>
-         	    <span class="error-message">What is your name?</span>
-         	  </div>
-         	  <div class="input">
-              <label for="e-mail">E-mail</label> 
-         	    <input name="email" required='true' class="required-field"/>
-         	    <span class="error-message">What is your e-mail address?</span>
-         	  </div>	   	  
-          </div>
-          <div class="actions">
-            <input type="submit" class="submit-enews-signup">
-          </div>
-        </form>
+        <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" method="get" novalidate='true'> 
+              <div class="hidden mailform-error"> 
+                default error
+              </div>
+              <div class="hidden mailform-success"> 
+                default success
+              </div> 
+              <div class="hidden mailform-loading"> 
+                <img src="images/ajax-loader.gif" alt="loading"/>
+              </div> 
+              <div class="inputs"> 
+                <div class="input">
+                  <label for="name">Name</label> 
+             	    <input name="name" required='true' class="required-field"/>
+             	    <span class="error-message">What is your name?</span>
+             	  </div>
+             	  <div class="input">
+                  <label for="e-mail">E-mail</label> 
+             	    <input name="email" required='true' class="required-field"/>
+             	    <span class="error-message">What is your e-mail address?</span>
+             	  </div> 
+              </div> 
+              <div class="actions"> 
+                <input class="submit-enews-signup button" type="submit" value="Sign-up"> 
+              </div> 
+            </form>
 	    </div>
     </p>  
     </div><!-- /lightbox-panel -->  

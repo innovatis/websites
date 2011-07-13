@@ -1301,6 +1301,15 @@ div.information p {
 	display:block;
 }
 
+.mailform-success {
+  font-family: Arial, sans-serif;
+	font-size:.8em;
+  color:rgb(107,40,2);
+	margin:0;
+	font-weight:700;
+	display:block;
+}
+
 /*END OF CONTACT US*/
 
 /*eNews form*/
@@ -1361,6 +1370,15 @@ div.information p {
   border:none;
   text-decoration: none;
   text-indent:-9999em;
+}
+
+.mailform-loading {
+  width:32px;
+  margin:10px auto;
+}
+
+.hidden {
+  display: none;
 }
 
 /*end eNews form*/
