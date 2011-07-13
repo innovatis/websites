@@ -15,6 +15,11 @@
   <link rel="canonical" href=
   "http://www.thorvaldson.ca/contact.html">
   <link href="thorvaldson.css" rel="stylesheet" type="text/css">
+  <style>
+    .hidden{
+      display: none;
+    }
+  </style>
   <script type="text/javascript" src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
   <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -140,16 +145,15 @@ try {
                         <tr>
                           <td style=
                             "padding-left:5px;padding-right:20px;padding-top:5px;">
-                            <div id="mailform-complete"></div>
-                            <div id="error-messages"></div>
                             <form name="_ctl0" data-mailform="9c2312cabe45bbe86c07b8c3e8dfed7b8282b301" id="mailform"
                              id="_ctl0">
                               <input type="hidden" name=
                               "__VIEWSTATE" value=
                               "dDwtMTgwNjAzNjM4OTs7PlPEN+7YCM2lJxGSOZmGRVLUyGPG">
                               <span id="lblStatus"></span>
-
-                              <table class="content">
+                              <div class="mailform-success"></div>
+                              <div class="mailform-error"></div>
+                              <table class="content inputs">
                                 <tr>
                                   <td align="right">First
                                   Name:</td>
