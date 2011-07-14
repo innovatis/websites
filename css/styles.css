@@ -1310,6 +1310,20 @@ div.information p {
   background:url(../images/page-content-background.png);
 }
 
+#content-middle-placeholder {
+  width:854px;
+  min-height:450px;
+  padding:25px;
+  margin:0 auto;
+  background:url(../images/page-content-background.png);
+}
+
+#content-middle-placeholder img {
+  -moz-box-shadow:    3px 3px 2px #888;
+  -webkit-box-shadow: 3px 3px 2px #888;
+  box-shadow:         3px 3px 2px #888;
+}
+
 #content-middle p{
   margin:15px 0;
   width:508px;
