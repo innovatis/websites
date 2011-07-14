@@ -815,6 +815,9 @@ span.african2 {color:#ffffff;}
    margin-bottom: 15px;
    text-shadow: 0 1px 4px #111;
 }
+#footer .upper #themed-suites .right li{
+   width: 115px;
+}
 #footer .upper ul li a{
    font-size: 16px;
    color: #FFFFFF;
