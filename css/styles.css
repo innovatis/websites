@@ -1701,3 +1701,54 @@ a.amber-trails:hover {
 }
 
 /*END OF ABOUT ME*/
+
+/*MORTGAGE CALCULATOR*/
+#mortgageloandata {
+  background-color:#e2e2e2;
+  padding:10px 15px 10px 15px;  
+  border:2px solid #CCCCCC;
+  width:500px;
+}
+
+#mortgageloandata label {
+  display:block;
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:15px 0 5px 0;
+}
+
+#mortgageloandata p{
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:19px 0 0 0;
+}
+
+#mortgageloandata .input{
+  margin:15px 0;
+}
+
+#mortgageloandata input{
+  width:100px;
+  height:26px;
+  border: 1px solid rgb(179,179,179);
+  margin:3px 0 0 0;
+ 	font-family: Arial, sans-serif;
+	font-size:.9em;
+	text-align:right;
+	padding: 0 5px 0 0;
+}
+
+#mortgageloandata select {
+    font-size:.8em;
+}
+
+.mortgage-text {
+	font-family: Arial, sans-serif;
+	font-size:.8em;
+	color:rgb(102,102,102);
+	margin:15px 0 5px 0;
+}
+
+/* END OF MORTGAGE CALCULATOR*/
