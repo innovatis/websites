@@ -1687,12 +1687,17 @@ a.amber-trails:hover {
   background-position: -682px -331px;
 }
 
-
-
-
-
-
-
-
-
 /*END OF COMMUNITIES*/
+
+/*ABOUT ME*/
+
+.about-me-phil {
+  float:right;
+  margin:15px 20px 20px 20px;
+  border:1px solid rgb(116,116,107);
+  -moz-box-shadow:    3px 3px 2px #888;
+  -webkit-box-shadow: 3px 3px 2px #888;
+  box-shadow:         3px 3px 2px #888;
+}
+
+/*END OF ABOUT ME*/
