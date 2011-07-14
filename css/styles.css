@@ -1752,3 +1752,29 @@ a.amber-trails:hover {
 }
 
 /* END OF MORTGAGE CALCULATOR*/
+
+/*404*/
+
+#content-middle-404 {
+  width:854px;
+  min-height:150px;
+  padding:25px;
+  margin:0 auto;
+  background:url(../images/page-content-background.png);
+}
+
+#content-middle-404 p{
+  margin:15px 0;
+  line-height:1.125em;
+}
+
+#content-middle-404 a {
+  text-decoration:none;
+  color:rgb(107,40,2);
+}
+
+#content-middle-404 a:hover {
+  border-bottom:1px dotted;
+}
+
+/*end of 404*/
