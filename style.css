@@ -16,7 +16,7 @@ a{ text-decoration: none;}
 /* HEADER RULES */
 #header{
    height: 185px;
-   border: 1px solid black;
+   background: #8E714B
 }
 #header .TMP-PLACEHOLDER{
    width: 304px;
@@ -34,13 +34,14 @@ a{ text-decoration: none;}
    width: 100px;
    margin-right: 16px;
    display: block;
-   background: lightcoral;
 }
 #header .main-menu li>a{
    display: block;
    height: 100%;
    width: 100%;
    font-size: 14px;
+   font-family: Helvetica, Arial, sans-serif;
+   color: #443413;
 }
 
 /* MAIN RULES */
