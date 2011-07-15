@@ -1636,56 +1636,106 @@ div.information p {
 /*COMMUNITIES*/
 
 a.bridgwater-forest {
-  background: url(../images/communities-listing.png) no-repeat 0 0;
-  width: 230px;
-  height: 331px;
+  background: url(../images/communities-bridgwater-forest.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
   display: block;
   margin: 0 0 0 0;
   float:left;
 }
 
 a.bridgwater-forest:hover {
-  background-position: 0 -331px;
+  background-position: 0 -277px;
   }
 
-a.south-pointe {
-  background: url(../images/communities-listing.png) no-repeat -230px 0;
-  width: 226px;
-  height: 331px;
-  display: block;
-  margin: 0 0 0 0;
-  float:left;
-}
-
-a.south-pointe:hover {
-  background-position: -230px -331px;
-}
-
-a.sage-creek {
-  background: url(../images/communities-listing.png) no-repeat -456px 0;
-  width: 226px;
-  height: 331px;
-  display: block;
-  margin: 0 0 0 0;
-  float:left;
-}
-
-a.sage-creek:hover {
-  background-position: -456px -331px;
-}
-
 a.amber-trails {
-  background: url(../images/communities-listing.png) no-repeat -682px 0;
-  width: 232px;
-  height: 331px;
+  background: url(../images/communities-amber-trails.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
   display: block;
   margin: 0 0 0 0;
   float:left;
 }
 
 a.amber-trails:hover {
-  background-position: -682px -331px;
+  background-position: 0 -277px;
 }
+
+a.bridgwater-lakes {
+  background: url(../images/communities-bridgwater-lakes.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.bridgwater-lakes:hover {
+  background-position: 0 -277px;
+}
+
+a.kingswood-le-salle {
+  background: url(../images/communities-kingswood-le-salle.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.kingswood-le-salle:hover {
+  background-position: 0 -277px;
+}
+  
+a.sage-creek {
+  background: url(../images/communities-sage-creek.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.sage-creek:hover {
+  background-position: 0 -277px;
+}  
+
+a.south-pointe {
+  background: url(../images/communities-south-pointe.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.south-pointe:hover {
+  background-position: 0 -277px;
+}  
+
+a.waterside-estates {
+  background: url(../images/communities-waterside-estates.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.waterside-estates:hover {
+  background-position: 0 -277px;
+}  
+  
+.communities-row {
+  height:277px;
+  width:854px;
+  margin:0 auto;
+}
+
+.communities-row a:hover {
+  border:none !important;
+}
+
 
 /*END OF COMMUNITIES*/
 
