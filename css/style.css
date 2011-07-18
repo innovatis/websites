@@ -277,3 +277,35 @@ form#contact-us-form textarea{
   height: 150px;
   width: 185px;
 }
+
+
+.list-view-house{
+   border: 1px solid white;
+}
+.list-view-house img{
+   border: 1px solid #BFBFBF;
+   float: left;
+   margin: 8px 14px 0 9px;
+}
+.list-view-house h4{
+   margin-top: 9px;
+}
+.list-view-house div{
+   float: left;
+   width: 225px;
+   height: 145px;
+}
+.list-view-house ul{
+   float: right;
+}
+
+.list-view-house li{
+   width: 170px;
+   height: 32px;
+   border: 1px solid #DFDAD2;
+   border-bottom: 1px solid #FFFFFF;
+}
+.list-view-house li.last{
+   height: 42px;
+   border-bottom: none;
+}
