@@ -1355,11 +1355,13 @@ div.information p {
 }
 
 #content-middle .photo {
-  margin:25px auto 0 auto;
+  margin:9px auto 15px auto;
   border:1px solid rgb(116,116,107);
   -moz-box-shadow:    3px 3px 2px #888;
   -webkit-box-shadow: 3px 3px 2px #888;
   box-shadow:         3px 3px 2px #888;
+  background:white;
+  padding:10px;
 }
 
 #content-bottom {
@@ -1825,6 +1827,10 @@ a.waterside-estates:hover {
 
 #content-middle-404 a:hover {
   border-bottom:1px dotted;
+}
+
+.required-star {
+  color:rgb(107,40,2);
 }
 
 /*end of 404*/
