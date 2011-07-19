@@ -4,6 +4,51 @@ filter:    sass
 layout:    nil 
 ---
 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body 
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+
 /*@import 'helpers'*/
 @mixin border-radius($radius)
   border-radius:          $radius
@@ -24,23 +69,37 @@ $verylight: #c3c3c3
   font-weight: normal
   font-style: normal
 
+strong
+  :font-weight bold
+
+em
+  :font-style italic
+
 body
+  :line-height 1.4em
   :margin 0 auto
   :font-family helvetica, arial, sans
   :font-size 12px
   :color $light
   :background #f0f0f0
 
+p 
+  margin-top: 1em
+
 h1
   :color $light
   :font-family 'HelveticaNeue45Light'
   :text-transform uppercase
   :font-weight normal
+  :font-size 24px
+  :padding-bottom 12px
   :border-bottom 2px solid $verylight
 
 h2
   :color $red
   :margin 0
+  :font-weight bold
+  :margin-bottom 6px
   :text-transform uppercase
   :font-size 15px
 
@@ -71,6 +130,7 @@ h3
 .call-us
   :font-weight bold
   :text-transform uppercase
+  :font-size 16px
   :color $red
   .number 
     :display inline
@@ -85,12 +145,14 @@ ul.nav
   :list-style-type none
   :padding 0
   li 
-    :color #9a9a94
     :display inline
     :text-transform uppercase
     :margin 0 40px 0 0
     &.last
       :margin 0
+    a 
+      :text-decoration none
+      :color #9a9a94
 
 #header .nav
   :margin 95px 0 0 0
@@ -99,6 +161,9 @@ ul.nav
 #content
   padding-top: 50px
   clear: both
+  h2
+    :text-transform none
+    :font-size 18px
 
 #footer
   :border-top 2px solid $verylight
@@ -129,6 +194,7 @@ ul.nav
     :margin-right 16px
     :font-size 14px
   .nav
+    :line-height 41px
     :float left
   .logo 
     :float right
@@ -174,3 +240,45 @@ ul.value
     &.last
       :background #dcdfeb
       :color #2b305b
+
+.clear
+  :clear both
+
+/* Contact Us styles */
+
+.contactus
+  padding-bottom: 85px
+  h1 
+    margin-bottom: 42px
+
+  iframe.googlemap
+    :float left
+   
+  .content  
+    position: relative
+    left: 29px
+
+/* Spacesaver styles */
+
+.spacesaver
+  h1 
+    :text-transform none
+  .third.first
+    width: 182px
+    height: 240px
+    margin-right: 33px
+    background: blue
+  .third.second
+    width: 328px
+    margin-right: 45px
+  .third.last
+    width: 310px
+    li 
+      padding: 5px 0 5px 32px
+      border-bottom: 1px solid $verylight
+      &.last
+        border-bottom: none
+      .name
+        color: #bad976
+        font-style: italic
+        font-weight: bold
