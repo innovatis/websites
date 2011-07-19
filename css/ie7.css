@@ -3,11 +3,12 @@ h2#the-meyer-phone{
 }
 
 .list-view-house li{
-   margin-top: -1px;
+   margin-bottom: -5px;
+   height: 34px;
 }
-.list-view-house li.last{
+/*.list-view-house li.last{
    height: 44px;
-}
+}*/
 
 ul#main-menu li.last{
    width: 19%;
