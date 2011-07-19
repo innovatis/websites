@@ -4,5 +4,173 @@ filter:    sass
 layout:    nil 
 ---
 
+/*@import 'helpers'*/
+@mixin border-radius($radius)
+  border-radius:          $radius
+  -webkit-border-radius:  $radius
+  -moz-border-radius:     $radius
+
+$red: #8b2114
+$dark: #333
+$medium: #5a5a5a
+$light: #696969
+$morelight: #bbbbbb
+$verylight: #c3c3c3
+
+@font-face
+  font-family: 'HelveticaNeue45Light'
+  src: url('/fonts/helveticaneue-light-webfont.eot')
+  src: url('/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/helveticaneue-light-webfont.woff') format('woff'), url('/fonts/helveticaneue-light-webfont.ttf') format('truetype'), url('/fonts/helveticaneue-light-webfont.svg#HelveticaNeue45Light') format('svg')
+  font-weight: normal
+  font-style: normal
+
 body
-  :font-family Verdana, "Bitstream Vera Sans", sans-serif
+  :margin 0 auto
+  :font-family helvetica, arial, sans
+  :font-size 12px
+  :color $light
+  :background #f0f0f0
+
+h1
+  :color $light
+  :font-family 'HelveticaNeue45Light'
+  :text-transform uppercase
+  :font-weight normal
+  :border-bottom 2px solid $verylight
+
+h2
+  :color $red
+  :margin 0
+  :text-transform uppercase
+  :font-size 15px
+
+h3 
+  :color $medium
+  :font-family 'HelveticaNeue45Light'
+  :margin 0
+  :padding-bottom 8px
+  :font-weight normal
+  :border-bottom 1px solid $verylight
+  :font-size 17px
+
+#wrapper
+  :position relative
+  :margin 0 auto
+  :width 903px
+
+#header 
+  .logo a
+    :margin 50px 0 0 0 
+    :height 64px
+    :width 229px
+    :background blue
+    :text-indent -9999px
+    :display block
+    :float left
+
+.call-us
+  :font-weight bold
+  :text-transform uppercase
+  :color $red
+  .number 
+    :display inline
+    :color $dark
+
+#header .call-us
+  :position absolute
+  :top 50px
+  :right 0px
+
+ul.nav
+  :list-style-type none
+  :padding 0
+  li 
+    :color #9a9a94
+    :display inline
+    :text-transform uppercase
+    :margin 0 40px 0 0
+    &.last
+      :margin 0
+
+#header .nav
+  :margin 95px 0 0 0
+  :float right
+
+#content
+  padding-top: 50px
+  clear: both
+
+#footer
+  :border-top 2px solid $verylight
+  :padding 25px 0
+
+.third 
+  text-align: justify
+  float: left
+  &.first
+    :width 294px
+    margin-right: 55px
+    em
+      font-style: normal
+      color: $dark
+  &.second
+    :width 262px
+    margin-right: 55px
+  &.last
+    :width 237px
+
+#footer 
+  .bottom
+    :clear left
+  .call-us
+    :color $dark
+    :float right
+    :line-height 41px
+    :margin-right 16px
+    :font-size 14px
+  .nav
+    :float left
+  .logo 
+    :float right
+    a
+      :height 41px
+      :width 154px
+      :background blue
+      :text-indent -9999px
+      :display block
+
+#mailer
+  label
+    :margin-top 8px
+    :display block
+    :color $dark
+  input.text
+    :height 18px
+    :padding 4px
+    :background white
+    :width 215px
+    :border 1px solid $morelight
+    &#mailer_phone
+      :width 155px
+  input.submit
+    :float right
+
+ul.value
+  :list-style-type none
+  :margin 0
+  :padding 0
+  li
+    :display block
+    :background red
+    @include border-radius(5px)
+    :padding 9px 9px 9px 62px
+    :margin-bottom 9px
+    &.first
+      :background #f9dff7
+      :color #673c5f
+    &.second
+      :background #e0f1ce
+      :color #385f3d
+    &.last
+      :background #dcdfeb
+      :color #2b305b

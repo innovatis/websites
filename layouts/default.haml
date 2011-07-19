@@ -13,4 +13,70 @@ filter: haml
     %script{src: '/javascripts/application.js'}
 
   %body
-    = @content
+    #wrapper
+      #header
+        .logo
+          %a{href: '/'} Millennium Office Furnishings Ltd.
+        .call-us
+          Call Us Today
+          .number (204) 779-0111
+        %ul.nav
+          %li Product Lines
+          %li Solutions
+          %li Spacesaver<sup>&reg;</sup>
+          %li.last Contact Us
+   
+      #content
+        = @content
+   
+      #footer
+        .top
+          .first.third
+            %h2 About
+            %h3 Millennium Office Furniture
+            %p Millennium Office Furnishings is a contract furnishing company serving corporate, government, healthcare, educational and institutional markets.
+     
+            %p <em>Our vision is to add value to your organization, which can be done in several ways:</em>
+            %ul.value
+              %li.first Increase employee productivity and health through provision of ergonomically correct furnishings.
+              %li.second Lower your space occupancy costs using space saving storage solutions and workstation concepts.
+              %li.last Lower the cost of moving and reorganizing through the use of flexible workstation design and movable wall systems.
+          .second.third
+            %h2 Need Financing?
+            %h3 We can help with that too.
+            %p Millennium can work with a company of your choice or suggest companies that can make purchasing of furniture easier. This allows organizations to upgrade to products which can increase office productivity, and thus, add value to your organization.
+     
+            %img{src: '/images/footer_placeholder.png'}
+     
+          .last.third
+            %h2 Questions?
+            %h3 We're here to help.
+            %p Fill out the "Quick Form" below and one of our experienced furniture consultants will follow up with you ASAP!
+     
+            %form#mailer{action: '?????', method: 'post'}
+              %label{for: 'mailer_name'} Name
+              %input#mailer_name.text{name: 'name'}
+     
+              %label{for: 'mailer_email'} Email
+              %input#mailer_email.text{name: 'email'}
+     
+              %label{for: 'mailer_phone'} Phone
+              %input#mailer_phone.text{name: 'phone'}
+
+              %input.submit{type: 'submit', value: 'Submit Info'}
+   
+        .bottom
+          %ul.nav
+            %li Product Lines
+            %li Solutions
+            %li Spacesaver<sup>&reg;</sup>
+            %li Contact Us
+        .logo
+          %a{href: '/'} Millennium Office Furnishings Ltd.
+        .call-us
+          Call
+          .number (204) 779-0111
+        
+        
+          
+          

@@ -4,5 +4,5 @@ filter:    coffeescript
 layout:    nil
 ---
 
-$ ->
-  alert("OMG")
+$ -> null
+
