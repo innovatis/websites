@@ -264,17 +264,21 @@ ul.value
   h1 
     :text-transform none
   .third.first
+    margin: 24px 0 55px 0
     width: 182px
     height: 240px
     margin-right: 33px
     background: blue
   .third.second
+    margin-top: 24px
     width: 328px
-    margin-right: 45px
+    margin-right: 40px
   .third.last
+    margin-top: 34px
     width: 310px
     li 
-      padding: 5px 0 5px 32px
+      background: url(/images/check.png) 5px center no-repeat
+      padding: 8px 0 8px 32px
       border-bottom: 1px solid $verylight
       &.last
         border-bottom: none
@@ -282,3 +286,39 @@ ul.value
         color: #bad976
         font-style: italic
         font-weight: bold
+
+/* Solutions styles */
+.solutions
+  .green
+    padding-top: 40px
+    .leader p 
+      :float left
+      :width 504px
+      @include border-radius(5px)
+      :padding 11px 13px
+      :margin-top -8px 
+      :background #e0f1ce
+      :color #699132
+    .leader h1
+      :float left
+      :font-size 28px
+      :font-family helvetica
+      :font-weight bold
+      :color #a2cf3f
+      :width 370px
+      :border none
+      :line-height 1em
+      :display block
+    .column
+      :width 200px
+      :margin-right 28px
+      :float left
+      &.fourth
+        :margin-right 0
+      h3
+        :padding-bottom 0
+        :font-family helvetica
+        :font-weight bold
+        :font-size 13px
+        :border none
+        :text-align left
