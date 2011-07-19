@@ -227,7 +227,6 @@ ul#main-menu li h1#logo a{
   width: 652px;
   float: left;
 }
-
 #body{
 }
 
@@ -281,6 +280,7 @@ form#contact-us-form textarea{
 
 .list-view-house{
    border: 1px solid white;
+   height: 145px;
 }
 .list-view-house img{
    border: 1px solid #BFBFBF;
@@ -308,4 +308,14 @@ form#contact-us-form textarea{
 .list-view-house li.last{
    height: 42px;
    border-bottom: none;
+}
+#footer ul{
+   display: block;
+   width: 610px;
+   margin: 0 auto;
+}
+#footer li{
+   float: left;
+   width: 150px;
+   text-align: center;
 }

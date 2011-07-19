@@ -4,6 +4,9 @@
     <title>The Title</title>
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/application.js" ></script>
+    <!--[if IE 7]>
+      <link href="css/ie7.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
   </head>
   <body>
     <div id="header">
@@ -34,6 +37,7 @@
         <div class="main-with-sidebar">
           <h2>Featured Listings</h2>
           <a href="listings.html">View all Listings</a>
+          <br class='clear' />
           <div class="list-view-house">
             <img src="images/samplehouse.png"/>
             <div>
@@ -82,8 +86,12 @@
     </div>
     <div id="footer">
       <div class="content">
-
-        <br class="clear"/>
+        <ul>
+          <li><a href="#">View Listings</li></a>
+          <li><a href="#">My Services</li></a>
+          <li><a href="#">Read My Blog</li></a>
+          <li><a href="#">Contact Us</li></a>
+        </ul>
       </div>
     </div>
   </body>
