@@ -261,11 +261,11 @@ ul#main-menu li h1#logo a{
 #body{
    padding-top: 32px;
 }
-#body .sidebar>h3{
+#body .sidebar h3{
    font-size: 20px;
    font-weight: bold;
 }
-#body .sidebar>p{
+#body .sidebar p{
    width: 230px;
    font-size: 12px;
 }

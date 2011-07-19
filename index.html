@@ -4,6 +4,9 @@
     <title>The Title</title>
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/application.js" ></script>
+    <!--[if IE 6]>
+        <link href="css/ie6.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
     <!--[if IE 7]>
       <link href="css/ie7.css" media="screen" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -22,6 +25,9 @@
           <li class="last"><a href="contact.html"   class="last"  >CONTACT          </a></li>
         </ul>
         <div id="main-showcase">
+          <!--[if IE 6]>
+              <div></div>
+          <![endif]-->
         </div>
         <div id="main-showcase-footer">
           <h2 id="the-meyer-team"><strong>Sabie Brar,</strong> Winnipeg Realtor</h2>
@@ -40,7 +46,7 @@
         </div>
         <div class="main-with-sidebar">
           <h2>Featured Listings</h2>
-          <a href="listings.html">VIEW ALL LISTINGS</a>
+          <a id="listings" href="listings.html">VIEW ALL LISTINGS</a>
           <br class='clear' />
           <div class="list-view-house">
             <img src="images/samplehouse.png"/>
