@@ -181,6 +181,9 @@ ul#main-menu li a {
   display: block;
   margin-top:81px;
   line-height:61px;
+  text-decoration: none;
+  color: #A38766;
+  font-size: 12px;
 }
 ul#main-menu li a.last{
   background: none;
@@ -211,8 +214,14 @@ ul#main-menu li h1#logo a{
   float: left;
   width: 50%;
   text-align: left;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
 }
-
+#the-meyer-team strong{
+   font-weight: bold;
+   font-style: none;
+}
 #the-meyer-phone{
   float: right;
   width: 50%;
