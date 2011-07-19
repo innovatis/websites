@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+   background: #F1EEEB;
 }
 ol, ul {
   list-style: none;
@@ -226,6 +227,17 @@ ul#main-menu li h1#logo a{
 .main-with-sidebar{
   width: 652px;
   float: left;
+}
+
+.main-with-sidebar h2{
+   float: left;
+   width: 49%;
+   text-align: left;
+}
+.main-with-sidebar a{
+   float: left;
+   width: 49%;
+   text-align: right;
 }
 #body{
 }

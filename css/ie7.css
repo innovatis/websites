@@ -8,3 +8,7 @@ h2#the-meyer-phone{
 .list-view-house li.last{
    height: 44px;
 }
+
+ul#main-menu li.last{
+   width: 19%;
+}
