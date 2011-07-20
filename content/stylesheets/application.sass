@@ -138,6 +138,7 @@ h3
 
 #header 
   :background url(../images/header_divider.png) bottom center no-repeat
+  :padding-bottom 16px
   .logo
     :margin 50px 0 0 0 
     :height 59px
@@ -175,8 +176,12 @@ ul.nav
       :color #9a9a94
 
 #header .nav
-  :margin 95px 0 0 0
-  :float right
+  :margin 0
+  :position absolute
+  :right 0
+  :left 300px
+  top: 90px
+  :text-align right
 
 #content
   padding-top: 50px
@@ -221,7 +226,9 @@ ul.nav
     :height 155px
   .nav
     :line-height 41px
-    :float left
+    :position absolute
+    :left 0
+    :right 350px
   .logo 
     :float right
     a
@@ -535,7 +542,6 @@ ul.value
         :font-size 11px
         :width 225px
       a.button
-        @include gradient(#f0f0f0, #c3c3c3)
         :height 28px
         @include border-radius(14px)
         :color $dark
@@ -545,6 +551,7 @@ ul.value
         :padding 3px 15px
         :font-weight bold
         :font-size 11px
+        @include gradient(#f0f0f0, #c3c3c3)
         &::before
           :content '▸ '
   .middle
