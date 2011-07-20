@@ -56,6 +56,11 @@ table
   -webkit-border-top-left-radius:  $radius
   -moz-border-radius-topleft:      $radius
 
+@mixin border-top-right-radius($radius)
+  border-top-right-radius:          $radius
+  -webkit-border-top-right-radius:  $radius
+  -moz-border-radius-topright:      $radius
+
 @mixin border-radius($radius)
   border-radius:          $radius
   -webkit-border-radius:  $radius
@@ -548,3 +553,24 @@ ul.value
     :width 100%
     :height 200px
     :margin-bottom 40px
+    :background white
+    ul.tabs
+      :list-style-type none
+      :padding 0
+      :margin 0
+      li
+        :text-align center
+        :float left
+        :background #dadad3
+        :width 180px
+        :height 25px
+        :line-height 25px
+        &.active
+          :background #49493f
+          :color white
+        &.first
+          :width 181px
+          @include border-top-left-radius(12px)
+        &.last
+          :width 182px
+          @include border-top-right-radius(12px)
