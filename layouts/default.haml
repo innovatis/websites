@@ -12,6 +12,7 @@ filter: haml
   
     %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
     %script{src: '/javascripts/application.js'}
+    %script{src: '/javascripts/mailform.js'}
 
   %body
     #wrapper
@@ -53,18 +54,29 @@ filter: haml
             %h2 Questions?
             %h3 We're here to help.
             %p Fill out the "Quick Form" below and one of our experienced furniture consultants will follow up with you ASAP!
-     
-            %form#mailer{action: '?????', method: 'post'}
-              %label{for: 'mailer_name'} Name
-              %input#mailer_name.text{name: 'name'}
-     
-              %label{for: 'mailer_email'} Email
-              %input#mailer_email.text{name: 'email'}
-     
-              %label{for: 'mailer_phone'} Phone
-              %input#mailer_phone.text{name: 'phone'}
 
-              %input.submit{type: 'submit', value: ' ▸  Submit Info  '}
+     
+            %form#mailform{'data-mailform' => 'da3444ca4bdba22e093df9dcfd85ae54a2605fc8', method: 'get'}
+              .hidden.mailform-error
+                error
+              .hidden.mailform-complete
+                complete
+              .hidden.mailform-success
+                success
+              .hidden.mailform-loading
+                loading
+              .inputs
+                .input.string
+                  %label{for: 'mailer_name'} Name
+                  %input#mailer_name.text{name: 'name'}
+                .input.string
+                  %label{for: 'mailer_email'} Email
+                  %input#mailer_email.text{name: 'email'}
+                .input.string
+                  %label{for: 'mailer_phone'} Phone
+                  %input#mailer_phone.text{name: 'phone'}
+              .actions
+                %input.submit{type: 'submit', value: ' ▸  Submit Info  '}
    
         .bottom
           %ul.nav
