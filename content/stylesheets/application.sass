@@ -50,6 +50,12 @@ table
 
 
 /*@import 'helpers'*/
+
+@mixin border-top-left-radius($radius)
+  border-top-left-radius:          $radius
+  -webkit-border-top-left-radius:  $radius
+  -moz-border-radius-topleft:      $radius
+
 @mixin border-radius($radius)
   border-radius:          $radius
   -webkit-border-radius:  $radius
@@ -66,12 +72,14 @@ $dark: #333
 $medium: #5a5a5a
 $light: #696969
 $morelight: #bbbbbb
+$anotherlight: #d4d3cb
 $verylight: #c3c3c3
+$bodybg: #f0f0f0
 
 @font-face
   font-family: 'HelveticaNeue45Light'
-  src: url('/fonts/helveticaneue-light-webfont.eot')
-  src: url('/fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/helveticaneue-light-webfont.woff') format('woff'), url('/fonts/helveticaneue-light-webfont.ttf') format('truetype'), url('/fonts/helveticaneue-light-webfont.svg#HelveticaNeue45Light') format('svg')
+  src: url('../fonts/helveticaneue-light-webfont.eot')
+  src: url('../fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneue-light-webfont.woff') format('woff'), url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'), url('../fonts/helveticaneue-light-webfont.svg#HelveticaNeue45Light') format('svg')
   font-weight: normal
   font-style: normal
 
@@ -87,7 +95,7 @@ body
   :font-family helvetica, arial, sans
   :font-size 12px
   :color $light
-  :background #f0f0f0
+  :background $bodybg
 
 p 
   margin-top: 1em
@@ -124,11 +132,12 @@ h3
   :width 903px
 
 #header 
-  .logo a
+  :background url(../images/header_divider.png) bottom center no-repeat
+  .logo
     :margin 50px 0 0 0 
-    :height 64px
-    :width 229px
-    :background blue
+    :height 59px
+    :width 226px
+    :background url(../images/header_logo.png)
     :text-indent -9999px
     :display block
     :float left
@@ -155,7 +164,7 @@ ul.nav
     :text-transform uppercase
     :margin 0 40px 0 0
     &.last
-      :margin 0
+      :margin-right 0
     a 
       :text-decoration none
       :color #9a9a94
@@ -189,8 +198,12 @@ ul.nav
 #footer 
   :border-top 2px solid $verylight
   :padding 25px 0
+  .top
+    :padding-bottom 20px
   .bottom
+    :background url(../images/footer_divider.jpg) top center no-repeat
     :clear left
+    :padding-top 25px
   .call-us
     :color $dark
     :float right
@@ -209,7 +222,7 @@ ul.nav
     a
       :height 41px
       :width 154px
-      :background blue
+      :background url('../images/footer_logo.png')
       :text-indent -9999px
       :display block
 
@@ -252,13 +265,13 @@ ul.value
     :padding 4px 8px 4px 62px
     :margin-bottom 9px
     &.first
-      :background #f9dff7
+      :background url(../images/icon_health.png) 14px center no-repeat #f9dff7
       :color #673c5f
     &.second
-      :background #e0f1ce
+      :background url(../images/icon_space.png) 14px center no-repeat #e0f1ce
       :color #385f3d
     &.last
-      :background #dcdfeb
+      :background url(../images/icon_cost.png) 14px center no-repeat #dcdfeb
       :color #2b305b
 
 .clear
@@ -300,7 +313,7 @@ ul.value
     width: 182px
     height: 240px
     margin-right: 33px
-    background: blue
+    background: url(../images/spacesaver.jpg) top left no-repeat
   .third.second
     margin-top: 24px
     width: 328px
@@ -309,7 +322,7 @@ ul.value
     margin-top: 34px
     width: 310px
     li 
-      background: url(/images/check.png) 5px center no-repeat
+      background: url(../images/check.png) 5px center no-repeat
       padding: 8px 0 8px 32px
       border-bottom: 1px solid $verylight
       &.last
@@ -354,12 +367,12 @@ ul.value
       :line-height 1em
       :display block
     .column
-      :width 200px
-      :margin 20px 28px 0 0
+      :width 210px
+      :margin 20px 19px 0 0
       :float left
       img
-        :width 200px
-        :height 80px
+        :width 210px
+        :height 85px
         :border 1px solid $morelight
       &.fourth
         :margin-right 0
@@ -462,3 +475,76 @@ ul.value
     :margin 40px 0 25px 0
 
     
+/* Home page styles */
+.home
+  .top
+    .image
+      :position absolute
+      :top 0
+      :right 0
+      :background url(../images/photo1.png) top right no-repeat
+      :bottom 0
+      :width 704px
+    :width 100%
+    :height 297px
+    :position relative
+    :background #49493f
+    @include border-radius(12px)
+    :border 1px solid $anotherlight
+    :margin-bottom 35px
+    ul
+      :list-style-type none
+      :padding 0
+      :margin 0
+      :width 400px
+      li 
+        :height 36px
+        :line-height 36px
+        :width 100%
+        :text-transform uppercase
+        :padding-left 15px
+        :background $bodybg
+        :color #808080
+        &.first
+          @include border-top-left-radius(10px)
+        &.current
+          :background #dadad3
+          :color $red
+          :font-weight bold
+    .gov
+      :margin 10px 0 0 12px
+      :background url(../images/leaf.png) top left no-repeat
+      h3
+        :margin-left 25px
+        :position relative
+        :top 2px
+        :text-transform uppercase
+        :font-weight bold
+        :color white
+        :font-family helvetica
+        :font-size 12px
+        :border none
+      p
+        :margin-top 0
+        :color $verylight
+        :font-size 11px
+        :width 225px
+      a.button
+        @include gradient(#f0f0f0, #c3c3c3)
+        :height 28px
+        @include border-radius(14px)
+        :color $dark
+        :line-height 28px
+        :text-transform uppercase
+        :text-decoration none
+        :padding 3px 15px
+        :font-weight bold
+        :font-size 11px
+        &::before
+          :content '▸ '
+  .middle
+    @include border-radius(12px)
+    :border 1px solid $verylight
+    :width 100%
+    :height 200px
+    :margin-bottom 40px

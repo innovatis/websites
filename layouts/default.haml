@@ -8,25 +8,25 @@ filter: haml
     %title= @page.title
     <meta charset="utf-8" /> 
   
-    %link{rel: 'stylesheet', href: "/stylesheets/application.css", type: "text/css", media: "screen, projection"}
+    %link{rel: 'stylesheet', href: "stylesheets/application.css", type: "text/css", media: "screen, projection"}
   
     %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
-    %script{src: '/javascripts/application.js'}
-    %script{src: '/javascripts/mailform.js'}
+    %script{src: 'javascripts/application.js'}
+    %script{src: 'javascripts/mailform.js'}
 
   %body
     #wrapper
       #header
-        .logo
-          %a{href: '/'} Millennium Office Furnishings Ltd.
+        %a.logo{href: '/'} Millennium Office Furnishings Ltd.
         .call-us
           Call Us Today
           .number (204) 779-0111
         %ul.nav
-          %li <a href='/products.html'>Product Lines</a>
-          %li <a href='/solutions.html'>Solutions</a>
-          %li <a href='/spacesaver.html'>Spacesaver<sup>&reg;</sup></a>
-          %li.last <a href='/contact.html'>Contact Us</a>
+          %li <a href='products.html'>Product Lines</a>
+          %li <a href='solutions.html'>Solutions</a>
+          %li <a href='spacesaver.html'>Spacesaver<sup>&reg;</sup></a>
+          %li.last <a href='contact.html'>Contact Us</a>
+        %br.clear
    
       #content
         = @content
@@ -48,7 +48,7 @@ filter: haml
             %h3 We can help with that too.
             %p Millennium can work with a company of your choice or suggest companies that can make purchasing of furniture easier. This allows organizations to upgrade to products which can increase office productivity, and thus, add value to your organization.
      
-            %img{src: '/images/blue.png'}
+            %img{src: 'images/blue.png'}
      
           .last.third
             %h2 Questions?
@@ -77,18 +77,19 @@ filter: haml
                   %input#mailer_phone.text{name: 'phone'}
               .actions
                 %input.submit{type: 'submit', value: ' ▸  Submit Info  '}
-   
+          %br.clear
         .bottom
           %ul.nav
-            %li Product Lines
-            %li Solutions
-            %li Spacesaver<sup>&reg;</sup>
-            %li Contact Us
-        .logo
-          %a{href: '/'} Millennium Office Furnishings Ltd.
-        .call-us
-          Call
-          .number (204) 779-0111
+            %li <a href='products.html'>Product Lines</a>
+            %li <a href='solutions.html'>Solutions</a>
+            %li <a href='spacesaver.html'>Spacesaver<sup>&reg;</sup></a>
+            %li.last <a href='contact.html'>Contact Us</a>
+          .logo
+            %a{href: '/'} Millennium Office Furnishings Ltd.
+          .call-us
+            Call
+            .number (204) 779-0111
+          %br.clear
         
         
           
