@@ -1,13 +1,18 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 62.5%;  font: inherit;  vertical-align: baseline;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}
+body {font-size:0.625em;line-height: 1.5;background: url(../images/content_bkg_tile.jpg) 0 0;
+}
 ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {  content: '';content: none;}
 table {  border-collapse: collapse;  border-spacing: 0;}
 input, textarea, select {-webkit-appearance: none;}
-a{ text-decoration: none;}
+h1 {font-family:news-gothic-std, sans-serif; font-weight:700; font-size: 5.5em;}
+h2 {font-family:news-gothic-std, sans-serif; font-weight:700;}
+h3 {font-family:news-gothic-std, sans-serif;}
+a { text-decoration: none;}
+p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #container{
    min-width: 1000px;
@@ -15,196 +20,191 @@ a{ text-decoration: none;}
 
 /* HEADER RULES */
 #header{
-   height: 185px;
-     background: url(../images/header_bkg_tile.jpg) 0 0;
+  height: 185px;
+  background: url(../images/header_bkg_tile.jpg) 0 0;
 }
 #header .TMP-PLACEHOLDER{
-   width: 304px;
-   height: 120px;
-   margin: 0 auto;
-   background: lightseagreen;
+  width: 304px;
+  height: 120px;
+  margin: 0 auto;
+  background: lightseagreen;
 }
 
 #header .logo {
-   width: 304px;
-   height: 120px;
-   margin: 0 auto;
+  width: 304px;
+  height: 120px;
+  margin: 0 auto;
 }
 
 #header .main-menu{
-   width: 700px;
-   margin: 0 auto;
-   margin-top: 40px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
+
+#header ul li{
+  margin-left:25px;
+}
+
 #header .main-menu li{
-   float: left;
-   width: 100px;
-   margin-right: 16px;
-   display: block;
+  float: left;
+  margin-right: 34px;
+  display: block;
 }
 #header .main-menu li>a{
-   display: block;
-   height: 100%;
-   width: 100%;
-   font-size: 14px;
-   font-family: Helvetica, Arial, sans-serif;
-   color: #443413;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 1.4em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:700;
+  color: rgb(72,68,49);
 }
+
 
 /* MAIN RULES */
 #main{
-   height: 699px;
-   border: 1px solid red;
-   background: url(../images/content_bkg_tile.jpg) 0 0;
+  background: url(../images/content_bkg_lighting.jpg) no-repeat 0 0;
 }
 #main .content{
-   padding-top: 32px;
+  padding-top: 32px;
 }
 #main div.headline{
-   width: 910px;
-   height: 300px;
-   background: black;
-   margin: 0 auto;
-/*   background:#fff;*/
+  width: 912px;
+  height: 299px;
+  margin: 0 auto;
+  background:url(../images/headline-background.png) no-repeat 0 0;
 }
-#main div.headline .TMP-PLACEHOLDER{
-   width: 250px;
-   height: 100%;
-   background: #808080;
-   float: left;
+#main div.headline .left{
+  width: 250px;
+  height: 100%;
+  float: left;
+  padding-top:30px;
 }
 #main div.headline .right{
-   float: left;
-   width: 660px;
-   color: white;
+  float: left;
+  width: 660px;
+  color: white;
 }
 #main div.headline h1{
-   margin-top: 40px;
-   font-size: 48px;
-   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 23px;
+  color:rgb(176,194,132);
+  text-shadow: rgba(0,0,0,.7) 0px 0px 6px;
 }
 #main div.headline h2{
-   font-size: 20px;
-   margin-top: 32px;
-   font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+  color:rgb(25,28,9);
 }
 #main div.headline p{
-   margin-top: 5px;
-   font-size: 14px;
-   width: 400px;
-   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 5px;
+  width: 400px;
+  color:rgb(230,347,209);
 }
 
 #main div.main{
-   margin-top: 100px;
-   padding-left: 45px;
-   padding-right: 45px;
+  margin-top: 100px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
-#main div.main .TMP-PLACEHOLDER{
-   width: 453px;
-   height: 230px;
-   background: seagreen;
-   float: right;
+#main div.main .couches{
+  width: 453px;
+  height: 230px;
+  background: url(../images/couches.png) no-repeat 0 0;
+  float: right;
 }
 #main div.main h2{
-   font-family: Helvetica, Arial, sans-serif;
-   font-size: 18px;
-   color: white;
+  color: rgb(244,247,234);
+  font-size: 1.8em;
 }
 #main div.main p{
-   font-family: Helvetica, Arial, sans-serif;
-   font-size: 14px;
-   margin-top: 8px;
-   width: 400px;
+  color:rgb(208,218,175);
+  font-size: 14px;
+  margin-top: 8px;
+  width: 400px;
 }
 
 #main div.headline a.action-ribbon {
   background: url(../images/action_ribbon_sprite.png) no-repeat 0 0;
   width: 219px;
-  height: 53px;
+  height: 55px;
   display: block;
-  margin: 8px 0 0 0;
+  margin: 73px 15px 0 0;
   text-decoration: none;
-  font-family: serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight:600;
-  color:rgb(79,79,79);
+  color:rgb(0,0,0);
   text-align:center;
-  padding:4px 0 0 0;
-  border:1px dashed green;
+  padding:5px 0 0 0;
   float: right;
   font-size: 16px;
   line-height: 50px;
-  margin-top: 32px;
-  margin-right: 15px;
+  text-shadow: rgb(181,70,59) 0px 1px 1px;
 }
 
 #main div.headline a.action-ribbon:hover {
   background-position: 0 -61px;
-  }
+}
 
 /* PRODUCTS LIST RULES */
 #products{
-   height: 60px;
-   border: 1px solid blue;
+  height: 58px;
+  background:url(../images/products-background-tile.png) repeat 0 0;
 }
 
 #products ul{
-   height: 100%;
+  height: 100%;
 }
 #products li{
-   float: left;
-   width: 98px;
-   height: 100%;
-   border: 1px solid chartreuse;
-   background: slategrey;
-
+  float: left;
+  width: 98px;
+  height: 100%;
 }
 #producs li>a{
-   display: block;
-   height: 100%;
-   width: 100%;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 /* FOOTER RULES */
 #footer{
-   height: 250px;
-   border: 1px solid green;
-   background: url(../images/footer_bkg_tile.jpg) 0 0;
+  height: 250px;
+  background: url(../images/footer_bkg_tile.jpg) 0 0;
 }
 #footer .content{
-   padding-top: 50px;
+  padding-top: 50px;
 }
 #footer .TMP-PLACEHOLDER{
-   float: left;
-   width: 200px;
-   height: 80px;
-   background: sienna;
-   margin-right
+  float: left;
+  width: 200px;
+  height: 80px;
+  background: sienna;
+  margin-right
 }
 
 #footer ul li{
-   width: 150px;
-   height: 50px;
-   float: left;
-   margin-left: 30px;
-   margin-top: 30px;
-   background: darkgoldenrod;
+  width: 150px;
+  height: 50px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: darkgoldenrod;
 }
 #footer ul li span,
 #footer ul li a{
-   font-family: Helvetica, Aria, sans-serif;
-   font-size: 12px;
-   display: block;
-   line-height: 25px;
+  font-family: Helvetica, Aria, sans-serif;
+  font-size: 12px;
+  display: block;
+  line-height: 25px;
 }
 #footer ul li a{
-   text-decoration: underline;
+  text-decoration: underline;
 }
 #footer ul li span strong{
-   font-weight: bold;
+  font-weight: bold;
 }
 .content{
-   width: 1000px;
-   height: 100%;
-   margin: 0 auto;
-   border:1px dashed purple;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  border:1px dashed purple;
 }
