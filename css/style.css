@@ -65,34 +65,42 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 #main .content{
   padding-top: 32px;
 }
-#main div.headline{
+
+#main div.panes {
+  width: 912px;
+  height: 299px;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+#main div.pane{
   width: 912px;
   height: 299px;
   margin: 0 auto;
   background:url(../images/headline-background.png) no-repeat 0 0;
 }
-#main div.headline .left{
+#main div.pane .left{
   width: 250px;
   height: 100%;
   float: left;
   padding-top:30px;
 }
-#main div.headline .right{
+#main div.pane .right{
   float: left;
   width: 660px;
   color: white;
 }
-#main div.headline h1{
+#main div.pane h1{
   margin-top: 23px;
   color:rgb(176,194,132);
   text-shadow: rgba(0,0,0,.7) 0px 0px 6px;
 }
-#main div.headline h2{
+#main div.pane h2{
   font-size: 2em;
   margin-top: 10px;
   color:rgb(25,28,9);
 }
-#main div.headline p{
+#main div.pane p{
   margin-top: 5px;
   width: 400px;
   color:rgb(230,347,209);
@@ -120,7 +128,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   width: 400px;
 }
 
-#main div.headline a.action-ribbon {
+#main div.pane a.action-ribbon {
   background: url(../images/action_ribbon_sprite.png) no-repeat 0 0;
   width: 219px;
   height: 55px;
@@ -138,34 +146,35 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   text-shadow: rgb(181,70,59) 0px 1px 1px;
 }
 
-#main div.headline a.action-ribbon:hover {
+#main div.pane a.action-ribbon:hover {
   background-position: 0 -61px;
 }
 
-#slide-controls {
-  border:1px dotted purple;
+.tab-bar {
   height:13px;
+  width:120px;
+  margin:11px auto;
 }
 
-#slide-controls a{
+.tab-bar a{
   text-indent:-9999em;
 }
 
-#slide-controls .previous {
+.tab-bar .previous {
   width:9px;
   height:13px;
   display:block;
   background:url(../images/slide-arrows.png) no-repeat 0 0;
 }
 
-#slide-controls .next {
+.tab-bar .next {
   width:9px;
   height:13px;
   display:block;
   background:url(../images/slide-arrows.png) no-repeat -9px 0;  
 }
 
-#slide-controls li{
+.tab-bar li{
   float:left;
   margin:0 4px;
 }
