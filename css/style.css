@@ -272,3 +272,33 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   width: 1000px;
   margin: 0 auto;
 }
+
+/* override the root element to enable scrolling */
+	#flowpanes {
+		position:relative;
+		overflow:hidden;
+		clear:both;
+	}
+
+	/* override single pane */
+	#flowpanes div {
+		float:left;
+		display:block;
+		width:912px;
+		height:299px;
+		font-size:14px;
+	}
+
+	/* our additional wrapper element for the items */
+	#flowpanes .items {
+		width:20000em;
+		position:absolute;
+		clear:both;
+		margin:0;
+		padding:0;
+	}
+
+	#flowpanes .less, #flowpanes .less a {
+		color:#999 !important;
+		font-size:11px;
+	}
