@@ -23,12 +23,6 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   height: 185px;
   background: url(../images/header_bkg_tile.jpg) 0 0;
 }
-#header .TMP-PLACEHOLDER{
-  width: 304px;
-  height: 120px;
-  margin: 0 auto;
-  background: lightseagreen;
-}
 
 #header .logo {
   width: 304px;
@@ -51,7 +45,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   margin-right: 34px;
   display: block;
 }
-#header .main-menu li>a{
+#header .main-menu li a{
   display: block;
   height: 100%;
   width: 100%;
@@ -60,7 +54,9 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   font-weight:700;
   color: rgb(72,68,49);
 }
-
+#header .main-menu li a:hover{
+  border-bottom:1px dotted;
+}
 
 /* MAIN RULES */
 #main{
@@ -146,6 +142,34 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   background-position: 0 -61px;
 }
 
+#slide-controls {
+  border:1px dotted purple;
+  height:13px;
+}
+
+#slide-controls a{
+  text-indent:-9999em;
+}
+
+#slide-controls .previous {
+  width:9px;
+  height:13px;
+  display:block;
+  background:url(../images/slide-arrows.png) no-repeat 0 0;
+}
+
+#slide-controls .next {
+  width:9px;
+  height:13px;
+  display:block;
+  background:url(../images/slide-arrows.png) no-repeat -9px 0;  
+}
+
+#slide-controls li{
+  float:left;
+  margin:0 4px;
+}
+
 /* PRODUCTS LIST RULES */
 #products{
   height: 58px;
@@ -154,10 +178,12 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #products ul{
   height: 100%;
+  margin:75px 0 0 0;
 }
 #products li{
   float: left;
   width: 98px;
+  margin:0 1px;
   height: 100%;
 }
 #producs li>a{
@@ -173,12 +199,14 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 #footer .content{
   padding-top: 50px;
 }
-#footer .TMP-PLACEHOLDER{
+#footer .footer-logo{
   float: left;
   width: 200px;
   height: 80px;
-  background: sienna;
-  margin-right
+}
+
+#footer ul {
+  
 }
 
 #footer ul li{
@@ -187,24 +215,28 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   float: left;
   margin-left: 30px;
   margin-top: 30px;
-  background: darkgoldenrod;
 }
 #footer ul li span,
 #footer ul li a{
-  font-family: Helvetica, Aria, sans-serif;
-  font-size: 12px;
+  font-family:news-gothic-std, sans-serif;
+  font-size: 1.2em;
   display: block;
   line-height: 25px;
 }
-#footer ul li a{
+#footer li a{
   text-decoration: underline;
+  color:rgb(75,63,45);
 }
+
+#footer li a:hover{
+  text-decoration: none;
+}
+
 #footer ul li span strong{
   font-weight: bold;
+  color:rgb(46,53,14);
 }
 .content{
   width: 1000px;
-  height: 100%;
   margin: 0 auto;
-  border:1px dashed purple;
 }
