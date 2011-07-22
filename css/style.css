@@ -15,7 +15,7 @@ a { text-decoration: none;}
 p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #container{
-   min-width: 1000px;
+  min-width: 1000px;
 }
 
 /* HEADER RULES */
@@ -195,11 +195,34 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   margin:0 1px;
   height: 100%;
 }
-#producs li>a{
+#products li>a{
   display: block;
   height: 100%;
   width: 100%;
 }
+
+#specials {
+  width:100%;
+  background:rgba(255,255,255,.35);
+  border:1px dashed rgb(255,255,255);
+  padding:25px;
+  margin:25px auto;
+}
+
+#specials h1 {
+  font-size:2.5em;
+}
+
+#specials h2 {
+  color: rgb(244,247,234);
+  font-size: 1.8em;
+}
+  
+#specials p {
+  margin-top: 5px;
+  color:rgb(230,347,209);
+}
+
 /* FOOTER RULES */
 #footer{
   height: 250px;
