@@ -1,0 +1,23 @@
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 912px;
+	height:299px;
+  background:url(../images/headline-background.png) no-repeat 0 0;
+}
+
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:912px;
+}
+
+.scrollable .active {
+	position:relative;
+	cursor:default;
+}

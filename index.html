@@ -12,7 +12,10 @@
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.live.tabs.js"></script>
       <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="js/functions.js"></script>
+      <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href="css/slider.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href="http://static.flowplayer.org/tools/css/scrollable-buttons.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="container">
@@ -33,65 +36,34 @@
 
       <div id="main">
         <div class="content">
-          <div class="tab-body"> 
-            <div class="panes">
-              <div class="pane" id="slide-1">
-                <div class="left">
-                  <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
-                </div>
-                <div class="right">
-                  <h1>Headline goes here.</h1>
-                  <h2>Subtitle if needed.</h2>
-                  <a href="#" class="action-ribbon">CALL TO ACTION</a>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
-                </div>
+          <a class="prev browse left"></a>
+           <div class="scrollable">   
+              <div class="items">
+                 <div class="pane">
+                   <div class="left">
+                     <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
+                   </div>
+                   <div class="right">
+                     <h1>Headline goes here.</h1>
+                     <h2>Subtitle if needed.</h2>
+                     <a href="#" class="action-ribbon">CALL TO ACTION</a>
+                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
+                   </div>
+                 </div>
+                 <div class="pane">
+                   <div class="left">
+                     <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
+                   </div>
+                   <div class="right">
+                     <h1>Headline 2 goes here.</h1>
+                     <h2>Subtitle if needed.</h2>
+                     <a href="#" class="action-ribbon">CALL TO ACTION</a>
+                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
+                   </div>
+                 </div>
               </div>
-              <div class="pane" id="slide-2">
-                <div class="left">
-                  <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
-                </div>
-                <div class="right">
-                  <h1>Headline 2 goes here.</h1>
-                  <h2>Subtitle if needed.</h2>
-                  <a href="#" class="action-ribbon">CALL TO ACTION</a>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
-                </div>
-              </div>
-              <div class="pane" id="slide-3">
-                <div class="left">
-                  <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
-                </div>
-                <div class="right">
-                  <h1>Headline 3 goes here.</h1>
-                  <h2>Subtitle if needed.</h2>
-                  <a href="#" class="action-ribbon">CALL TO ACTION</a>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
-                </div>
-              </div>
-              <div class="pane" id="slide-4">
-                <div class="left">
-                  <img src="images/cigarcutter.png" alt="Cigar Cutter and Accessories"/>
-                </div>
-                <div class="right">
-                  <h1>Headline 4 goes here.</h1>
-                  <h2>Subtitle if needed.</h2>
-                  <a href="#" class="action-ribbon">CALL TO ACTION</a>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus erat, dignissim vel laoreet a, cursus nec felis. Fusce tincidunt nisl ut lorem blandit sed pellentesque tortor sodales</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-bar"> 
-            <ul> 
-              <li><a href ="#" class="previous tab">Previous Slide</a></li>
-              <li><a class="tab" href ="#slide-1"><img src="images/slideindicator.png"/></a></li>
-              <li><a class="tab" href ="#slide-2"><img src="images/slideindicator.png"/></a></li>
-              <li><a class="tab" href ="#slide-3"><img src="images/slideindicator.png"/></a></li>
-              <li><a class="tab" href ="#slide-4"><img src="images/slideindicator.png"/></a></li>
-              <li><a href ="#" class="next tab">Next slide</a></li> 
-            </ul> 
-          </div>
-
+           </div>
+           <a class="next browse right"></a>
           <div class="main">
             <div class="couches"> </div>
             <h2>Title goes here.</h2>
