@@ -11,7 +11,7 @@ a.browse {
 	width:30px;
 	height:30px;
 	float:left;
-	margin:40px 10px;
+	margin:5px;
 	cursor:pointer;
 	font-size:1px;
 }
@@ -49,24 +49,30 @@ a.down 				{ background-position: 0 -30px; }
 a.down:hover  		{ background-position:-30px -30px; }
 a.down:active  	{ background-position:-60px -30px; } 
 
+#controls {
+    height:30px;
+    margin-bottom:-35px;
+}
+
+ul#controls {
+  list-style:none;
+}
+
+#controls li {
+  float:left;
+  margin:5px;
+}
+
+#controls li img {
+  margin-top:7px;
+}
+
+#control-centre {
+  width:150px;
+  margin:0 auto;
+}
 
 /* disabled navigational button */
 /*a.disabled {
   visibility:hidden !important;   
 } */	
-
-/*
-.tab-bar .previous {
-  width:9px;
-  height:13px;
-  display:block;
-  background:url(../images/slide-arrows.png) no-repeat 0 0;
-}
-
-.tab-bar .next {
-  width:9px;
-  height:13px;
-  display:block;
-  background:url(../images/slide-arrows.png) no-repeat -9px 0;  
-}
-*/
