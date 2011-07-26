@@ -22,3 +22,11 @@
 	position:relative;
 	cursor:default;
 }
+
+ul#controls {
+  list-style:none;
+}
+
+#controls li {
+float:left;
+}
