@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 62.5%;  font: inherit;  vertical-align: baseline;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 body {font-size:0.625em;line-height: 1.5;background: url(../images/content_bkg_tile.jpg) 0 0;
@@ -53,9 +53,13 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   font-family: Helvetica, Arial, sans-serif;
   font-weight:700;
   color: rgb(72,68,49);
+  border-bottom:1px dotted transparent;
+  border-top:1px dotted transparent;
 }
 #header .main-menu li a:hover{
   border-bottom:1px dotted;
+  border-top:1px dotted;
+  text-shadow: #d0ccb9 1px 1px 1px;
 }
 
 /* MAIN RULES */
@@ -110,6 +114,11 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   padding-left: 45px;
   padding-right: 45px;
 }
+
+#main div.subpage{
+  margin-top: 40px;
+}
+
 #main div.main .couches{
   width: 453px;
   height: 230px;
@@ -201,25 +210,33 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 }
 
 #specials {
-  width:100%;
-  background:rgba(255,255,255,.35);
+  width:46%;
+  background:rgb(96,102,75);
+  background:rgba(255,255,255,.25);
   border:1px dashed rgb(255,255,255);
   padding:25px;
-  margin:25px auto;
+  margin:0 auto;
+  float:right;
+  webkit-border-radius: 5px;
+  moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 #specials h1 {
-  font-size:2.5em;
+  font-size:1.7em;
+  color:#fff;
+  text-shadow: #444 2px 2px 0px;
 }
 
 #specials h2 {
   color: rgb(244,247,234);
-  font-size: 1.8em;
+  font-size: 2em;
+  text-shadow: #444 2px 2px 0px;
 }
   
 #specials p {
   margin-top: 5px;
-  color:rgb(230,347,209);
+  text-shadow: #444 1px 1px 0px;
 }
 
 /* FOOTER RULES */
