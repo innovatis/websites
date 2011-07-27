@@ -30,3 +30,7 @@ ul#controls {
 #controls li {
 float:left;
 }
+
+#controls a:hover {
+  cursor:pointer;
+}
