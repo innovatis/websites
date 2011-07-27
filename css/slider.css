@@ -34,3 +34,20 @@ float:left;
 #controls a:hover {
   cursor:pointer;
 }
+
+a.slide-indicator {
+  width:13px;
+  height:8px;
+  display:block;
+  background:url(../images/slideindicator.png) no-repeat 0 0;
+  text-indent:-9999em;
+  margin-top: 7px;
+}
+
+a.slide-indicator:hover {
+  background-position: 0 -8px; 
+}
+
+a.slide-indicator:active {
+  background-position: 0 -16px; 
+}
