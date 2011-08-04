@@ -115,6 +115,11 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 }
 
+#main div.pane strong{
+  font-weight:bold;
+  color:white;
+}
+
 #main div.main{
   margin-top: 100px;
   padding-left: 45px;
@@ -246,7 +251,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   left:0;
   width:420px;
   height:22px;
-  font-size:1.7em;
+  font-size:1.6em;
   border-bottom:1px solid rgb(195,168,139);
   border-bottom:1px solid rgb(195,168,139);
   padding:8px 20px;
