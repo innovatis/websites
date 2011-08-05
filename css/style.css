@@ -129,15 +129,22 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #main div.subpage{
   margin-top: 40px;
-}
-
-#main div.subpage{
   height:400px;
 }
 
 #main div.subpage-contact-us{
   margin-top: 40px;
-  height:475px;
+  height:500px;
+}
+
+#main div.location{
+  height:725px;
+}
+
+#contact-us-map h3{
+  color: rgb(244,247,234);
+  text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
+  margin:2px 0;
 }
 
 #main div.main .couches{
@@ -245,11 +252,12 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 /* PRODUCTS LIST RULES */
 #products{
-  height: 58px;
+  height: 55px;
   margin-top:50px;
   border-top: 1px solid rgb(206,182,147);
   border-bottom: 1px solid rgb(126,99,67);
   background:url(../images/products-background-tile.png) repeat 0 0;
+  padding-top:3px;
 }
 
 #products ul{
@@ -498,6 +506,73 @@ div.main li strong {
 
 div.main h3, div.main h4 {
   margin-top:25px;
+}
+
+.location-box {
+  width:228px;
+  position:relative;
+  background:rgb(96,102,75);
+  background:rgba(255,255,255,.25);
+  padding:55px 25px 25px;
+  margin:0 12px 25px 12px;
+  float:left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
+}
+
+.location-box h1 {
+  position:absolute;
+  top:0;
+  left:0;
+  width:238px;
+  height:22px;
+  font-size:1.6em;
+  border-bottom:1px solid rgb(195,168,139);
+  border-bottom:1px solid rgb(195,168,139);
+  padding:8px 20px;
+  color:rgb(79,64,50);
+  text-shadow:0 1px 2px rgb(195,168,139);
+ -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-radius: 5px;
+  background: url(../images/header_bkg_tile.jpg) repeat-x;
+}
+
+div.main .location-box h2 {
+  color: rgb(244,247,234);
+  font-size: 1.8em;
+  text-shadow:0 1px 1px rgba(12, 14, 3, 0.5);
+}
+ 
+div.main .location-box p {
+  color: rgb(12,14,3);
+  margin:0;
+  text-shadow:0 1px rgba(255,255,255,.15);
+}
+
+div.main .location-box iframe {
+  border: 1px solid #222;
+  margin: 0px auto;
+  -moz-box-shadow: 2px 2px 2px #333;
+  -webkit-box-shadow: 2px 2px 2px #333;
+  box-shadow: 2px 2px 2px #333;
+}
+
+div.main .location-box h3{
+  margin:0px;
+}
+
+div.main .location-box img {
+  border:1px solid #fff;
+  margin:auto;
+}
+
+.interior-shot {
+  border:1px solid #fff;
+  margin-bottom:25px;
 }
 
 /* FOOTER RULES */
