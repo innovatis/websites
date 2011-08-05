@@ -352,6 +352,51 @@ div.main #contact-us-map p {
   text-shadow:0 1px rgba(255,255,255,.15);
 }
 
+div.products-listing {
+  height:230px;
+}
+
+a.pipes {
+  background: url(../images/products-pipes.png) no-repeat 0 0;
+  width: 278px;
+  height: 171px;
+  margin: 12px;
+  text-indent:-9999em;
+  display:block;
+  float:left;  
+}
+
+a.pipes:hover {
+  background-position: 0 -171px;
+  }
+
+a.tobacco {
+  background: url(../images/products-tobacco.png) no-repeat 0 0;
+  width: 278px;
+  height: 171px;
+  margin: 12px;
+  text-indent:-9999em;
+  display:block;
+  float:left;
+}
+
+a.tobacco:hover {
+  background-position: 0 -171px;
+  }
+
+a.cigars {
+  background: url(../images/products-cigars.png) no-repeat 0 0;
+  width: 278px;
+  height: 171px;
+  margin: 12px;
+  text-indent:-9999em;
+  display:block;
+  float:left;  
+}
+
+a.cigars:hover {
+  background-position: 0 -171px;
+  }    
 
 /* FOOTER RULES */
 #footer{
