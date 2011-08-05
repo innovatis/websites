@@ -137,6 +137,14 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   height:500px;
 }
 
+#main div.cigars-page{
+  height:900px; /*FIX LATER*/
+}
+
+#main div.tobacco-page {
+  height:4530px; /*FIX LATER*/
+}
+
 #main div.location{
   height:725px;
 }
