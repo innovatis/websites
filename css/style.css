@@ -11,6 +11,7 @@ input, textarea, select {-webkit-appearance: none;}
 h1 {font-family:news-gothic-std, sans-serif; font-weight:700; font-size: 5.5em;}
 h2 {font-family:news-gothic-std, sans-serif; font-weight:700;}
 h3 {font-family:news-gothic-std, sans-serif;}
+h4 {font-family:news-gothic-std, sans-serif;}
 a { text-decoration: none;}
 p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
@@ -155,6 +156,13 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   margin-bottom:8px;
 }
 
+#main div.main h4{
+  color: rgb(244,247,234);
+  text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
+  font-size: 1.4em;
+  margin-bottom:8px;
+}
+
 #main div.main p{
   color:rgb(165,185,120);
   font-size: 14px;
@@ -162,6 +170,22 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   width: 400px;
   line-height:1.25em;
   text-shadow:0 1px 1px rgba(12, 14, 3, 0.5);
+}
+
+#main div.main a, #main div.main a:visited {
+  text-decoration:underline;
+  color:white;
+}
+
+#main div.main a:hover {
+  text-decoration:none;  
+}
+
+#main div.main li {
+  color: rgb(165,185,120);
+  margin:0;
+  text-shadow:0 1px rgba(255,255,255,.15);
+  font-size: 1.4em;
 }
 
 #main div.pane a.action-ribbon {
@@ -250,7 +274,8 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   background:rgb(96,102,75);
   background:rgba(255,255,255,.25);
   padding:55px 25px 25px;
-  margin:0 auto;
+/*  margin:0 auto;*/
+  margin:0 0 25px 25px;
   float:right;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -287,6 +312,11 @@ div.main #specials p {
   color: rgb(12,14,3);
   margin:0;
   text-shadow:0 1px rgba(255,255,255,.15);
+}
+
+div.main #specials img {
+  border:1px solid #fff;
+  margin:auto;
 }
 
 #contact-us-map {
@@ -396,7 +426,75 @@ a.cigars {
 
 a.cigars:hover {
   background-position: 0 -171px;
-  }    
+  }
+  
+div.product-table {
+  width:100%;
+  height:650px; /*FIX LATER*/
+  color: rgb(165,185,120);
+  margin:0;
+  text-shadow:0 1px rgba(255,255,255,.15);
+  font-size: 1.4em;
+}
+
+div.product-table strong{
+  font-weight:bold;
+  color:#fff;
+  text-decoration:underline;
+}
+
+div.product-table h3{
+  margin-top:17px;
+}
+  
+
+div.product-title,  div.product-row{
+  width:100%;
+  clear:both;
+}
+  
+
+div.product-code {
+  width:16%;
+  float:left;
+  height:21px;
+  margin-left:25px;
+}
+
+div.product-description {
+  width:16%;
+  height:21px;
+  float:left;
+}
+
+div.product-price-each {
+  width:16%;
+  float:left;
+}
+
+div.product-price-box {
+  width:16%;
+  float:left;
+}
+
+div.product-length {
+  width:16%;
+  float:left;
+}
+
+div.product-ring {
+  width:16%;
+  float:left;
+}
+
+div.main li strong {
+  font-weight:bold;
+  color:white;
+}
+
+div.main h3, div.main h4 {
+  margin-top:25px;
+}
 
 /* FOOTER RULES */
 #footer{
