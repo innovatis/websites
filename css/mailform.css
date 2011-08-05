@@ -1,4 +1,4 @@
-#mailform-container {
+/*#mailform-container {
   width:278px;
   float:right;
   margin:0 auto;
@@ -29,7 +29,7 @@
   -moz-border-radius-topright: 5px;
   border-radius: 5px;
   background: url(../images/header_bkg_tile.jpg) repeat-x;
-}
+}*/
 
 #mailform-container .message-error {
   float:right;
