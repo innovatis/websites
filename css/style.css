@@ -131,6 +131,10 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   margin-top: 40px;
 }
 
+#main div.subpage{
+  height:400px;
+}
+
 #main div.subpage-contact-us{
   margin-top: 40px;
   height:475px;
