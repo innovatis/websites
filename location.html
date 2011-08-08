@@ -38,18 +38,20 @@
             <img src="images/interior.jpg" alt="Inside Our Location" class="interior-shot"/>
             <div class="box-location">
               <div class="box-header">Find Us</div>
-              <div class="box-content">
-                <p><span class="box-message"><a href ="contact-us.html">185 Carlton Street</a></span></p>
-                <p><span class="box-message">Winnipeg MB  R3C 3J1</span></p>
+              <div class="box-content" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p><span class="box-message" itemprop="streetAddress"><a href ="contact-us.html">185 Carlton Street</a></span></p>
+                <p><span class="box-message" itemprop="addressLocality">Winnipeg MB  R3C 3J1</span></p>
               </div>
               <div class="box-footer"></div>
             </div>
             <div class="box-location">
               <div class="box-header">Contact Us</div>
               <div class="box-content">
-                <p><span class="box-message">Phone: (204) 942-0203</span></p>
-                <p><span class="box-message">Fax: (204) 942-5376</span></p>
+                <div itemprop="telephone"><p><span class="box-message"><strong>Phone:</strong> (204) 942-0203</span></div></p>
+                <div itemprop="faxNumber"><p><span class="box-message"><strong>Fax:</strong> (204) 942-5376</span></div></p>
               </div>
+              
+              
               <div class="box-footer"></div>
             </div>
             <div class="box-location">
@@ -86,20 +88,24 @@
       <div id="footer">
         <div class='content'>
           <div class="footer-logo"><img src="images/footer-logo.png" alt="Thomas Hinds Tobacconist"/> </div>
-          <ul>
-            <li>
-              <span>185 Carlton Street</span>
-              <span>Winnipeg MB R3C 3J1</span>
-            </li>
-            <li>
-              <span><strong>Phone:</strong> (204) 942-0203</span>
-              <span><strong>Fax:</strong> (204) 942-5376</span>
-            </li>
-            <li>
-              <span><strong>Send us an E-mail:</strong></span>
-              <a href="mailto:sales@thtlwinnipeg.com">sales@thtlwinnipeg.com</a>
-            </li>
-          </ul>
+          <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <ul>
+              <li>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="streetAddress">185 Carlton Street</span>
+                  <span itemprop="addressLocality">Winnipeg MB R3C 3J1</span>
+                </div>
+              </li>
+              <li>
+                <div itemprop="telephone"><span><strong>Phone:</strong> (204) 942-0203</span></div>
+                <div itemprop="faxNumber"><span><strong>Fax:</strong> (204) 942-5376</span></div>
+              </li>
+              <li>
+                <span><strong>Send us an E-mail:</strong></span>
+                <div itemprop="email"><a href="mailto:sales@thtlwinnipeg.com">sales@thtlwinnipeg.com</a></div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
