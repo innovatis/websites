@@ -15,6 +15,18 @@ h4 {font-family:news-gothic-std, sans-serif;}
 a { text-decoration: none;}
 p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
 #container{
   min-width: 1000px;
 }
@@ -62,7 +74,12 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 }
 #header .main-menu li a:hover{
   text-shadow: rgba(255,255,255,.3) 0 1px;
-  color: rgb(62,58,39);
+  color: rgb(143,6,14);
+}
+
+#header .main-menu li a:active{
+  text-shadow: rgba(255,255,255,.3) 0 1px;
+  color: rgb(194,144,65);
 }
 
 /* MAIN RULES */
@@ -129,24 +146,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #main div.subpage{
   margin-top: 40px;
-  height:400px;
-}
-
-#main div.subpage-contact-us{
-  margin-top: 40px;
-  height:500px;
-}
-
-#main div.cigars-page{
-  height:900px; /*FIX LATER*/
-}
-
-#main div.tobacco-page {
-  height:4530px; /*FIX LATER*/
-}
-
-#main div.location{
-  height:725px;
+/*  height:400px;*/
 }
 
 #contact-us-map h3{
