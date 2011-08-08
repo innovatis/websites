@@ -447,7 +447,7 @@ div.products-listing {
 a.pipes {
   background: url(../images/products-pipes.png) no-repeat 0 0;
   width: 278px;
-  height: 171px;
+  height: 342px;
   margin: 12px;
   text-indent:-9999em;
   display:block;
@@ -455,13 +455,13 @@ a.pipes {
 }
 
 a.pipes:hover {
-  background-position: 0 -171px;
+  background-position: 0 -342px;
   }
 
 a.tobacco {
   background: url(../images/products-tobacco.png) no-repeat 0 0;
   width: 278px;
-  height: 171px;
+  height: 342px;
   margin: 12px;
   text-indent:-9999em;
   display:block;
@@ -469,13 +469,13 @@ a.tobacco {
 }
 
 a.tobacco:hover {
-  background-position: 0 -171px;
+  background-position: 0 -342px;
   }
 
 a.cigars {
   background: url(../images/products-cigars.png) no-repeat 0 0;
   width: 278px;
-  height: 171px;
+  height: 342px;
   margin: 12px;
   text-indent:-9999em;
   display:block;
@@ -483,7 +483,7 @@ a.cigars {
 }
 
 a.cigars:hover {
-  background-position: 0 -171px;
+  background-position: 0 -342px;
   }
   
 div.product-table {
@@ -588,6 +588,7 @@ p.title-ribbon-end{
   height:61px;
   background: url(../images/title-ribbon-end.png) 0 0;
 }
+
 
 
 /* FOOTER RULES */
