@@ -275,31 +275,37 @@ a.next:active {
 
 /* PRODUCTS LIST RULES */
 #products{
-  height: 55px;
+  height: 65px;
   margin-top:50px;
   border-top: 1px solid rgb(206,182,147);
   border-bottom: 1px solid rgb(126,99,67);
   background:url(../images/products-background-tile.png) repeat 0 0;
-  padding-top:3px;
 }
 
-#products ul{
+#product-shelf {
+  height:65px;
+  width:1050px;
+  margin:0 auto;
+  padding:5px 0 0 0;
+  background:url(../images/product-shelf.png) repeat 0 0;
+}
+
+#product-shelf ul{
   height: 100%;
   margin:0;
 }
-#products li{
+#product-shelf li{
   float: left;
   width: 98px;
   margin:0 1px;
   padding: auto;
   height: 100%;
   opacity:.5;
-/*  border:1px dashed purple;*/
 }
-#products li:hover {
+#product-shelf li:hover {
   opacity:1;
 }
-#products li>a{
+#product-shelf li>a{
   display: block;
   height: 100%;
   width: 100%;
