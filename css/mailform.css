@@ -1,36 +1,3 @@
-/*#mailform-container {
-  width:278px;
-  float:right;
-  margin:0 auto;
-  background:rgb(96,102,75);
-  background:rgba(255,255,255,.25);
-  padding:55px 25px 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
-  position:relative;
-}
-
-#mailform-container h1 {
-  position:absolute;
-  top:0;
-  left:0;
-  width:288px;
-  height:22px;
-  font-size:1.6em;
-  border-bottom:1px solid rgb(195,168,139);
-  border-bottom:1px solid rgb(195,168,139);
-  padding:8px 20px;
-  color:rgb(79,64,50);
-  text-shadow:0 1px 2px rgb(195,168,139);
- -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  border-radius: 5px;
-  background: url(../images/header_bkg_tile.jpg) repeat-x;
-}*/
-
 #mailform-container .message-error {
   float:right;
   color:red;
@@ -56,6 +23,11 @@
   font-family:news-gothic-std, sans-serif;
   margin:0 auto;
   color:#f4f7ea;
+}
+
+#mailform-container .required-message {
+  width:144px;
+  float:left;
 }
 
 #mailform-container .input{
