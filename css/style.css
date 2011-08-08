@@ -146,7 +146,6 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 
 #main div.subpage{
   margin-top: 40px;
-/*  height:400px;*/
 }
 
 #contact-us-map h3{
@@ -292,8 +291,10 @@ a.next:active {
   float: left;
   width: 98px;
   margin:0 1px;
+  padding: auto;
   height: 100%;
-  opacity:.8;
+  opacity:.5;
+/*  border:1px dashed purple;*/
 }
 #products li:hover {
   opacity:1;
@@ -310,7 +311,6 @@ a.next:active {
   background:rgb(96,102,75);
   background:rgba(255,255,255,.25);
   padding:55px 25px 25px;
-/*  margin:0 auto;*/
   margin:0 0 25px 25px;
   float:right;
   -webkit-border-radius: 5px;
@@ -434,69 +434,6 @@ div.main #specials img {
   float:left;
 }
 
-/*#contact-us-map {
-  width:481px;
-  position:relative;
-  background:rgb(96,102,75);
-  background:rgba(255,255,255,.25);
-  padding:55px 25px 25px;
-  margin:0 auto;
-  float:left;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
-}
-
-#contact-us-map h1 {
-  position:absolute;
-  top:0;
-  left:0;
-  width:491px;
-  height:22px;
-  font-size:1.6em;
-  border-bottom:1px solid rgb(195,168,139);
-  border-bottom:1px solid rgb(195,168,139);
-  padding:8px 20px;
-  color:rgb(79,64,50);
-  text-shadow:0 1px 2px rgb(195,168,139);
- -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  border-radius: 5px;
-  background: url(../images/header_bkg_tile.jpg) repeat-x;
-}
-
-div.main #contact-us-map a, div.main #contact-us-map a:visited {
-  color:#fff;
-  text-decoration:underline;
-}
-
-div.main #contact-us-map a:hover {
-  text-decoration:none;
-}
-
-div.main #contact-us-map iframe {
-  border: 1px solid #222;
-  width:480px;
-  margin: 0px auto 25px auto;
-  -moz-box-shadow: 2px 2px 2px #333;
-  -webkit-box-shadow: 2px 2px 2px #333;
-  box-shadow: 2px 2px 2px #333;
-}
-
-div.main #contact-us-map h2 {
-  color: rgb(244,247,234);
-  font-size: 1.8em;
-  text-shadow:0 1px 1px rgba(12, 14, 3, 0.5);
-}
-
-div.main #contact-us-map p {
-  color: rgb(12,14,3);
-  margin:0;
-  text-shadow:0 1px rgba(255,255,255,.15);
-}*/
-
 div.products-listing {
   height:230px;
 }
@@ -545,7 +482,6 @@ a.cigars:hover {
   
 div.product-table {
   width:100%;
-  height:650px; /*FIX LATER*/
   color: rgb(165,185,120);
   margin:0;
   text-shadow:0 1px rgba(255,255,255,.15);
@@ -610,68 +546,6 @@ div.main li strong {
 div.main h3, div.main h4 {
   margin-top:25px;
 }
-
-/*.location-box {
-  width:228px;
-  position:relative;
-  background:rgb(96,102,75);
-  background:rgba(255,255,255,.25);
-  padding:55px 25px 25px;
-  margin:0 12px 25px 12px;
-  float:left;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
-}
-
-.location-box h1 {
-  position:absolute;
-  top:0;
-  left:0;
-  width:238px;
-  height:22px;
-  font-size:1.6em;
-  border-bottom:1px solid rgb(195,168,139);
-  border-bottom:1px solid rgb(195,168,139);
-  padding:8px 20px;
-  color:rgb(79,64,50);
-  text-shadow:0 1px 2px rgb(195,168,139);
- -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  border-radius: 5px;
-  background: url(../images/header_bkg_tile.jpg) repeat-x;
-}
-
-div.main .location-box h2 {
-  color: rgb(244,247,234);
-  font-size: 1.8em;
-  text-shadow:0 1px 1px rgba(12, 14, 3, 0.5);
-}
- 
-div.main .location-box p {
-  color: rgb(12,14,3);
-  margin:0;
-  text-shadow:0 1px rgba(255,255,255,.15);
-}
-
-div.main .location-box iframe {
-  border: 1px solid #222;
-  margin: 0px auto;
-  -moz-box-shadow: 2px 2px 2px #333;
-  -webkit-box-shadow: 2px 2px 2px #333;
-  box-shadow: 2px 2px 2px #333;
-}
-
-div.main .location-box h3{
-  margin:0px;
-}
-
-div.main .location-box img {
-  border:1px solid #fff;
-  margin:auto;
-}*/
 
 .interior-shot {
   border:1px solid #fff;
