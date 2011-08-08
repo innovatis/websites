@@ -145,7 +145,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 }
 
 #main div.subpage{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #contact-us-map h3{
@@ -557,6 +557,38 @@ div.main h3, div.main h4 {
   border:1px solid #fff;
   margin-bottom:25px;
 }
+
+div.title-ribbon {
+  height:61px;
+  margin:0 0 20px 0;
+}
+
+p.title-ribbon-start{
+  float:left;
+  width:43px;
+  height:61px;
+  background: url(../images/title-ribbon-start.png) 0 0;
+}
+
+h1.title-ribbon-middle{
+  float:left;
+  height:48px;
+  background: url(../images/title-ribbon-middle.png) 0 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:600;
+  color:rgb(0,0,0);
+  font-size: 2em;
+  padding:13px 0 0 0;
+  text-shadow: rgb(181,70,59) 0px 1px 1px;
+}
+  
+p.title-ribbon-end{
+  float:left;
+  width:75px;
+  height:61px;
+  background: url(../images/title-ribbon-end.png) 0 0;
+}
+
 
 /* FOOTER RULES */
 #footer{
