@@ -239,18 +239,34 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
   text-indent:-9999em;
 }
 
-.tab-bar .previous {
+.tab-bar a.prev {
   width:9px;
   height:13px;
   display:block;
   background:url(../images/slide-arrows.png) no-repeat 0 0;
 }
 
-.tab-bar .next {
+a.prev:hover {
+  background-position: 0px -13px; 
+}
+
+a.prev:active {
+  background-position: 0px -26px; 
+}
+
+.tab-bar a.next {
   width:9px;
   height:13px;
   display:block;
   background:url(../images/slide-arrows.png) no-repeat -9px 0;  
+}
+
+a.next:hover {
+  background-position: -9px -13px; 
+}
+
+a.next:active {
+  background-position: -9px -26px; 
 }
 
 .tab-bar li{
