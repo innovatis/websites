@@ -1,0 +1,60 @@
+.product-table {
+  margin: 10px auto;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  border:1px solid #222;
+  width:660px;
+  -moz-box-shadow: inset 0px 0px 10px #000;
+  -webkit-box-shadow: inset 0px 0px 10px #000;
+  box-shadow: inset 0px 0px 10px #000;
+}
+  .product-table tbody tr:nth-child(odd) {
+    background: rgba(225, 231, 209, .1); }
+  .product-table tbody tr:nth-child(even) {
+    background: rgba(202, 214, 176, .2); }
+  .product-table tbody tr:hover, .product-table tbody tr.hover {
+    color: white;
+    background: rgba(202, 214, 176, .4);
+    text-shadow: none; }
+  .product-table td {
+    text-shadow: #333 1px 1px 1px;
+    padding:5px;
+    color:#a5b978;
+    font-size: 1.4em;
+  }
+  tr:first-child td{
+    background: url(../images/header_bkg_tile.jpg) repeat-x;
+    color:#fff;
+  }
+
+  div.products {
+    width:660px;
+    margin:0 auto;
+    font-family:news-gothic-std, sans-serif;
+  }
+  
+  .products span.type{
+    color: rgb(244,247,234);
+    text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
+    font-size: 2em;
+    margin: 40px 0 8px 0;
+    display:block;
+    clear:both;
+  }
+  
+  .product-table td.brand{
+    color: rgb(244,247,234);
+    text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
+    font-size: 1.6em;
+    margin-bottom:8px;
+    min-width:330px;
+  }
+  
+  .column-header {
+    font-family:news-gothic-std, sans-serif;
+    text-decoration:underline;
+  }
