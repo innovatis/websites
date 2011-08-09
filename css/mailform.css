@@ -30,10 +30,18 @@
   float:left;
 }
 
-#mailform-container .mailform-error {
-  color:white;
+#mailform-container .mailform-error, #mailform-container .mailform-success {
   font-family:news-gothic-std, sans-serif;
   font-size:1.2em;
+}
+
+#mailform-container .mailform-error {
+  color:red;
+  font-weight:600;
+}
+
+#mailform-container .mailform-success {
+  color:white;
 }
 
 #mailform-container .input{

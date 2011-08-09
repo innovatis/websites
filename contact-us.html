@@ -9,7 +9,7 @@
     	<meta name="robots" content="index,follow">
       <script type="text/javascript" src="http://use.typekit.com/juz4oec.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
       <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
   	 	<script src="js/mailform.js"></script>
       <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
@@ -63,26 +63,22 @@
                        <div class="input">
                          <label for="name">Name*</label> 
                          <input name="name" required='true' class="required-field"/>
-                         <!-- <span class="message-error">What is your name?</span> -->
                        </div>
                        <div class="input">
                          <label for="e-mail">E-mail*</label> 
                          <input name="email" required='true' class="required-field"/>
-                         <!-- <span class="message-error">What is your e-mail address?</span>
-                         <span class="message-invalid">Please enter a valid email address</span> -->
                        </div>
                        <div class="input">
                          <label for="phone">Phone</label> 
                          <input name="phone"/>
-                         <!-- <span class="message-invalid">Please enter a valid phone number</span> -->
                        </div>
                        <div class="input">
                          <label for="message">Message</label> 
                          <textarea name="comments"></textarea>
                        </div>
-                     </div>
-                     <div class="required-message">
-                       <small>All fields marked with an * must be completed</small> 
+                       <div class="required-message">
+                         <small>All fields marked with an * must be completed</small> 
+                       </div>
                      </div>
                      <div class="actions"> 
                        <input class="input-button" type="submit" value="submit"></input>
