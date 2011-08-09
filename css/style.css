@@ -85,6 +85,7 @@ p {font-family:news-gothic-std, sans-serif;font-size:1.4em;}
 /* MAIN RULES */
 #main{
   background: url(../images/content_bkg_lighting.jpg) no-repeat 0 0;
+  padding-bottom:50px;
 }
 #main .content{
   padding-top: 32px;
@@ -276,7 +277,6 @@ a.next:active {
 /* PRODUCTS LIST RULES */
 #products{
   height: 60px;
-  margin-top:50px;
   border-top: 1px solid rgb(206,182,147);
   border-bottom: 1px solid rgb(126,99,67);
   padding:5px 0 0 0;
