@@ -287,8 +287,8 @@ a.next:active {
   width:1050px;
   margin:0 auto;
   padding:5px 0 0 0;
-  background:url(../images/product-shelf.png) repeat 0 0;
-}
+/*  background:url(../images/product-shelf.png) repeat 0 0;
+*/}
 
 #product-shelf ul{
   height: 100%;
