@@ -30,6 +30,12 @@
   float:left;
 }
 
+#mailform-container .mailform-error {
+  color:white;
+  font-family:news-gothic-std, sans-serif;
+  font-size:1.2em;
+}
+
 #mailform-container .input{
   margin:15px 0;
 }

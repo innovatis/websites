@@ -1,0 +1,7 @@
+.product-table tbody {
+  background: rgb(57,62,42);
+}
+
+.product-table tr {
+  border:1px solid #555;
+}

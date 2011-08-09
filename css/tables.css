@@ -13,9 +13,11 @@
   box-shadow: inset 0px 0px 10px #000;
 }
   .product-table tbody tr:nth-child(odd) {
-    background: rgba(225, 231, 209, .1); }
+    background: rgba(225, 231, 209, .1);
+  }
   .product-table tbody tr:nth-child(even) {
-    background: rgba(202, 214, 176, .2); }
+    background: rgba(202, 214, 176, .2);
+  }
   .product-table tbody tr:hover, .product-table tbody tr.hover {
     color: white;
     background: rgba(202, 214, 176, .4);
