@@ -1,6 +1,7 @@
 SERVER     = "og"
 BRANCH     = "thomashinds"
-ROOT       = "/srv/http/inno/static.innovatisinc.ca/htdocs/thomashinds"
+#ROOT       = "/srv/http/inno/static.innovatisinc.ca/htdocs/thomashinds"
+ROOT       = "/srv/http/inno/thtlwinnipeg.com/"
 PATH       = "#{ROOT}/htdocs/"
 REPO_ROOT  = "http://github.com/innovatis"
 REPO       = "websites"
