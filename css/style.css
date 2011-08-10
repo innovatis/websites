@@ -474,64 +474,6 @@ a.cigars {
 a.cigars:hover {
   background-position: 0 -342px;
   }
-  
-div.product-table {
-  width:100%;
-  color: rgb(165,185,120);
-  margin:0;
-  text-shadow:0 1px rgba(255,255,255,.15);
-  font-size: 1.4em;
-}
-
-div.product-table strong{
-  font-weight:bold;
-  color:#fff;
-  text-decoration:underline;
-}
-
-div.product-table h3{
-  margin-top:17px;
-}
-  
-
-div.product-title,  div.product-row{
-  width:100%;
-  clear:both;
-}
-  
-
-div.product-code {
-  width:16%;
-  float:left;
-  height:21px;
-  margin-left:25px;
-}
-
-div.product-description {
-  width:16%;
-  height:21px;
-  float:left;
-}
-
-div.product-price-each {
-  width:16%;
-  float:left;
-}
-
-div.product-price-box {
-  width:16%;
-  float:left;
-}
-
-div.product-length {
-  width:16%;
-  float:left;
-}
-
-div.product-ring {
-  width:16%;
-  float:left;
-}
 
 div.main li strong {
   font-weight:bold;
@@ -631,4 +573,24 @@ p.title-ribbon-end{
 .content{
   width: 1000px;
   margin: 0 auto;
+}
+
+#credits {
+  text-align:center;
+  background: url(../images/footer_bkg_tile.jpg) 0 0;
+  color:#445544;
+}
+
+#credits p{
+  font-size:1em;
+}
+
+#credits a {
+  color:white;
+  text-decoration:none;
+}
+
+#credits a:hover {
+  text-decoration:underline;
+  color:#445544;
 }
