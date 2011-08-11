@@ -6,6 +6,12 @@ layout:    nil
 @import '_helpers'
 @import '_boilerplate'
 
+/******************* Constants *************************/
+
+$red: red
+$gray: #CACACB
+$light-gray: #797474
+
 /******************* Global Style ***************/
 
 *
@@ -18,7 +24,8 @@ html
   height: 100%
 
 body
-  color: #797474
+  color: $light-gray
+
 
 /******************* Global Typography *****************/
 
@@ -28,7 +35,7 @@ h1,h2,h3,h4,h5,h6
   margin-bottom: 0.5em
 
 h4, h5
-  color: red
+  color: $red
 
 p
   margin-bottom: 1em
@@ -74,15 +81,17 @@ body
       float: left
       width: 24%
       a
-        color: #CACACB
+        color: $gray
         text-transform: uppercase
+        &:hover
+          color: $red
 
 #content
 
 #footer
   height: 559px
   padding-top: 220px
-  background: red
+  background: $red
   background: url(/images/footer-background.png) top center no-repeat
 
 #breadcrumbs
@@ -95,7 +104,7 @@ body
       padding-right: 1em
       a
         display: block
-        color: #cacacb
+        color: $gray
         background: url(/images/breadcrumbs/breadcrumb-spacer.png) no-repeat center right
         padding: 0em 1em 0 0
         line-height: 39px
