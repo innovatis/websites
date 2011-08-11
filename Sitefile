@@ -1,12 +1,26 @@
 require 'sass'
 require 'sass/plugin'
+require 'net/http'
 
 SITE.sass_options[:style] = :expanded #:compressed
 SITE.sass_options[:cache] = false
 
 SITE.sass_options[:load_paths] =[Pathname.new('content/stylesheets/').expand_path] #filesystem_importer
 
-task :default => :build
+SITE.user       = '..'
+SITE.host       = '..'
+SITE.site_root  = ''
+SITE.remote_dir = ''
+
+namespace :ping do
+  task :google do
+    sitemap_uri = SITE.site_root + '/sitemap.xml'
+    Net::HTTP.get('www.google.com', '/webmasters/sitemaps/ping?sitemap=' + URI.escape(sitemap_uri))
+  end
+end
 
 desc 'deploy the site to the webserver'
-task :deploy => [:build, 'deploy:rsync']
+task :deploy => [:build, 'deploy:rsync', 'ping:google']
+
+
+task :default => :build
