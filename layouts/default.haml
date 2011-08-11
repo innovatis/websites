@@ -8,7 +8,7 @@ filter: haml
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    %title= @page.title || SITE.title
+    %title #{SITE.title} #{@page.title and '- '+@page.title}
 
     <link rel="stylesheet" href="stylesheets/application.css">
 
@@ -40,13 +40,18 @@ filter: haml
             %li
               %a Contact
     #content
-      #breadcrumbs
-        .container
-          %ul
-            %li
-              %a Example
-            %li
-              %a Example
+      -if @page.crums
+        #breadcrumbs
+          .container
+            %ul
+              - crums = @page.crums.clone
+              - last  = crums.pop
+              - crums.each do |crum|
+                %li
+                  %a{href: crum.values.first}= crum.keys.first
+              - if last
+                %li
+                  %a.current{href: last.values.first}= last.keys.first
       #main-content.container.clearfix=@content
     #footer
       .container.clearfix

@@ -69,9 +69,11 @@ span
 ul
   list-style: none
   padding-left: 0
+  margin-bottom: 1em
   li 
 
 ol
+  margin-bottom: 1em
   li
 
 dl
@@ -122,11 +124,16 @@ body
       padding-right: 1em
       a
         display: block
-        color: $gray
+        text-decoration: none
+        color: $light-gray
         background: url(/images/breadcrumbs/breadcrumb-spacer.png) no-repeat center right
-        padding: 0em 1em 0 0
+        padding: 0em 1.5em 0 0
         line-height: 39px
-        font-size: 18px
+        font-size: 14px
+        &.current
+          color: $red
+        &:hover
+          color: #eee
 
 .container
   padding: 0 20px
@@ -174,8 +181,10 @@ body
   padding-top: 3em
 
 #logo
-  height: 100px
-  width: 100px
+  margin-top: 30px
+  height: 168px
+  width:  289px
+  background: url(/images/logo.png) no-repeat
 
 .services-listing
   li
@@ -225,6 +234,10 @@ body
     padding: 10px
     
 /******************* Global Widgets **************/
+.image
+  width: 180px
+  height: 150px
+  background:  white
 .box
   background: black
   min-height: 70px
@@ -241,6 +254,21 @@ body
     background: url(/images/box/box-footer.png) no-repeat
     height: 30px
 
+.full-box
+  background: black
+  min-height: 70px
+  width: 100%
+  margin-bottom: 2em
+  .full-box-header
+    background: url(/images/box/box-header.png) no-repeat
+    height: 30px
+  .full-box-content
+    background: url(/images/box/box-content.png) repeat-y
+    min-height: 10px
+    padding: 1em 2em
+  .full-box-footer
+    background: url(/images/box/box-footer.png) no-repeat
+    height: 30px
 /******************* Page Overrides **************/
 
 #index
