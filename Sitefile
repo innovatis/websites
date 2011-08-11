@@ -1,3 +1,11 @@
+require 'sass'
+require 'sass/plugin'
+
+SITE.sass_options[:style] = :expanded #:compressed
+SITE.sass_options[:cache] = false
+
+SITE.sass_options[:load_paths] =[Pathname.new('content/stylesheets/').expand_path] #filesystem_importer
+
 task :default => :build
 
 desc 'deploy the site to the webserver'

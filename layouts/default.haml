@@ -5,92 +5,19 @@ filter: haml
 !!!5
 %html
   %head
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     %title= @page.title
-    <meta charset="utf-8" /> 
-  
-    %link{rel: 'stylesheet', href: "stylesheets/application.css", type: "text/css", media: "screen, projection"}
-  
-    %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
-    %script{src: 'javascripts/application.js'}
-    %script{src: 'javascripts/mailform.js'}
 
-  %body
-    #wrapper
-      #header
-        %a.logo{href: '/'} Millennium Office Furnishings Ltd.
-        .call-us
-          Call Us Today
-          .number (204) 779-0111
-        %ul.nav
-          %li <a href='products.html'>Product Lines</a>
-          %li <a href='solutions.html'>Solutions</a>
-          %li <a href='spacesaver.html'>Spacesaver<sup>&reg;</sup></a>
-          %li.last <a href='contact.html'>Contact Us</a>
-        %br.clear
-   
-      #content
-        = @content
-   
-      #footer
-        .top
-          .first.third
-            %h2 About
-            %h3 Millennium Office Furniture
-            %p Millennium Office Furnishings is a contract furnishing company serving corporate, government, healthcare, educational and institutional markets.
-     
-            %p <em>Our vision is to add value to your organization, which can be done in several ways:</em>
-            %ul.value
-              %li.first Increase employee productivity and health through provision of ergonomically correct furnishings.
-              %li.second Lower your space occupancy costs using space saving storage solutions and workstation concepts.
-              %li.last Lower the cost of moving and reorganizing through the use of flexible workstation design and movable wall systems.
-          .second.third
-            %h2 Need Financing?
-            %h3 We can help with that too.
-            %p Millennium can work with a company of your choice or suggest companies that can make purchasing of furniture easier. This allows organizations to upgrade to products which can increase office productivity, and thus, add value to your organization.
-     
-            %img{src: 'images/blue.png'}
-     
-          .last.third
-            %h2 Questions?
-            %h3 We're here to help.
-            %p Fill out the "Quick Form" below and one of our experienced furniture consultants will follow up with you ASAP!
+    <link rel="stylesheet" href="css/style.css?v=2">
 
-     
-            %form#mailform{'data-mailform' => 'da3444ca4bdba22e093df9dcfd85ae54a2605fc8', method: 'get'}
-              .hidden.mailform-error
-                error
-              .hidden.mailform-complete
-                complete
-              .hidden.mailform-success
-                success
-              .hidden.mailform-loading
-                loading
-              .inputs
-                .input.string
-                  %label{for: 'mailer_name'} Name
-                  %input#mailer_name.text{name: 'name'}
-                .input.string
-                  %label{for: 'mailer_email'} Email
-                  %input#mailer_email.text{name: 'email'}
-                .input.string
-                  %label{for: 'mailer_phone'} Phone
-                  %input#mailer_phone.text{name: 'phone'}
-              .actions
-                %input.submit{type: 'submit', value: ' ▸  Submit Info  '}
-          %br.clear
-        .bottom
-          %ul.nav
-            %li <a href='products.html'>Product Lines</a>
-            %li <a href='solutions.html'>Solutions</a>
-            %li <a href='spacesaver.html'>Spacesaver<sup>&reg;</sup></a>
-            %li.last <a href='contact.html'>Contact Us</a>
-          .logo
-            %a{href: '/'} Millennium Office Furnishings Ltd.
-          .call-us
-            Call
-            .number (204) 779-0111
-          %br.clear
-        
-        
-          
-          
+    %meta{ name: 'description', content: @page.content}
+    %meta{ name: 'keywords',    content: @page.content}
+    %meta{ name: 'author',      content: ''}
+    %meta{ name: 'viewport',    content: 'width=device-width, initial-scale=1.0'}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js">\x3C/script>')</script>
+    <script src="//javascripts/applications.js"></script>
+  %body=@content
