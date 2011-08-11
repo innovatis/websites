@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/burke/webby.git
-  revision: 7bc2656dfd9a2bb4aa3675bb5d84be37f70cb52e
+  remote: git://github.com/stefanpenner/webby.git
+  revision: ba4c6fc74950bf4a9d6a40854b1a9780660af168
   specs:
     webby (0.9.4.1)
       directory_watcher (>= 1.1.2)
@@ -14,6 +14,7 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.6)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -24,7 +25,8 @@ GEM
       multi_json (~> 1.0)
     haml (3.1.2)
     hpricot (0.8.4)
-    launchy (2.0.3)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     little-plugger (1.1.2)
     logging (1.5.2)
       little-plugger (>= 1.1.2)

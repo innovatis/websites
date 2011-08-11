@@ -12,6 +12,9 @@ SITE.host       = '..'
 SITE.site_root  = ''
 SITE.remote_dir = ''
 
+SITE.changefreq = 1
+SITE.priority   = 1
+
 namespace :ping do
   task :google do
     sitemap_uri = SITE.site_root + '/sitemap.xml'
