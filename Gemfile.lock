@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/stefanpenner/webby.git
-  revision: 92c8851a2829a95e916d70ae13fc6c8ecb32ee0e
+  remote: git://github.com/burke/webby.git
+  revision: b963f692b1818fa5c02ded26b9f7e1d57ffad6d4
   specs:
     webby (0.9.4.1)
       directory_watcher (>= 1.1.2)
