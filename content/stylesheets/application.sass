@@ -106,43 +106,45 @@ body
   width: 940px
   margin: 0 auto
 
-.column-20
-  width: 20%
+@mixin column
   float: left
   height: 100%
+  display: block
+
+.column-20
+  @include column
+  width: 20%
 
 .column,.column-30
+  @include column
   width: 30%
-  float: left
-  height: 100%
 
 .column-40
+  @include column
   width: 40%
-  float: left
-  height: 100%
 
 .column-50
+  @include column
   width: 50%
-  float: left
-  height: 100%
 
 .column-60
+  @include column
   width: 60%
-  float: left
-  height: 100%
 
 .column-70
+  @include column
   width: 70%
-  float: left
-  height: 100%
 
 .column-80
+  @include column
   width: 80%
-  float: left
-  height: 100%
 
 #main-content
   padding-top: 3em
+
+#logo
+  height: 100px
+  width: 100px
 
 /******************* Global Widgets **************/
 .box
