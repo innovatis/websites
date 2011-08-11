@@ -117,11 +117,15 @@ body
       padding-right: 1em
       a
         display: block
-        color: $gray
+        color: $light-gray
         background: url(/images/breadcrumbs/breadcrumb-spacer.png) no-repeat center right
-        padding: 0em 1em 0 0
+        padding: 0em 1.5em 0 0
         line-height: 39px
-        font-size: 18px
+        font-size: 14px
+        &.current
+          color: $red
+        &:hover
+          color: #eee
 
 .container
   padding: 0 20px
