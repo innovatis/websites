@@ -12,9 +12,9 @@ filter: haml
 
     <link rel="stylesheet" href="stylesheets/application.css">
 
-    %meta{ name: 'description', content: @page.description}
-    %meta{ name: 'keywords',    content: @page.keywords}
-    %meta{ name: 'author',      content: ''}
+    %meta{ name: 'description', content: @page.description || SITE.description}
+    %meta{ name: 'keywords',    content: @page.keywords    || SITE.keywords}
+    %meta{ name: 'author',      content: @page.author      || SITE.author}
     %meta{ name: 'viewport',    content: 'width=device-width, initial-scale=1.0'}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
@@ -24,26 +24,23 @@ filter: haml
     #header
       .container.clearfix
         .column-40
-          %h1#logo.ir
-            %a ONQ-Pro Media
+          %h1
+            %a#logo.ir{ href: '/'} ONQ-Pro Media
         .column-60
-          %ul#navigation.clearfix
+          %ul.nav#navigation.clearfix
+            %li.first
+              %a{ href: '/home.html'} Home
             %li
-              %a
-                Home
+              %a{ href: '/services.html'} Services
             %li
-              %a
-                Searches
-            %li
-              %a
-                Products
-            %li
-              %a Contact
+              %a{ href: '/products.html'} Products
+            %li.last
+              %a{ href: '/contact.html'}  Contact
     #content
       -if @page.crums
-        #breadcrumbs
+        .breadcrumbs
           .container
-            %ul
+            %ul.nav
               - crums = @page.crums.clone
               - last  = crums.pop
               - crums.each do |crum|

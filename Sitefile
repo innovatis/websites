@@ -12,10 +12,14 @@ SITE.host       = '..'
 SITE.site_root  = ''
 SITE.remote_dir = ''
 
+# SEO STuff
 SITE.changefreq = 1
 SITE.priority   = 1
+SITE.description = ""
+SITE.keywords    = ""
 
 SITE.title = "ON-Q Pro Media"
+SITE.author = ""
 
 namespace :ping do
   task :google do
