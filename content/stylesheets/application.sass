@@ -79,7 +79,7 @@ ul
   list-style: none
   padding-left: 0
   margin-bottom: 1em
-  li 
+  li
 
 ol
   margin-bottom: 1em
@@ -97,6 +97,12 @@ body
   border-top: 1px solid #343434 
   background: url(/images/background-tile.png) repeat
 
+ul.nav
+  margin-bottom: 0em
+  li
+    float: left
+
+
 #header
   background: url(/images/header-background.png) top center no-repeat
   height: 211px
@@ -107,11 +113,12 @@ body
     margin-top: 13px
     float: right
     li
-      float: left
       width: 24%
       a
         color: $gray
         text-transform: uppercase
+        text-decoration: none
+        text-align: center
         &:hover
           color: $red
 
@@ -122,27 +129,6 @@ body
   padding-top: 220px
   background: $red
   background: url(/images/footer-background.png) top center no-repeat
-
-#breadcrumbs
-  height: 39px
-  background: url(/images/breadcrumbs/breadcrumb-background.png) repeat-x
-  ul
-    li
-      float: left
-      font-size: 18px
-      padding-right: 1em
-      a
-        display: block
-        text-decoration: none
-        color: $light-gray
-        background: url(/images/breadcrumbs/breadcrumb-spacer.png) no-repeat center right
-        padding: 0em 1.5em 0 0
-        line-height: 39px
-        font-size: 14px
-        &.current
-          color: $red
-        &:hover
-          color: #eee
 
 .container
   padding: 0 20px
@@ -198,7 +184,7 @@ body
 .services-listing
   li
     line-height: 30px
-    
+
 #contact-form
   background: url(/images/contact-box-background.png) 0 0 no-repeat
   width: 231px
@@ -233,7 +219,7 @@ body
     text-transform: uppercase
     font-weight: bold
     &:hover
-    
+
   textarea
     width: 211px
     background: transparent
@@ -241,7 +227,7 @@ body
     color: white
     border: 1px solid rgb(51,49,49)
     padding: 10px
-    
+
 /******************* Global Widgets **************/
 .image
   width: 180px
