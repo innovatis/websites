@@ -21,21 +21,33 @@ filter: haml
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js">\x3C/script>')</script>
     <script src="//javascripts/applications.js"></script>
   %body{ id: @page.css_id }
-    .header.global
+    #header
       .container.clearfix
         .column-40
           %h1 hi
         .column-60
-          %nav
-            %ul.clearfix
-              %li Home
-              %li Searches
-              %li Products
-              %li Contact
-            %h1 hi
-    .content.global
+          %ul#navigation.clearfix
+            %li
+              %a
+                Home
+            %li
+              %a
+                Searches
+            %li
+              %a
+                Products
+            %li
+              %a Contact
+    #content
+      #breadcrumbs
+        .container
+          %ul
+            %li
+              %a Example
+            %li
+              %a Example
       .container.clearfix=@content
-    .footer.global
+    #footer
       .container.clearfix
         .column-30
           %h4 Services
