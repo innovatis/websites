@@ -27,8 +27,20 @@ h1,h2,h3,h4,h5,h6
 
 h4, h5
   color: red
+  font-style:italic
+
+h2.title
+  text-transform: uppercase
+
+h4.subtitle
+  font-style: italic
+  font-weight: normal
+  margin: 20px 0
 
 p
+
+p.side-content
+  font-style: italic
 
 p+p
 
@@ -111,6 +123,7 @@ body
   width: 30%
   float: left
   height: 100%
+  margin-top: 60px
 
 .column-40
   width: 40%
@@ -131,11 +144,16 @@ body
   width: 70%
   float: left
   height: 100%
+  margin-top: 60px
 
 .column-80
   width: 80%
   float: left
   height: 100%
+  
+.side-block
+  width: 240px
+  margin: 10px 0 70px 0
 
 /******************* Global Widgets **************/
 .box
@@ -157,6 +175,7 @@ body
 /******************* Page Overrides **************/
 
 #index
+
 
 /******************* Media Queries ****************/
 @media only screen and (min-width: 480px)
