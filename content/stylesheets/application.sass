@@ -152,6 +152,10 @@ body
 .column,.column-30
   @include column
   width: 30%
+  
+.column-33
+  @include column
+  width: 33.3%
 
 .column-40
   @include column
@@ -189,12 +193,41 @@ body
 .services-listing
   li
     line-height: 30px
-    
+    color: white
+
+#contact-info
+  margin: 150px 0 0 0
+  text-align: center
+  color: #CECDCD
+  .phone
+    color: $red
+    font-weight: bold
+  li
+    line-height: 20px
+  .social
+    background: url(/images/socialbox-background.png) 0 0 no-repeat
+    width: 198px
+    height: 76px
+    padding: 35px 0 0 0
+    text-transform: uppercase
+    text-align: center
+    a
+      padding: 0 0 0 25px
+      color: white
+      &:hover
+        color: $red
+    .twitter
+      background: url(/images/twitter-logo.png) 0 0 no-repeat
+    .facebook
+      background: url(/images/facebook-logo.png) 0 0 no-repeat
+  
+
 #contact-form
   background: url(/images/contact-box-background.png) 0 0 no-repeat
   width: 231px
   height: 416px
   padding: 20px
+  float: right
   h4
     text-transform: uppercase
     font-weight: normal
@@ -224,7 +257,15 @@ body
     text-transform: uppercase
     font-weight: bold
     &:hover
-    
+      -moz-box-shadow: inset 0px 0px 14px #333
+      -webkit-box-shadow: inset 0px 0px 14px #333
+      box-shadow: inset 0px 0px 14px #333
+    &:active
+      padding-top: 11px
+      -moz-box-shadow: inset 0px 0px 14px #111
+      -webkit-box-shadow: inset 0px 0px 14px #111
+      box-shadow: inset 0px 0px 14px #111
+      
   textarea
     width: 211px
     background: transparent
@@ -232,7 +273,7 @@ body
     color: white
     border: 1px solid rgb(51,49,49)
     padding: 10px
-    
+      
 /******************* Global Widgets **************/
 .image
   width: 180px
