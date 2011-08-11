@@ -56,14 +56,18 @@ filter: haml
     #footer
       .container.clearfix
         .column-30
-          %h4 Services
+          %h4.services-listing-header Services
           .column-50
             %ul.services-listing
               %li List Item Here Long
               %li List Item Here Long
               %li List Item Here Long
+              %li List Item Here Long
+              %li List Item Here Long
+              %li List Item Here Long
           .column-50
-            %ul
+            %ul.services-listing
+              %li List Item Here Long
               %li List Item Here Long
               %li List Item Here Long
               %li List Item Here Long
@@ -71,4 +75,14 @@ filter: haml
         .column-30
           %h1 ONQ-Pro Media
         .column-30
-          %h4 Questions/Comments
+          %div#contact-form
+            %h4 Questions/Comments:
+            %form
+              %fieldset
+                %label{:for => "message[name]"} Name
+                %input{:type => "text", :name => "message[name]"}
+                %label{:for => "message[mail]"} E-Mail
+                %input{:type => "text", :name => "message[mail]"}
+                %label{:for => "message[body]"} Questions/Comments
+                %textarea{:name => "message[body]"}
+                %input.button{:type => "submit", :value => "Send"}

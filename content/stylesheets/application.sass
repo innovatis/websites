@@ -55,6 +55,11 @@ h4.subtitle
   font-weight: normal
   margin: 20px 0
   color: $red
+  
+h4.services-listing-header
+  text-transform: uppercase
+  font-size: 1.1em
+  font-weight: normal
 
 p
   margin-bottom: 1em
@@ -191,10 +196,52 @@ body
   background: url(/images/logo.png) no-repeat
 
 .services-listing
-  ul
-    li
-      line-height: 30px
-
+  li
+    line-height: 30px
+    
+#contact-form
+  background: url(/images/contact-box-background.png) 0 0 no-repeat
+  width: 231px
+  height: 416px
+  padding: 20px
+  h4
+    text-transform: uppercase
+    font-weight: normal
+    font-size: 1.4em
+  label
+    display: block
+    margin: 10px 0 3px 0
+    font-size: .8em
+  input
+    width: 211px
+    background: transparent
+    height: 17px
+    color: white
+    border: 1px solid rgb(51,49,49)
+    padding: 10px
+  .button
+    width: 112px
+    height: 36px
+    float: right
+    margin: 20px 0 0 0
+    @include gradient(#FF0000, #5F0000)
+    border-top: 1px solid #FF2A30
+    border-right: 1px solid #360305
+    border-bottom: 1px solid #360305
+    border-left: 1px solid #FF2A30
+    text-shadow: #333 -1px -1px 1px
+    text-transform: uppercase
+    font-weight: bold
+    &:hover
+    
+  textarea
+    width: 211px
+    background: transparent
+    height: 113px
+    color: white
+    border: 1px solid rgb(51,49,49)
+    padding: 10px
+    
 /******************* Global Widgets **************/
 .image
   width: 180px
