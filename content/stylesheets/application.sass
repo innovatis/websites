@@ -26,6 +26,15 @@ html
 body
   color: $light-gray
 
+::-moz-selection
+  text-shadow: none
+  background: $red
+  color: white
+
+::selection
+  text-shadow: none
+  background: $red
+  color: white
 
 /******************* Global Typography *****************/
 
@@ -222,6 +231,14 @@ body
   .full-box-footer
     background: url(/images/box/box-footer.png) no-repeat
     height: 30px
+
+.picture-set
+  margin-left: 2em
+  .image
+    width: 160px
+    margin: 0 13px 0 0
+  .image.last
+    margin: 0 0em 0 0
 /******************* Page Overrides **************/
 
 #index
