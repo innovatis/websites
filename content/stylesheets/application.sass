@@ -272,6 +272,29 @@ ul.nav
     margin: 0 13px 0 0
   .image.last
     margin: 0 0em 0 0
+
+
+.breadcrumbs
+  height: 39px
+  background: url(/images/breadcrumbs/breadcrumb-background.png) repeat-x
+  ul
+    li
+      float: left
+      font-size: 18px
+      padding-right: 1em
+      a
+        display: block
+        text-decoration: none
+        color: $light-gray
+        background: url(/images/breadcrumbs/breadcrumb-spacer.png) no-repeat center right
+        padding: 0em 1.5em 0 0
+        line-height: 39px
+        font-size: 14px
+        &.current
+          color: $red
+        &:hover
+          color: #eee
+
 /******************* Page Overrides **************/
 
 #index
