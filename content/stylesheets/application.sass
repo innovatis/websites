@@ -251,15 +251,11 @@ ul.nav
     text-transform: uppercase
     font-weight: bold
     &:hover
-      -moz-box-shadow: inset 0px 0px 14px #333
-      -webkit-box-shadow: inset 0px 0px 14px #333
-      box-shadow: inset 0px 0px 14px #333
+      @include box-shadow(inset 0px 0px 14px #333)
     &:active
       padding-top: 11px
-      -moz-box-shadow: inset 0px 0px 14px #111
-      -webkit-box-shadow: inset 0px 0px 14px #111
-      box-shadow: inset 0px 0px 14px #111
-
+      @include box-shadow(inset 0px 0px 14px #111)
+  
   textarea
     width: 211px
     background: transparent
