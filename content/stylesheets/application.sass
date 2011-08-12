@@ -39,6 +39,7 @@ body
 /******************* Global Typography *****************/
 
 h1,h2,h3,h4,h5,h6
+  // font-family: 'Lato', sans-serif
   font-family: Arial, Sans-serif
   color: white
   margin-bottom: 0.5em
@@ -63,6 +64,7 @@ h4.services-listing-header
 
 p
   margin-bottom: 1em
+  // font-family: 'Lato', sans-serif
 
 p.side-content
   font-style: italic
@@ -103,17 +105,22 @@ ul.nav
     float: left
 
 
+#header-container
+  background: url(/images/header-background-tile.png) top center repeat-x
+  height: 211px
+  
 #header
   background: url(/images/header-background.png) top center no-repeat
   height: 211px
 
+  
 #header
   ul#navigation
     width: 500px
     margin-top: 13px
     float: right
     li
-      width: 24%
+      width: 20%
       a
         color: $gray
         text-transform: uppercase
@@ -125,10 +132,14 @@ ul.nav
 #content
 
 #footer
-  height: 559px
-  padding-top: 220px
-  background: $red
-  background: url(/images/footer-background.png) top center no-repeat
+  height: 536px
+  padding-top: 504px
+  margin-top: -271px
+  background: url(/images/footer-background.jpg) top center no-repeat
+
+#footer-container
+  height: 461px
+  background: url(/images/footer-background-tile.jpg) bottom center repeat-y
 
 .container
   padding: 0 20px
@@ -179,18 +190,18 @@ ul.nav
 .column-30
   hr
     background: url(/images/hr.png) 0 0 no-repeat
-    height: 3px
+    height: 42px
     width: 235px
     border: none
-    margin: 35px 0
+    margin: -10px 0 35px 0
 
 #main-content
   padding-top: 3em
 
 #logo
   margin-top: 30px
-  height: 168px
-  width:  289px
+  height: 117px
+  width:  241px
   background: url(/images/logo.png) no-repeat
 
 .services-listing
@@ -281,20 +292,19 @@ ul.nav
   height: 150px
   background:  white
 .box
-  background: black
   min-height: 70px
   width: 659px
   margin-bottom: 2em
   .box-header
     background: url(/images/box/box-header.png) no-repeat
-    height: 30px
+    height: 45px
   .box-content
     background: url(/images/box/box-content.png) repeat-y
     min-height: 10px
-    padding: 1em 2em
+    padding: 0em 2em 1em 2em
   .box-footer
     background: url(/images/box/box-footer.png) no-repeat
-    height: 30px
+    height: 45px
 
 .full-box
   background: black

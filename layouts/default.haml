@@ -5,11 +5,11 @@ filter: haml
 !!!5
 %html
   %head
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     %title #{SITE.title} #{@page.title and '- '+@page.title}
-
     <link rel="stylesheet" href="stylesheets/application.css">
 
     %meta{ name: 'description', content: @page.description || SITE.description}
@@ -21,21 +21,24 @@ filter: haml
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js">\x3C/script>')</script>
     <script src="//javascripts/applications.js"></script>
   %body{ id: @page.css_id }
-    #header
-      .container.clearfix
-        .column-40
-          %h1
-            %a#logo.ir{ href: '/'} ONQ-Pro Media
-        .column-60
-          %ul.nav#navigation.clearfix
-            %li.first
-              %a{ href: '/home.html'} Home
-            %li
-              %a{ href: '/services.html'} Services
-            %li
-              %a{ href: '/products.html'} Products
-            %li.last
-              %a{ href: '/contact.html'}  Contact
+    #header-container
+      #header
+        .container.clearfix
+          .column-40
+            %h1
+              %a#logo.ir{ href: '/'} ONQ-Pro Media
+          .column-60
+            %ul.nav#navigation.clearfix
+              %li.first
+                %a{ href: '/home.html'} Home
+              %li
+                %a{ href: '/services.html'} Services
+              %li
+                %a{ href: '/products.html'} Products
+              %li
+                %a{ href: '/client.html'} Clients
+              %li.last
+                %a{ href: '/contact.html'}  Contact
     #content
       -if @page.crums
         .breadcrumbs
@@ -50,45 +53,47 @@ filter: haml
                 %li
                   %a.current{href: last.values.first}= last.keys.first
       #main-content.container.clearfix=@content
-    #footer
-      .container.clearfix
-        .column-33
-          %h4.services-listing-header Services
-          .column-50
-            %ul.services-listing
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-          .column-50
-            %ul.services-listing
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-              %li List Item Here Long
-        .column-33
-          %div#contact-info
-            %ul
-              %li 12345 Longer Name Street
-              %li Winnipeg, Manitoba
-              %li Canada  R3B 3K6
-              %li.phone 888-999-2222
-            %div.social
-              %a.facebook Visit us on Facebook
-            %div.social
-              %a.twitter Follow us on Twitter
-        .column-33
-          %div#contact-form
-            %h4 Questions/Comments:
-            %form
-              %fieldset
-                %label{:for => "message[name]"} Name
-                %input{:type => "text", :name => "message[name]"}
-                %label{:for => "message[mail]"} E-Mail
-                %input{:type => "text", :name => "message[mail]"}
-                %label{:for => "message[body]"} Questions/Comments
-                %textarea{:name => "message[body]"}
-                %input.button{:type => "submit", :value => "Send"}
+    #footer-container
+      #footer
+        .container.clearfix
+          .column-33
+            %h4.services-listing-header Services
+            .column-50
+              %ul.services-listing
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+            .column-50
+              %ul.services-listing
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+                %li List Item Here Long
+          .column-33
+            %div#contact-info
+              %ul
+                %li 12345 Longer Name Street
+                %li Winnipeg, Manitoba
+                %li Canada  R3B 3K6
+                %li.phone 888-999-2222
+              %div.social
+                %a.facebook Visit us on Facebook
+              %div.social
+                %a.twitter Follow us on Twitter
+          .column-33
+            %div#contact-form
+              %h4 Questions/Comments:
+              %form
+                %fieldset
+                  %label{:for => "message[name]"} Name
+                  %input{:type => "text", :name => "message[name]"}
+                  %label{:for => "message[mail]"} E-Mail
+                  %input{:type => "text", :name => "message[mail]"}
+                  %label{:for => "message[body]"} Questions/Comments
+                  %textarea{:name => "message[body]"}
+                  %input.button{:type => "submit", :value => "Send"}
+      
