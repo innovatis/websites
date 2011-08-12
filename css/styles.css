@@ -1676,6 +1676,19 @@ a.bridgwater-lakes:hover {
   background-position: 0 -277px;
 }
 
+a.deer-pointe-park {
+  background: url(../images/communities-deer-pointe-park.jpg) no-repeat 0 0;
+  width: 210px;
+  height: 277px;
+  display: block;
+  margin: 0 0 0 0;
+  float:left;
+}
+
+a.deer-pointe-park:hover {
+  background-position: 0 -277px;
+}
+
 a.kingswood-le-salle {
   background: url(../images/communities-kingswood-le-salle.jpg) no-repeat 0 0;
   width: 210px;
