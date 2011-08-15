@@ -1,77 +1,32 @@
 ---
-title: Services
-css_id: services
+title: Home
+css_id: home
 filter:
   - haml
 crums:
-  - home: /
-  - services: /
+  - Home: /
 ---
 
-.column-30
-  %div.side-block
-    %h2.title Services
-    %h4.subtitle Subtitle if needed
-    %p.side-content some content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk
-  %hr
-  %div.side-block
-    %h3 Some Content
-    %h4.subtitle Some Content
-    %p.side-content some content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk
-.column-70
-  .box
-    .box-header
-    .box-content
-    .box-footer
-  .box
-    .box-header
-    .box-content
-      %h1 Some Content
-      %h2 Some Content
-      %h3 Some Content
-      %h4 Some Content
-      %h5 Some Content
-      %h6 Some Content
-      %p some content content content content asdf adsf g 2 123 asdlk
-      %p some content content content content asdf adsf g 2 123 asdlk
-      %p some content content content content asdf adsf g 2 123 asdlk
-      %ul
-        %li List
-        %li List
-        %li List
-        %li List
-        %li List
-      %ul
-        %li List
-        %li List
-        %li List
-        %li List
-        %li List
-      %p some content content content content asdf adsf g 2 123  asdlk
-    .box-footer
-
-  %h1 Some Content
-  %h2 Some Content
-  %h3 Some Content
-  %h4 Some Content
-  %h5 Some Content
-  %h6 Some Content
-
-  %p some content content content content asdf adsf g 2 123  asdlk
-  %p some content content content content asdf adsf g 2 123  asdlk
-  %p some content content content content asdf adsf g 2 123  asdlk
-
-  %ul
-    %li List
-    %li List
-    %li List
-    %li List
-    %li List
-  %ul
-    %li List
-    %li List
-    %li List
-    %li List
-    %li List
-
-  %p some content content content content asdf adsf g 2 123  asdlk
+#showcase
+  .column.column-thumbs
+    %img.thumb{:src => "/images/square-sports-bar.png", :alt => "Sports Bar"}
+    %img.thumb{:src => "/images/square-restaurant.png", :alt => "Restaurant"}
+    %img.thumb{:src => "/images/square-patio.png", :alt => "Patio"}
+  .column.column-thumbs
+    %img.thumb{:src => "/images/square-dance-club.png", :alt => "Dance Club"}
+    %img.thumb{:src => "/images/square-hall.png", :alt => "Hall"}
+    %img.thumb{:src => "/images/square-hotel.png", :alt => "Hotel"}
+  .column.column-large
+    %img.large{:src => "/images/large-sports-bar.png", :alt => "Sports Bar"}
+#featured-products-showcase
+  .column-30
+    %h2 Featured Products
+    %h5 Title of Selected Product
+    %p adsf asdf  f f as d asdfasdf  asdfasdf  asdf  asdf  asdf faslkjzx se,fa,x
+    %p adsf asdf  f f as d asdfasdf  asdfasdf  asdf  asdf  asdf faslkjzx se,fa,x
+  .column-20.first
+    %img.image{:src => "http://dummyimage.com/180x155/2e2e2e/2e2e2e", :alt => "Dance Club"}\n
+  .column-20
+    %img.image{:src => "http://dummyimage.com/180x155/2e2e2e/2e2e2e", :alt => "Dance Club"}
+  .column-20
+    %img.image{:src => "http://dummyimage.com/180x155/2e2e2e/2e2e2e", :alt => "Dance Club"}
