@@ -134,7 +134,7 @@ ul.nav
 #footer
   height: 536px
   padding-top: 504px
-  margin-top: -271px
+  margin-top: 20px // should be -271px
   background: url(/images/footer-background.jpg) top center no-repeat
 
 #footer-container
@@ -307,19 +307,18 @@ ul.nav
     height: 45px
 
 .full-box
-  background: black
   min-height: 70px
   width: 100%
   margin-bottom: 2em
   .full-box-header
-    background: url(/images/box/box-header.png) no-repeat
+    background: url(/images/box/full-box-header.png) no-repeat
     height: 30px
   .full-box-content
-    background: url(/images/box/box-content.png) repeat-y
+    background: url(/images/box/full-box-content.png) repeat-y
     min-height: 10px
     padding: 1em 2em
   .full-box-footer
-    background: url(/images/box/box-footer.png) no-repeat
+    background: url(/images/box/full-box-footer.png) no-repeat
     height: 30px
 
 .picture-set
@@ -354,10 +353,12 @@ ul.nav
 
 /*********************** Widgets ******************/
 
-.location-map
-  width: 909px
-  height: 410px
+#showcase
+  width: 922px
+  height: 382px
   padding: 8px 0px
+  background: black
+  margin: 0 0 50px 0
   .column-thumbs
     width: 134px
     height: 380px
@@ -368,12 +369,61 @@ ul.nav
     margin: 0 0 0 8px
   .column-large
     
-.featured-products-showcase
+#featured-products-showcase
   background: url(/images/box-featured-products.png) 0 0 no-repeat
   margin: 0 auto
-  width: 925px
-  height: 210px
+  width: 875px
+  height: 150px
+  padding: 30px 25px
+  .column-20
+    margin-left: 25px
+    
+#contact-us
+  padding: 20px
+  h4
+    text-transform: uppercase
+    font-weight: normal
+    font-size: 1.4em
+    margin-bottom: 20px
+  label
+    display: block
+    margin: 20px 0 3px 0
+    font-size: 1em
+    cursor: auto
+  input
+    width: 100%
+    background: transparent
+    height: 17px
+    color: white
+    border: 1px solid rgb(51,49,49)
+    padding: 10px
+  .button
+    width: 112px
+    height: 36px
+    float: right
+    margin: 20px 0 0 0
+    @include gradient(#FF0000, #5F0000)
+    border-top: 1px solid #FF2A30
+    border-right: 1px solid #360305
+    border-bottom: 1px solid #360305
+    border-left: 1px solid #FF2A30
+    text-shadow: #333 -1px -1px 1px
+    text-transform: uppercase
+    font-weight: bold
+    &:hover
+      @include box-shadow(inset 0px 0px 14px #333)
+    &:active
+      padding-top: 11px
+      @include box-shadow(inset 0px 0px 14px #111)
 
+  textarea
+    width: 100%
+    background: transparent
+    height: 113px
+    color: white
+    border: 1px solid rgb(51,49,49)
+    padding: 10px
+  
 /******************* Page Overrides **************/
 
 #index

@@ -8,3 +8,23 @@ crums:
   - contact: /contact.html
 ---
 
+.column-30
+  %div.side-block
+    %h2.title Contact Us
+    %h4.subtitle Subtitle if needed
+    %p.side-content some content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk content content content content asdf adsf g 2 123 asdlk
+.column-70
+  .box
+    .box-header
+    .box-content
+      #contact-us
+        %form
+          %fieldset
+            %label{:for => "message[name]"} Name
+            %input{:type => "text", :name => "message[name]"}
+            %label{:for => "message[mail]"} E-Mail
+            %input{:type => "text", :name => "message[mail]"}
+            %label{:for => "message[body]"} Questions/Comments
+            %textarea{:name => "message[body]"}
+            %input.button{:type => "submit", :value => "Send"}
+    .box-footer
