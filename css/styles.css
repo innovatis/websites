@@ -745,6 +745,7 @@ ul#listing-bar select {
   height:373px;
   margin:0 auto;
   background:url(../images/listing-background.png);
+  overflow:hidden;
 }
 
 .listing-column {
