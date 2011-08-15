@@ -28,17 +28,18 @@ filter: haml
             %h1
               %a#logo.ir{ href: '/'} ONQ-Pro Media
           .column-60
-            %ul.nav#navigation.clearfix
-              %li.first
-                %a{ href: '/'} Home
-              %li
-                %a{ href: '/services.html'} Services
-              %li
-                %a{ href: '/products.html'} Products
-              %li
-                %a{ href: '/clients.html'} Clients
-              %li.last
-                %a{ href: '/contact.html'}  Contact
+            #navigation-container
+              %ul.nav#navigation.clearfix
+                %li.first
+                  %a{ href: '/'} Home
+                %li
+                  %a{ href: '/services.html'} Services
+                %li
+                  %a{ href: '/products.html'} Products
+                %li
+                  %a{ href: '/clients.html'} Clients
+                %li.last
+                  %a{ href: '/contact.html'}  Contact
     #content
       -if @page.crums
         .breadcrumbs
