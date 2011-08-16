@@ -11,6 +11,7 @@ layout:    nil
 $red: red
 $gray: #CACACB
 $light-gray: #aba8a8// #797474
+$purple: #a189b3
 
 /******************* Global Style ***************/
 
@@ -28,12 +29,12 @@ body
 
 ::-moz-selection
   text-shadow: none
-  background: $red
+  background: $purple
   color: white
 
 ::selection
   text-shadow: none
-  background: $red
+  background: $purple
   color: white
 
 /******************* Global Typography *****************/
@@ -428,7 +429,13 @@ ul.nav
     color: white
     border: 1px solid rgb(51,49,49)
     padding: 10px
-  
+
+#product-nav
+  a
+    color: $gray
+    font-size: 1.1em
+    &:hover
+      color: $red
 /******************* Page Overrides **************/
 
 #index
