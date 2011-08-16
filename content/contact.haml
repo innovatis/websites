@@ -7,7 +7,6 @@ crums:
   - home: /
   - contact: /contact.html
 ---
-
 .column-30
   %div.side-block
     %h2.title Contact Us
@@ -19,13 +18,24 @@ crums:
     .box-content
       #contact-us
         %h4.subtitle Questions/Comments:
-        %form
+        %form{:id => "footer-mailform", 'data-mailform' => "99925f3d9360008161629fbfbc15f71bb72d65ee", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
+          #message-wrapper
+            .hidden.mailform-loading
+            .hidden.mailform-error
+              default error
+            .hidden.mailform-success
+              default success
           %fieldset
-            %label{:for => "message[name]"} Name
-            %input{:type => "text", :name => "message[name]"}
-            %label{:for => "message[mail]"} E-Mail
-            %input{:type => "text", :name => "message[mail]"}
-            %label{:for => "message[body]"} Questions/Comments
-            %textarea{:name => "message[body]"}
-            %input.button{:type => "submit", :value => "Send"}
+            .input
+              %label{:for => "message[name]"} Name
+              %input{:type => "text", :name => "message[name]", 'required' => "true"}
+            .input
+              %label{:for => "message[mail]"} E-Mail
+              %input{:type => "text", :name => "message[mail]", 'required' => "true"}
+            .input
+              %label{:for => "message[body]"} Questions/Comments
+              %textarea{:name => "message[body]", 'required' => "true"}
+            .actions
+              %input.button{:type => "submit", :value => "Send"}
+            %p All fields marked with an * must be completed
     .box-footer
