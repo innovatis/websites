@@ -19,10 +19,12 @@ filter: haml
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js">\x3C/script>')</script>
-    <script src="//javascripts/applications.js"></script>
+    <script src="/javascripts/applications.js"></script>
+    <script src="/javascripts/waypoints.min.js"></script>
+    <script src="/javascripts/sticky.js"></script>    
     <script src="/javascripts/scroll.js"></script>
     <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script> 
-    <script src="js/mailform.js"></script>
+    <script src="/javascripts/mailform.js"></script>
   %body{ id: @page.css_id }
     #header-container
       #header
@@ -90,5 +92,5 @@ filter: haml
                   %input{:type => "text", :name => "message[mail]"}
                   %label{:for => "message[body]"} Questions/Comments
                   %textarea{:name => "message[body]"}
-                  %input.button{:type => "submit", :value => "Send"}
+                  %input.input-button{:type => "submit", :value => "submit"}
       
