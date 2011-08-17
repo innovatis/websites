@@ -300,11 +300,20 @@ ul.nav
   textarea
     width: 211px
     background: transparent
-    height: 113px
+    height: 87px // 113px
     color: white
     border: 1px solid rgb(51,49,49)
     padding: 10px
 
+.mailform-loading
+  background: url(/images/ajax-loader.gif) no-repeat 0 0
+  height: 32px
+  width: 32px
+  float: left
+  margin-top: 28px
+
+.required-message
+  float: left
 /******************* Global Widgets **************/
 .image
   width: 178px
@@ -410,7 +419,7 @@ ul.nav
     font-size: 1em
     cursor: auto
   input
-    width: 100%
+    width: 96%
     background: transparent
     height: 17px
     color: white
@@ -436,7 +445,7 @@ ul.nav
       @include box-shadow(inset 0px 0px 14px #111)
 
   textarea
-    width: 100%
+    width: 96%
     background: transparent
     height: 113px
     color: white

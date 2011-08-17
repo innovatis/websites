@@ -83,13 +83,25 @@ filter: haml
           .column-33
             %div#contact-form
               %h4 Questions/Comments:
-              %form
+              %form{:id => "mailform", 'data-mailform' => "f592bb357e9f87206571aab80c0c484c670d28d3", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
+                #message-wrapper
+                  .hidden.mailform-error
+                    default error
+                  .hidden.mailform-success
+                    default success
                 %fieldset
-                  %label{:for => "message[name]"} Name
-                  %input{:type => "text", :name => "message[name]"}
-                  %label{:for => "message[mail]"} E-Mail
-                  %input{:type => "text", :name => "message[mail]"}
-                  %label{:for => "message[body]"} Questions/Comments
-                  %textarea{:name => "message[body]"}
-                  %input.input-button{:type => "submit", :value => "submit"}
+                  .inputs
+                    .input
+                      %label{:for => "message[name]"} Name*
+                      %input.required-field{:type => "text", :name => "name", 'required' => "true"}
+                    .input
+                      %label{:for => "message[mail]"} E-Mail*
+                      %input.required-field{:type => "text", :name => "email", 'required' => "true"}
+                    .input
+                      %label{:for => "message[body]"} Questions/Comments*
+                      %textarea.required-field{:name => "body", 'required' => "true"}
+                  .actions
+                    %input.input-button{:type => "submit", :value => "submit"}
+                    %p.required-message * Required
+                    .hidden.mailform-loading
       

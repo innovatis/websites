@@ -24,24 +24,25 @@ crums:
     .box-content
       #contact-us
         %h4.subtitle Questions/Comments:
-        %form{:id => "mailform", 'data-mailform' => "99925f3d9360008161629fbfbc15f71bb72d65ee", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
+        %form{:id => "contactform", 'data-mailform' => "f592bb357e9f87206571aab80c0c484c670d28d3", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
           #message-wrapper
             .hidden.mailform-error
               default error
             .hidden.mailform-success
               default success
           %fieldset
-            .input
-              %label{:for => "message[name]"} Name*
-              %input.required-field{:type => "text", :name => "message[name]", 'required' => "true"}
-            .input
-              %label{:for => "message[mail]"} E-Mail*
-              %input.required-field{:type => "text", :name => "message[mail]", 'required' => "true"}
-            .input
-              %label{:for => "message[body]"} Questions/Comments*
-              %textarea.required-field{:name => "message[body]", 'required' => "true"}
-            .hidden.mailform-loading
+            .inputs
+              .input
+                %label{:for => "message[name]"} Name*
+                %input.required-field{:type => "text", :name => "name", 'required' => "true"}
+              .input
+                %label{:for => "message[mail]"} E-Mail*
+                %input.required-field{:type => "text", :name => "email", 'required' => "true"}
+              .input
+                %label{:for => "message[body]"} Questions/Comments*
+                %textarea.required-field{:name => "body", 'required' => "true"}
             .actions
               %input.input-button{:type => "submit", :value => "submit"}
-            %p All fields marked with an * must be completed
+              %p.required-message All fields marked with an * must be completed
+              .hidden.mailform-loading
     .box-footer
