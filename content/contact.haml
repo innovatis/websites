@@ -24,24 +24,24 @@ crums:
     .box-content
       #contact-us
         %h4.subtitle Questions/Comments:
-        %form{:id => "footer-mailform", 'data-mailform' => "99925f3d9360008161629fbfbc15f71bb72d65ee", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
+        %form{:id => "mailform", 'data-mailform' => "99925f3d9360008161629fbfbc15f71bb72d65ee", 'data-mailform-error' => "error-messages", :method => "get", :novalidate => "true"}
           #message-wrapper
-            .hidden.mailform-loading
             .hidden.mailform-error
               default error
             .hidden.mailform-success
               default success
           %fieldset
             .input
-              %label{:for => "message[name]"} Name
-              %input{:type => "text", :name => "message[name]", 'required' => "true"}
+              %label{:for => "message[name]"} Name*
+              %input.required-field{:type => "text", :name => "message[name]", 'required' => "true"}
             .input
-              %label{:for => "message[mail]"} E-Mail
-              %input{:type => "text", :name => "message[mail]", 'required' => "true"}
+              %label{:for => "message[mail]"} E-Mail*
+              %input.required-field{:type => "text", :name => "message[mail]", 'required' => "true"}
             .input
-              %label{:for => "message[body]"} Questions/Comments
-              %textarea{:name => "message[body]", 'required' => "true"}
+              %label{:for => "message[body]"} Questions/Comments*
+              %textarea.required-field{:name => "message[body]", 'required' => "true"}
+            .hidden.mailform-loading
             .actions
-              %input.button{:type => "submit", :value => "Send"}
+              %input.input-button{:type => "submit", :value => "Send"}
             %p All fields marked with an * must be completed
     .box-footer
