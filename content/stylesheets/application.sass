@@ -123,10 +123,19 @@ ul.nav
     padding: 0px 0px 0px 20px 
   ul#navigation
     width: 500px
-    margin-top: 13px
     float: right
     li
-      width: 20%
+      // width: 20%
+      padding-top: 13px
+      margin-left: 20px
+      padding-right: 20px
+      font-weight: bold
+      background: url(/images/nav-divider.png) top right no-repeat
+      height: 50px
+      &.first
+        margin-left: 0px
+      &.last
+        background: none
       a
         color: $gray
         text-transform: uppercase
@@ -137,7 +146,7 @@ ul.nav
 
 #content
   background: url(/images/content-background.png) bottom center no-repeat
-  padding-bottom: 150px
+  padding-bottom: 105px
     
 #footer
   height: 579px
@@ -193,6 +202,9 @@ ul.nav
 .side-block
   width: 240px
   margin: 10px 0 0 0
+  .phone
+    color: $red
+    font-weight: bold
 
 .column-30
   hr
