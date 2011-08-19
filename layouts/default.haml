@@ -10,7 +10,7 @@ filter: haml
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     %title #{SITE.title} #{@page.title and '- '+@page.title}
-    <link rel="stylesheet" href="stylesheets/application.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
 
     %meta{ name: 'description', content: @page.description || SITE.description}
     %meta{ name: 'keywords',    content: @page.keywords    || SITE.keywords}
@@ -19,7 +19,7 @@ filter: haml
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js">\x3C/script>')</script>
-    <script src="/javascripts/applications.js"></script>
+    <script src="/javascripts/application.js"></script>
     <script src="/javascripts/waypoints.min.js"></script>
     <script src="/javascripts/scroll.js"></script>
     <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script> 

@@ -1,0 +1,33 @@
+---
+title: Room
+css_id: room
+filters:
+  - haml
+---
+<link rel="stylesheet" href="/stylesheets/rooms.css">
+<script src="/javascripts/rooms.js"></script>
+#rooms.clearfix
+  #room-nav
+    .room-thumbs
+      %img.room-thumb{src: "/images/square-sports-bar.png", alt: "Sports Bar"}
+      %img.room-thumb{src: "/images/square-restaurant.png", alt: "Restaurant"}
+      %img.room-thumb{src: "/images/square-patio.png",      alt: "Patio"}
+    .room-thumbs
+      %img.room-thumb{src: "/images/square-dance-club.png", alt: "Dance Club"}
+      %img.room-thumb{src: "/images/square-hall.png",       alt: "Hall"}
+      %img.room-thumb{src: "/images/square-hotel.png",      alt: "Hotel"}
+  #sports-bar.room
+    .entity.back-wall{ style: "display:none"}
+    .entity.transparent.people-balcony
+    .entity.back-wall-front
+    .entity.transparent.ambient-lights.ambient-lights-blue
+    .entity.transparent.ambient-lights.ambient-lights-green
+    .entity.transparent.ambient-lights.ambient-lights-purple
+    .entity.transparent.ambient-lights.ambient-lights-red
+    .entity.transparent.bar
+    .entity.transparent.bar-with-waitress
+    .entity.transparent.bar-with-people
+    .entity.transparent.lights
+    .entity.transparent.people-background-with-theatre
+    .entity.transparent.waitress-middle-of-room
+    .entity.transparent.people-forground

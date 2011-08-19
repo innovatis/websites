@@ -1,0 +1,64 @@
+#rooms{
+  background: black;
+  -webkit-box-shadow: 0px 0px 5px black;
+  -moz-box-shadow:    0px 0px 5px black;
+  -o-box-shadow:      0px 0px 5px black;
+  box-shadow:         0px 0px 5px black;
+  margin: 2em 0 4em 0;
+}
+
+#room-nav{
+  width: 260px;
+  height: 400px;
+  float: left;
+}
+
+#room-nav .room-thumbs{
+  float: left;
+  width: 130px;
+  height: 400px;
+  margin: 0;
+}
+
+#room-nav .room-thumbs .room-thumb{
+  width: 130px;
+  padding: 0px;
+}
+
+#rooms .room{
+  width: 679px;
+  height: 400px;
+  background-color: black; position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#rooms .room#sports-bar{
+}
+
+#rooms .entity{
+  position: absolute;
+  width: 680px;
+  height: 400px;
+}
+
+#rooms .transparent{
+  opacity: 0;
+}
+
+#sports-bar .back-wall{                       background: url(/rooms/sports_bar/Back-Wall.png)              no-repeat; }
+#sports-bar .back-wall-front{                 background: url(/rooms/sports_bar/Back-Wall-Front.png)        no-repeat; }
+#sports-bar .ambient-lights-blue{             background: url(/rooms/sports_bar/Ambient-Lights-Blue.png)    no-repeat; }
+#sports-bar .ambient-lights-green{            background: url(/rooms/sports_bar/Ambient-Lights-Green.png)   no-repeat; }
+#sports-bar .ambient-lights-purple{           background: url(/rooms/sports_bar/Ambient-Lights-Purple.png)  no-repeat; }
+#sports-bar .ambient-lights-red{              background: url(/rooms/sports_bar/Ambient-Lights-Red.png)     no-repeat; }
+#sports-bar .bar{                             background: url(/rooms/sports_bar/Bar.png) }
+#sports-bar .bar-with-waitress{               background: url(/rooms/sports_bar/Bar-With-Waitress.png) }
+#sports-bar .bar-with-people{                 background: url(/rooms/sports_bar/Bar-With-People.png) }
+#sports-bar .lights{                          background: url(/rooms/sports_bar/Lights.png) }
+#sports-bar .people-background-with-theatre{  background: url(/rooms/sports_bar/People-Background-with-Theatre.png) }
+#sports-bar .people-balcony{                  background: url(/rooms/sports_bar/People-Balcony.png)                 }
+#sports-bar .waitress-middle-of-room{         background: url(/rooms/sports_bar/Waitress-Middle-of-Room.png)}
+#sports-bar .people-forground{                background: url(/rooms/sports_bar/People-Foreground.png)}
+#sports-bar .ambient-lights     { opacity: 0 }
