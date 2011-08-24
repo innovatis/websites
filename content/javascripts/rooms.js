@@ -4,7 +4,6 @@ var Onq = Onq || {};
     var values = {
       opacity: value
     };
-
     if(!jQuery.support.opacity){
       /* only IE (hopefully) */
       value = value || 1;
@@ -44,27 +43,30 @@ var Onq = Onq || {};
     },
 
     bind: function(event,fcn){
-      this.root.bind(event,fcn);
+      return this.root.bind(event,fcn);
     },
 
     show: function(selector,duration){
-      this.$(selector).opIn(duration||1000,function(){
-        $(document).trigger('show.'+selector);
+      return this.$(selector||'*').opIn(duration||1000,function(){
+        $(document).trigger('@show'+selector);
       });
     },
 
     hide: function(selector,duration){
-      this.$(selector).opIn(duration||1000,function(){
-      // shouldnt be global
+      return this.$(selector||'*').opOut(duration||1000,function(){
+        // shouldnt be global
         $(document).trigger('hide.'+selector);
       });
     },
+
     after: function(event,action,selectorOrFcn,duration){
       var that = this;
       // shouldnt be global
+      // store current state, if stopped it will resume
       $(document).bind(event, function(){
         that[action](selectorOrFcn,duration);
       });
+      return this;
     }
   };
 
@@ -72,26 +74,33 @@ var Onq = Onq || {};
   Onq.rooms.sportsBar.load = function(){
     this.root          = $(this.selector);
     this.ambientLights = this.root.find('.ambient-lights');
+    this.previous      = this.root.clone();
+    this.root.data("room",this);
   }
 
   Onq.rooms.sportsBar.start = function(){
     var that = this;
+    $.fx.off = this.stopped = false;
 
     // ugly but simple enough for now
-    this.after('backWallFadeIn',          'cycleAmbientLights');
-
-    this.after('backWallFadeIn',          'show', '.bar');
-    this.after('show..bar',               'show', '.bar-with-waitress');
-    this.after('show..bar',               'show', '.people-background-with-theatre');
-    this.after('show..bar-with-waitress', 'show', '.bar-with-people');
-    this.after('show..bar-with-waitress', 'show', '.people-balcony');
-    this.after('show..bar-with-people',   'show', '.waitress-middle-of-room');
-    this.after('show..bar-with-people',   'show', '.people-forground');
-    this.after('show..people-forground',  'show', '.lights');
+    this.after('@backWallFadeIn',         'cycleAmbientLights').
+         after('@backWallFadeIn',         'show', '.bar').
+         after('@show.bar',               'show', '.bar-with-waitress').
+         after('@show.bar',               'show', '.people-background-with-theatre').
+         after('@show.bar-with-waitress', 'show', '.bar-with-people').
+         after('@show.bar-with-waitress', 'show', '.people-balcony').
+         after('@show.bar-with-people',   'show', '.waitress-middle-of-room').
+         after('@show.bar-with-people',   'show', '.people-forground').
+         after('@show.people-forground',  'show', '.lights');
 
     this.$('.back-wall').fadeIn(1000,function(){
-      $(this).trigger('backWallFadeIn');
+      $(this).trigger('@backWallFadeIn');
     })
+  };
+
+  Onq.rooms.sportsBar.stop = function(){
+    $.fx.off = this.stopped = true;
+    return this;
   };
 
   Onq.rooms.sportsBar.cycleAmbientLights = function(){
@@ -106,11 +115,15 @@ var Onq = Onq || {};
       current.op(newOpacity,1000,function(){
         index = (index+1)% (that.ambientLights.length);
         if(index == 0){ index = 1 }
-        thater();
+        if(!that.stopped){
+          thater();
+        }
       });
     })()
   };
+
   $(function(){
-    Onq.rooms.sportsBar.run();
+    //Onq.rooms.sportsBar.run();
   });
+
 })($)
