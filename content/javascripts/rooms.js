@@ -123,7 +123,7 @@ var Onq = Onq || {};
   };
 
   $(function(){
-    //Onq.rooms.sportsBar.run();
+    Onq.rooms.sportsBar.run();
   });
 
 })($)

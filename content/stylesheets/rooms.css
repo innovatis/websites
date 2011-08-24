@@ -32,6 +32,7 @@
   margin: 0;
   padding: 0;
   float: left;
+  display: none;
 }
 
 #rooms .room#sports-bar{
@@ -206,6 +207,36 @@
 
 #hallway .silhouette{ background: url(/rooms/hallway/Silhouette.png) no-repeat; }
 
-#hallway .speakers-glow-white  { background: url(/rooms/hallway/Speakers-Glow-White.png) no-repeat; }
+#hallway .speakers-glow-white  { background: url(/rooms/hallway/Speakers-Glow-White.png)  no-repeat; }
 #hallway .speakers-glow-yellow { background: url(/rooms/hallway/Speakers-Glow-Yellow.png) no-repeat; }
-#hallway .speakers             { background: url(/rooms/hallway/Speakers.png) no-repeat; }
+#hallway .speakers             { background: url(/rooms/hallway/Speakers.png)             no-repeat; }
+
+#patio .background { background: url(/rooms/patio/Background.png) no-repeat; }
+#patio .black      { background: url(/rooms/patio/Black.png     ) no-repeat; }
+
+#patio .people-1 { background: url(/rooms/patio/People-1.png    ) no-repeat; }
+#patio .people-2 { background: url(/rooms/patio/People-2.png    ) no-repeat; }
+#patio .people-3 { background: url(/rooms/patio/People-3.png    ) no-repeat; }
+#patio .people-4 { background: url(/rooms/patio/People-4.png    ) no-repeat; }
+#patio .people-5 { background: url(/rooms/patio/People-5.png    ) no-repeat; }
+#patio .people-6 { background: url(/rooms/patio/People-6.png    ) no-repeat; }
+#patio .people-7 { background: url(/rooms/patio/People.png      ) no-repeat; }
+
+#patio .speaker-glow-white-1    { background: url(/rooms/patio/Speaker-Glow-White-1.png     ) no-repeat; }
+#patio .speaker-glow-white-2    { background: url(/rooms/patio/Speaker-Glow-White-2.png     ) no-repeat; }
+#patio .speaker-glow-white-3    { background: url(/rooms/patio/Speaker-Glow-White-3.png     ) no-repeat; }
+#patio .speaker-glow-white-4    { background: url(/rooms/patio/Speaker-Glow-White-4.png     ) no-repeat; }
+#patio .speaker-glow-white-5    { background: url(/rooms/patio/Speaker-Glow-White-5.png     ) no-repeat; }
+#patio .speaker-glow-yellow-1   { background: url(/rooms/patio/Speaker-Glow-Yellow-1.png    ) no-repeat; }
+#patio .speaker-glow-yellow-2   { background: url(/rooms/patio/Speaker-Glow-Yellow-2.png    ) no-repeat; }
+#patio .speaker-glow-yellow-3   { background: url(/rooms/patio/Speaker-Glow-Yellow-3.png    ) no-repeat; }
+#patio .speaker-glow-yellow-4   { background: url(/rooms/patio/Speaker-Glow-Yellow-4.png    ) no-repeat; }
+#patio .speaker-glow-yellow-5   { background: url(/rooms/patio/Speaker-Glow-Yellow-5.png    ) no-repeat; }
+#patio .speaker-glow-white-all  { background: url(/rooms/patio/Speakers-Glow-White-All.png  ) no-repeat; }
+#patio .speaker-glow-yellow-all { background: url(/rooms/patio/Speakers-Glow-Yellow-All.png ) no-repeat; }
+
+#patio .tables-1 { background: url(/rooms/patio/Tables-1.png) no-repeat; }
+#patio .tables-2 { background: url(/rooms/patio/Tables-2.png) no-repeat; }
+#patio .tables-3 { background: url(/rooms/patio/Tables-3.png) no-repeat; }
+#patio .tables-4 { background: url(/rooms/patio/Tables-4.png) no-repeat; }
+#patio .tables-5 { background: url(/rooms/patio/Tables-5.png) no-repeat; }

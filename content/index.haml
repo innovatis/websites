@@ -12,15 +12,15 @@ crums:
 #rooms.clearfix
   #room-nav
     .room-thumbs
-      %img.room-thumb{:src => "/images/square-sports-bar.png", :alt => "Sports Bar"}
-      %img.room-thumb{:src => "/images/square-restaurant.png", :alt => "Restaurant"}
-      %img.room-thumb{:src => "/images/square-patio.png", :alt => "Patio"}
+      %img.room-thumb{ 'data-room' => '#sports-bar' , :src => "/images/square-sports-bar.png", :alt => "Sports Bar"}
+      %img.room-thumb{ 'data-room' => '#restaurant' , :src => "/images/square-restaurant.png", :alt => "Restaurant"}
+      %img.room-thumb{ 'data-room' => '#patio'      , :src => "/images/square-patio.png",      :alt => "Patio"     }
     .room-thumbs
-      %img.room-thumb{:src => "/images/square-dance-club.png", :alt => "Dance Club"}
-      %img.room-thumb{:src => "/images/square-hall.png", :alt => "Hall"}
-      %img.room-thumb{:src => "/images/square-hotel.png", :alt => "Hotel"}
+      %img.room-thumb{ 'data-room' => '#night-club' , :src => "/images/square-dance-club.png", :alt => "Dance Club"}
+      %img.room-thumb{ 'data-room' => '#hallway'    , :src => "/images/square-hall.png",       :alt => "Hall"      }
+      %img.room-thumb{ 'data-room' => ''            , :src => "/images/square-hotel.png",      :alt => "Hotel"     }
   #sports-bar.room
-    .entity.back-wall{ style: "display:none"}
+    .entity.back-wall
     .entity.transparent.people-balcony
     .entity.back-wall-front
     .entity.transparent.ambient-lights.ambient-lights-blue
@@ -34,7 +34,7 @@ crums:
     .entity.transparent.people-background-with-theatre
     .entity.transparent.waitress-middle-of-room
     .entity.transparent.people-forground
-  #night-club.room.hidden
+  #night-club.room
     .entity.background
     .entity.background-1
     .entity.bg-people-1
@@ -62,7 +62,7 @@ crums:
     .entity.mixers
     .entity.dj
     .entity.silhouette
-  #restaurant.room.hidden
+  #restaurant.room
     .entity.background
     .entity.tv
     .entity.people-5
@@ -125,6 +125,33 @@ crums:
     .entity.light-beam-red-4
     .entity.light-beam-white-1
     .entity.light-beam-white-2
+  #patio.room
+    .entity.background
+    .entity.black.hidden
+    .entity.people-1
+    .entity.tables-1
+    .entity.people-2
+    .entity.tables-2
+    .entity.people-3
+    .entity.tables-3
+    .entity.people-4
+    .entity.tables-4
+    .entity.people-5
+    .entity.tables-5
+    .entity.people-6
+    .entity.people
+    .entity.speaker-glow-white-1.hidden
+    .entity.speaker-glow-white-2.hidden
+    .entity.speaker-glow-white-3.hidden
+    .entity.speaker-glow-white-4.hidden
+    .entity.speaker-glow-white-5.hidden
+    .entity.speaker-glow-yellow-1.hidden
+    .entity.speaker-glow-yellow-2.hidden
+    .entity.speaker-glow-yellow-3.hidden
+    .entity.speaker-glow-yellow-4.hidden
+    .entity.speaker-glow-yellow-5.hidden
+    .entity.speakers-glow-White-all.hidden
+    .entity.speakers-glow-Yellow-all.hidden
 #featured-products-showcase
   .column-30
     %h2 Featured Product
