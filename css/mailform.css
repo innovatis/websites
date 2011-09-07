@@ -83,7 +83,7 @@
 }
 
 #mailform-container .mailform-loading {
-  background:url(../images/ajax-loader.gif) no-repeat 0 0;
+  background:url(..images/ajax-loader.gif) no-repeat 0 0;
   height:32px;
   width:32px;
   float:right;
