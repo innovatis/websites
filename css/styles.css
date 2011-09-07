@@ -168,7 +168,7 @@ strong {
 }
 
 #menu {
-  width: 217px;
+  width: 223px;
   margin: 0 auto;
 }
 
@@ -176,6 +176,7 @@ strong {
   float:left;
   padding: 10px;
   background: #e2e2e2;
+  border: 1px solid white;
 }
 
 #menu li a {
@@ -183,7 +184,7 @@ strong {
   color: #076F96;
 }
 
-#menu li:first-child {
+#menu li.first {
   -moz-border-radius-topleft: 15px;
   -moz-border-radius-topright: 0px;
   -moz-border-radius-bottomright: 0px;
@@ -192,7 +193,7 @@ strong {
   border-radius: 15px 0px 0px 15px;
 }
 
-#menu li:last-child {
+#menu li.last {
   -moz-border-radius-topleft: 0px;
   -moz-border-radius-topright: 15px;
   -moz-border-radius-bottomright: 15px;
