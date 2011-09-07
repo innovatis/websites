@@ -1,5 +1,5 @@
 SERVER     = "og"
-BRANCH     = "valmonk"
+BRANCH     = "valmonk.ca"
 ROOT       = "/srv/http/inno/static.innovatisinc.ca/htdocs/valmonk"
 PATH       = "#{ROOT}"
 REPO_ROOT  = "http://github.com/innovatis"
