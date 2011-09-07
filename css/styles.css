@@ -117,11 +117,11 @@ strong {
   width: 1px;
 }
 
-.left {
+.float-left {
   float: left;
 }
 
-.right {
+.float-right {
   float: right;
 }
 

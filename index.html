@@ -5,16 +5,17 @@
 		<title>Val Monk - Advisor / Facilitator for Business and people</title>
 	  <meta name="keywords" content="">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">    
 	</head>
 	<body>
     <div id ="container">
       <div id="header">
         <div id="header-container">
-          <div id="header-logo" class="left">
+          <div id="header-logo" class="float-left">
             <a href ="index.html"><img src="/images/val-monk.png" alt="Val Monk & Associates"/>            </a>
           </div>
           <div></div>
-          <div id="menu" class="right">
+          <div id="menu" class="float-right">
             <ul>
               <li class="first"><a href ="#">About Us   <a/></li>
               <li><a href ="#">Services   <a/></li>
@@ -25,8 +26,23 @@
       </div>
       <div id="content" class="clearfix">
         <div>
-          <div class ="column-66"><img src="http://dummyimage.com/600x338/aaa/fff&text=Slideshow" alt="Slideshow"/></div>
-          <div class ="colum-33"><img src="http://dummyimage.com/300x338/ccc/fff&text=contact+form" alt="Slideshow"/></div>
+          <div class="scrollable column-66 ">
+            <div id="controls">
+              <a class="prev browse left float-left"></a><a class="next browse right float-right"></a>
+            </div>
+            <div class="items">
+              <div>
+                <img src="http://dummyimage.com/600x338/aaa/fff&text=Slideshow" alt="Slideshow"/>
+              </div>
+              <div>
+                <img src="http://dummyimage.com/600x338/aaa/fff&text=Slideshow2" alt="Slideshow"/>
+              </div>
+              <div>
+                <img src="http://dummyimage.com/600x338/aaa/fff&text=Slideshow3" alt="Slideshow"/>
+              </div>
+            </div>
+          </div>  
+          <div id ="contact-form" class ="column-33"></div>
         </div>
         <div>
           <div class ="column-27 paragraph">
@@ -48,12 +64,15 @@
             <li><a href ="#">Services     <a/></li>
             <li><a href ="#">Contact Us <a/></li>
           </ul>
-          <div class="right">
+          <div class="float-right">
             <p class="copyright">Copyright 2011 Val Monk & Associates, All Rights Reserved.</p>
             <p class="innovatis"><a href ="http://innovatisinc.ca" target ="_blank">Website by Innovatis Inc.</a></p>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 	</body>
 </html>
