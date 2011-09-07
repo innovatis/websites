@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 1.8em;
 }
+h2.headline {
+  margin: 25px 25px 0px 25px;
+  text-shadow: #666666 0px 1px 1px;
+  color: #0069f9;
+}
 h3 {                
   font-size: 1.4em;
 }
@@ -46,7 +51,9 @@ li {
   font-size: 1.2em;
 }
 
-a {}
+a {
+
+}
 
 a:hover {}
   
@@ -64,7 +71,7 @@ strong {
   font-weight: bold;
 }
 
-.column, .column-20, .column-27, .column-30, .column-33, .column-40, .column-50, .column-60, .column-66, .column-70, .column-80 {
+.column, .column-20, .column-27, .column-30, .column-33, .column-40, .column-50, .column-60, .column-66, .column-70, .column-80, .column-100 {
   float: left;
   height: 100%;
   display: block;
@@ -83,6 +90,9 @@ strong {
 .column-33{
   width: 33%;
 }
+.column-33.image {
+  padding: 25px 0;
+}
 .column-40{
   width: 40%;
 }
@@ -100,6 +110,9 @@ strong {
 }
 .column-80{
   width: 80%;
+}
+.column-100{
+  width: 100%;
 }
 
 .invisible {
@@ -179,7 +192,7 @@ strong {
 
 #menu li a, #menu li a:visited  {
   text-decoration: none;
-  color: #076F96;
+  color: #0069f9;
   display: block;
   padding: 15px;
   background: #e2e2e2;
@@ -217,10 +230,12 @@ strong {
 }
 
 #content {
-  background: #f7f7f7;
+  background: #f9fbff;
   width: 910px;
   padding: 25px;
   margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
 #footer {
@@ -260,4 +275,27 @@ strong {
 #footer-container p.innovatis a {
   color: white;
   font-size: 1em;
+}
+
+a.call-to-action-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0069f9), to(#1c7cff));
+  background: -moz-linear-gradient(top, #0069f9, #1c7cff);
+  background: linear-gradient(top, #0069f9, #1c7cff);
+  padding: 15px;
+  display:block;
+  webkit-border-radius: 10px;
+  moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  -moz-box-shadow: 1px 1px 1px #000;
+  -webkit-box-shadow: 1px 1px 1px #000;
+  box-shadow: 1px 1px 1px #000;
+  border: 1px solid white;
+  font-size: 14px;
+  text-shadow: #333 0px 1px 1px;
+}
+
+a.call-to-action-button:hover {
+  background: #1c7cff;
 }
