@@ -5,7 +5,8 @@
 		<title>Val Monk - Advisor / Facilitator for Business and people</title>
 	  <meta name="keywords" content="">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/slider.css">    
+    <link rel="stylesheet" href="css/slider.css"> <!-- Only for the index! -->
+    <link rel="stylesheet" href="css/mailform.css">    
 	</head>
 	<body>
     <div id ="container">
@@ -42,7 +43,46 @@
               </div>
             </div>
           </div>  
-          <div id ="contact-form" class ="column-33"></div>
+          <div id="mailform-container" class="column-33">
+            <div id="mailform-complete" style="display:none;">
+              <h2>Thank you, your message has been successfully sent</h2>
+            </div>
+            <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
+              <div id="message-wrapper">
+                <div class="hidden mailform-loading"></div>
+                <div class="hidden mailform-error"> 
+                  default error
+                </div>
+                <div class="hidden mailform-success"> 
+                  default success
+                </div> 
+              </div>
+              <div class="inputs"> 
+                <div class="input">
+                  <label for="name">Name*</label> 
+                  <input name="name" required='true' class="required-field"/>
+                </div>
+                <div class="input">
+                  <label for="e-mail">E-mail Address*</label> 
+                  <input name="email" required='true' class="required-field"/>
+                </div>
+                <div class="input">
+                  <label for="phone">Phone</label> 
+                  <input name="phone"/>
+                </div>
+                <div class="input">
+                  <label for="message">Comments</label> 
+                  <textarea name="comments"></textarea>
+                </div>
+                <div class="required-message">
+                  <small>All fields marked with an * must be completed</small> 
+                </div>
+              </div>
+              <div class="actions"> 
+                <input class="input-button" type="submit" value="submit"></input>
+              </div> 
+            </form>
+          </div>
         </div>
         <div>
           <div class ="column-27 paragraph">
@@ -74,5 +114,6 @@
     <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/mailform.js"></script>
 	</body>
 </html>
