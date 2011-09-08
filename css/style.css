@@ -65,7 +65,7 @@ li {font-family:news-gothic-std, sans-serif;}
 }
 
 #header .main-menu{
-  width: 568px;
+  width: 570px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -560,4 +560,23 @@ p.title-ribbon-end{
 #credits a:hover {
   text-decoration:underline;
   color:#445544;
+}
+
+#login {
+  position: relative;
+  float: right;
+  top: 20px;
+  right:0;
+}
+
+a.login {
+  background: url(../images/login_ribbon_sprite.png) no-repeat 0 0;
+  width: 100px;
+  height: 31px;
+  display: block;
+  text-indent: -9999em;
+}
+
+a.login:hover {
+  background-position: 0 -31px;
 }
