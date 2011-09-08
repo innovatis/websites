@@ -355,7 +355,7 @@ div.main #specials img {
   margin:auto;
 }
 
-.box, .box-specials, .box-message-form, .box-contact-us-map, .box-images,.box-location {
+.box, .box-specials, .box-message-form, .box-contact-us-map, .box-images,.box-location, .box-special-offers {
   margin:0 0 25px 25px;
   -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
 }
@@ -432,6 +432,17 @@ div.main #specials img {
 
 .box-details {
   font-size:1.2em;
+}
+
+.box-special-offers {
+  float:left;
+  width: 100%;
+}
+
+.box-special-offers span.box-message {
+ color: #a5b978;
+ text-shadow: 0 1px 1px rgba(12, 14, 3, 0.5) 
+
 }
 
 a.pipes {
