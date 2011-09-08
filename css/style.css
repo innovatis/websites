@@ -28,6 +28,14 @@ li {font-family:news-gothic-std, sans-serif;}
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
+.column-38 {
+  float: left;
+  height: 100%;
+  display: block;
+  width: 38%;
+  overflow: hidden;
+}
+
 #container{
   min-width: 1000px;
 }
@@ -49,7 +57,7 @@ li {font-family:news-gothic-std, sans-serif;}
 }
 
 #header .main-menu{
-  width: 900px;
+  width: 568px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -156,12 +164,13 @@ li {font-family:news-gothic-std, sans-serif;}
   margin:2px 0;
 }
 
-#main div.main .couches{
+/*#main div.main .couches{
   width: 453px;
   height: 230px;
   background: url(../images/couches.png) no-repeat 0 0;
   float: right;
-}
+}*/
+
 #main div.main h2{
   color: rgb(244,247,234);
   text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
