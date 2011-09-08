@@ -109,7 +109,6 @@ li {font-family:news-gothic-std, sans-serif;}
 }
 
 #main div.main{
-  margin-top: 100px;
   padding-left: 45px;
   padding-right: 45px;
 }
@@ -317,7 +316,7 @@ div.main #specials img {
   margin:auto;
 }
 
-.box, .box-specials, .box-message-form, .box-contact-us-map, .box-images,.box-location {
+.box, .box-specials, .box-contact-us-map, .box-images,.box-location {
   margin:0 0 25px 25px;
   -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
 }
@@ -370,8 +369,13 @@ div.main #specials img {
 }
 
 .box-message-form {
-  width:330px;
-  float:right;
+  width:425px;
+  margin:25px 0;
+  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
+}
+
+.box-message-form.box-content {
+  padding: 25px 25px 35px 25px;
 }
 
 .box-contact-us-map {

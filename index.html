@@ -8,6 +8,7 @@
     <meta name="robots" content="index,follow">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slider.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/mailform.css" media="screen" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
       <link href='css/ie.css'       media='screen' rel='stylesheet' type='text/css' />
     <![endif]-->
@@ -28,8 +29,6 @@
       </div>
       <div id="main">
         <div class="content clearfix">
-          
-          <br clear="all">
           <div class="main column-38">
             <h2>Welcome to Hinds Brothers</h2>
             <p>Est cras, ac arcu cras odio, ultricies porta sociis ac lectus aenean sit, arcu ultrices? Duis, sit. Augue arcu sed, est adipiscing placerat mattis, hac amet amet ultricies tincidunt cras aenean auctor? Amet cras odio etiam. Vut integer. Cum, scelerisque? Aliquam placerat, pulvinar, ut nascetur, massa integer porttitor! Et rhoncus, eu, elementum urna pulvinar ridiculus, porttitor? Sed magna tincidunt montes. In magna, a ac augue rhoncus, pellentesque montes. Diam aliquet, nascetur dictumst sagittis est augue mattis, pulvinar turpis odio dolor integer eu auctor rhoncus lorem enim! Mid massa? Elementum ac, a nunc, arcu adipiscing est nec augue, mid sagittis ut cras sit a aliquam tortor nunc elit mid! Ultrices, placerat eu sit etiam duis. Etiam et ridiculus lacus, enim porta.</p>
@@ -52,8 +51,51 @@
                 </div>
               </div>
             </div>
+          </div>>
+          <div class="main column-38">  
+            <div class="box-message-form"> 
+              <div class="box-header">Sign-up Today!</div> 
+              <div class="box-content clearfix"> 
+                <div id="mailform-container">
+                  <div id="mailform-complete" style="display:none;">
+                    <h2>Thank you, your message has been successfully sent</h2>
+                  </div>
+              	  <form data-mailform="a0d9bc720869d423e03c9c31d526a01afd10eac4" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
+                    <div id="message-wrapper">
+                      <div class="hidden mailform-loading"></div>
+                      <div class="hidden mailform-error"> 
+                        default error
+                      </div>
+                      <div class="hidden mailform-success"> 
+                        default success
+                      </div> 
+                    </div>
+                    <div class="inputs"> 
+                      <div class="input">
+                        <label for="name">Name*</label> 
+                        <input name="name" required='true' class="required-field"/>
+                      </div>
+                      <div class="input">
+                        <label for="e-mail">E-mail*</label> 
+                        <input name="email" required='true' class="required-field"/>
+                      </div>
+                      <div class="input">
+                        <label for="companyname">Company Name</label> 
+                        <input name="companyname"/>
+                      </div>
+                      <div class="required-message">
+                        <small>All fields marked with an * must be completed</small> 
+                      </div>
+                    </div>
+                    <div class="actions"> 
+                      <input class="input-button" type="submit" value="submit"></input>
+                    </div> 
+                  </form>
+                </div>            
+              </div>
+              <div class="box-footer"></div>
+            </div>
           </div>
-
         </div>
       </div>
 
