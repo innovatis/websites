@@ -36,6 +36,14 @@ li {font-family:news-gothic-std, sans-serif;}
   overflow: hidden;
 }
 
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
 #container{
   min-width: 1000px;
 }
@@ -100,54 +108,6 @@ li {font-family:news-gothic-std, sans-serif;}
   padding-top: 32px;
 }
 
-#main div.panes {
-  width: 912px;
-  height: 299px;
-  margin: 0 auto;
-  overflow:hidden;
-}
-
-#main div.pane{
-  width: 912px;
-  height: 299px;
-  margin: 0 auto;
-}
-#main div.pane .left{
-  width: 250px;
-  height: 100%;
-  float: left;
-  padding-top:30px;
-}
-#main div.pane .right{
-  float: left;
-  width: 660px;
-  color: white;
-}
-#main div.pane h1{
-  margin-top: 23px;
-  color:rgb(176,194,132);
-  text-shadow:0 1px 3px rgba(12, 14, 3, 0.6);
-}
-#main div.pane h2{
-  font-size: 2em;
-  margin-top: 10px;
-  color: rgb(244,247,234);
-  text-shadow:0 1px 1px rgba(12, 14, 3, 0.4);
-}
-#main div.pane p{
-  margin-top: 3px;
-  width: 400px;
-  color:rgb(175,195,150);
-  line-height:18px;
-  text-shadow:0 1px 1px rgba(12, 14, 3, 0.3);
-
-}
-
-#main div.pane strong{
-  font-weight:bold;
-  color:white;
-}
-
 #main div.main{
   margin-top: 100px;
   padding-left: 45px;
@@ -163,13 +123,6 @@ li {font-family:news-gothic-std, sans-serif;}
   text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
   margin:2px 0;
 }
-
-/*#main div.main .couches{
-  width: 453px;
-  height: 230px;
-  background: url(../images/couches.png) no-repeat 0 0;
-  float: right;
-}*/
 
 #main div.main h2{
   color: rgb(244,247,234);
