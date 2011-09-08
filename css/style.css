@@ -437,12 +437,12 @@ div.main #specials img {
 .box-special-offers {
   float:left;
   width: 100%;
+  margin:0 0 25px 0;
 }
 
 .box-special-offers span.box-message {
  color: #a5b978;
  text-shadow: 0 1px 1px rgba(12, 14, 3, 0.5) 
-
 }
 
 a.pipes {
