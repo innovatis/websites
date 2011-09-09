@@ -1,0 +1,37 @@
+
+@mixin column
+  float: left
+  height: 100%
+  display: block
+
+.column-20
+  @include column
+  width: 20%
+
+.column,.column-30
+  @include column
+  width: 30%
+
+.column-33
+  @include column
+  width: 33.3%
+
+.column-40
+  @include column
+  width: 40%
+
+.column-50
+  @include column
+  width: 50%
+
+.column-60
+  @include column
+  width: 60%
+
+.column-70
+  @include column
+  width: 70%
+
+.column-80
+  @include column
+  width: 80%
