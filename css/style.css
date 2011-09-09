@@ -44,6 +44,10 @@ li {font-family:news-gothic-std, sans-serif;}
   float:right;
 }
 
+.hidden {
+  display:none;
+}
+
 #container{
   min-width: 1000px;
 }
@@ -568,11 +572,15 @@ p.title-ribbon-end{
   color:#445544;
 }
 
+#login-holder {
+  position:fixed;
+	top:20px;
+	right:0px;
+	width:100%;
+}
+
 #login {
-  position: relative;
-  float: right;
-  top: 20px;
-  right:0;
+  float:right;
 }
 
 a.login {
@@ -604,4 +612,31 @@ a.logout {
 
 a.logout:hover {
   background-position: 0 -31px;
+}
+
+
+  div.products {
+    width:660px;
+    float: right;
+    font-family:news-gothic-std, sans-serif;
+  }
+  #sticky-nav-holder{
+    width: 200px;
+    float: left;
+  }
+  .products span.type{
+    color: rgb(244,247,234);
+    text-shadow:0 1px 1px rgba(12, 14, 3, 0.7);
+    font-size: 2em;
+    margin: 40px 0 8px 0;
+    display:block;
+    clear:both;
+  }
+  
+.sticky {
+  position: fixed;
+  top: 0;
+}
+.invisible {
+  display: none;
 }
