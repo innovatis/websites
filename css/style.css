@@ -586,3 +586,22 @@ a.login {
 a.login:hover {
   background-position: 0 -31px;
 }
+
+#logout {
+  position: relative;
+  float: right;
+  top: 20px;
+  right:0;
+}
+
+a.logout {
+  background: url(../images/logout_ribbon_sprite.png) no-repeat 0 0;
+  width: 100px;
+  height: 31px;
+  display: block;
+  text-indent: -9999em;
+}
+
+a.logout:hover {
+  background-position: 0 -31px;
+}
