@@ -378,6 +378,12 @@ div.main #specials img {
   padding: 25px 25px 35px 25px;
 }
 
+.box-login-form {
+  width:322px;
+  margin:25px 0;
+  -moz-box-shadow: 0 2px 9px rgba(12, 14, 3, 0.4);
+}
+
 .box-contact-us-map {
   width:530px;
   float:left;
