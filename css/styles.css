@@ -217,7 +217,7 @@ strong {
   background: #f9fbff;
   width: 910px;
   padding: 25px;
-  margin: 0 auto;
+  margin: 0 auto -7px auto;
   border: 1px solid #ddd;
   -webkit-border-radius-topleft:  5px;
   -webkit-border-radius-topright: 5px;
@@ -257,14 +257,23 @@ strong {
   background: #0069f9;
 }
 
+#footer-container .footer-logo {
+  background: url(../images/footer-logo.png);
+  height:125px;
+  width:121px;
+  margin: 20px auto;
+  }
+
 #footer-container p.copyright {
   color: white;
   font-size: 1em;
+  margin-top: 10px;
 }
 
-#footer-container p.innovatis a {
+#footer-container p.innovatis ,#footer-container p.innovatis a{
   color: white;
   font-size: 1em;
+  margin-top: -10px;
 }
 
 a.call-to-action-button {
