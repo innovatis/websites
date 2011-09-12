@@ -162,7 +162,7 @@ strong {
 }
 
 #header-logo {
- margin: 10px; 
+ padding: 16px 0px 0 9px;
 }
 
 #menu {
@@ -177,17 +177,14 @@ strong {
   float:left;
 }
 
-#menu li a.current, #menu li a:visited.current {
+#menu li a.current, #menu li a:visited.current, #menu li a.current:hover, #menu li a:visited.current:hover {
   background-color: #F7F9FF;
   color: #333;
   border-bottom: none;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;  
-}
-
-#menu li a.current:hover, #menu li a:visited.current:hover {
-  color: #0069f9;
+  border-right: 1px solid #ddd;
+  cursor: default; 
 }
 
 #menu li a, #menu li a:visited  {
@@ -202,11 +199,13 @@ strong {
   -moz-border-radius-topright: 10px;
   -webkit-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
+  text-shadow: #fff 0px 1px 1px;
 }
 
 #menu li a:hover {
   color: white;
-  background: #4f99ff;
+  background: #5d9bbd;
+  text-shadow: #fff 0px 0px 0px;
 }
 
 #menu li a:active {
@@ -254,11 +253,14 @@ strong {
 }
 
 #footer li a:hover {
-  background: #0069f9;
+  background: #3e7898;
   -moz-border-radius-bottomleft: 10px;
   -moz-border-radius-bottomright: 10px;
   -webkit-border-radius:  0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;
+  -moz-box-shadow:    inset 0px 1px 5px #333;
+  -webkit-box-shadow: inset 0px 1px 5px #333;
+  box-shadow:         inset 0px 1px 5px #333;
 }
 
 #footer-container .footer-logo {
@@ -307,14 +309,24 @@ a.call-to-action-button:hover {
 .headline-box h2{
   color: white;
   font-size: 2.8em;
-  text-shadow: black 2px 1px 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0069f9), to(#338bff));
-  background: -moz-linear-gradient(top, #0069f9, #338bff);
-  background: linear-gradient(top, #0069f9, #338bff);
-  background-color: #0069f9;
-  border: 1px solid #0069f9; 
+  text-shadow: 1px 1px 1px #3e7898;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e7898), to(#5d9bbd));
+  background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
+  background: linear-gradient(top, #3e7898, #5d9bbd);
+  background-color: #3e7898;
+  border: 1px solid #3e7898; 
   padding: 20px 20px 20px 35px;
   -moz-box-shadow:    1px 1px 1px #333;
   -webkit-box-shadow: 1px 1px 1px #333;
   box-shadow:         1px 1px 1px #333;
+}
+
+.tagline h2{
+  color: #3e7898;
+  position: relative;
+  top: 35px;
+  left: 285px;
+  float:right;
+  font-size: 2.5em;
+  text-shadow: #fff 1px 1px 1px;
 }
