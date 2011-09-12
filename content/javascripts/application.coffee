@@ -16,14 +16,3 @@ $ ->
       $('#nav-container').show()
   ),
       offset: $('#nav-container').height())
-
-  rooms = $('.room')
-  $('.room-thumb').click(->
-    thumb        = $(this)
-    roomSelector = thumb.data('room')
-    rooms.not(roomSelector).hide()
-    $(roomSelector).show()
-  ).first().trigger('click')
-
-
-  

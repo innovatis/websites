@@ -7,19 +7,19 @@ crums:
   - Home: /
 ---
 
-<link rel="stylesheet" href="/stylesheets/rooms.css">
-<script src="/javascripts/rooms.js"></script>
-#rooms.clearfix
-  #room-nav
-    .room-thumbs
-      %img.room-thumb{ 'data-room' => '#sports-bar' , :src => "/images/square-sports-bar.png", :alt => "Sports Bar"}
-      %img.room-thumb{ 'data-room' => '#restaurant' , :src => "/images/square-restaurant.png", :alt => "Restaurant"}
-      %img.room-thumb{ 'data-room' => '#patio'      , :src => "/images/square-patio.png",      :alt => "Patio"     }
-    .room-thumbs
-      %img.room-thumb{ 'data-room' => '#night-club' , :src => "/images/square-dance-club.png", :alt => "Dance Club"}
-      %img.room-thumb{ 'data-room' => '#hallway'    , :src => "/images/square-hall.png",       :alt => "Hall"      }
-      %img.room-thumb{ 'data-room' => ''            , :src => "/images/square-hotel.png",      :alt => "Hotel"     }
-  #sports-bar.room
+<link rel="stylesheet" href="/stylesheets/scenes.css">
+<script src="/javascripts/scenes.js"></script>
+#scenes.clearfix
+  #scene-nav
+    .scene-thumbs
+      %img.scene-thumb{ 'data-scene' => '#sports-bar' , :src => "/images/square-sports-bar.png", :alt => "Sports Bar"}
+      %img.scene-thumb{ 'data-scene' => '#restaurant' , :src => "/images/square-restaurant.png", :alt => "Restaurant"}
+      %img.scene-thumb{ 'data-scene' => '#patio'      , :src => "/images/square-patio.png",      :alt => "Patio"     }
+    .scene-thumbs
+      %img.scene-thumb{ 'data-scene' => '#night-club' , :src => "/images/square-dance-club.png", :alt => "Dance Club"}
+      %img.scene-thumb{ 'data-scene' => '#hallway'    , :src => "/images/square-hall.png",       :alt => "Hall"      }
+      %img.scene-thumb{ 'data-scene' => ''            , :src => "/images/square-hotel.png",      :alt => "Hotel"     }
+  #sports-bar.scene.hidden
     .entity.back-wall
     .entity.transparent.people-balcony
     .entity.back-wall-front
@@ -32,100 +32,113 @@ crums:
     .entity.transparent.bar-with-people
     .entity.transparent.lights
     .entity.transparent.people-background-with-theatre
-    .entity.transparent.waitress-middle-of-room
+    .entity.transparent.waitress-middle-of-scene
     .entity.transparent.people-forground
-  #night-club.room
-    .entity.background
-    .entity.background-1
-    .entity.bg-people-1
-    .entity.bg-people-2
-    .entity.background-2
-    .entity.background-3
-    .entity.balcony-people
+  #night-club.scene.hidden
+    .entity.background.bg
+    .entity.background-1.bg
+    .entity.transparent.bg-people-1.bg-people
+    .entity.transparent.bg-people-2.bg-people
+    .entity.background-2.bg
+    .entity.background-3.bg
+    .entity.transparent.balcony-people
     .entity.roof-and-balcony
     .entity.second-story
     .entity.tv-screen
-    .entity.people
-    .entity.people-at-table
-    .entity.table
-    .entity.person-at-table-arm
-    .entity.rack-back
-    .entity.rack-front
-    .entity.monitors
-    .entity.center-light-beam
-    .entity.room-shine
-    .entity.lights-blue
-    .entity.left-light-beam-blue
-    .entity.middle-light-beam-blue
-    .entity.right-light-beam-blue
-    .entity.dj-table
-    .entity.mixers
-    .entity.dj
-    .entity.silhouette
-  #restaurant.room
+    .entity.transparent.people
+    .entity.transparent.people-at-table
+    .entity.transparent.table
+    .entity.transparent.person-at-table-arm
+    .entity.transparent.rack-back.rack
+    .entity.transparent.rack-front.rack
+    .entity.transparent.monitors
+    .entity.transparent.center-light-beam
+    .entity.transparent.scene-shine
+
+
+    .entity.transparent.left-light-beam-blue
+    .entity.transparent.left-light-beam-green
+    .entity.transparent.left-light-beam-purple
+    .entity.transparent.left-light-beam-red
+
+    .entity.transparent.middle-light-beam-blue
+    .entity.transparent.middle-light-beam-green
+    .entity.transparent.middle-light-beam-purple
+    .entity.transparent.middle-light-beam-red
+
+    .entity.transparent.right-light-beam-blue
+    .entity.transparent.right-light-beam-green
+    .entity.transparent.right-light-beam-purple
+    .entity.transparent.right-light-beam-red
+
+    .entity.transparent.dj-table
+    .entity.transparent.mixers
+    .entity.transparent.dj
+    .entity.transparent.silhouette
+  #restaurant.scene.hidden
     .entity.background
-    .entity.tv
-    .entity.people-5
+    .entity.transparent.tv
+    .entity.transparent.people-5
     .entity.tables-5
-    .entity.people-4
-    .entity.tables-4
-    .entity.people-3
-    .entity.tables-3
-    .entity.people-2
-    .entity.tables-2
-    .entity.people-1
-    .entity.tables-1
-    .entity.speakers
-  #hallway.room
+    .entity.transparent.people-4
+    .entity.transparent.tables-4
+    .entity.transparent.people-3
+    .entity.transparent.tables-3
+    .entity.transparent.people-2
+    .entity.transparent.tables-2
+    .entity.transparent.people-1
+    .entity.transparent.tables-1
+    .entity.transparent.speakers
+  #hallway.scene.hidden
     .entity.background3
     .entity.background2
     .entity.background1
-    .entity.speakers
-    .entity.dj-table
-    .entity.ceiling-lights
-    .entity.disco-ball
-    .entity.disco-ball-shine-1
-    .entity.disco-ball-shine-2
-    .entity.disco-ball-shine-3
-    .entity.beat-box-guy
-    .entity.speakers
-    .entity.cd-player
-    .entity.cd-player-cords
-    .entity.mixer-1
-    .entity.mixer-2
-    .entity.laptop
-    .entity.laptop-cord
-    .entity.side-dj
-    .entity.people-dancing
-    .entity.silhouette
-    .entity.darkness
-    .entity.light-1-glow-white
-    .entity.light-1-glow-yellow
-    .entity.light-1-glow
-    .entity.light-1
-    .entity.light-2-glow-white
-    .entity.light-2-glow-yellow
-    .entity.light-2-glow
-    .entity.light-2
-    .entity.light-beam-blue-1
-    .entity.light-beam-blue-2
-    .entity.light-beam-blue-3
-    .entity.light-beam-blue-4
-    .entity.light-beam-green-1
-    .entity.light-beam-green-2
-    .entity.light-beam-green-3
-    .entity.light-beam-green-4
-    .entity.light-beam-purple-1
-    .entity.light-beam-purple-2
-    .entity.light-beam-purple-3
-    .entity.light-beam-purple-4
-    .entity.light-beam-red-1
-    .entity.light-beam-red-2
-    .entity.light-beam-red-3
-    .entity.light-beam-red-4
-    .entity.light-beam-white-1
-    .entity.light-beam-white-2
-  #patio.room
+    .entity.transparent.speakers
+    .entity.transparent.dj-table
+    .entity.transparent.ceiling-lights
+    .entity.transparent.disco-ball
+    .entity.transparent.disco-ball-shine-1
+    .entity.transparent.disco-ball-shine-2
+    .entity.transparent.disco-ball-shine-3
+    .entity.transparent.beat-box-guy
+    .entity.transparent.speakers
+    .entity.transparent.cd-player
+    .entity.transparent.cd-player-cords
+    .entity.transparent.mixer-1
+    .entity.transparent.mixer-2
+    .entity.transparent.laptop
+    .entity.transparent.laptop-cord
+    .entity.transparent.side-dj
+    .entity.transparent.people-dancing
+    .entity.transparent.silhouette
+      .entity.transparent.darkness{ 'data-max-opacity' => 0.4}
+    .entity.transparent.light-1-glow-white
+    .entity.transparent.light-1-glow-yellow
+    .entity.transparent.light-1-glow
+    .entity.transparent.light-1
+    .entity.transparent.light-2-glow-white
+    .entity.transparent.light-2-glow-yellow
+    .entity.transparent.light-2-glow
+    .entity.transparent.light-2
+    .entity.transparent.light-beam-blue-1.light-beam-blue{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-blue-2.light-beam-blue{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-blue-3.light-beam-blue
+    .entity.transparent.light-beam-blue-4.light-beam-blue
+    .entity.transparent.light-beam-green-1.light-beam-green{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-green-2.light-beam-green{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-green-3.light-beam-green
+    .entity.transparent.light-beam-green-4.light-beam-green
+    .entity.transparent.light-beam-purple-1.light-beam-purple{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-purple-2.light-beam-purple{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-purple-3.light-beam-purple
+    .entity.transparent.light-beam-purple-4.light-beam-purple
+    .entity.transparent.light-beam-red-1.light-beam-red{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-red-2.light-beam-red{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-red-3.light-beam-red
+    .entity.transparent.light-beam-red-4.light-beam-red
+    .entity.transparent.light-beam-white-1.light-beam-white{ 'data-max-opacity' => 0.2}
+    .entity.transparent.light-beam-white-2.light-beam-white{ 'data-max-opacity' => 0.2}
+  #patio.scene.hidden
     .entity.background
     .entity.black.hidden
     .entity.people-1
