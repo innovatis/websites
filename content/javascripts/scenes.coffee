@@ -141,8 +141,7 @@ Onq ?=  {}
       )()
 
   class Onq.Scene.NightClub extends Onq.Scene
-    constructor: ->
-      super "#night-club"
+    constructor: -> super "#night-club"
 
     start: ->
       super
@@ -173,8 +172,7 @@ Onq ?=  {}
       console.log("cycling light beams")
 
   class Onq.Scene.Restaurant extends Onq.Scene
-    constructor: ->
-      super "#restaurant"
+    constructor: -> super "#restaurant"
 
     start: ->
       super
@@ -193,8 +191,7 @@ Onq ?=  {}
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
 
   class Onq.Scene.Hall extends Onq.Scene
-    constructor: ->
-      super "#hallway"
+    constructor: -> super "#hallway"
 
     start: ->
       super
@@ -252,18 +249,44 @@ Onq ?=  {}
         #after('@appear.disco-ball', 'cycleDiscoBallSHine')
 
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
+
+  class Onq.Scene.Patio extends Onq.Scene
+    constructor: -> super "#patio"
+
+    start: ->
+      super
+      @.after('@backgroundAppear',  'appear', '.tables-1').
+        after('@appear.tables-1',   'appear', '.people-1').
+        after('@appear.tables-1',          'appear', '.tables-2').
+        after('@appear.tables-1',          'appear', '.people-2').
+
+        after('@appear.tables-1',          'appear', '.tables-3').
+        after('@appear.tables-1',          'appear', '.people-3').
+
+        after('@appear.tables-3',          'appear', '.tables-4').
+        after('@appear.tables-3',          'appear', '.people-4').
+
+        after('@appear.tables-4',          'appear', '.tables-5').
+        after('@appear.tables-4',          'appear', '.people-5').
+
+        after('@appear.tables-5',          'appear', '.people').
+        after('@appear.people',            'appear', '.people-6')
+
+      @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
+
   $ ->
     (new Onq.Scene.NightClub)
     (new Onq.Scene.SportsBar)
     (new Onq.Scene.Restaurant)
     (new Onq.Scene.Hall)
+    (new Onq.Scene.Patio)
 
     Scenes = $('.scene')
     $('.scene-thumb').click(->
       thumb        = $(this)
       SceneSelector = thumb.data('Scene')
 
-      Scene.stop().root.fadeOut() for Scene in Onq.Scenes
+      scene.stop().root.fadeOut() for scene in Onq.Scenes
 
       $(SceneSelector).
         data('Scene').
