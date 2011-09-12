@@ -2,7 +2,11 @@
   width: 250px;
   height: 338px;
   background: #0069f9;
+  background-image: url(../images/form-background.png);
   padding: 0 25px;
+	-webkit-border-radius-topright:  5px;
+  -moz-border-radius-topright:     5px;
+  border-radius-topright:          5px;
 }
 
 #mailform-container .message-error {
