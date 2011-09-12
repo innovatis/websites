@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: chunk,serif;
+  font-family: chunk,georgia,serif;
   font-size: 2.4em;
   font-weight: bold;
   color: #333;
