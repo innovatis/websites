@@ -167,23 +167,41 @@ strong {
 
 #menu {
   width: 320px;
-  margin: 130px 37px 0 0;
+  position: relative;
+  float: right;
+  top: 168px;
+  right: 31px;
 }
 
 #menu li {
   float:left;
 }
 
+#menu li a.current, #menu li a:visited.current {
+  background-color: #F7F9FF;
+  color: #333;
+  border-bottom: none;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;  
+}
+
+#menu li a.current:hover, #menu li a:visited.current:hover {
+  color: #0069f9;
+}
+
 #menu li a, #menu li a:visited  {
   text-decoration: none;
-  color: #0069f9;
+  color: #666666;
   display: block;
-  padding: 15px;
+  padding: 10px 15px 10px 15px;
   background: #e2e2e2;
   border: 1px solid white;
-  -webkit-box-shadow: 1px 1px 1px 0px #333;
-  -moz-box-shadow: 1px 1px 1px 0px #333;
-  box-shadow: 1px 1px 1px 0px #333;
+  border-bottom: none;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #menu li a:hover {
@@ -193,24 +211,6 @@ strong {
 
 #menu li a:active {
   background: #1c7bff;
-}
-
-#menu li a.first {
-  -moz-border-radius-topleft: 15px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 15px;
-  -webkit-border-radius: 15px 0px 0px 15px;
-  border-radius: 15px 0px 0px 15px;
-}
-
-#menu li a.last {
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  border-radius: 0px 15px 15px 0px;
 }
 
 #content {
@@ -255,6 +255,10 @@ strong {
 
 #footer li a:hover {
   background: #0069f9;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-radius:  0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 #footer-container .footer-logo {
