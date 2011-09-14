@@ -113,9 +113,10 @@
         };
         this.defaultOptions = {
           itemSelector: '.item',
-          layoutMode: 'fitRows',
+          layoutMode: 'masonry',
           masonry: {
-            rowHeight: 220
+            columnWidth: 120,
+            rowHeight: 120
           },
           getSortData: getSortCriteriaFromItem
         };
