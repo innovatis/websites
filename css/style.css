@@ -216,16 +216,24 @@ strong {
   border-radius:        3px;
 }
 
+#global-toolbar{
+  margin-right: 2em;
+  padding-top: 5px;
+  font-size: 12px;
+  color: white;
+}
+#global-toolbar a{
+}
+
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  padding-top: 25px;
   border-left:  1px solid #BFC4C6;
   border-right: 1px solid #BFC4C6;
 }
 
 #big-search-box-wrapper{
-  height: 560px;
+  height: 558px;
   width: 960px;
 }
 
