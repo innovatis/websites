@@ -216,6 +216,15 @@ strong {
   border-radius:        3px;
 }
 
+#global-toolbar{
+  margin-right: 2em;
+  padding-top: 5px;
+  font-size: 12px;
+  color: white;
+}
+#global-toolbar a{
+}
+
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -224,7 +233,7 @@ strong {
 }
 
 #big-search-box-wrapper{
-  height: 560px;
+  height: 558px;
   width: 960px;
 }
 
