@@ -113,7 +113,11 @@
         };
         this.defaultOptions = {
           itemSelector: '.item',
-          layoutMode: 'fitRows',
+          layoutMode: 'masonry',
+          masonry: {
+            columnWidth: 115,
+            rowHeight: 140
+          },
           getSortData: getSortCriteriaFromItem
         };
         return this.initialOptions = $.extend(true, {}, this.defaultOptions, this.overrides);

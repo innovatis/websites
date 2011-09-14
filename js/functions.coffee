@@ -78,7 +78,11 @@
 
        @defaultOptions =
          itemSelector: '.item'
-         layoutMode:   'fitRows'
+         layoutMode:   'masonry'
+         masonry:
+           columnWidth: 115
+           rowHeight: 140
+
          getSortData:  getSortCriteriaFromItem
 
       @initialOptions = $.extend true, {}, @defaultOptions, @overrides
@@ -135,7 +139,8 @@
 
           activeCount = allLi.filter('.active').length
           filterCount = allLi.find('[data-action=filter]').length
-          if activeCount is 0 
+
+          if activeCount is 0
             unfilteredLi.addClass('active')
           else if activeCount is filterCount
             allLi.removeClass('active')

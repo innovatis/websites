@@ -137,7 +137,7 @@ strong {
 
 #isotope-container{
   margin: 0 auto;
-  width: 890px;
+  width: 940px;
 }
 .item {
   width:  100px;
@@ -240,8 +240,11 @@ h1#logo{
 }
 #body .wrapper{
   background: #BAECFF;
+  padding-bottom: 40px;
 }
-
+#footer {
+  height: 150px;
+}
 #big-search-box-input{
   height: 40px;
   width: 400px;
