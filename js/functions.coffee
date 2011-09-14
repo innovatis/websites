@@ -79,6 +79,7 @@
        @defaultOptions =
          itemSelector: '.item'
          layoutMode:   'fitRows'
+         masonry : true
          getSortData:  getSortCriteriaFromItem
 
       @initialOptions = $.extend true, {}, @defaultOptions, @overrides
