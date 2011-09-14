@@ -140,11 +140,27 @@ strong {
   height: 300px;
 }
 .item {
-  width:  150px;
+  width:  100px;
   height: 100px;
-  margin: 1em 2em;
-  border: 3px dashed #eee;
+  margin: 10px;
+  border: 1px dashed #eee;
 }
+
+.item.wide {
+  width:  210px;
+  height: 100px;
+}
+  
+.item.tall {
+  width:  100px;
+  height: 210px;
+}
+  
+.item.square {
+  width:  210px;
+  height: 210px;
+}
+
 #isotope-actions li {
   list-style: none;
 }
