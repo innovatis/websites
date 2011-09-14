@@ -58,6 +58,10 @@ h1 {
 
 h1 span.frstltr {font-size:20px;}
 
+h2, h3{
+   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
 
 .ltblue {color: rgb(169,203,231);}
 .dkblue {color: rgb(40,62,83);}
@@ -165,7 +169,8 @@ body{
 ul#main-menu{
   height:148px;
   width: 933px;
-  margin-bottom: -43px;
+  margin-bottom: -45px;
+  background: url(../images/menu-bar.png) center no-repeat;
 }
 
 ul#main-menu li{
@@ -175,14 +180,15 @@ ul#main-menu li{
 }
 
 ul#main-menu li a {
-   background: #FFFAF4
+  background: #FFFAF4
   height: 59px;
   display: block;
-  margin-top:81px;
+  margin-top:38px;
   line-height:61px;
   text-decoration: none;
   color: #A38766;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 ul#main-menu li a.last{
   background: none;
@@ -198,7 +204,6 @@ ul#main-menu li h1#logo a{
 
 #main-showcase{
   height: 364px;
-   margin-top: 20px;
   margin-left: 17px;
   width: 904px;
   background: #83BCD9;
@@ -253,6 +258,7 @@ ul#main-menu li h1#logo a{
    margin-bottom: 16px;
 }
 .main-with-sidebar>a{
+   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
    float: left;
    width: 49%;
    text-align: right;
@@ -269,7 +275,7 @@ ul#main-menu li h1#logo a{
 }
 #body .sidebar p{
    width: 230px;
-   font-size: 12px;
+   font-size: 14px;
 }
 #footer{
   padding: 35px 0px 70px 0px;
@@ -329,6 +335,8 @@ form#contact-us-form textarea{
 }
 .list-view-house p{
    font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #818181;
 }
 .list-view-house img{
    border: 1px solid #BFBFBF;
@@ -336,6 +344,7 @@ form#contact-us-form textarea{
    margin: 8px 14px 0 9px;
 }
 .list-view-house h4{
+   color: #2B495D;
    margin-top: 9px;
 }
 .list-view-house div{
@@ -408,12 +417,12 @@ form#contact-us-form textarea{
 .call-to-action h3{
    color: white;
    font-style: italic;
-   font-size: 30px;
+   font-size: 28px;
 }
 .call-to-action h2{
    color: white;
    font-weight: bold;
-   font-size: 36px;
+   font-size: 32px;
 }
 #sabie{
    background: url(../images/sabie.png) 0px 40px no-repeat;
@@ -421,3 +430,30 @@ form#contact-us-form textarea{
    width: 300px;
    height: 350px;
 }
+
+.quote{
+   font-style: italic;
+   font-weight: bold;
+   color: #990000;
+}
+.view-details {
+  background: url(../images/view-details-sprite.png) no-repeat 0 0;
+  width: 147px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-decoration: none;
+  text-indent:-9999em;
+  float:right;
+  cursor:pointer;
+  border:none;
+}
+
+.view-details:hover {
+  background-position: 0 -30px;
+  }
+
+.view-details:active {
+  background-position: 0 -60px;
+  }
