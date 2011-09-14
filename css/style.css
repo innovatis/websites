@@ -151,4 +151,19 @@ strong {
 #isotope-actions li.active{
   list-style: circle;
 }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
 /* Design */
+body {
+  background: url(../images/background.png) repeat;
+}
+#big-search-box-wrapper{
+  height: 265px;
+}
+
+#big-search-box-wrapper #slide1{
+  background: url(../images/slide1.png) no-repeat;
+}
