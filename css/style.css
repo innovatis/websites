@@ -139,6 +139,7 @@ strong {
   margin: 0 auto;
   width: 940px;
 }
+
 .item {
   width:  100px;
   height: 100px;
@@ -234,8 +235,8 @@ strong {
 #big-search-box-body   {
   height: 160px;
   background: rgba(0,0,0,0.3);
-  border-top:    1px solid rgba(255,255,255,0.4);
-  border-bottom: 1px solid rgba(255,255,255,0.4);
+  border-top:    1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 #big-search-box-footer {
