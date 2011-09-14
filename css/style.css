@@ -143,7 +143,7 @@ strong {
   width:  100px;
   height: 100px;
   margin: 5px;
-  border: 1px dashed #eee;
+  border: 1px solid #fff;
 }
 
 .item.wide {
@@ -184,11 +184,29 @@ strong {
 }
 
 
+#isotope-actions {
+  padding: 10px 0px 20px 0px;
+}
+
 #isotope-actions li {
   list-style: none;
+  float: left;
 }
 #isotope-actions li.active{
-  list-style: circle;
+  background: red;
+}
+#isotope-actions a.action {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #dd7800;
+  color: white;
+  -moz-box-shadow: 1px 1px 1px #888;
+  -webkit-box-shadow: 1px 1px 1px #888;
+  box-shadow: 1px 1px 1px #888;
+  margin: 5px;
+  webkit-border-radius: 3px;
+  moz-border-radius:    3px;
+  border-radius:        3px;
 }
 
 .wrapper {
@@ -263,6 +281,7 @@ h1#logo{
   -moz-border-radius-topleft:        5px;
   -moz-border-radius-bottomleft:     5px;
   border-top-left-radius:            5px;
+  float:left;
 }
 #big-search-box-wrapper.slide-one{
   background: url(../images/slide1.png) no-repeat;
@@ -272,4 +291,39 @@ h1#logo{
 }
 #big-search-box-wrapper.slide-three{
   background: url(../images/slide3.png) no-repeat;
+}
+#big-search-box-body .big-search-box-button {
+  height: 44px;
+  color: white;
+  font-family: lobster,georgia,serif;
+  font-size: 2.4em;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd7800), to(#ff9211));
+  background: -moz-linear-gradient(top, #dd7800, #ff9211);
+  background: linear-gradient(top,      #dd7800, #ff9211);
+  border: 1px solid white;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 0px 12px 12px 0px;
+  border-radius: 0px 12px 12px 0px;
+  float: left;
+  cursor: pointer;
+  text-shadow: #aaa 0px 1px 1px;
+  margin-left: -2px;
+}
+
+#big-search-box-body .big-search-box-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff9211), to(#dd7800));
+  background: -moz-linear-gradient(top, #ff9211, #dd7800);
+  background: linear-gradient(top,      #ff9211, #dd7800);
+  border: 1px solid #ddd;
+}
+
+#big-search-box-body .big-search-box-button:active {  
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd7800), to(#ff9211));
+  background: -moz-linear-gradient(top, #dd7800, #ff9211);
+  background: linear-gradient(top,      #dd7800, #ff9211);
+  border: 1px solid #bbb;
 }
