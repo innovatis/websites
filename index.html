@@ -2,90 +2,54 @@
 <html>
   <head>
     <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <style>
-    /**** Isotope Filtering ****/
-
-    .isotope-item {
-      z-index: 2;
-    }
-
-    .isotope-hidden.isotope-item {
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    /**** Isotope CSS3 transitions ****/
-
-    .isotope,
-    .isotope .isotope-item {
-      -webkit-transition-duration: 0.8s;
-         -moz-transition-duration: 0.8s;
-              transition-duration: 0.8s;
-    }
-
-    .isotope-item {
-      z-index: 2;
-    }
-
-    .isotope-hidden.isotope-item {
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .isotope {
-      -webkit-transition-property: height, width;
-         -moz-transition-property: height, width;
-              transition-property: height, width;
-    }
-
-    .isotope .isotope-item {
-      -webkit-transition-property: -webkit-transform, opacity;
-         -moz-transition-property:    -moz-transform, opacity;
-              transition-property:         transform, opacity;
-    }
-    #isotope-container{
-      margin: 0 auto;
-      height: 300px;
-    }
-    .item {
-      width:  150px;
-      height: 100px;
-      margin: 1em 2em;
-      border: 3px dashed #eee;
-    }
-    #isotope-actions li {
-      list-style: none;
-    }
-    #isotope-actions li.active{
-      list-style: circle;
-    }
-  </style>
-  <script src='js/jquery-1.6.3.js'></script>
-  <script src='js/jquery.isotope.js'></script>
-  <script src='js/functions.js'></script>
+    <link href='css/isotope.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='js/jquery-1.6.3.js'></script>
+    <script src='js/jquery.isotope.js'></script>
+    <script src='js/functions.js'></script>
   </head>
   <body>
-    <ul id="isotope-actions">
-      <li class="active"><a href="#" class="action" data-action="unfilter"                        >Show All</a></li>
-      <li               ><a href="#" class="action" data-action="filter"   data-filters=".food ">Food </a></li>
-      <li               ><a href="#" class="action" data-action="filter"   data-filters=".party">Party</a></li>
-      <li               ><a href="#" class="action" data-action="filter"   data-filters=".event">Event</a></li>
-      <li               ><a href="#" class="action" data-action="filter"   data-filters=".show ">Show </a></li>
-      <li               ><a href="#" class="action" data-action="filter"   data-filters=".store">Store</a></li>
-      <li               ><a href="#" class="action" data-action="sort"     data-sort='priority'>Prioritize</a></li>
-      <li               ><a href="#" class="action" data-action="shuffle"                         >Shuffle</a></li>
-    </ul>
-    <div id="isotope-container">
-      <div class="item food            " data-priority='1'>1 food</div>
-      <div class="item food            " data-priority='2'>2 food</div>
-      <div class="item party food      " data-priority='1'>1 party food</div>
-      <div class="item event           " data-priority='1'>1 event</div>
-      <div class="item party           " data-priority='4'>4 party</div>
-      <div class="item store           " data-priority='3'>3 store</div>
-      <div class="item something       " data-priority='5'>5 something</div>
-      <div class="item show            " data-priority='4'>4 show</div>
-      <div class="item store food party" data-priority='2'>2 store food party</div>
-      <div class="item show food       " data-priority='1'>1 show food</div>
+    <div id="header">
+      <div class="wrapper">
+        <div id="big-search-box-wrapper">
+          <div id="big-search-box-header">
+          </div>
+          <div id="big-search-box-body">
+          </div>
+          <div id="big-search-box-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <div class="wrapper">
+        <h1> The Big Search</h1>
+        <ul id="isotope-actions">
+          <li class="active"><a href="#" class="action" data-action="unfilter"                        >Show All</a></li>
+          <li               ><a href="#" class="action" data-action="filter"   data-filters=".food ">Food </a></li>
+          <li               ><a href="#" class="action" data-action="filter"   data-filters=".party">Party</a></li>
+          <li               ><a href="#" class="action" data-action="filter"   data-filters=".event">Event</a></li>
+          <li               ><a href="#" class="action" data-action="filter"   data-filters=".show ">Show </a></li>
+          <li               ><a href="#" class="action" data-action="filter"   data-filters=".store">Store</a></li>
+          <li               ><a href="#" class="action" data-action="sort"     data-sort='priority'>Prioritize</a></li>
+          <li               ><a href="#" class="action" data-action="shuffle"                         >Shuffle</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div id="isotope-container">
+          <div class="item food            " data-priority='1'>1 food</div>
+          <div class="item food            " data-priority='2'>2 food</div>
+          <div class="item party food      " data-priority='1'>1 party food</div>
+          <div class="item event           " data-priority='1'>1 event</div>
+          <div class="item party           " data-priority='4'>4 party</div>
+          <div class="item store           " data-priority='3'>3 store</div>
+          <div class="item something       " data-priority='5'>5 something</div>
+          <div class="item show            " data-priority='4'>4 show</div>
+          <div class="item store food party" data-priority='2'>2 store food party</div>
+          <div class="item show food       " data-priority='1'>1 show food</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
     </div>
   </body>
 </html>
