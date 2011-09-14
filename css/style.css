@@ -200,7 +200,23 @@ body {
   background: url(../images/background.png) repeat;
 }
 
-
+#big-search-box-teaser {
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  margin-top: 100px;
+  padding: 1em 2em 2em 1em;
+  float: right;
+  -webkit-border-top-left-radius:    5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft:        5px;
+  -moz-border-radius-bottomleft:     5px;
+  border-top-left-radius:            5px;
+}
+#big-search-box-teaser, #big-search-box-teaser h2{
+  color: white;
+  font-family: arial;
+}
 #body .wrapper{
   background: #BAECFF;
 }
