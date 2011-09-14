@@ -167,4 +167,27 @@ strong {
 #isotope-actions li.active{
   list-style: circle;
 }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
 /* Design */
+body {
+  background: url(../images/background.png) repeat;
+}
+
+#big-search-box-wrapper{
+  height: 560px;
+  width: 960px;
+}
+
+#big-search-box-wrapper.slide-one{
+  background: url(../images/slide1.png) no-repeat;
+}
+#big-search-box-wrapper.slide-two{
+  background: url(../images/slide2.png) no-repeat;
+}
+#big-search-box-wrapper.slide-three{
+  background: url(../images/slide3.png) no-repeat;
+}
