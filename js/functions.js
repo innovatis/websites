@@ -114,7 +114,9 @@
         this.defaultOptions = {
           itemSelector: '.item',
           layoutMode: 'fitRows',
-          masonry: true,
+          masonry: {
+            rowHeight: 220
+          },
           getSortData: getSortCriteriaFromItem
         };
         return this.initialOptions = $.extend(true, {}, this.defaultOptions, this.overrides);
