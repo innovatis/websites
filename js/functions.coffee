@@ -80,8 +80,8 @@
          itemSelector: '.item'
          layoutMode:   'masonry'
          masonry:
-           columnWidth: 120
-           rowHeight: 120
+           columnWidth: 115
+           rowHeight: 140
 
          getSortData:  getSortCriteriaFromItem
 
