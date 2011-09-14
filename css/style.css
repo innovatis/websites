@@ -38,7 +38,7 @@ li {
 }
 
 a {
-
+  color: #dd7800;
 }
 
 a:hover {}
@@ -162,15 +162,21 @@ strong {
 }
 
 #isotope-actions {
-  padding: 10px 0px 20px 0px;
+  margin-top:10px;
+  padding: 15px;
+  background: white;
+  height: 14px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
 }
 
 #isotope-actions li {
   list-style: none;
   float: left;
 }
-#isotope-actions li.active{
-  background: red;
+#isotope-actions li.active a{
+  background: #ffa944;
+  color: white;
 }
 #isotope-actions a.action {
   text-decoration: none;
@@ -189,6 +195,7 @@ strong {
 .wrapper {
   width: 960px;
   margin: 0 auto;
+  padding-top: 25px;
   border-left:  1px solid #BFC4C6;
   border-right: 1px solid #BFC4C6;
 }
