@@ -163,11 +163,10 @@ strong {
 }
 
 #header-logo {
-  margin-top: -45px;
+  margin-top: 15px;
 }
 
 #menu {
-  width: 320px;
   position: relative;
   float: right;
   top: 168px;
@@ -206,7 +205,7 @@ strong {
 #menu li a:hover {
   color: white;
   background: #5d9bbd;
-  text-shadow: #fff 0px 0px 0px;
+  text-shadow: #777 0px 1px 1px;
 }
 
 #menu li a:active {
@@ -330,9 +329,10 @@ a.call-to-action-button:hover {
   z-index: 999;
 }
 
-.tagline h2{
+h2.tagline {
   color: #3e7898;
-  font-size: 2.4em;
+  font-size: 1.4em;
   text-shadow: #fff 1px 1px 1px;
   text-align: center;
+  margin: 7px 16px 0 0;
 }
