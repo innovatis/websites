@@ -88,7 +88,7 @@ strong {
 }
 .column-33.image {
   padding: 25px 0 0 0;
-  margin-bottom: -26px;
+  margin-bottom: -20px;
 }
 .column-40{
   width: 40%;
@@ -99,9 +99,14 @@ strong {
 .column-60{
   width: 60%;
 }
+.column-60.paragraph {
+  padding: 25px; 
+}
+
 .column-66{
   width: 66%;
 }
+
 .column-70{
   width: 70%;
 }
@@ -325,8 +330,6 @@ a.call-to-action-button:hover {
   margin: 0 auto;
   width: 100%;
   float:left;
-  position: relative;
-  z-index: 999;
 }
 
 h2.tagline {
@@ -345,4 +348,29 @@ h2.tagline {
  top: 0;
  right: 0;
  float: right;
+}
+
+#have-you-ever-felt h3{
+  font-size: 2.2em;
+  color: #3e7898;
+  text-shadow: #333 0px 1px 1px;
+  margin-bottom: 10px;
+}
+
+#have-you-ever-felt li{
+  font-size: 1.8em;
+  line-height: 2.1em;
+  font-weight: bold;
+  color: #999;
+}
+
+#have-you-ever-felt li a{
+  float:right;
+  margin-right:100px;
+  text-decoration: none;
+  color: #3e7898;
+}
+
+#have-you-ever-felt li a:hover {
+  border-bottom: 1px dotted #3e7898;
 }
