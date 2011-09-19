@@ -96,6 +96,16 @@ strong {
 .column-50{
   width: 50%;
 }
+.column-50.paragraph{
+  padding:25px;
+  width:44%;
+}
+.column-50.image img{
+  -moz-box-shadow:    1px 1px 2px #333;
+  -webkit-box-shadow: 1px 1px 2px #333;
+  box-shadow:         1px 1px 2px #333;
+}
+
 .column-60{
   width: 60%;
 }
@@ -373,4 +383,33 @@ h2.tagline {
 
 #have-you-ever-felt li a:hover {
   border-bottom: 1px dotted #3e7898;
+}
+
+.tip-listing li{
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #3e7898;
+}
+
+.tip-listing.numbers li {
+  list-style-type:decimal;
+}
+
+.tip-listing.bullets li {
+  list-style:disc;
+}
+
+blockquote {
+	margin: 1em 20px;
+	padding-left: 45px;
+	background: transparent url(../images/blockquote.png) no-repeat;
+	font-size: 1.2em;
+	line-height:1.8em; 
+	color: #777;
+}
+
+cite {
+  text-align:right;
 }
