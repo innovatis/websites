@@ -819,6 +819,7 @@ body.about div.column.first {
 #meetourteam li.first {
    border-left:none;
 }
+#meetourteam .spacer a,
 #meetourteam .sales a,
 #meetourteam .customerservice a,
 #meetourteam .support a {
@@ -830,6 +831,13 @@ body.about div.column.first {
    font-size:14px;
    padding: 0 16px 0 36px;
    text-shadow:0 1px #FFFFFF;
+}
+
+#meetourteam .spacer{
+   width: 89px;
+}
+#meetourteam .spacer:hover{
+   background-position: 0 0;
 }
 
 #meetourteam .sales a {
