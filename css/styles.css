@@ -9,14 +9,15 @@ html {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 0.625em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: chunk,georgia,serif;
+/*  font-family: chunk,georgia,serif;*/
+  font-family: verdana, helvetica, sans-serif;
   font-size: 2.4em;
-  font-weight: bold;
+  font-weight: 800;
   color: #333;
 }
 h2 {
@@ -265,8 +266,8 @@ strong {
 
 #footer-container .footer-logo {
   background: url(../images/footer-logo.png);
-  height:125px;
-  width:121px;
+  height:150px;
+  width:137px;
   margin: 20px auto;
   }
 
@@ -308,7 +309,7 @@ a.call-to-action-button:hover {
 
 .headline-box h2{
   color: white;
-  font-size: 2.8em;
+  font-size: 2.4em;
   text-shadow: 1px 1px 1px #3e7898;
   background: -webkit-gradient(linear, left top, left bottom, from(#3e7898), to(#5d9bbd));
   background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
@@ -331,7 +332,7 @@ a.call-to-action-button:hover {
 
 .tagline h2{
   color: #3e7898;
-  font-size: 2.8em;
+  font-size: 2.4em;
   text-shadow: #fff 1px 1px 1px;
   text-align: center;
 }
