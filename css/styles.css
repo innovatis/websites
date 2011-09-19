@@ -336,3 +336,13 @@ h2.tagline {
   text-align: center;
   margin: 7px 16px 0 0;
 }
+
+#three-circles {
+ background: url(../images/three-circles.png);
+ width:92px;
+ height:97px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ float: right;
+}
