@@ -1,6 +1,6 @@
 .scrollable {
 	position:relative;
-	overflow:visible;
+	overflow:hidden;
 	width: 600px;
 	height:338px;
 }
