@@ -190,6 +190,9 @@ ul#main-menu li a {
   font-size: 14px;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
+ul#main-menu li.phone a{
+   font-size: 16px;
+}
 ul#main-menu li a.last{
   background: none;
 }
@@ -483,6 +486,52 @@ form#contact-us-form textarea{
 .contact span label{
    display: block;
 }
+
+.communities{
+   width: 800px;
+   margin: 0 auto;
+}
+.communities h3{
+   font-size: 24px;
+   margin-bottom: 12px;
+}
+
+.communities-row{
+   height: 277px;
+   width: 750px;
+   margin: 0 auto;
+   background: cyan;
+}
+.communities-row a{
+   width: 249px;
+   border-right: 1px solid yellow;
+   border-bottom: 1px solid green;
+   height: 276px;
+   display: block;
+   float: left;
+   margin: 0;
+   background: green;
+}
+
+.communities-row a.kildonan-green{
+   background: url(../images/kildonan_green.jpeg) center no-repeat;
+}
+.communities-row a.canterbury{
+   background: url(../images/canterbury.jpeg) center no-repeat;
+}
+.communities-row a.waterside-estates{
+   background: url(../images/waterside_estates.jpeg) center no-repeat;
+}
+.communities-row a.sage-creek{
+   background: url(../images/sage_creek.jpeg) center no-repeat;
+}
+.communities-row a.bridgwater-forest{
+   background: url(../images/bridgwater_forest.jpeg) center no-repeat;
+}
+.communities-row a.river-park-south{
+   background: url(../images/river_park_south.jpeg) center no-repeat;
+}
+
 
 
 #mailform-container {
