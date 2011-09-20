@@ -1,10 +1,8 @@
 .scrollable {
-	position:relative;
-	overflow:hidden;
-	width: 600px;
-	height:338px;
+	margin-top: -223px;
 }
 
 .headline-box {
   width: 100%;
+  clear: both;
 }
