@@ -1,5 +1,4 @@
 #mailform-container {
-  width: 250px;
   height: 338px;
   background: #0069f9;
   padding: 0 25px;
@@ -10,6 +9,14 @@
   background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
   background: linear-gradient(top, #3e7898, #5d9bbd);
   background-color: #3e7898;
+}
+
+#mailform-container.index-form {
+  width: 250px;
+}
+
+#mailform-container.contact-us-form {
+  width: 560px;
 }
 
 #mailform-container .message-error {
