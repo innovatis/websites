@@ -14,7 +14,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-/*  font-family: chunk,georgia,serif;*/
   font-family: verdana, helvetica, sans-serif;
   font-size: 2.4em;
   font-weight: 800;
