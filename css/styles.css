@@ -46,15 +46,13 @@ li {
   font-size: 1.2em;
 }
 
-a {
-
+a, a:active, a:visited {
+  color: #3e7898;
 }
 
-a:hover {}
-  
-a:active {}
-  
-a:visited {}
+a:hover {
+  color: #555;
+}
 
 em {
   font-weight: italic;
@@ -220,6 +218,10 @@ strong {
   color: white;
   background: #5d9bbd;
   text-shadow: #777 0px 1px 1px;
+}
+
+#menu li a.current:hover {
+  text-shadow: #fff 0px 0px 0px;
 }
 
 #menu li a:active {
@@ -409,6 +411,6 @@ blockquote {
 	color: #777;
 }
 
-cite {
+cite{
   text-align:right;
 }
