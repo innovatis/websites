@@ -165,7 +165,8 @@ strong {
 }
 
 #header {
-  width: 100%;
+  width: 960px;
+  margin: 0 auto;
   height: 200px;
 }
 
@@ -175,14 +176,13 @@ strong {
 }
 
 #header-logo {
-  margin-top: 15px;
+  margin-top: -15px;
 }
 
 #menu {
   position: relative;
-  float: right;
   top: 168px;
-  right: 31px;
+  right: -68px;
 }
 
 #menu li {
