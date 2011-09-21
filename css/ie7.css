@@ -13,4 +13,5 @@
 
 #header .header-contact-info {
   visibility: hidden;
+  display: none;
 }
