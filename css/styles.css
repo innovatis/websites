@@ -229,7 +229,7 @@ strong {
 #content {
   background: #f9fbff;
   width: 910px;
-  padding: 25px;
+  padding: 25px 25px 52px 25px;
   margin: 0 auto -7px auto;
   border: 1px solid #ddd;
   -moz-border-radius-topleft: 10px;
