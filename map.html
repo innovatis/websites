@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+    <script src='js/jquery-1.6.3.js'></script>
+    <script src='js/jquery.isotope.js'></script>
+    <script src='js/functions.js'></script>
+    <script src='js/map.js'></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script>
+      $(function(){
+        window.map = new Map();
+        map.run()
+        for(city in Cities){
+          map.addLocation({
+            name:     city,
+            position: Cities[city]
+          });
+        }
+      })
+    </script>
+    <style>
+      #container{
+        width: 960px;
+        margin: 0 auto;
+        font-family: arial;
+      }
+      #list{
+        float: left;
+        width: 250px;
+      }
+      #list ul{
+        list-style: none;
+        border-top:    1px solid #eee;
+        margin: 0 ;
+        padding: 0;
+      }
+      #list ul li{
+        border-bottom: 1px solid #eee;
+        text-indent: 1em
+        margin: 0 ;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 40px;
+      }
+      #list ul li:hover {
+        background: gray;
+        color: white
+      }
+      #list ul li h1{
+        margin: 0 ;
+        padding: 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+      }
+      #list ul li cite{
+        font-size: 12px;
+        color: gray;
+        float: right
+      }
+      #list ul li:hover cite{
+        color: white;
+      }
+      #map {
+        float: left;
+        width: 700px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="list">
+        <ul>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+          <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+        </ul>
+      </div>
+      <div id="map">
+      </div>
+    </div>
+  </body>
+</html>
