@@ -10,3 +10,7 @@
 .column-33.image {
   margin-bottom: -23px;
 }
+
+#header .header-contact-info {
+  visibility: hidden;
+}
