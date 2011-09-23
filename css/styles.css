@@ -269,7 +269,7 @@ strong {
   -moz-border-radius-bottomleft: 10px;
   -moz-border-radius-bottomright: 10px;
   -webkit-border-radius:  0px 0px 10px 10px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius:          0px 0px 10px 10px;
   -moz-box-shadow:    inset 0px 1px 5px #333;
   -webkit-box-shadow: inset 0px 1px 5px #333;
   box-shadow:         inset 0px 1px 5px #333;
@@ -282,10 +282,14 @@ strong {
   margin: 20px auto;
   }
 
+#footer-container p.footer-contact-info {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 #footer-container p.footer-contact-info, #footer-container p.footer-contact-info a{
   color: white;
-  font-size: 1em;
-  margin-top: 10px;
+  margin-top: 21px;
 }
 
 #footer-container p.innovatis ,#footer-container p.innovatis a, #footer-container p.copyright{
