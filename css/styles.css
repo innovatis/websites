@@ -356,7 +356,7 @@ h2.tagline {
  width:145px;
  height:137px;
  position: absolute;
- top: 0;
+ top: 45px;
  right: 0;
  float: right;
 }
@@ -441,15 +441,35 @@ a.readers-digest:hover {
   line-height: 25px;
 }
 
-/*#header .header-contact-info {
-  border: 1px solid #bbb;
-  background: #eee;
-  padding: 15px;
-  webkit-border-radius: 10px;
-  moz-border-radius: 10px;
-  border-radius: 10px;
+#top-bar {
+  height: 15px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e7898), to(#5d9bbd));
+  background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
+  background: linear-gradient(top, #3e7898, #5d9bbd);
+  background-color: #3e7898;
+  border: 1px solid #3e7898; 
   -moz-box-shadow:    1px 1px 1px #333;
   -webkit-box-shadow: 1px 1px 1px #333;
   box-shadow:         1px 1px 1px #333;
-  margin-top: 25px;
-}*/
+  padding: 15px 0;
+  position: relative;
+  z-index: 999;
+}
+
+#top-bar .contact-info-container {
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.4em;
+}
+
+#top-bar .contact-info-container li{
+  list-style:none;
+  float: right;
+  margin-left: 25px;
+}
+
+#top-bar .contact-info-container a {
+  color: white;
+}
