@@ -174,13 +174,13 @@ strong {
 }
 
 #header-logo {
-  margin-top: -15px;
+  margin-top: 15px;
 }
 
 #menu {
   position: relative;
   top: 168px;
-  right: -137px;
+  right: 35px;
 }
 
 #menu li {
@@ -437,11 +437,11 @@ a.readers-digest:hover {
   border-radius: 10px;
 }
 
-.contact-info li, #header .header-contact-info li {
+.contact-info li {
   line-height: 25px;
 }
 
-#header .header-contact-info {
+/*#header .header-contact-info {
   border: 1px solid #bbb;
   background: #eee;
   padding: 15px;
@@ -452,4 +452,4 @@ a.readers-digest:hover {
   -webkit-box-shadow: 1px 1px 1px #333;
   box-shadow:         1px 1px 1px #333;
   margin-top: 25px;
-}
+}*/
