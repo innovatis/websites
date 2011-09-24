@@ -1,4 +1,5 @@
 (function() {
+  var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
   (function($) {
     var Cities, Map, _ref;
     Map = (function() {
@@ -59,6 +60,14 @@
           map: this.map(),
           position: location.position
         };
+        this.map().event.addListener(location.marker, 'click', __bind(function(e) {
+          var infobox;
+          return infobox = new SmartInfoWindow({
+            position: marker.getPosition(),
+            map: map,
+            content: content
+          });
+        }, this));
         location.marker = new google.maps.Marker(markerOptions);
         return this.locations.push(location);
       };

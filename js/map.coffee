@@ -43,6 +43,12 @@
         map: this.map(),
         position: location.position
 
+      this.map().event.addListener location.marker, 'click', (e) =>
+        infobox = new SmartInfoWindow
+          position: marker.getPosition(),
+          map: map,
+          content: content
+
       location.marker = new google.maps.Marker(markerOptions)
       @locations.push(location)
 
