@@ -179,7 +179,7 @@ strong {
 
 #menu {
   position: relative;
-  top: 168px;
+  top: 150px;
   right: -112px;
 }
 
@@ -341,14 +341,16 @@ a.call-to-action-button:hover {
   margin: 0 auto;
   width: 100%;
   float:left;
+  position: relative;
+  top: 90px;
+  left: -75px;
 }
 
 h2.tagline {
   color: #3e7898;
-  font-size: 1.4em;
+  font-size: 1.8em;
   text-shadow: #fff 1px 1px 1px;
   text-align: center;
-  margin: 7px 16px 0 0;
 }
 
 #three-circles {
@@ -356,7 +358,7 @@ h2.tagline {
  width:145px;
  height:137px;
  position: relative;
- top: 0px;
+ top: -16px;
  right: 0;
  float: right;
 }
