@@ -402,6 +402,10 @@ h2.tagline {
   list-style:disc;
 }
 
+.column-50.paragraph h4{
+  margin-top: 25px;
+}
+
 blockquote {
 	margin: 1em 20px;
 	padding-left: 45px;
