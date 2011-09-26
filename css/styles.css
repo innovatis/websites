@@ -424,6 +424,10 @@ cite{
   text-align:right;
 }
 
+cite p {
+  margin-bottom: 55px;
+}
+
 a.readers-digest {
   text-indent: -9999em;
   background: url(../images/readers-digest.png) no-repeat 0 0;
