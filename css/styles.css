@@ -180,7 +180,7 @@ strong {
 #menu {
   position: relative;
   top: 168px;
-  right: 35px;
+  right: -112px;
 }
 
 #menu li {
@@ -355,8 +355,8 @@ h2.tagline {
  background: url(../images/three-circles.png);
  width:145px;
  height:137px;
- position: absolute;
- top: 45px;
+ position: relative;
+ top: 0px;
  right: 0;
  float: right;
 }
@@ -447,7 +447,7 @@ a.readers-digest:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#3e7898), to(#5d9bbd));
   background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
   background: linear-gradient(top, #3e7898, #5d9bbd);
-  background-color: #3e7898;
+  background: #3e7898;
   border: 1px solid #3e7898; 
   -moz-box-shadow:    1px 1px 1px #333;
   -webkit-box-shadow: 1px 1px 1px #333;
