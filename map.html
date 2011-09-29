@@ -19,6 +19,14 @@
             position: Cities[city]
           });
         }
+        $(".smart-info-window-wrapper").live("mouseover",function(){
+          var element = $(this),
+                other = $('.smart-info-window-wrapper');
+
+          other.css({'z-index':1,opacity:0.8});
+          element.css({'z-index':9,opacity:1});
+        });
+
         $('#list li').live('click',function(){
           map.locations()[0].toggleInfoWindow();
         });
@@ -29,6 +37,10 @@
         width: 960px;
         margin: 0 auto;
         font-family: arial;
+      }
+      .smart-info-window-wrapper{
+        z-index: 1;
+        opacity: 0.8:
       }
       #list{
         float: left;

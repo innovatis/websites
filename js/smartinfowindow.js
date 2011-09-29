@@ -146,6 +146,7 @@ SmartInfoWindow.prototype.createElement = function() {
     div.style.overflow = 'hidden';
     var wrapperDiv     = this.wrapperDiv_ = document.createElement('div');
     var contentDiv     = document.createElement('div');
+    $(div).addClass("smart-info-window-wrapper");
     if (typeof this.content_ == 'string') {
       contentDiv.innerHTML = this.content_;
     } else {
@@ -204,13 +205,13 @@ SmartInfoWindow.prototype.close = function() {
  */
 SmartInfoWindow.prototype.maybePanMap = function() {
   // if we go beyond map, pan map
-  var map = this.map_;
-  var projection = this.getProjection();
-  var bounds = map.getBounds();
+  var map              = this.map_;
+  var projection       = this.getProjection();
+  var bounds           = map.getBounds();
   if (!bounds) return;
 
   // The dimension of the infowindow
-  var iwWidth = this.width_;
+  var iwWidth  = this.width_;
   var iwHeight = this.height_;
 
   // The offset position of the infowindow
@@ -218,12 +219,10 @@ SmartInfoWindow.prototype.maybePanMap = function() {
   var iwOffsetY = this.offsetY_;
 
   var anchorPixel = projection.fromLatLngToDivPixel(this.latlng_);
-  var bl = new google.maps.Point(anchorPixel.x + iwOffsetX + 20,
-      anchorPixel.y + iwOffsetY + iwHeight);
-  var tr = new google.maps.Point(anchorPixel.x + iwOffsetX + iwWidth,
-      anchorPixel.y + iwOffsetY);
-  var sw = projection.fromDivPixelToLatLng(bl);
-  var ne = projection.fromDivPixelToLatLng(tr);
+  var bl          = new google.maps.Point(anchorPixel.x + iwOffsetX + 20, anchorPixel.y + iwOffsetY + iwHeight);
+  var tr          = new google.maps.Point(anchorPixel.x + iwOffsetX + iwWidth, anchorPixel.y + iwOffsetY);
+  var sw          = projection.fromDivPixelToLatLng(bl);
+  var ne          = projection.fromDivPixelToLatLng(tr);
 
   // The bounds of the infowindow
   if (!map.getBounds().contains(ne) || !map.getBounds().contains(sw)) {
@@ -236,7 +235,7 @@ SmartInfoWindow.prototype.maybePanMap = function() {
  */
 SmartInfoWindow.Align = {
   ABOVE: 0,
-  LEFT: 1,
+  LEFT:  1,
   RIGHT: 2,
   BELOW: 3
 };

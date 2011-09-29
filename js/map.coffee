@@ -3,15 +3,15 @@
   Cities = {}
   window.Cities = Cities
   $ ->
-  Cities.chicago=      new google.maps.LatLng(41.850033, -87.6500523)
-  Cities.anchorage=    new google.maps.LatLng(61.2180556, -149.9002778)
-  Cities.mexico=       new google.maps.LatLng(19.4270499, -99.1275711)
-  Cities.equator=      new google.maps.LatLng(0,0)
-  Cities.london=       new google.maps.LatLng(51.5001524, -0.1262362)
-  Cities.johannesburg= new google.maps.LatLng(-26.201452, 28.045488)
-  Cities.kinshasa=     new google.maps.LatLng(-4.325, 15.322222)
-  Cities.sydney=       new google.maps.LatLng( -33.867139, 151.207114)
-  Cities.winnipeg=     new google.maps.LatLng(49.88454445583448, -97.04631347656247)
+  Cities.chicago=      new google.maps.LatLng(41.850033         , -87.6500523)
+  Cities.anchorage=    new google.maps.LatLng(61.2180556        , -149.9002778)
+  Cities.mexico=       new google.maps.LatLng(19.4270499        , -99.1275711)
+  Cities.equator=      new google.maps.LatLng(0                 , 0)
+  Cities.london=       new google.maps.LatLng(51.5001524        , -0.1262362)
+  Cities.johannesburg= new google.maps.LatLng(-26.201452        , 28.045488)
+  Cities.kinshasa=     new google.maps.LatLng(-4.325            , 15.322222)
+  Cities.sydney=       new google.maps.LatLng( -33.867139       , 151.207114)
+  Cities.winnipeg=     new google.maps.LatLng(49.88454445583448 , -97.04631347656247)
 
   class Map
     constructor: () ->
@@ -96,7 +96,7 @@
       @map    = @options.markerOptions.map
       @infoWindow = null
       @position = @options.position
-      @content = "no content"
+      @content = '<div style="margin:0px 1.5em 2em 1.5em"><h2>Example Content</h2><p>Some text</p> <ul><li>List</li><li>Of</li><li>Stuff</li></ul></div>'
 
     openInfoWindow: =>
       @infoWindow = new SmartInfoWindow

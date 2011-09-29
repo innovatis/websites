@@ -142,7 +142,7 @@
         this.map = this.options.markerOptions.map;
         this.infoWindow = null;
         this.position = this.options.position;
-        this.content = "no content";
+        this.content = '<div style="margin:0px 1.5em 2em 1.5em"><h2>Example Content</h2><p>Some text</p> <ul><li>List</li><li>Of</li><li>Stuff</li></ul></div>';
       }
       Location.prototype.openInfoWindow = function() {
         this.infoWindow = new SmartInfoWindow({
