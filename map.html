@@ -5,23 +5,12 @@
     </style>
     <script src='js/jquery-1.6.3.js'></script>
     <script src='js/jquery.isotope.js'></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <script src='js/functions.js'></script>
     <script src='js/map.js'></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	  <script type="text/javascript" src="js/smartinfowindow.js"></script>
     <script>
       $(function(){
-        var Cities = {}
-        window.Cities = Cities
-        Cities.chicago=      new google.maps.LatLng(41.850033, -87.6500523);
-        Cities.anchorage=    new google.maps.LatLng(61.2180556, -149.9002778);
-        Cities.mexico=       new google.maps.LatLng(19.4270499, -99.1275711);
-        Cities.equator=      new google.maps.LatLng(0,0);
-        Cities.london=       new google.maps.LatLng(51.5001524, -0.1262362);
-        Cities.johannesburg= new google.maps.LatLng(-26.201452, 28.045488);
-        Cities.kinshasa=     new google.maps.LatLng(-4.325, 15.322222);
-        Cities.sydney=       new google.maps.LatLng( -33.867139, 151.207114);
-        Cities.winnipeg=     new google.maps.LatLng(49.88454445583448, -97.04631347656247);
-
         window.map = new Map();
         map.run()
         for(city in Cities){
@@ -30,6 +19,9 @@
             position: Cities[city]
           });
         }
+        $('#list li').live('click',function(){
+          map.locations()[0].toggleInfoWindow();
+        });
       })
     </script>
     <style>
@@ -110,7 +102,7 @@
       #map {
         float: left;
         width: 700px;
-        height: 500px;
+        height: 700px;
       }
     </style>
   </head>

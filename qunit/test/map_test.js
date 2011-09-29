@@ -16,20 +16,21 @@
           },
           set_center: function() {}
         };
-      }
+      },
+      event: {
+        addListener: function() {}
+      },
+      OverlayView: function() {}
     }
   };
+  window.SmartInfoWindow = (function() {
+    function SmartInfoWindow() {}
+    SmartInfoWindow.prototype.close = function() {};
+    return SmartInfoWindow;
+  })();
   window.google = FakeGoogle;
-  module('Map.API', {
-    setup: function() {
-      return window.google = FakeGoogle;
-    },
-    teardown: function() {
-      return window.google = null;
-    }
-  });
+  module('Map.API');
   test('Map Object Loaded', 1, function() {
-    console.log(window.google);
     return ok(Map, "Map Loaded");
   });
   test('Api Present', 2, function() {
@@ -68,43 +69,44 @@
     var loc1, loc2, map;
     map = new Map();
     loc1 = {
-      x: 1,
-      y: 2
+      position: {
+        x: 1,
+        y: 2
+      }
     };
     loc2 = {
-      x: 3,
-      y: 4
+      position: {
+        x: 3,
+        y: 4
+      }
     };
     map.addLocation(loc1);
     map.addLocation(loc2);
-    equal(loc1, map.locationAtIndex(0));
-    return equal(loc2, map.locationAtIndex(1));
+    equal(map.locationAtIndex(0).position, loc1.position);
+    return equal(map.locationAtIndex(1).position, loc2.position);
   });
   test('removing a location removes it', 2, function() {
     var loc1, loc2, map;
     map = new Map();
     loc1 = {
-      x: 1,
-      y: 2
+      position: {
+        x: 1,
+        y: 2
+      }
     };
     loc2 = {
-      x: 3,
-      y: 4
+      position: {
+        x: 3,
+        y: 4
+      }
     };
     map.addLocation(loc1);
     map.addLocation(loc2);
     map.removeLocation(loc1);
     equal(map.locationCount(), 1);
-    return equal(loc2, map.locationAtIndex(0));
+    return equal(map.locationAtIndex(0).position, loc2.position);
   });
-  module('Map.MapDomDriver', {
-    setup: function() {
-      return window.google = FakeGoogle;
-    },
-    teardown: function() {
-      return window.google = null;
-    }
-  });
+  module('Map.MapDomDriver');
   test('Object Loaded', 1, function() {
     return ok(Map.drivers.Dom);
   });
@@ -152,5 +154,26 @@
       position: {}
     });
     return equal(driver.locationCount(), 2);
+  });
+  module('Map.Location');
+  test("exists", 1, function() {
+    return ok(Map.Location, "class Exists");
+  });
+  test("initial isOpen is no", 1, function() {
+    var loc;
+    loc = new Map.Location;
+    return same(loc.isOpen, false);
+  });
+  test("isOpen is always acurrate", 4, function() {
+    var loc;
+    loc = new Map.Location;
+    loc.openInfoWindow();
+    same(loc.isOpen, true, "Location knows its open");
+    loc.closeInfoWindow();
+    same(loc.isOpen, false, "Location knows its closed");
+    loc.toggleInfoWindow();
+    same(loc.isOpen, true, "Location knows its open");
+    loc.toggleInfoWindow();
+    return same(loc.isOpen, false, "Location knows its closed");
   });
 }).call(this);

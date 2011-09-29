@@ -9,15 +9,17 @@ window.FakeGoogle =
         getCenter:  -> { lat:1, lng: 1},
         set_center: ->
       }
+    event:
+      addListener: ->
+    OverlayView: ->
+
+class window.SmartInfoWindow
+  close: ->
 window.google = FakeGoogle
-module 'Map.API',
-  setup: ->
-    window.google = FakeGoogle
-  teardown: ->
-    window.google = null
+
+module 'Map.API'
 
 test 'Map Object Loaded', 1, ->
-  console.log(window.google)
   ok Map, "Map Loaded"
 
 test 'Api Present', 2, ->
@@ -52,29 +54,33 @@ test 'adding two locations', 2, ->
 
 test 'locationAtIndex', 2, ->
   map = new Map()
-  loc1 =
-    x: 1,
-    y: 2
+  loc1=
+    position:
+      x: 1
+      y: 2
 
-  loc2 =
-    x: 3,
-    y: 4
+  loc2=
+    position:
+      x: 3
+      y: 4
 
   map.addLocation(loc1)
   map.addLocation(loc2)
 
-  equal loc1, map.locationAtIndex(0)
-  equal loc2, map.locationAtIndex(1)
+  equal map.locationAtIndex(0).position, loc1.position
+  equal map.locationAtIndex(1).position, loc2.position
 
 test 'removing a location removes it', 2, ->
   map = new Map()
   loc1 =
-    x: 1,
-    y: 2
+    position:
+      x: 1,
+      y: 2
 
   loc2 =
-    x: 3,
-    y: 4
+    position:
+      x: 3
+      y: 4
 
   map.addLocation(loc1)
   map.addLocation(loc2)
@@ -82,13 +88,9 @@ test 'removing a location removes it', 2, ->
   map.removeLocation(loc1)
 
   equal map.locationCount(), 1
-  equal loc2, map.locationAtIndex(0)
+  equal map.locationAtIndex(0).position, loc2.position
 
-module 'Map.MapDomDriver',
-  setup: ->
-    window.google = FakeGoogle
-  teardown: ->
-    window.google = null
+module 'Map.MapDomDriver'
 
 test 'Object Loaded', 1, ->
   ok Map.drivers.Dom
@@ -125,3 +127,23 @@ test 'adding two markers', 1, ->
   driver.pushLocation({position:{}})
   driver.pushLocation({position:{}})
   equal driver.locationCount(), 2
+
+module 'Map.Location'
+
+test "exists", 1 , ->
+  ok Map.Location, "class Exists"
+
+test "initial isOpen is no", 1, ->
+  loc = new Map.Location
+  same loc.isOpen, no
+
+test "isOpen is always acurrate", 4, ->
+  loc = new Map.Location
+  loc.openInfoWindow()
+  same loc.isOpen, yes, "Location knows its open"
+  loc.closeInfoWindow()
+  same loc.isOpen, no,  "Location knows its closed"
+  loc.toggleInfoWindow()
+  same loc.isOpen, yes, "Location knows its open"
+  loc.toggleInfoWindow()
+  same loc.isOpen, no,  "Location knows its closed"
