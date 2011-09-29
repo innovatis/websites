@@ -2,10 +2,40 @@
 <html>
   <head>
     <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='css/map.css' media='screen' rel='stylesheet' type='text/css' />
     <link href='css/isotope.css' media='screen' rel='stylesheet' type='text/css' />
     <script src='js/jquery-1.6.3.js'></script>
     <script src='js/jquery.isotope.js'></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <script src='js/functions.js'></script>
+    <script src='js/map.js'></script>
+	  <script type="text/javascript" src="js/smartinfowindow.js"></script>
+    <script>
+      $(function(){
+        window.map = new Map();
+        map.run()
+        for(city in Cities){
+          map.addLocation({
+            name:     city,
+            position: Cities[city]
+          });
+        }
+        $(".smart-info-window-wrapper").live("mouseover",function(){
+          var element = $(this),
+                other = $('.smart-info-window-wrapper');
+
+          other.css({'z-index':1,opacity:0.8});
+          element.css({'z-index':9,opacity:1});
+        });
+
+        $('#list li').live('click',function(){
+          map.locations()[0].toggleInfoWindow();
+        });
+        $('#toggler').live('click',function(){
+          $("#isotope-container").add("#map-container").toggle()
+        });
+      })
+    </script>
   </head>
   <body>
     <div id='header'>
@@ -45,6 +75,7 @@
       <div class='wrapper'>
         <h1 style="margin-left:30px;padding-top:30px;">The Big Search</h1>
         <ul id="isotope-actions">
+          <a href="#" id="toggler" style="float: right"  >Toggle Map</a>
           <li class="active"><a href="#" class="action" data-action="unfilter"                        >Show All</a></li>
           <li               ><a href="#" class="action" data-action="filter"   data-filters=".food ">Food </a></li>
           <li               ><a href="#" class="action" data-action="filter"   data-filters=".fun">Fun</a></li>
@@ -59,7 +90,7 @@
         </ul>
       </div>
       <div class="wrapper">
-        <div id="isotope-container">
+        <div id="isotope-container" class="hidden">
           <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/94cb13/fff&text=Tip+1."   alt=""/></div>
           <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/4a6bf8/fff&text=Tip+2."   alt=""/></div>
           <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/f34772/fff&text=Tip+3."   alt=""/></div>
@@ -88,6 +119,27 @@
           <div class="item tall show        " data-priority='1'><img src="images/isotopes/spa-2x1.png"                            alt=""/></div>
           <div class="item square food      " data-priority='1'><img src="images/isotopes/speaker-2x2.png"                        alt=""/></div>
         </div>
+        <div id="map-container">
+          <div id="list">
+            <ul>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
+            </ul>
+          </div>
+          <div id="map">
+          </div>
+          <br class="clear:both"/>
+        </div>
+        <br class="clear:both"/>
       </div>
     </div>
     <div id='footer'>

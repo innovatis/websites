@@ -56,7 +56,9 @@ em {
 strong {
   font-weight: bold;
 }
-
+.hidden{
+	display: none;
+}
 .column, .column-20, .column-27, .column-30, .column-33, .column-40, .column-50, .column-60, .column-66, .column-70, .column-80, .column-100 {
   float: left;
   height: 100%;
@@ -138,6 +140,7 @@ strong {
 #isotope-container{
   margin: 0 auto;
   width: 940px;
+	min-height: 700px;
 }
 
 .item {
