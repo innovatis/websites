@@ -1,5 +1,18 @@
 (($) ->
 
+  Cities = {}
+  window.Cities = Cities
+  $ ->
+    Cities.chicago=      new google.maps.LatLng(41.850033, -87.6500523)
+    Cities.anchorage=    new google.maps.LatLng(61.2180556, -149.9002778)
+    Cities.mexico=       new google.maps.LatLng(19.4270499, -99.1275711)
+    Cities.equator=      new google.maps.LatLng(0,0)
+    Cities.london=       new google.maps.LatLng(51.5001524, -0.1262362)
+    Cities.johannesburg= new google.maps.LatLng(-26.201452, 28.045488)
+    Cities.kinshasa=     new google.maps.LatLng(-4.325, 15.322222)
+    Cities.sydney=       new google.maps.LatLng( -33.867139, 151.207114)
+    Cities.winnipeg=     new google.maps.LatLng(49.88454445583448, -97.04631347656247)
+
   class Map
     constructor: (@locations=[]) ->
       @driver = new Map.drivers.Dom
@@ -16,7 +29,7 @@
     locationCount:            ->
       @driver.locationCount()
 
-    locationAt: (index)       ->
+    locationAtIndex: (index)       ->
       @driver.locationAt(index)
 
     removeLocation: (location) ->
@@ -43,11 +56,11 @@
         map: this.map(),
         position: location.position
 
-      this.map().event.addListener location.marker, 'click', (e) =>
-        infobox = new SmartInfoWindow
-          position: marker.getPosition(),
-          map: map,
-          content: content
+      #google.map.event.addListener location.marker, 'click', (e) =>
+      #  infobox = new SmartInfoWindow
+      #    position: marker.getPosition(),
+      #    map: map,
+      #    content: content
 
       location.marker = new google.maps.Marker(markerOptions)
       @locations.push(location)
@@ -88,17 +101,5 @@
 
   window.Map = Map
 
-  Cities = {}
-  window.Cities = Cities
-  $ ->
-    Cities.chicago=      new google.maps.LatLng(41.850033, -87.6500523)
-    Cities.anchorage=    new google.maps.LatLng(61.2180556, -149.9002778)
-    Cities.mexico=       new google.maps.LatLng(19.4270499, -99.1275711)
-    Cities.equator=      new google.maps.LatLng(0,0)
-    Cities.london=       new google.maps.LatLng(51.5001524, -0.1262362)
-    Cities.johannesburg= new google.maps.LatLng(-26.201452, 28.045488)
-    Cities.kinshasa=     new google.maps.LatLng(-4.325, 15.322222)
-    Cities.sydney=       new google.maps.LatLng( -33.867139, 151.207114)
-    Cities.winnipeg=     new google.maps.LatLng(49.88454445583448, -97.04631347656247)
 
 ).call(this,$)

@@ -1,76 +1,11 @@
 (function() {
-  module('Map.API');
-  test('Map Object Loaded', 1, function() {
-    return ok(Map);
-  });
-  test('Api Present', 2, function() {
-    var map;
-    map = new Map();
-    ok(map.run);
-    return ok(map.center);
-  });
-  test('adding a location', 1, function() {
-    var location, map;
-    map = new Map();
-    location = {
-      x: 1,
-      y: 2
-    };
-    map.addLocation(location);
-    return equal(1, map.locationCount());
-  });
-  test('adding two locations', 2, function() {
-    var location, map;
-    map = new Map();
-    location = {
-      x: 1,
-      y: 2
-    };
-    map.addLocation(location);
-    equal(1, map.locationCount());
-    map.addLocation(location);
-    return equal(2, map.locationCount());
-  });
-  test('locationAt', 2, function() {
-    var location1, location2, map;
-    map = new Map();
-    location1 = {
-      x: 1,
-      y: 2
-    };
-    location2 = {
-      x: 3,
-      y: 4
-    };
-    map.addLocation(location1);
-    map.addLocation(location2);
-    equal(location1, map.locationAt(0));
-    return equal(location2, map.locationAt(1));
-  });
-  test('removing a location removes it', 2, function() {
-    var location1, location2, map;
-    map = new Map();
-    location1 = {
-      x: 1,
-      y: 2
-    };
-    location2 = {
-      x: 3,
-      y: 4
-    };
-    map.addLocation(location1);
-    map.addLocation(location2);
-    map.removeLocation(location2);
-    equal(map.locationCount(), 1);
-    return equal(location1, map.locationAt(0));
-  });
-  module('Map.MapDomDriver');
-  window.google = {
+  window.FakeGoogle = {
     maps: {
       LatLng: function(x, y) {},
       MapTypeId: {
         ROADMAP: 1
       },
+      Marker: function() {},
       Map: function(a, b) {
         return {
           getCenter: function() {
@@ -84,6 +19,92 @@
       }
     }
   };
+  window.google = FakeGoogle;
+  module('Map.API', {
+    setup: function() {
+      return window.google = FakeGoogle;
+    },
+    teardown: function() {
+      return window.google = null;
+    }
+  });
+  test('Map Object Loaded', 1, function() {
+    console.log(window.google);
+    return ok(Map, "Map Loaded");
+  });
+  test('Api Present', 2, function() {
+    var map;
+    map = new Map();
+    ok(map.run);
+    return ok(map.center);
+  });
+  test('adding a location', 1, function() {
+    var loc, map;
+    map = new Map();
+    loc = {
+      position: {
+        x: 1,
+        y: 2
+      }
+    };
+    map.addLocation(loc);
+    return equal(1, map.locationCount(), "Correct Location Count");
+  });
+  test('adding two locations', 2, function() {
+    var loc, map;
+    map = new Map();
+    loc = {
+      position: {
+        x: 1,
+        y: 2
+      }
+    };
+    map.addLocation(loc);
+    equal(1, map.locationCount());
+    map.addLocation(loc);
+    return equal(2, map.locationCount());
+  });
+  test('locationAtIndex', 2, function() {
+    var loc1, loc2, map;
+    map = new Map();
+    loc1 = {
+      x: 1,
+      y: 2
+    };
+    loc2 = {
+      x: 3,
+      y: 4
+    };
+    map.addLocation(loc1);
+    map.addLocation(loc2);
+    equal(loc1, map.locationAtIndex(0));
+    return equal(loc2, map.locationAtIndex(1));
+  });
+  test('removing a location removes it', 2, function() {
+    var loc1, loc2, map;
+    map = new Map();
+    loc1 = {
+      x: 1,
+      y: 2
+    };
+    loc2 = {
+      x: 3,
+      y: 4
+    };
+    map.addLocation(loc1);
+    map.addLocation(loc2);
+    map.removeLocation(loc1);
+    equal(map.locationCount(), 1);
+    return equal(loc2, map.locationAtIndex(0));
+  });
+  module('Map.MapDomDriver', {
+    setup: function() {
+      return window.google = FakeGoogle;
+    },
+    teardown: function() {
+      return window.google = null;
+    }
+  });
   test('Object Loaded', 1, function() {
     return ok(Map.drivers.Dom);
   });
