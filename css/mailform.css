@@ -11,6 +11,11 @@
   background-color: #3e7898;
 }
 
+#mailform-container #message-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+
 #mailform-container.index-form {
   width: 250px;
 }
