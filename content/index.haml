@@ -1,7 +1,6 @@
 ---
 title: Millennium
-filter:
-  - haml
+filter: haml
 ---
 
 .home
@@ -17,7 +16,11 @@ filter:
       %h3 Federal Government
       %p We are pleased to provide a partial listing of our suppliers who have products on the Standing Offer program.
       %a.button{href: '#'} View Standing Offers
-    .image
+    .image.business
+    .image.architecture
+    .image.product
+    .image.financing
+    .image.spacesaver
 
   .middle
     %ul.tabs
@@ -26,5 +29,12 @@ filter:
       %li.l Open Office Workstations
       %li Seating Solutions
       %li.last Furniture in a Hurry
-      
-      
+    %br.clear
+    %div.panes
+      .pane.mobile{style: "height: 100%; width: 100%; background: red"}
+      .pane.walls{style: "height: 100%; width: 100%; background: blue"}
+      .pane.workstations{style: "height: 100%; width: 100%; background: green"}
+      .pane.seating{style: "height: 100%; width: 100%; background: yellow"}
+      .pane.furniture{style: "height:100%; width: 100%; background: black"}
+
+
