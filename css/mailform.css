@@ -11,6 +11,13 @@
   background-color: #3e7898;
 }
 
+#mailform-container h2 {
+  color: #fff;
+  margin-top: 25px;
+  text-shadow: #3e7898 1px 1px 1px;
+  text-align: center;
+}
+
 #mailform-container #message-wrapper {
   float: right;
   margin-top: 5px;

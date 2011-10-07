@@ -25,6 +25,9 @@ h2 {
 h3 {                
   font-size: 1.4em;
 }
+h3.intro-blurb {
+  line-height: 1.4em;
+}
 h4 {                
   font-size: 1.2em;
 }
