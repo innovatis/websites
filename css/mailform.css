@@ -9,11 +9,12 @@
   background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
   background: linear-gradient(top, #3e7898, #5d9bbd);
   background-color: #3e7898;
+  overflow: hidden;
 }
 
 #mailform-container h2 {
   color: #fff;
-  margin-top: 25px;
+  margin-top: 10px;
   text-shadow: #3e7898 1px 1px 1px;
   text-align: center;
 }
@@ -54,6 +55,10 @@
 #mailform-container small {
   margin:0 auto;
   color:#f4f7ea;
+}
+
+#mailform-container small em{
+  text-decoration:underline;
 }
 
 #mailform-container .required-message {

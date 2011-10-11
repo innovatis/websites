@@ -77,6 +77,9 @@ strong {
  width: 27%;
  padding: 25px; 
 }
+.column-27.paragraph em{
+  text-decoration:underline;
+}
 .column-30{
   width: 30%;
 }
@@ -391,6 +394,7 @@ h2.tagline {
   margin-right:100px;
   text-decoration: none;
   color: #3e7898;
+  border-bottom: 1px dotted transparent;
 }
 
 #have-you-ever-felt li a:hover {
