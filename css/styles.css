@@ -25,9 +25,6 @@ h2 {
 h3 {                
   font-size: 1.4em;
 }
-h3.intro-blurb {
-  line-height: 1.4em;
-}
 h4 {                
   font-size: 1.2em;
 }
@@ -111,6 +108,12 @@ strong {
 }
 .column-60.paragraph {
   padding: 25px; 
+}
+.column-60.paragraph.intro {
+  padding-top:0px;
+  -moz-box-shadow: 0px 0px 0px #888;
+  -webkit-box-shadow: 0px 0px 0px #888;
+  box-shadow: 0px 0px 0px #888;
 }
 
 .column-66{
@@ -376,7 +379,7 @@ h2.tagline {
   margin-bottom: 10px;
 }
 
-#have-you-ever-felt li{
+#have-you-ever-felt li, #intro-blurb p{
   font-size: 1.8em;
   line-height: 2.1em;
   font-weight: bold;
