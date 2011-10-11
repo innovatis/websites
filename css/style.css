@@ -262,6 +262,10 @@ body {
 h1#logo{
   font-size: 42px;
   color: white;
+  text-indent: -9999em;
+  background: url(../images/searchosaur_lo.png) no-repeat;
+  height:97px;
+  width:234px;
 }
 #big-search-box-teaser {
   height: 40px;
