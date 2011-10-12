@@ -2,7 +2,7 @@
   height: 338px;
   background: #0069f9;
   padding: 0 25px;
-	-webkit-border-radius-topright:  5px;
+  -webkit-border-radius: 0px 5px 0px 0px;
   -moz-border-radius-topright:     5px;
   border-radius-topright:          5px;
   background: -webkit-gradient(linear, left top, left bottom, from(#3e7898), to(#5d9bbd));

@@ -15,7 +15,7 @@
 }
 
 .items div img{
-	-webkit-border-radius-topleft:  5px;
+  -webkit-border-radius: 5px 0px 0px 0px;
   -moz-border-radius-topleft:     5px;
   border-radius-topleft:          5px;
 }

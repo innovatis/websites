@@ -382,7 +382,7 @@ h2.tagline {
   margin-bottom: 10px;
 }
 
-#have-you-ever-felt li, #intro-blurb p{
+#have-you-ever-felt li {
   font-size: 1.8em;
   line-height: 2.1em;
   font-weight: bold;
@@ -495,4 +495,23 @@ a.readers-digest:hover {
 
 #top-bar .contact-info-container a {
   color: white;
+}
+
+.intro-block {
+  background:#e2e2e2;
+  border:1px solid #aaa;
+  -moz-box-shadow:    1px 1px 1px #888;
+  -webkit-box-shadow: 1px 1px 1px #888;
+  box-shadow:         1px 1px 1px #888;
+  webkit-border-radius: 5px;
+  moz-border-radius:    5px;
+  border-radius:        5px;
+}
+
+#intro-blurb p{
+  font-size: 1.8em;
+  line-height: 2.1em;
+  font-weight: bold;
+  color: #3e7898;
+  text-shadow: #fff 1px 1px 1px;
 }
