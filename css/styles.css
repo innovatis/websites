@@ -244,7 +244,7 @@ strong {
   background: url(../images/apple.png);
   position:absolute;
   left:-30px;
-  bottom:-0px;
+  bottom:16px;
   height:261px;
   width:290px;
 }
@@ -252,7 +252,7 @@ strong {
 #family-recipe p{
   position:absolute;
   left:20px;
-  bottom:50px;
+  bottom:66px;
   color: #fff;
   font-size: 3em;
   text-shadow: #333 1px 1px 1px;
@@ -261,7 +261,7 @@ strong {
 #order-now {
   position:absolute;
   right:25px;
-  bottom:0px;
+  bottom:16px;
   width: 275px;
 }
 
@@ -272,12 +272,24 @@ strong {
 
 #footer {
   width:100%;
-  height:6px;
+  height:16px;
   background:#c73333;
   border-top: 2px solid #f1f1f3;
   border-bottom: 1px solid #c0ab96;
   text-align: center;
   position: absolute;
   bottom: 0;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  margin-right:45px;
+}
+
+#footer a:hover {
+  color: #f2cfcf;
+  text-decoration: underline;
 }
