@@ -1,176 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Searchasaur</title>
-    <link href='css/style.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='css/map.css' media='screen' rel='stylesheet' type='text/css' />
-    <link href='css/isotope.css' media='screen' rel='stylesheet' type='text/css' />
-    <script src='js/jquery-1.6.3.js'></script>
-    <script src='js/jquery.isotope.js'></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-    <script src='js/functions.js'></script>
-    <script src='js/map.js'></script>
-	  <script type="text/javascript" src="js/smartinfowindow.js"></script>
-    <script>
-      $(function(){
-        window.map = new Map();
-        map.run()
-        for(city in Cities){
-          map.addLocation({
-            name:     city,
-            position: Cities[city]
-          });
-        }
-        $(".smart-info-window-wrapper").live("mouseover",function(){
-          var element = $(this),
-                other = $('.smart-info-window-wrapper');
-
-          other.css({'z-index':1,opacity:0.8});
-          element.css({'z-index':9,opacity:1});
-        });
-
-        $('#list li').live('click',function(){
-          map.locations()[0].toggleInfoWindow();
-        });
-        $('#toggler').live('click',function(){
-          $("#isotope-container").add("#map-container").toggle()
-        });
-      })
-    </script>
-  </head>
-  <body>
-    <div id='header'>
-      <div class='wrapper'>
-        <div id='big-search-box-wrapper' class='slide-three'>
-          <div id='big-search-box-header'>
-            <div class='left'>
-              <h1 id="logo" style="margin-left:30px;margin-top: 30px;color:white"><a style="color:white;text-shadow: 0px 0px 5px gray">Logo</a></h1>
-            </div>
-            <div class='right'>
-              <div id='global-toolbar'>
-                Welcome Back, <a href="#">Caleb</a>
-              </div>
-            </div>
-          </div>
-          <div id='big-search-box-body'>
-            <div style="width:550px;margin: 0 auto;">
-              <div style="margin-top:30px;color:white;font-size:16px;text-shadow: 0px 0px 3px black;margin-bottom: 5px">Find in <a href="#">Winnipeg</a></div>
-              <div style="height:35px; padding-bottom: 2px">
-                <input id='big-search-box-input'/>
-                <input type="submit" class="big-search-box-button" value="Search!"/>
-              </div>
-              <div style="color:white;font-size:16px;text-shadow: 0px 0px 3px black;margin-top: 15px; margin-bottom: 5px;">Popular Searches: <a href="#">Poutine</a>, <a href="#">Steak in Winnipeg</a></div>
-              <div style="color:white;font-size:16px;text-shadow: 0px 0px 3px black;margin-top: 5px; margin-bottom: 5px;">Popular Cities:  <a href="#">Brandon</a>, <a href="#">Portage la Prairie</a>, <a href="#">Calgary</a>, <a href="#">Toronto</a></div>
-            </div>
-          </div>
-          <div id='big-search-box-footer'>
-            <div id='big-search-box-teaser'>
-              <h2>Tanatlizing?</h2>
-              <p>It's from <a href="#">Pasta Pirate</a> in <a href="#"> Winnipeg</a>!</p>
-            </div>
-          </div>
-        </div>
+	<head>
+	  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title></title> 
+	  <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+    <div id ="container">
+      <div id="header">
+        <div id="menu"></div>
       </div>
+      <div id="content"></div>
+      <div id="footer"></div>
     </div>
-    <div id='body'>
-      <div class='wrapper'>
-        <h1 style="margin-left:30px;padding-top:30px;">The Big Search</h1>
-        <ul id="isotope-actions">
-          <a href="#" id="toggler" style="float: right"  >Toggle Map</a>
-          <li class="active"><a href="#" class="action" data-action="unfilter"                        >Show All</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".food ">Food </a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".fun">Fun</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".drinks">Drinks</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".fitness">Fitness</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".party">Party</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".event">Event</a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".show ">Show </a></li>
-          <li               ><a href="#" class="action" data-action="filter"   data-filters=".store">Store</a></li>
-          <li               ><a href="#" class="action" data-action="sort"     data-sort='priority'>Prioritize</a></li>
-          <li               ><a href="#" class="action" data-action="shuffle"                         >Shuffle</a></li>
-        </ul>
-      </div>
-      <div class="wrapper">
-        <div id="isotope-container" class="hidden">
-          <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/94cb13/fff&text=Tip+1."   alt=""/></div>
-          <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/4a6bf8/fff&text=Tip+2."   alt=""/></div>
-          <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/f34772/fff&text=Tip+3."   alt=""/></div>
-          <div class="item square demo      " data-priority='1'><img src="http://dummyimage.com/210x210/fc7234/fff&text=Ad?"      alt=""/></div>
-          <div class="item wide fun         " data-priority='1'><img src="images/isotopes/amusement-2x1.png"                      alt=""/></div>
-          <div class="item tall food        " data-priority='2'><img src="images/isotopes/bruschetta-1x2.png"                     alt=""/></div>
-          <div class="item tall party food  " data-priority='1'><img src="images/isotopes/bar-2x1.png"                            alt=""/></div>
-          <div class="item wide food        " data-priority='1'><img src="images/isotopes/dessert-2x1.png"                        alt=""/></div>
-          <div class="item food fun family  " data-priority='3'><img src="http://dummyimage.com/100/999/fff&text=temp.+img"       alt=""/></div>
-          <div class="item fun store        " data-priority='2'><img src="images/isotopes/kayaks-1x1.jpg"                         alt=""/></div>
-          <div class="item square           " data-priority='4'><img src="images/isotopes/film-2x2.png"                           alt=""/></div>
-          <div class="item fitness          " data-priority='3'><img src="images/isotopes/fitness-1x1.png"                        alt=""/></div>
-          <div class="item fitness          " data-priority='3'><img src="http://dummyimage.com/100/999/fff&text=temp.+img"       alt=""/></div>
-          <div class="item fun store        " data-priority='2'><img src="images/isotopes/kayaks-1x1.jpg"                         alt=""/></div>
-          <div class="item something        " data-priority='5'><img src="images/isotopes/flamingo-1x1.jpg"                       alt=""/></div>
-          <div class="item show tall        " data-priority='4'><img src="images/isotopes/lemur-1x2.png"                          alt=""/></div>
-          <div class="item square food      " data-priority='1'><img src="images/isotopes/sushi-2x2.png"                          alt=""/></div>
-          <div class="item something        " data-priority='5'><img src="images/isotopes/flamingo-1x1.jpg"                       alt=""/></div>
-          <div class="item fun store        " data-priority='2'><img src="images/isotopes/kayaks-1x1.jpg"                         alt=""/></div>
-          <div class="item show tall drinks " data-priority='1'><img src="images/isotopes/martini-2x1.png"                        alt=""/></div>
-          <div class="item wide show food   " data-priority='1'><img src="images/isotopes/pasta-2x1.png"                          alt=""/></div>
-          <div class="item party            " data-priority='3'><img src="http://dummyimage.com/100/999/fff&text=temp.+img"       alt=""/></div>
-          <div class="item show food party  " data-priority='1'><img src="images/isotopes/party-1x1.png"                          alt=""/></div>
-          <div class="item fun drinks food  " data-priority='3'><img src="http://dummyimage.com/100/999/fff&text=temp.+img"       alt=""/></div>
-          <div class="item party            " data-priority='3'><img src="http://dummyimage.com/100/999/fff&text=temp.+img"       alt=""/></div>
-          <div class="item tall show        " data-priority='1'><img src="images/isotopes/spa-2x1.png"                            alt=""/></div>
-          <div class="item square food      " data-priority='1'><img src="images/isotopes/speaker-2x2.png"                        alt=""/></div>
-        </div>
-        <div id="map-container">
-          <div id="list">
-            <ul>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-              <li><h1> Something Cool</h1><cite> food apple orange</cite></li>
-            </ul>
-          </div>
-          <div id="map">
-          </div>
-          <br class="clear:both"/>
-        </div>
-        <br class="clear:both"/>
-      </div>
-    </div>
-    <div id='footer'>
-        <div class="footer-container">
-          <div class="column-25">
-            <ul>
-              <li><a href ="#">First item </a></li>
-              <li><a href ="#">Second item</a></li>
-              <li><a href ="#">Third item </a></li>
-              <li><a href ="#">Fourth item</a></li>                                    
-            </ul>
-          </div>
-          <div class="column-25">
-            <ul>
-              <li><a href ="#">First item </a></li>
-              <li><a href ="#">Second item</a></li>
-              <li><a href ="#">Third item </a></li>
-              <li><a href ="#">Fourth item</a></li>                                    
-            </ul>
-          </div>
-          <div class="column-25">
-            <ul>
-              <li><a href ="#">First item </a></li>
-              <li><a href ="#">Second item</a></li>
-              <li><a href ="#">Third item </a></li>
-              <li><a href ="#">Fourth item</a></li>                                    
-            </ul>
-          </div>
-          <div class="column-25"><img class= "right" src="images/searchosaur_lo.png"/></div>
-        </div>
-    </div>
-  </body>
+	</body>
 </html>
