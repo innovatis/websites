@@ -54,13 +54,18 @@ p {
   padding: 1em 0;
 }
 
-a {}
+a, a:visited, a:active {
+  color: #fff;
+  -webkit-transition: color .3s linear;
+  -moz-transition:    color .3s linear;
+  -o-transition:      color .3s linear;
+  -ms-transition:     color .3s linear;
+  transition:         color .3s linear;
+}
 
-a:hover {}
-  
-a:active {}
-  
-a:visited {}
+a:hover {
+  color: #f49e1a;
+}
 
 em {
   font-weight: italic;
@@ -144,7 +149,6 @@ strong {
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-
 /*Structure*/
 
 #header {
@@ -164,7 +168,6 @@ strong {
 #header .content {
   background: url(../images/rays.png) no-repeat top center;
   height: 100%;
-  border: none;
 }
 
 #header p {
@@ -270,8 +273,20 @@ strong {
   width: 100%;
 }
 
+#section-1 p, #section-2 p, #section-3 p, #section-4 p {
+  color: #fff;
+  text-shadow: #555 1px 1px 1px;  
+  font-size: 1.4em;
+}
+
 #section-1 {
   background: url(../images/section1.png) repeat;
+}
+
+#section-1 .note {
+  background: url(../images/note.png) no-repeat;
+  width: 284px;
+  height: 258px;
 }
 
 #section-2 {
@@ -286,13 +301,51 @@ strong {
   background: url(../images/section4.png) repeat;
 }
 
+#section-4 h3.question {
+  color: #fff;
+  margin-top: 30px;
+  font-size: 1.8em;
+  text-shadow: #555 1px 1px 1px;    
+}
+
+#section-4 p.answer {}
+
 .content {
   width: 960px;
   padding: 53px 0;
   margin: 0 auto;
-  border-left: 1px dotted #888;
-  border-right: 1px dotted #888;  
 }
+
+.content h2.section-title {
+  color: #fff;
+  text-shadow: #333 1px 1px 1px;
+  background: url(../images/hr.png) bottom center repeat-x;
+  padding-bottom: 3px;
+}
+
+.content ul.jack-list {
+  list-style: disc;
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 2.1em;
+  text-shadow: #555 1px 1px 1px;  
+  margin: 20px 0 0 30px;
+}
+
+.content ul.jack-help-list {
+  margin-top: 20px;
+  text-shadow: #555 1px 1px 1px;
+  color: #fff;
+  font-size:1.4em;
+  line-height: 1.4em;  
+}
+
+.content ul.jack-help-list li {
+  padding: 0 0 0 30px;
+  background: url(../images/check_s.png) no-repeat;
+  margin: 0 0 10px 0;
+}
+
 
 #footer {
   background: #363636; /* Old browsers */
@@ -304,4 +357,13 @@ strong {
   background: -ms-linear-gradient(top, #363636 0%,#4a4a4a 100%); /* IE10+ */
   background: linear-gradient(top, #363636 0%,#4a4a4a 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#4a4a4a',GradientType=0 ); /* IE6-8 */
+}
+
+#footer li, #footer p {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+#footer .social a {
+  text-decoration: none;
 }
