@@ -267,7 +267,7 @@ h1#logo{
   font-size: 42px;
   color: white;
   text-indent: -9999em;
-  background: url(../images/searchosaur_lo.png) no-repeat;
+  background: url(../images/searchasaur_lo.png) no-repeat;
   height:99px;
   width:234px;
 }
@@ -306,7 +306,7 @@ h1#logo{
 }
 
 #footer .footer-container img{
-  opacity: .65;
+  opacity: .40;
 }
 
 #big-search-box-input{
