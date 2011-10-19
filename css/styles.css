@@ -256,7 +256,7 @@ strong {
   margin: -10px auto 0 auto
 }
 
-.call-to-action, .call-to-action:visited {
+.call-to-action, .call-to-action:visited, .input-button {
   text-decoration:none;
   text-align:center;
   white-space:nowrap;

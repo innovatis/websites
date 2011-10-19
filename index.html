@@ -84,8 +84,6 @@
        </div>
 	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
          <div id="message-wrapper">
-           <div class="hidden mailform-loading">
-           </div>
            <div class="hidden mailform-error"> 
              default error
            </div>
@@ -95,31 +93,23 @@
          </div>
          <div class="inputs"> 
            <div class="input">
-             <label for="name">Name*</label> 
-             <input name="name" required='true' class="required-field"/>
-             <span class="message-error">What is your name?</span>
+             <input name="name" required='true' class="required-field" title="Name"/>
+             <span class="message-error hidden">What is your name?</span>
            </div>
            <div class="input">
-             <label for="e-mail">E-mail*</label> 
-             <input name="email" required='true' class="required-field"/>
-             <span class="message-error">What is your e-mail address?</span>
-             <span class="message-invalid">Please enter a valid email address</span>
+             <input name="phone" title="Phone Number"/>
+             <span class="message-invalid hidden">Please enter a valid phone number</span>
            </div>
            <div class="input">
-             <label for="phone">Phone</label> 
-             <input name="phone"/>
-             <span class="message-invalid">Please enter a valid phone number</span>
-           </div>
-           <div class="input">
-             <label for="message">Comments</label> 
-             <textarea name="comments"></textarea>
+             <input name="email" required='true' class="required-field" title="Email Address"/>
+             <span class="message-error hidden">What is your e-mail address?</span>
+             <span class="message-invalid hidden">Please enter a valid email address</span>
            </div>
          </div> 
          <div class="actions"> 
+           <div class="hidden mailform-loading"></div>
            <input class="input-button" type="submit" value="submit"></input>
-           <a href="#"class="input-button">reset</a>
          </div> 
-         <small>All fields marked with an * must be completed</small>
        </form>
 	    </div>
         </div>
@@ -233,5 +223,6 @@
 	</body>
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
   <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
-  <script src="js/mailform.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/mailform.js"></script>  
 </html>

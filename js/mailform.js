@@ -7,12 +7,4 @@ $(function(){
   
     }
   });
-  
-  reset = function(){
-     $(".input").val("").trigger("change");
-   },
-  
-  //contact form reset
-  $('.reset-button').click(reset);
-  
 });
