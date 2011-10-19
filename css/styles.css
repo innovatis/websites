@@ -77,12 +77,15 @@ strong {
   font-weight: bold;
 }
 
-.column, .column-20, .column-30, .column-33, .column-40, .column-50, .column-60, .column-66, .column-70, .column-80 {
+.column, .column-10, .column-20, .column-30, .column-33, .column-40, .column-50, .column-60, .column-66, .column-70, .column-80 {
   float: left;
   height: 100%;
   display: block;
 }
 
+.column-10{
+  width: 10%;
+}
 .column-20{
   width: 20%;
 }

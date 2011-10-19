@@ -5,7 +5,8 @@
 		<title>JACK by Innovatis Inc.</title> 
 	  <meta name="keywords" content="">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mailform.css">    
+    <link rel="stylesheet" href="css/mailform.css">
+    <link rel="stylesheet" href="css/scroller.css">        
     <!--[if gte IE 9]>
       <style type="text/css">
         .gradient {
@@ -144,7 +145,37 @@
       </div>
     </div>
     <div id="section-3">
-      <div class="content clearfix"><h1>SLIDESHOW!</h1></div>
+      <div class="content clearfix">
+        <div class="column-10">
+          <a class="prev browse left"></a>          
+        </div>
+        <div class="column-80">
+          <div class="scrollable" id=browsable>   
+            <div class="items">
+              <div>
+                <h4 class="testimonial">This summer I bought a boat... and used it! Thanks JACK for giving me my life back</h4>
+               <h5 class="credit right">- Roofer</h5>
+              </div>
+              <div>
+                <h4 class="testimonial">I now have all my information with me wherever I am. I get home at night sooner and I don't have to spend all night at my computer catching up on paperwork</h4>
+                <h5 class="credit right"> - Small Business Owner</h5>
+              </div>
+              <div>
+                <h4 class="testimonial">My husband did his own laundry for the first time in 10 years. He may not like doing laundry, but it is better than paperwork</h4>
+                <h5 class="credit right">- Wife of a tradesperson</h5>
+              </div>
+            </div>
+          </div>
+          <div class="navi">
+            <a href="0" class="active"/>
+	          <a href="1" class=""/>
+	          <a href="2" class=""/>
+          </div>
+        </div>
+        <div class="column-10">
+          <a class="next browse right"></a>
+        </div>        
+      </div>
     </div>
     <div id="section-4">
       <div class="content clearfix">
@@ -222,6 +253,7 @@
     </div>    
 	</body>
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+  <script src="js/jquery.tools.min.js"></script>
   <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/mailform.js"></script>  

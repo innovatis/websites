@@ -1,4 +1,5 @@
 $(function(){
+
   $('input[title],input[type=password][title]').each(function(i){
     $(this).addClass('input-prompt-' + i);
     var promptSpan = $('<span class="input-prompt"/>');
@@ -20,5 +21,10 @@ $(function(){
         $('#input-prompt-' + i).show();
       }
     });
+  });
+  
+	// initialize scrollable
+	$("#browsable").scrollable({circular: true, mousewheel: false}).navigator().autoscroll({
+	  interval: 5000		
   });
 });
