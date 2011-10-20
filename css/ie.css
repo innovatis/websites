@@ -1,6 +1,5 @@
 .call-to-action-container  {
-  position: relative;
-  z-index: 999;
+
 }
 .call-to-action:hover {
   color: #fff;
