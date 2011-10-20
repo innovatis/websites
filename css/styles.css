@@ -262,7 +262,7 @@ strong {
 }
 
 .call-to-action-container.small {
-  margin: -10px auto 0 auto
+  margin: -10px auto 0 auto;
 }
 
 .call-to-action, .call-to-action:visited, .input-button {
