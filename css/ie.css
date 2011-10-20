@@ -1,5 +1,5 @@
-.call-to-action-container  {
-
+.call-to-action, .call-to-action:visited, .input-button {
+  white-space: none;
 }
 .call-to-action:hover {
   color: #fff;
