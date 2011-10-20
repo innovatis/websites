@@ -1,6 +1,11 @@
 .call-to-action, .call-to-action:visited, .input-button {
-  white-space: none;
+  white-space: normal;
 }
+
+.call-to-action.large {
+  padding: 14px 10px;
+}
+
 .call-to-action:hover {
   color: #fff;
 }
