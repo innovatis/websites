@@ -402,6 +402,7 @@ strong {
 
 #footer p {
   padding: 0;
+  text-align: justify;
 }
 
 #footer li.address, #footer li.phone, #footer li.email, #footer .address-extra-line {
