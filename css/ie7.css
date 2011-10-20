@@ -1,0 +1,6 @@
+.call-to-action, .call-to-action:visited, .input-button {
+  background: #f7d020;
+}
+.call-to-action:hover {
+  color: #fff;
+}
