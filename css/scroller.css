@@ -48,7 +48,8 @@ h4.testimonial{
 }
 
 h5.credit {
-  font-size: 1.8em;  
+  font-size: 1.8em; 
+  margin-top:10px; 
 }
 
 /* this makes it possible to add next button beside scrollable */
