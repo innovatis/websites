@@ -6,7 +6,8 @@
 	  <meta name="keywords" content="">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mailform.css">
-    <link rel="stylesheet" href="css/scroller.css">        
+    <link rel="stylesheet" href="css/scroller.css">
+    <link rel="stylesheet" href="css/lightbox.css">            
     <!--[if gte IE 9]>
       <style type="text/css">
         .gradient {
@@ -41,7 +42,7 @@
             </ul>
           </div>
           <div class="get-to-know-jack">
-            <h2><a href ="#">Get to know JACK</a></h2>
+            <h2><a href ="#get-to-know-jack" class="scroll">Get to know JACK</a></h2>
           </div>
         </div>        
       </div>
@@ -168,9 +169,9 @@
             </div>
           </div>
           <div class="navi">
-            <a href="0" class="active"/>
-	          <a href="1" class=""/>
-	          <a href="2" class=""/>
+            <a href="0" class="active"></a>
+	          <a href="1" class=""></a>
+	          <a href="2" class=""></a>
           </div>
         </div>
         <div class="column-10">
@@ -181,7 +182,7 @@
     </div>
     <div id="section-4">
       <div class="content clearfix">
-        <h2 class="section-title">Getting to Know JACK (Frequently Asked Questions):</h2>
+        <span class="type" id="get-to-know-jack"><h2 class="section-title">Getting to Know JACK (Frequently Asked Questions):</h2></span>
         <div class="clearfix">
           <div class="column-50 left">
             <h3 class="question">Q: How much does JACK cost?</h3>
@@ -252,11 +253,12 @@
           <a href ="http://www.innovatisinc.ca" target ="_blank">Powered by Innovatis Inc.</a>
         </div>
       </div>
-    </div>    
+    </div>
 	</body>
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
   <script src="js/jquery.tools.min.js"></script>
   <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
   <script src="js/functions.js"></script>
-  <script src="js/mailform.js"></script>  
+  <script src="js/mailform.js"></script>
+  <script src="js/scroll.js"></script>    
 </html>

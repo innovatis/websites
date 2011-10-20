@@ -7,7 +7,7 @@
 	/* required settings */
 	position:relative;
 	overflow:hidden;
-	width:792px;
+	width: 745px;
 	height:250px;
 }
 
@@ -37,8 +37,8 @@
 
 h4.testimonial, h5.credit {
   font-weight: bold;  
-  color: #333;
-  text-shadow: #fff 1px 1px 1px;
+  color: #905f3b;
+  text-shadow: #dcbfaa 1px 1px 1px;
 }
 
 h4.testimonial{
@@ -93,21 +93,22 @@ a.disabled {
 
 /* items inside navigator */
 .navi a {
-	width:8px;
-	height:8px;
+	width:14px;
+	height:14px;
 	float:left;
 	margin:3px;
-	background:url(../images/navigator.png) 0 0 no-repeat;
+	background:url(../images/slideshow-nav.png) 0 0 no-repeat;
 	display:block;
 	font-size:1px;
+	opacity:.5;
 }
 
 /* mouseover state */
 .navi a:hover {
-	background-position:0 -8px;      
+	opacity: .75;
 }
 
 /* active state (current page state) */
 .navi a.active {
-	background-position:0 -16px;     
+	opacity: 1;
 }

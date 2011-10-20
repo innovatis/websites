@@ -27,4 +27,5 @@ $(function(){
 	$("#browsable").scrollable({circular: true, mousewheel: false}).navigator().autoscroll({
 	  interval: 5000		
   });
+
 });

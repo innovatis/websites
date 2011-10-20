@@ -65,7 +65,7 @@
   text-decoration:none;
   text-align:center;
   white-space:nowrap;
-  font-size:1.5em;
+  font-size:1.4em;
   border:1px solid #6f6f6f;
   webkit-border-radius: 12px;
   moz-border-radius:    12px;
@@ -86,13 +86,21 @@
   -moz-box-shadow:    2px 2px 2px #333;
   -webkit-box-shadow: 2px 2px 2px #333;
   box-shadow:         2px 2px 2px #333;
+  cursor: pointer;
+  -webkit-transition: color .3s linear;
+  -moz-transition:    color .3s linear;
+  -o-transition:      color .3s linear;
+  -ms-transition:     color .3s linear;
+  transition:         color .3s linear;
 }
   
-.call-to-action:hover {
+.input-button:hover {
   color: #cf8314;
 }
 
-.call-to-action:active {}
+.input-button:active {
+  color: #fff;
+}
   
 .input-prompt {
   position: absolute;
