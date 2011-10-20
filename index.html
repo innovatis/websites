@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mailform.css">
     <link rel="stylesheet" href="css/scroller.css">
-    <link rel="stylesheet" href="css/lightbox.css">            
+    <link rel="stylesheet" href="css/lightbox.css">           
     <!--[if gte IE 9]>
       <style type="text/css">
         .gradient {
@@ -22,7 +22,7 @@
         <div class="column-50">
           <img src="images/jack.png" alt="JACK"/>
           <div class="call-to-action-container">
-            <a class="call-to-action large" href ="">Call Today for Exclusive Introductory Pricing</a>
+            <a class="call-to-action large" href ="#" id="show-panel">Call Today for Exclusive Introductory Pricing</a>
             <img src="images/large-shadow.png" alt="shadow for the box"/>
           </div>
         </div>
@@ -81,39 +81,39 @@
         </div>
         <div class="column-33 note right">
           <div id="mailform-container">
-       <div id="mailform-complete" style="display:none;">
-         <h2>Thank you, your message has been successfully sent</h2>
-       </div>
-	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
-         <div id="message-wrapper">
-           <div class="hidden mailform-error"> 
-             default error
-           </div>
-           <div class="hidden mailform-success"> 
-             default success
-           </div> 
-         </div>
-         <div class="inputs"> 
-           <div class="input">
-             <input name="name" required='true' class="required-field" title="Name"/>
-             <span class="message-error hidden">What is your name?</span>
-           </div>
-           <div class="input">
-             <input name="phone" title="Phone Number"/>
-             <span class="message-invalid hidden">Please enter a valid phone number</span>
-           </div>
-           <div class="input">
-             <input name="email" required='true' class="required-field" title="Email Address"/>
-             <span class="message-error hidden">What is your e-mail address?</span>
-             <span class="message-invalid hidden">Please enter a valid email address</span>
-           </div>
-         </div> 
-         <div class="actions"> 
-           <div class="hidden mailform-loading"></div>
-           <input class="input-button" type="submit" value="submit"></input>
-         </div> 
-       </form>
-	    </div>
+            <div id="mailform-complete" style="display:none;">
+              <h2>Thank you, your message has been successfully sent</h2>
+            </div>
+	          <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
+              <div id="message-wrapper">
+                <div class="hidden mailform-error"> 
+                  default error
+                </div>
+                <div class="hidden mailform-success"> 
+                  default success
+                </div> 
+              </div>
+              <div class="inputs"> 
+                <div class="input">
+                  <input name="name" required='true' class="required-field" title="Name"/>
+                  <span class="message-error hidden">What is your name?</span>
+                </div>
+                <div class="input">
+                  <input name="phone" title="Phone Number"/>
+                  <span class="message-invalid hidden">Please enter a valid phone number</span>
+                </div>
+                <div class="input">
+                  <input name="email" required='true' class="required-field" title="Email Address"/>
+                  <span class="message-error hidden">What is your e-mail address?</span>
+                  <span class="message-invalid hidden">Please enter a valid email address</span>
+                </div>
+              </div> 
+              <div class="actions"> 
+                <div class="hidden mailform-loading"></div>
+                <input class="input-button" type="submit" value="submit"></input>
+              </div> 
+            </form>
+	        </div>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@
         </div>
       </div>
       <div class="call-to-action-container right small">
-        <a class="call-to-action small" href ="">Hire Jack Today</a>
+        <a class="call-to-action small" href ="#" id="show-panel">Hire Jack Today</a>
         <img src="images/small-shadow.png" alt="shadow for the box"/>
       </div>
     </div>
@@ -254,6 +254,48 @@
         </div>
       </div>
     </div>
+		<div id="lightbox-panel">    
+      <a id="close-panel" href="#" class="right">Close</a>
+      <h1>Interested in JACK?</h1>
+      <h2>We want to talk to you!</h2>
+      <h3>Give us a call at 204.272.6037</h3>
+      <h3>Or fill out the form below so we can contact you!</h3>
+      <div id="lightboxform-container" class="lightbox">
+        <div id="mailform-complete" style="display:none;">
+          <h2>Thank you, your message has been successfully sent</h2>
+        </div>
+	      <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
+          <div id="message-wrapper">
+            <div class="hidden mailform-error"> 
+              default error
+            </div>
+            <div class="hidden mailform-success"> 
+              default success
+            </div> 
+          </div>
+          <div class="inputs"> 
+            <div class="input">
+              <input name="name" required='true' class="required-field" title="Name"/>
+              <span class="message-error hidden">What is your name?</span>
+            </div>
+            <div class="input">
+              <input name="phone" title="Phone Number"/>
+              <span class="message-invalid hidden">Please enter a valid phone number</span>
+            </div>
+            <div class="input">
+              <input name="email" required='true' class="required-field" title="Email Address"/>
+              <span class="message-error hidden">What is your e-mail address?</span>
+              <span class="message-invalid hidden">Please enter a valid email address</span>
+            </div>
+          </div> 
+          <div class="actions"> 
+            <div class="hidden mailform-loading"></div>
+            <input class="input-button" type="submit" value="submit"></input>
+          </div> 
+        </form>
+	    </div>
+    </div>  
+    <div id="lightbox"> </div>
 	</body>
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
   <script src="js/jquery.tools.min.js"></script>
@@ -261,4 +303,5 @@
   <script src="js/functions.js"></script>
   <script src="js/mailform.js"></script>
   <script src="js/scroll.js"></script>    
+	<script src="js/lightbox.js"></script>  
 </html>
