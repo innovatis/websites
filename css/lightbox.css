@@ -1,14 +1,5 @@
 #lightbox {  
-  display:none;  
-  background:#000000;  
-  opacity:0.9;  
-  filter:alpha(opacity=90);  
-  position:absolute;  
-  top:0px;  
-  left:0px;  
-  min-width:100%;  
-  min-height:100%;  
-  z-index:1000;  
+
 }  
 
 #lightbox-panel {  

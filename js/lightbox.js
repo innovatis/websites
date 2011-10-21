@@ -1,12 +1,15 @@
 $(function(){
-  $("a#show-panel").click(function(){  
+  $("a#show-panel").click(function(e){
+    e.preventDefault();  
     $("#lightbox, #lightbox-panel").fadeIn(300);  
   })  
-  $("a#close-panel").click(function(){  
+  $("a#close-panel").click(function(e){
+    e.preventDefault();  
     $("#lightbox, #lightbox-panel").fadeOut(300);  
   });
   
-  $('.submit-enews-signup').click(function(){
+  $('.submit-enews-signup').click(function(e){
+     e.preventDefault();
      if($("requiredField").val()){
        
      }else{
