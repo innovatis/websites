@@ -78,13 +78,13 @@ Onq ?=  {}
 
     trigger: (event) ->
       if @triggered[event]
-        console.log(this,"[alreadyTriggered] No Trigger",event)
+        #console.log(this,"[alreadyTriggered] No Trigger",event)
       else
         @root.trigger(event) and this.didTrigger(event)
 
     didTrigger: (event) ->
       @triggered[event] = true
-      console.log(this,"[didTrigger]",event)
+      #console.log(this,"[didTrigger]",event)
       this
 
     appear: (selector,duration) ->
@@ -173,7 +173,6 @@ Onq ?=  {}
 
       this
     cycleLightBeams: ->
-      console.log("cycling light beams")
 
   class Onq.Scene.Restaurant extends Onq.Scene
     constructor: -> super "#restaurant"
@@ -226,7 +225,7 @@ Onq ?=  {}
       @.after('@backgroundAppear',    'appear', '.speakers').
         after('@appear.speakers',     'appear', '.ceiling-lights').
         after('@backgroundAppear',    'appear', '.dj-table').
-        after('@appear.dj-table',     'appear', '.beat-box-guy').
+        #after('@appear.dj-table',     'appear', '.beat-box-guy').
         after('@appear.dj-table',     'appear', '.mixer-2').
 
         after('@appear.side-dj', 'appear', '.cd-player').
@@ -274,7 +273,7 @@ Onq ?=  {}
         after('@appear.darkness', 'appear', '.disco-ball-shine-3').
         #after('@loadInBeams', 'cycleBeams').
         #after('@appear.light-beam-white', 'loadInBeams').
-        after('@appear.disco-ball', 'cycleDiscoBallShine').
+        after('@appear.darkness', 'cycleDiscoBallShine').
         after('@appear.disco-ball', 'cycleLazers')
 
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
