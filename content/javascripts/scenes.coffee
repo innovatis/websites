@@ -273,6 +273,23 @@ Onq ?=  {}
         after('@appear.people',            'appear', '.people-6')
 
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
+  class Onq.Scene.Hotel extends Onq.Scene
+    constructor: -> super "#hotel"
+
+    start: ->
+      super
+      @.after('@backgroundAppear',         'appear', '.front_desk').
+        after('@backgroundAppear'       ,  'appear', '.bellboy').
+        after('@backgroundAppear'       ,  'appear', '.busboy').
+        after('@appear.busboy'          ,  'appear', '.concierge').
+        after('@appear.busboy'          ,  'appear', '.girl').
+        after('@appear.busboy'          ,  'appear', '.red_shirt_guy').
+        after('@appear.red_shirt_guy'   ,  'appear', '.suitcase').
+        after('@appear.busboy'          ,  'appear', '.white_shirt_guy').
+        after('@appear.white_shirt_guy' ,  'appear', '.woman').
+        after('@appear.white_shirt_guy' ,  'appear', '.little_boy')
+
+      @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
 
   $ ->
     (new Onq.Scene.NightClub)
@@ -280,6 +297,7 @@ Onq ?=  {}
     (new Onq.Scene.Restaurant)
     (new Onq.Scene.Hall)
     (new Onq.Scene.Patio)
+    (new Onq.Scene.Hotel)
 
     Scenes = $('.scene')
     $('.scene-thumb').click(->

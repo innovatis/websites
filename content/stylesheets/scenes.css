@@ -239,3 +239,14 @@
 #patio .tables-3 { background: url(/scenes/patio/Tables-3.png) no-repeat; }
 #patio .tables-4 { background: url(/scenes/patio/Tables-4.png) no-repeat; }
 #patio .tables-5 { background: url(/scenes/patio/Tables-5.png) no-repeat; }
+
+#hotel .bellboy         { background: url(/scenes/hotel/Bellboy.png)          }
+#hotel .busboy          { background: url(/scenes/hotel/Busboy.png)           }
+#hotel .concierge       { background: url(/scenes/hotel/Concierge.png)        }
+#hotel .girl            { background: url(/scenes/hotel/Girl.png)             }
+#hotel .front_desk      { background: url(/scenes/hotel/Hotel_Front_Desk.png) }
+#hotel .little_boy      { background: url(/scenes/hotel/Little_Boy.png)       }
+#hotel .red_shirt_guy   { background: url(/scenes/hotel/Red_Shirt_Guy.png)    }
+#hotel .suitcases       { background: url(/scenes/hotel/Suitcases.png)        }
+#hotel .white_shirt_guy { background: url(/scenes/hotel/White_Shirt_Guy.png)  }
+#hotel .woman           { background: url(/scenes/hotel/Woman.png)            }
