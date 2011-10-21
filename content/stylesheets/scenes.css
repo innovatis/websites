@@ -1,5 +1,5 @@
 #scenes{
-  background: black;
+  background: #000 url(/scenes/default.png)              no-repeat;
   -webkit-box-shadow: 0px 0px 5px black;
   -moz-box-shadow:    0px 0px 5px black;
   -o-box-shadow:      0px 0px 5px black;
