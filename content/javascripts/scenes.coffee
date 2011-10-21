@@ -191,7 +191,31 @@ Onq ?=  {}
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
 
   class Onq.Scene.Hall extends Onq.Scene
-    constructor: -> super "#hallway"
+    constructor: ->
+      super "#hallway"
+      @discoBall = $ '.disco-ball'
+      @lazers =[$('.light-beam-blue-1')
+                $('.light-beam-blue-2')
+                $('.light-beam-blue-3')
+                $('.light-beam-blue-4')
+                $('.light-beam-green-1')
+                $('.light-beam-green-2')
+                $('.light-beam-green-3')
+                $('.light-beam-green-4')
+                $('.light-beam-purple-1')
+                $('.light-beam-purple-2')
+                $('.light-beam-purple-3')
+                $('.light-beam-purple-4')
+                $('.light-beam-red-1')
+                $('.light-beam-red-2')
+                $('.light-beam-red-3')
+                $('.light-beam-red-4')
+                $('.light-beam-white-1')
+                $('.light-beam-white-2')]
+
+      @discoShines = [ $('.disco-ball-shine-1')
+                       $('.disco-ball-shine-2')
+                       $('.disco-ball-shine-3')]
 
     start: ->
       super
@@ -243,12 +267,59 @@ Onq ?=  {}
         after('@appear.darkness', 'appear', '.disco-ball').
         after('@appear.darkness', 'appear', '.disco-ball-shine-1').
         after('@appear.darkness', 'appear', '.disco-ball-shine-2').
-        after('@appear.darkness', 'appear', '.disco-ball-shine-3')
-        #after('@appear.light-beam-white', 'loadInBeams').
+        after('@appear.darkness', 'appear', '.disco-ball-shine-3').
         #after('@loadInBeams', 'cycleBeams').
-        #after('@appear.disco-ball', 'cycleDiscoBallSHine')
+        #after('@appear.light-beam-white', 'loadInBeams').
+        after('@appear.disco-ball', 'cycleDiscoBallShine').
+        after('@appear.disco-ball', 'cycleLazers')
 
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
+
+    cycleLazers: ->
+      index = 0
+      scene  = this
+      (->
+        return if scene.stopped
+        parent = arguments.callee
+        lazer = scene.lazers[10]
+
+        lazer.op(0,1000, -> lazer.op(1,2000, ->  setTimeout(parent,50)))
+      )()
+
+      (->
+        return if scene.stopped
+        parent = arguments.callee
+        lazer = scene.lazers[7]
+
+        lazer.op(0,1000, -> lazer.op(1,2000, ->  setTimeout(parent,50)))
+      )()
+      (->
+        return if scene.stopped
+        parent = arguments.callee
+        lazer = scene.lazers[6]
+
+        lazer.op(1,1000, -> lazer.op(0,2000, ->  setTimeout(parent,50)))
+      )()
+
+    cycleDiscoBallShine: ->
+      index = 0
+      scene  = this
+
+      (->
+        return if scene.stopped
+        shine = scene.discoShines[0]
+        parent = arguments.callee
+
+        shine.op(1,1000, -> shine.op(0,2000, ->  setTimeout(parent,50)))
+      )()
+
+      (->
+        return if scene.stopped
+        shine = scene.discoShines[1]
+        parent = arguments.callee
+
+        shine.op(0,2000, -> shine.op(1,3000, ->  setTimeout(parent,50)))
+      )()
 
   class Onq.Scene.Patio extends Onq.Scene
     constructor: -> super "#patio"
