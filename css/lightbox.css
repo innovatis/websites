@@ -1,6 +1,4 @@
-#lightbox {  
-
-}  
+#lightbox {}  
 
 #lightbox-panel {  
   display:none;  
@@ -14,6 +12,9 @@
   border:2px solid #CCCCCC;  
   z-index:1001;
   background: url(../images/lightbox.png);
+  -moz-box-shadow:    2px 2px 4px #333;
+  -webkit-box-shadow: 2px 2px 4px #333;
+  box-shadow:         2px 2px 4px #333;  
 }
 
 #lightbox-panel p{
