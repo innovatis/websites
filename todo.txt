@@ -1,0 +1,115 @@
+Administrative
+==============
+
+[ ] email links
+[ ] email reminder with what we need from then
+[ ] confirm friday
+
+Header
+======
+
+Professional Entertainment Solutions.
+* canadian audio providing
+* <fill in from glens paper> local install
+
+
+Products
+========
+
+[ ] Back to top button
+
+Resteraunts
+===========
+
+[ ] Persistant menu?
+[ ] back to top menu
+[ ] new info + pictures from client
+[ ] picture popups/gallery
+
+Footer
+=====
+
+[ ] remove social media
+[ ] music/sound distribution
+
+Scene
+======
+
+  [ ] progress bar
+
+  Sports Bar
+  ----------
+
+  [ ] tv
+  [ ] audio rack
+  [ ] volume
+  [ ] speakers
+  [ ] sound dog
+  [ ] lights
+
+  Dance Club
+  ----------
+
+  [ ] DJ
+  [ ] Laptop
+  [ ] chasing lights
+  [ ] flush lights
+  [ ] popups
+
+  Hall
+  ----
+
+  [ ] big lights colors?
+  [ ] better cycling
+  [ ] disco shines dont persist
+  [ ] popups
+
+  Patio
+  -----
+
+  [ ] no cables
+  [ ] volume ?
+  [ ] popups
+
+  Hotel
+  -----
+
+  [ ] speakers
+  [ ] volume
+
+  Popups:
+  -------
+    * TV
+      - Plasmas
+      - LCD
+      - Projectors
+
+    * Speakers
+      - Tovolt
+      - Active
+      - Passive
+
+    * Lighting
+      - LCD
+      - wall washers
+      - moving heads
+      - D.S. Effects
+
+    * Volume
+      - Digital
+      - Analog
+
+    * Sound
+      - dog
+
+    * Audio
+      - Processors
+      - mixers
+
+    * Music Supply
+      - Pro DJ Systems
+      - background
+      - music and demand
+
+
+
