@@ -1,7 +1,7 @@
 SERVER     = "og"
 BRANCH     = "jack"
 ROOT       = "/srv/http/inno"
-PATH       = "#{ROOT}/jacktheapp.innovatisinc.ca/htdocs"
+PATH       = "#{ROOT}/jacktheapp.ca/htdocs"
 REPO_ROOT  = "http://github.com/innovatis"
 REPO       = "websites"
 TMP        = "#{BRANCH}_tmp"
