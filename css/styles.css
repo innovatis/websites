@@ -462,6 +462,10 @@ strong {
 
 #footer #logo {
   width: 159px;
-  margin: 15px auto;
+  margin: 8px auto;
   text-align: center;
+}
+
+#footer #logo img {
+  margin: 0px auto 8px auto;
 }
