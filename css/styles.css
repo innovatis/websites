@@ -163,7 +163,7 @@ strong {
 
 #header h1 {
   position: relative;
-  z-index: 10000;
+  z-index: 10;
 }
 
 #menu {
@@ -221,7 +221,7 @@ strong {
   height:359px;
   width:518px;
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   clear: none;
   top: 0;
   right: 0;
@@ -304,4 +304,49 @@ strong {
 #footer #contact-bar a:hover {
   color: #f2cfcf;
   text-decoration: underline;
+}
+
+#lightbox {  
+  display:none;  
+  background:#000000;  
+  opacity:0.9;  
+  filter:alpha(opacity=90);  
+  position:absolute;  
+  top:0px;  
+  left:0px;  
+  min-width:100%;  
+  min-height:100%;  
+  z-index:1000;  
+}  
+
+#lightbox-panel {  
+  display:none;  
+  position:fixed;  
+  top:100px;  
+  left:50%;  
+  margin-left:-200px;  
+  width:400px;  
+  background:#FFFFFF;  
+  padding:10px 15px 10px 15px;  
+  border:2px solid #CCCCCC;  
+  z-index:1001;  
+}
+
+#lightbox-panel p{
+  margin:15px 0;
+  width:400px;
+  line-height:1.125em;
+}
+
+#lightbox-panel h2{
+  line-height:1.65em;
+}
+
+#lightbox-panel a {
+  text-decoration:none;
+  color:rgb(107,40,2);
+}
+
+#lightbox-panel a:hover {
+  border-bottom:1px dotted;
 }
