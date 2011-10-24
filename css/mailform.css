@@ -74,7 +74,6 @@
 }
 
 .button, .button:visited, .input-button {
-  float:left;
   text-align:center;
   white-space:nowrap;
   font-size:1.4em;
@@ -100,15 +99,15 @@
 }
 
 .button, .button:visited  {
-  padding:8px 18px;
+  padding:8px 25px;
 }
   
 a.input-button {
-  padding:8px 18px;
+  padding:8px 25px;
 }
 
 input.input-button {
-  padding:8px 18px;
+  padding:8px 25px;
   margin:0;
 }
 
@@ -127,15 +126,15 @@ input.input-button {
   -webkit-box-shadow: inset 0 0 6px #888;
   box-shadow: inner 0 0 6px #888;
   outline: none;
-  padding: 9px 18px 7px 18px;
+  padding: 9px 25px 7px 25px;
 }
 
 .button:active  {
-  padding: 9px 18px 7px 18px;
+  padding: 9px 25px 7px 25px;
 }
   
 a.input-button:active {
-  padding: 9px 18px 7px 18px;
+  padding: 9px 25px 7px 25px;
 }
 
 .button-disabled, .button-disabled:visited {
@@ -146,7 +145,7 @@ a.input-button:active {
   font-size:.8em;
   font-family:"gill sans", "arial", san-serif;
   border:1px solid rgb(209,209,209);
-  padding:8px 18px;
+  padding:8px 25px;
   text-decoration:none;
   webkit-border-radius: 3px;
   moz-border-radius: 3px;
