@@ -256,6 +256,20 @@ strong {
   color: #5b84c7;
 }
 
+.get-to-know-jack img{
+  width: 90px;
+  opacity: .8;
+  -webkit-transition: opacity .3s linear;
+  -moz-transition:    opacity .3s linear;
+  -o-transition:      opacity .3s linear;
+  -ms-transition:     opacity .3s linear;
+  transition:         opacity .3s linear;  
+}
+
+.get-to-know-jack img:hover{
+  opacity: 1;
+}
+
 .call-to-action-container {
   width: 436px;
   margin: 0 auto; 
