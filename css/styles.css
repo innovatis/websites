@@ -417,6 +417,9 @@ strong {
 #footer p {
   padding: 0;
   text-align: justify;
+  width: 236px;
+  float: right;
+  font-size: 1.1em;
 }
 
 #footer li.address, #footer li.phone, #footer li.email, #footer .address-extra-line {
