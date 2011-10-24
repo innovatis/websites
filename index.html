@@ -5,6 +5,7 @@
 		<title>Apple Cider Mulling Spices</title> 
 	  <meta name="keywords" content="Winnipeg, Christmas, cider, apple cider, Winnipeg apple cider, apple cider mullings, family recipe, teacher gifts, stocking stuffers, family traditions">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mailform.css">    
     <!--[if IE 7]>
       <link href='css/ie7.css'       media='screen' rel='stylesheet' type='text/css' />
     <![endif]-->
@@ -58,13 +59,57 @@
       </div>  
     </div>
     <div id="lightbox-panel">    
-    <p align="center">
-      <a id="close-panel" class="right" href="#">Close</a>  
-      <h3>LIGHTBOX</h3>
-    </p>  
-    </div><!-- /lightbox-panel -->  
-    <div id="lightbox"> </div><!-- /lightbox -->
+      <p align="center">
+        <a id="close-panel" class="right" href="#">Close</a>  
+      </p>
+      <div id="mailform-container">
+        <div id="mailform-complete" style="display:none;">
+          <h2>Thank you, your message has been successfully sent</h2>
+        </div>
+	       <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" data-mailform-error="error-messages" method="get"  novalidate='true'> 
+          <div id="message-wrapper">
+            <div class="hidden mailform-loading">
+            </div>
+            <div class="hidden mailform-error"> 
+              default error
+            </div>
+            <div class="hidden mailform-success"> 
+              default success
+            </div> 
+          </div>
+          <div class="inputs"> 
+            <div class="input">
+              <label for="name">Name*</label> 
+              <input name="name" required='true' class="required-field"/>
+              <span class="message-error">What is your name?</span>
+            </div>
+            <div class="input">
+              <label for="e-mail">E-mail*</label> 
+              <input name="email" required='true' class="required-field"/>
+              <span class="message-error">What is your e-mail address?</span>
+              <span class="message-invalid">Please enter a valid email address</span>
+            </div>
+            <div class="input">
+              <label for="phone">Phone</label> 
+              <input name="phone"/>
+              <span class="message-invalid">Please enter a valid phone number</span>
+            </div>
+            <div class="input">
+              <label for="message">Order, Questions or Comments</label> 
+              <textarea name="comments"></textarea>
+            </div>
+          </div> 
+          <div class="actions"> 
+            <input class="input-button" type="submit" value="submit"></input>
+            <small>All fields marked with an * must be completed</small>
+          </div> 
+        </form>
+	    </div>
+    </div>
+    <div id="lightbox"> </div>
     <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
+	 	<script src="js/mailform.js"></script>
     <script src="js/lightbox.js"></script>
 	</body>
 </html>
