@@ -17,7 +17,7 @@ Products
 
 [ ] Back to top button
 
-Resteraunts
+Restaurants
 ===========
 
 [ ] Persistant menu?
@@ -28,7 +28,7 @@ Resteraunts
 Footer
 =====
 
-[ ] remove social media
+[*] remove social media
 [ ] add music/sound distribution to services (we will get the correct
 name tomorrow)
 
@@ -37,15 +37,11 @@ Scene
 
   [ ] progress bar
 
-  Sports Bar Mouseovers
+  Sports Bar
   ----------
 
-  [ ] tv
-  [ ] audio rack
-  [ ] volume
-  [ ] speakers
-  [ ] sound dog
-  [ ] lights
+  [*] mouse over of any relevant products
+  [ ] popups
 
   Dance Club
   ----------
@@ -55,7 +51,7 @@ Scene
   [ ] chasing lights
   [ ] flush lights
 
-  [ ] mouse over of any relevant products
+  [*] mouse over of any relevant products
   [ ] popups
 
   Hall
@@ -65,16 +61,16 @@ Scene
   [ ] better cycling
   [ ] disco shines shouldn't persist
 
-  [ ] mouse over of any relevant products
+  [*] mouse over of any relevant products
   [ ] popups
 
   Patio Mouseovers
   -----
 
-  [ ] remove cables
+  [*] remove cables
   [ ] volume ?
 
-  [ ] mouse over of any relevant products
+  [*] mouse over of any relevant products
   [ ] popups
 
   Hotel
@@ -83,7 +79,7 @@ Scene
   [ ] speakers
   [ ] volume (add this volume control from the sportsbar
 
-  Resteraunt
+  Restaurant
   ----------
 
   [ ] volume
