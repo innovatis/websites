@@ -188,6 +188,31 @@
 #night-club .right-light-beam-purple { background: url(/scenes/night_club/Right-Light-Beam-Purple.png) no-repeat; }
 #night-club .right-light-beam-red    { background: url(/scenes/night_club/Right-Light-Beam-Red.png)    no-repeat; }
 
+#night-club .mixers-yellow-glow       { background: url(/scenes/night_club/Mixers-Glow-Yellow.png)    no-repeat; }
+#night-club .monitors-yellow-glow     { background: url(/scenes/night_club/Monitors-Glow-Yellow.png)    no-repeat; }
+#night-club .tv-screens-yellow-glow   { background: url(/scenes/night_club/TV-Screen-Glow-Yellow.png)    no-repeat; }
+
+#night-club .mixers-glow {
+  top: 281px;
+  left: 137px;
+  height: 106px;
+  width: 229px;
+}
+
+#night-club .monitors-glow {
+  top: 170px;
+  left: 27px;
+  height: 60px;
+  width: 75px;
+}
+
+#night-club .tv-screens-glow {
+  top: 95px;
+  left: 305px;
+  height: 170px;
+  width: 155px;
+}
+
 #restaurant .background { background: url(/scenes/restaurant/BG.png)       no-repeat; }
 #restaurant .tv         { background: url(/scenes/restaurant/TV.png      ) no-repeat; }
 #restaurant .speakers   { background: url(/scenes/restaurant/Speakers.png) no-repeat; }
