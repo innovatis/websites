@@ -372,6 +372,11 @@ Onq ?=  {}
     Scenes = $('.scene')
     $('.scene-thumb').click(->
       thumb        = $(this)
+      allThumbs    = $('#scene-nav .scene-thumb')
+
+      allThumbs.removeClass('current')
+      thumb.addClass('current')
+
       SceneSelector = thumb.data('Scene')
       setTimeout( ->
         $('#scenes').css('background-image':'none')

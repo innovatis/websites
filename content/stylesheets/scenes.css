@@ -18,6 +18,15 @@
   width: 130px;
   height: 400px;
   margin: 0;
+
+}
+
+#scene-nav .scene-thumb {
+  opacity: 0.7;
+}
+
+#scene-nav .scene-thumb:hover, #scene-nav .scene-thumb.current {
+  opacity: 1;
 }
 
 #scene-nav .scene-thumbs .scene-thumb{
