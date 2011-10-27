@@ -7,11 +7,10 @@ Administrative
 
 Header
 ======
-
-Professional Entertainment Solutions.
-* canadian audio providing
-* <fill in from glens paper> local install
-
+[ ] New Header and sub header information
+  %h1 Professional Entertainment Solutions.
+  * Something about providing audio to canadian... <fill in from glens paper>
+  * something about doing local A/V installations  <fill in from glens paper>
 
 Products
 ========
@@ -30,14 +29,15 @@ Footer
 =====
 
 [ ] remove social media
-[ ] music/sound distribution
+[ ] add music/sound distribution to services (we will get the correct
+name tomorrow)
 
 Scene
 ======
 
   [ ] progress bar
 
-  Sports Bar
+  Sports Bar Mouseovers
   ----------
 
   [ ] tv
@@ -50,10 +50,12 @@ Scene
   Dance Club
   ----------
 
-  [ ] DJ
-  [ ] Laptop
+  [ ] DJ Missing
+  [ ] add Laptop  (same as from hall)
   [ ] chasing lights
   [ ] flush lights
+
+  [ ] mouse over of any relevant products
   [ ] popups
 
   Hall
@@ -61,24 +63,38 @@ Scene
 
   [ ] big lights colors?
   [ ] better cycling
-  [ ] disco shines dont persist
+  [ ] disco shines shouldn't persist
+
+  [ ] mouse over of any relevant products
   [ ] popups
 
-  Patio
+  Patio Mouseovers
   -----
 
-  [ ] no cables
+  [ ] remove cables
   [ ] volume ?
+
+  [ ] mouse over of any relevant products
   [ ] popups
 
   Hotel
   -----
 
   [ ] speakers
-  [ ] volume
+  [ ] volume (add this volume control from the sportsbar
 
   Popups:
   -------
+
+    Each * when clicked opens a popup with * as the title, and the list
+    bellow as content, it could be the case that a paragraph exists.
+
+    Each of the popups will work for any * clicked on any scene.
+
+    Each of these popups also needs a button "more info >> " that when clicked,
+    takes the user to the services page, and scrolls them down to the
+    correct section.
+
     * TV
       - Plasmas
       - LCD
@@ -110,6 +126,3 @@ Scene
       - Pro DJ Systems
       - background
       - music and demand
-
-
-

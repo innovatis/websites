@@ -64,10 +64,11 @@
 #sports-bar .lights{                          background: url(/scenes/sports_bar/Lights.png) }
 #sports-bar .people-background-with-theatre{  background: url(/scenes/sports_bar/People-Background-with-Theatre.png) }
 #sports-bar .people-balcony{                  background: url(/scenes/sports_bar/People-Balcony.png)                 }
-#sports-bar .waitress-middle-of-scene{         background: url(/scenes/sports_bar/Waitress-Middle-of-scene.png)}
+#sports-bar .waitress-middle-of-scene{        background: url(/scenes/sports_bar/Waitress-Middle-of-scene.png)}
 #sports-bar .people-forground{                background: url(/scenes/sports_bar/People-Foreground.png)}
+#sports-bar .center-tv-screen-yellow-glow{    background: url(/scenes/sports_bar/TV-Screen-Yellow-Glow.png)}
+#sports-bar .right-tv-screen-yellow-glow{    background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
-#sports-bar .tv-screen-yellow-glow{          background: url(/scenes/sports_bar/TV-Screen-Yellow-Glow.png)}
 #night-club {
 
 }
