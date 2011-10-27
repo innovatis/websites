@@ -70,7 +70,7 @@
 #sports-bar .right-tv-screen-yellow-glow{     background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
 
-#sports-bar .bounding{
+.bounding{
   background: none;
   position: absolute;
 }

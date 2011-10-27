@@ -50,7 +50,7 @@ Scene
   Dance Club
   ----------
 
-  [ ] DJ Missing
+  [*] DJ Missing
   [ ] add Laptop  (same as from hall)
   [ ] chasing lights
   [ ] flush lights
@@ -82,6 +82,11 @@ Scene
 
   [ ] speakers
   [ ] volume (add this volume control from the sportsbar
+
+  Resteraunt
+  ----------
+
+  [ ] volume
 
   Popups:
   -------
