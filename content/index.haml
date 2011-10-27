@@ -190,6 +190,22 @@ crums:
     .entity.transparent.suitcase
     .entity.transparent.white_shirt_guy
     .entity.transparent.woman
+  #tv-popup.exo-popup{ 'data-popup-top' => '20'}
+    .exo-popup-header
+    .exo-popup-body
+      %h1 TV
+      %ul
+        %li Plasmas
+        %li LCD
+        %li Projectors
+    .exo-popup-footer
+  :css
+    .exo-popup{
+      display: none;
+      background: blue;
+      width: 100px;
+      position: absolute;
+    }
 #featured-products-showcase
   .column-30
     %h2 Featured Product
