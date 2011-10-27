@@ -281,6 +281,8 @@
 #hallway .light-2-glow        { background: url(/scenes/hallway/Light-2-Glow.png) no-repeat; }
 #hallway .light-2             { background: url(/scenes/hallway/Light-2.png) no-repeat; }
 
+#hallway .lights-glow-yellow { background: url(/scenes/hallway/Light-both-Glow-Yellow.png) no-repeat; }
+
 #hallway .light-beam-blue-1 { background: url(/scenes/hallway/Light-Beam-Blue-1.png) no-repeat; }
 #hallway .light-beam-blue-2 { background: url(/scenes/hallway/Light-Beam-Blue-2.png) no-repeat; }
 #hallway .light-beam-blue-3 { background: url(/scenes/hallway/Light-Beam-Blue-3.png) no-repeat; }
@@ -318,9 +320,48 @@
 
 #hallway .silhouette{ background: url(/scenes/hallway/Silhouette.png) no-repeat; }
 
-#hallway .speakers-glow-white  { background: url(/scenes/hallway/Speakers-Glow-White.png)  no-repeat; }
-#hallway .speakers-glow-yellow { background: url(/scenes/hallway/Speakers-Glow-Yellow.png) no-repeat; }
-#hallway .speakers             { background: url(/scenes/hallway/Speakers.png)             no-repeat; }
+#hallway .speakers-glow-white       { background: url(/scenes/hallway/Speakers-Glow-White.png)  no-repeat; }
+#hallway .speakers-glow-yellow      { background: url(/scenes/hallway/Speakers-Glow-Yellow.png) no-repeat; }
+/*#hallway .back-speakers-glow-yellow { background: url(/scenes/hallway/Back-Speakers-Glow-Yellow.png) no-repeat; }*/
+#hallway .speakers                  { background: url(/scenes/hallway/Speakers.png)             no-repeat; }
+
+#hallway .speakers-glow {
+  top: 125px;
+  left: 305px;
+  height: 140px;
+  width: 375px;
+}
+#hallway .mixer-1-glow {
+  top: 269px;
+  left: 115px;
+  height: 40px;
+  width: 95px;
+}
+#hallway .mixer-2-glow {
+  top: 165px;
+  left: 125px;
+  height: 50px;
+  width: 125px;
+}
+#hallway .lights-glow {
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 680px;
+}
+#hallway .laptop-glow {
+  top: 210px;
+  left: 160px;
+  height: 60px;
+  width: 80px
+}
+/*#hallway .back-speakers-glow {
+background: aqua;
+  top: 125px;
+  left: 305px;
+  height: 140px;
+  width: 375px;
+}*/
 
 #patio .background { background: url(/scenes/patio/Background.png) no-repeat; }
 #patio .black      { background: url(/scenes/patio/Black.png     ) no-repeat; }
