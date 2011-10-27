@@ -227,6 +227,22 @@
 #restaurant .tables-1   { background: url(/scenes/restaurant/Tables-1.png) no-repeat; }
 #restaurant .people-1   { background: url(/scenes/restaurant/People-1.png) no-repeat; }
 
+#restaurant .speakers-yellow-glow   { background: url(/scenes/restaurant/Speakers-Glow-Yellow.png) no-repeat; }
+#restaurant .tv-yellow-glow         { background: url(/scenes/restaurant/TV-Glow-Yellow.png) no-repeat; }
+
+#restaurant .speakers-glow {
+  top: 35px;
+  left: 35px;
+  height: 90px;
+  width: 445px;
+}
+#restaurant .tv-glow {
+  top: 115px;
+  left: 465px;
+  height: 80px;
+  width: 105px;
+}
+
 #hallway .speakers-glow-white  { background: url(/scenes/hallway/Back-Speakers-Glow-White.png ) no-repeat; }
 #hallway .speakers-glow-yellow { background: url(/scenes/hallway/Back-Speakers-Glow-Yellow.png) no-repeat; }
 #hallway .speakers             { background: url(/scenes/hallway/Back-Speakers.png            ) no-repeat; }
