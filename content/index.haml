@@ -96,10 +96,13 @@ crums:
     
     .entity.transparent.mixers-yellow-glow            
     .entity.transparent.monitors-yellow-glow                            
-    .entity.transparent.tv-screens-yellow-glow                                
+    .entity.transparent.tv-screens-yellow-glow
+    .entity.laptop-white-glow                                    
+    .entity.transparent.laptop-yellow-glow                                        
     .bounding.mixers-glow{'data-layer'  => '.mixers-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#music-supply-popup'}
     .bounding.monitors-glow{'data-layer'  => '.monitors-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
     .bounding.tv-screens-glow{'data-layer'  => '.tv-screens-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
+    .bounding.laptop-glow{'data-layer'  => '.laptop-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#music-supply-popup'}    
 
   #restaurant.scene.hidden
     .entity.background
@@ -115,10 +118,13 @@ crums:
     .entity.transparent.people-1
     .entity.transparent.tables-1
     .entity.transparent.speakers
-    .entity.transparent.speakers-yellow-glow                                    
-    .entity.transparent.tv-yellow-glow                                        
+    .entity.transparent.speakers-yellow-glow
+    .entity.transparent.tv-yellow-glow
+    .entity.volume-white-glow
+    .entity.transparent.volume-yellow-glow
     .bounding.speakers-glow{'data-layer'  => '.speakers-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#speaker-popup'}
     .bounding.tv-glow{'data-layer'  => '.tv-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
+    .bounding.volume-glow{'data-layer'  => '.volume-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#volume-popup'}    
     
   #hallway.scene.hidden
     .entity.background3
@@ -208,7 +214,10 @@ crums:
     .entity.transparent.speaker-glow-yellow-5.hidden
     .entity.transparent.speakers-glow-White-all.hidden
     .entity.transparent.speakers-glow-Yellow-all
-    .bounding.speakers-glow-all{'data-layer'  => '.speakers-glow-Yellow-all', 'data-popup-trigger' => true,  'data-href' => '#speaker-popup'}                                                                        
+    .entity.volume-glow-white
+    .entity.transparent.volume-glow-yellow
+    .bounding.speakers-glow-all{'data-layer'  => '.speakers-glow-Yellow-all', 'data-popup-trigger' => true,  'data-href' => '#speaker-popup'}
+    .bounding.volume-glow{'data-layer'  => '.volume-glow-yellow', 'data-popup-trigger' => true,  'data-href' => '#volume-popup'}    
 
   #hotel.scene.hidden
     .entity.front_desk
@@ -221,6 +230,12 @@ crums:
     .entity.transparent.suitcase
     .entity.transparent.white_shirt_guy
     .entity.transparent.woman
+    .entity.speakers-glow-white
+    .entity.transparent.speakers-glow-yellow 
+    .entity.volume-glow-white
+    .entity.transparent.volume-glow-yellow         
+    .bounding.speakers-glow{'data-layer'  => '.speakers-glow-yellow', 'data-popup-trigger' => true,  'data-href' => '#speaker-popup'}                                                                            
+    .bounding.volume-glow{'data-layer'  => '.volume-glow-yellow', 'data-popup-trigger' => true,  'data-href' => '#volume-popup'}                                                                            
   #tv-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body

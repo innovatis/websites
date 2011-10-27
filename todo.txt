@@ -47,7 +47,7 @@ Scene
   ----------
 
   [*] DJ Missing
-  [+] add Laptop  (same as from hall)
+  [*] add Laptop  (same as from hall)
   [ ] chasing lights
   [ ] flush lights
 
@@ -68,7 +68,7 @@ Scene
   -----
 
   [*] remove cables
-  [ ] volume ?
+  [*] volume ?
 
   [*] mouse over of any relevant products
   [*] popups
@@ -76,13 +76,13 @@ Scene
   Hotel
   -----
 
-  [+] speakers
-  [+] volume (add this volume control from the sportsbar
+  [*] speakers
+  [*] volume (add this volume control from the sportsbar
 
   Restaurant
   ----------
 
-  [+] volume
+  [*] volume
 
   Popups:
   -------

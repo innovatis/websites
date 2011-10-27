@@ -201,6 +201,9 @@
 #night-club .monitors-yellow-glow     { background: url(/scenes/night_club/Monitors-Glow-Yellow.png)    no-repeat; }
 #night-club .tv-screens-yellow-glow   { background: url(/scenes/night_club/TV-Screen-Glow-Yellow.png)    no-repeat; }
 
+#night-club .laptop-white-glow   { background: url(/scenes/night_club/laptop-glow-white.png)    no-repeat; }
+#night-club .laptop-yellow-glow   { background: url(/scenes/night_club/laptop-glow-yellow.png)    no-repeat; }
+
 #night-club .mixers-glow {
   top: 281px;
   left: 137px;
@@ -215,11 +218,11 @@
   width: 95px;
 }
 
-#night-club .tv-screens-glow {
-  top: 95px;
-  left: 305px;
-  height: 170px;
-  width: 155px;
+#night-club .laptop-glow {
+  top: 265px;
+  left: 205px;
+  height: 72px;
+  width: 85px;
 }
 
 #restaurant .background { background: url(/scenes/restaurant/BG.png)       no-repeat; }
@@ -238,6 +241,8 @@
 
 #restaurant .speakers-yellow-glow   { background: url(/scenes/restaurant/Speakers-Glow-Yellow.png) no-repeat; }
 #restaurant .tv-yellow-glow         { background: url(/scenes/restaurant/TV-Glow-Yellow.png) no-repeat; }
+#restaurant .volume-white-glow      { background: url(/scenes/restaurant/volume-white-glow.png) no-repeat; }
+#restaurant .volume-yellow-glow     { background: url(/scenes/restaurant/volume-yellow-glow.png) no-repeat; }
 
 #restaurant .speakers-glow {
   top: 35px;
@@ -250,6 +255,12 @@
   left: 465px;
   height: 80px;
   width: 105px;
+}
+#restaurant .volume-glow {
+  top: 145px;
+  left: 115px;
+  height: 50px;
+  width: 55px;
 }
 
 #hallway .speakers-glow-white  { background: url(/scenes/hallway/Back-Speakers-Glow-White.png ) no-repeat; }
@@ -402,20 +413,46 @@ background: aqua;
 #patio .tables-4 { background: url(/scenes/patio/Tables-4.png) no-repeat; }
 #patio .tables-5 { background: url(/scenes/patio/Tables-5.png) no-repeat; }
 
+#patio .volume-glow-white { background: url(/scenes/patio/volume-white-glow.png) no-repeat; }
+#patio .volume-glow-yellow { background: url(/scenes/patio/volume-yellow-glow.png) no-repeat; }
+
 #patio .speakers-glow-all {
   top: 0px;
   left: 40px;
   height: 120px;
   width: 640px;
 }
+#patio .volume-glow {
+  top: 151px;
+  left: 60px;
+  height: 60px;
+  width: 60px;
+}
 
-#hotel .bellboy         { background: url(/scenes/hotel/Bellboy.png)          }
-#hotel .busboy          { background: url(/scenes/hotel/Busboy.png)           }
-#hotel .concierge       { background: url(/scenes/hotel/Concierge.png)        }
-#hotel .girl            { background: url(/scenes/hotel/Girl.png)             }
-#hotel .front_desk      { background: url(/scenes/hotel/Hotel_Front_Desk.png) }
-#hotel .little_boy      { background: url(/scenes/hotel/Little_Boy.png)       }
-#hotel .red_shirt_guy   { background: url(/scenes/hotel/Red_Shirt_Guy.png)    }
-#hotel .suitcases       { background: url(/scenes/hotel/Suitcases.png)        }
-#hotel .white_shirt_guy { background: url(/scenes/hotel/White_Shirt_Guy.png)  }
-#hotel .woman           { background: url(/scenes/hotel/Woman.png)            }
+#hotel .bellboy               { background: url(/scenes/hotel/Bellboy.png)                  }
+#hotel .busboy                { background: url(/scenes/hotel/Busboy.png)                   }
+#hotel .concierge             { background: url(/scenes/hotel/Concierge.png)                }
+#hotel .girl                  { background: url(/scenes/hotel/Girl.png)                     }
+#hotel .front_desk            { background: url(/scenes/hotel/Hotel_Front_Desk.png)         }
+#hotel .little_boy            { background: url(/scenes/hotel/Little_Boy.png)               }
+#hotel .red_shirt_guy         { background: url(/scenes/hotel/Red_Shirt_Guy.png)            }
+#hotel .suitcases             { background: url(/scenes/hotel/Suitcases.png)                }
+#hotel .white_shirt_guy       { background: url(/scenes/hotel/White_Shirt_Guy.png)          }
+#hotel .woman                 { background: url(/scenes/hotel/Woman.png)                    }
+#hotel .speakers-glow-white   { background: url(/scenes/hotel/speakers-glow-white-both.png) }
+#hotel .speakers-glow-yellow  { background: url(/scenes/hotel/speakers-glow-yellow-both.png) }
+#hotel .volume-glow-white     { background: url(/scenes/hotel/volume-white-glow.png) }
+#hotel .volume-glow-yellow    { background: url(/scenes/hotel/volume-yellow-glow.png) }
+
+#hotel .speakers-glow {
+  top: 42px;
+  left: 0;
+  height: 60px;
+  width: 680px;
+}
+#hotel .volume-glow {
+  top: 182px;
+  left: 451px;
+  height: 50px;
+  width: 50px;
+}
