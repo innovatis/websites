@@ -221,69 +221,76 @@ crums:
     .entity.transparent.suitcase
     .entity.transparent.white_shirt_guy
     .entity.transparent.woman
-  #tv-popup.exo-popup{ 'data-popup-top' => '20'}
+  #tv-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#video", :target => "_blank"}
-        %h1 TV
+      %a{:class => "close-button"}x      
+      %h1 TV
       %ul
         %li Plasmas
         %li LCD
         %li Projectors
+      %a{:href => "products.html#video", :target => "_blank"} Learn more
     .exo-popup-footer
-  #speaker-popup.exo-popup{ 'data-popup-top' => '20'}
+  #speaker-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#audio", :target => "_blank"}
-        %h1 Speakers
+      %a{:class => "close-button"}x
+      %h1 Speakers
       %ul
         %li Tovolt
         %li Active
         %li Passive
+      %a{:href => "products.html#audio", :target => "_blank"} Learn More
     .exo-popup-footer
-  #lighting-popup.exo-popup{ 'data-popup-top' => '20'}
+  #lighting-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#lighting", :target => "_blank"}
-        %h1 Lighting
+      %a{:class => "close-button"}x
+      %h1 Lighting
       %ul
         %li LCD
         %li Wall Washers
         %li Moving Heads
         %li D.S. Effects
+      %a{:href => "products.html#lighting", :target => "_blank"} Learn More        
     .exo-popup-footer
-  #volume-popup.exo-popup{ 'data-popup-top' => '20'}
+  #volume-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#audio", :target => "_blank"}
-        %h1 Volume
+      %a{:class => "close-button"}x
+      %h1 Volume
       %ul
         %li Digital
         %li Analog
-  #soundog-popup.exo-popup{ 'data-popup-top' => '20'}
+      %a{:href => "products.html#audio", :target => "_blank"} Learn More        
+  #soundog-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#soundog", :target => "_blank"}
-        %h1 Sound
+      %a{:class => "close-button"}x
+      %h1 Sound
       %ul
         %li Dog
-  #audio-popup.exo-popup{ 'data-popup-top' => '20'}
+      %a{:href => "products.html#soundog", :target => "_blank"} Learn More
+  #audio-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#audio", :target => "_blank"}
-        %h1 Audio
+      %a{:class => "close-button"}x
+      %h1 Audio
       %ul
         %li Processors
         %li Mixers
-  #music-supply-popup.exo-popup{ 'data-popup-top' => '20'}
+      %a{:href => "products.html#audio", :target => "_blank"} Learn More
+  #music-supply-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body
-      %a{:href => "products.html#music-supply", :target => "_blank"}
-        %h1 Music Supply
+      %a{:class => "close-button"}x
+      %h1 Music Supply
       %ul
         %li Pro DJ Systems
         %li Background
         %li Music and Demand
+      %a{:href => "products.html#music-supply", :target => "_blank"} Learn More        
     .exo-popup-footer        
     .exo-popup-footer        
     .exo-popup-footer        
@@ -305,7 +312,11 @@ crums:
       position: absolute;
     }
     .exo-popup a{
-      color: white;
+      color: #aba8a8;
+      float: right;
+    }
+    .exo-popup a.close-button{
+      color: #888;
     }
     .exo-popup a:hover{
       text-decoration: none;

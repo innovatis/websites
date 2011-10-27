@@ -41,7 +41,7 @@ Scene
   ----------
 
   [*] mouse over of any relevant products
-  [ ] popups
+  [*] popups
 
   Dance Club
   ----------
@@ -52,7 +52,7 @@ Scene
   [ ] flush lights
 
   [*] mouse over of any relevant products
-  [ ] popups
+  [*] popups
 
   Hall
   ----
@@ -62,7 +62,7 @@ Scene
   [ ] disco shines shouldn't persist
 
   [*] mouse over of any relevant products
-  [ ] popups
+  [*] popups
 
   Patio Mouseovers
   -----
@@ -71,7 +71,7 @@ Scene
   [ ] volume ?
 
   [*] mouse over of any relevant products
-  [ ] popups
+  [*] popups
 
   Hotel
   -----
