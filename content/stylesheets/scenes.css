@@ -71,6 +71,8 @@
 #sports-bar .tv-farm-yellow-glow        {       background: url(/scenes/sports_bar/TV-Farm-Yellow-Glow-Both.png)}
 #sports-bar .computer-monitor-yellow-glow{      background: url(/scenes/sports_bar/Computer-Monitor-Yellow-Glow.png)}
 #sports-bar .soundog-bar-yellow-glow{           background: url(/scenes/sports_bar/Soundog-Bar-Yellow-Glow.png)}
+#sports-bar .soundog-table-yellow-glow{         background: url(/scenes/sports_bar/Soundog-Yellow-Glow.png)}
+#sports-bar .speakers-yellow-glow{              background: url(/scenes/sports_bar/Speakers-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
 
 .bounding{
@@ -107,6 +109,19 @@
   left: 158px;
   height: 23px;
   width: 24px;
+}
+#sports-bar .soundog-table {
+  top: 356px;
+  left: 508px;
+  height: 35px;
+  width: 40px;
+}
+#sports-bar .speakers {
+  background: purple;
+  top: 356px;
+  left: 508px;
+  height: 35px;
+  width: 40px;
 }
 
 
