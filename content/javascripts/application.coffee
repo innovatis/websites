@@ -5,9 +5,17 @@ layout:    nil
 ---
 
 $ ->
-  $('#stefan').
-    live('mouseover',-> $('.center-tv-screen-yellow-glow').stop().op(1,300)).
-    live('mouseout', -> $('.center-tv-screen-yellow-glow').stop().op(0,300))
+  $('.bounding').
+    live('mouseover',(e)->
+      bound = $(e.target)
+      layer = $(bound.data('layer'))
+      layer.stop().op(1,300)
+    ).
+    live('mouseout', (e) ->
+      bound = $(e.target)
+      layer = $(bound.data('layer'))
+      layer.stop().op(0,300)
+    )
 
   $.waypoints.settings.scrollThrottle = 30
   $('#nav-container-wrapper').waypoint (event,direction) ->

@@ -67,8 +67,27 @@
 #sports-bar .waitress-middle-of-scene{        background: url(/scenes/sports_bar/Waitress-Middle-of-scene.png)}
 #sports-bar .people-forground{                background: url(/scenes/sports_bar/People-Foreground.png)}
 #sports-bar .center-tv-screen-yellow-glow{    background: url(/scenes/sports_bar/TV-Screen-Yellow-Glow.png)}
-#sports-bar .right-tv-screen-yellow-glow{    background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
+#sports-bar .right-tv-screen-yellow-glow{     background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
+
+#sports-bar .bounding{
+  background: none;
+  position: absolute;
+}
+
+#sports-bar .bounding.center-tv-screen {
+  height: 100px;
+  width:  125px;
+  top: 130px;
+  left: 370px;
+}
+#sports-bar .bounding.right-tv-screen {
+  top: 118px;
+  left: 548px;
+  height: 100px;
+  width: 133px;
+}
+
 #night-club {
 
 }

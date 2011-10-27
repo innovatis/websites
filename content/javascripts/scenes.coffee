@@ -108,10 +108,6 @@ Onq ?=  {}
       super "#sports-bar"
       @ambientLights = @$ '.ambient-lights'
 
-      $('<div id="stefan"></div>').appendTo('#sports-bar')
-      $('#stefan').css({background: 'none', height: 100,width: 100, position: 'absolute'})
-
-      $('#stefan').css({top: 130,left: 370})
     start: ->
       super
       @.after('@backWallFadeIn',           'cycleAmbientLights').
