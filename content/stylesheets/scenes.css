@@ -385,13 +385,20 @@ background: aqua;
 #patio .speaker-glow-yellow-4   { background: url(/scenes/patio/Speaker-Glow-Yellow-4.png    ) no-repeat; }
 #patio .speaker-glow-yellow-5   { background: url(/scenes/patio/Speaker-Glow-Yellow-5.png    ) no-repeat; }
 #patio .speaker-glow-white-all  { background: url(/scenes/patio/Speakers-Glow-White-All.png  ) no-repeat; }
-#patio .speaker-glow-yellow-all { background: url(/scenes/patio/Speakers-Glow-Yellow-All.png ) no-repeat; }
+#patio .speakers-glow-Yellow-all { background: url(/scenes/patio/Speakers-Glow-Yellow-All.png ) no-repeat; }
 
 #patio .tables-1 { background: url(/scenes/patio/Tables-1.png) no-repeat; }
 #patio .tables-2 { background: url(/scenes/patio/Tables-2.png) no-repeat; }
 #patio .tables-3 { background: url(/scenes/patio/Tables-3.png) no-repeat; }
 #patio .tables-4 { background: url(/scenes/patio/Tables-4.png) no-repeat; }
 #patio .tables-5 { background: url(/scenes/patio/Tables-5.png) no-repeat; }
+
+#patio .speakers-glow-all {
+  top: 0px;
+  left: 40px;
+  height: 120px;
+  width: 640px;
+}
 
 #hotel .bellboy         { background: url(/scenes/hotel/Bellboy.png)          }
 #hotel .busboy          { background: url(/scenes/hotel/Busboy.png)           }
