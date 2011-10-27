@@ -224,7 +224,8 @@ crums:
   #tv-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 TV
+      %a{:href => "products.html#video", :target => "_blank"}
+        %h1 TV
       %ul
         %li Plasmas
         %li LCD
@@ -233,7 +234,8 @@ crums:
   #speaker-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Speakers
+      %a{:href => "products.html#audio", :target => "_blank"}
+        %h1 Speakers
       %ul
         %li Tovolt
         %li Active
@@ -242,7 +244,8 @@ crums:
   #lighting-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Lighting
+      %a{:href => "products.html#lighting", :target => "_blank"}
+        %h1 Lighting
       %ul
         %li LCD
         %li Wall Washers
@@ -252,27 +255,31 @@ crums:
   #volume-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Volume
+      %a{:href => "products.html#audio", :target => "_blank"}
+        %h1 Volume
       %ul
         %li Digital
         %li Analog
   #soundog-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Sound
+      %a{:href => "products.html#soundog", :target => "_blank"}
+        %h1 Sound
       %ul
         %li Dog
   #audio-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Audio
+      %a{:href => "products.html#audio", :target => "_blank"}
+        %h1 Audio
       %ul
         %li Processors
         %li Mixers
   #music-supply-popup.exo-popup{ 'data-popup-top' => '20'}
     .exo-popup-header
     .exo-popup-body
-      %h1 Music Supply
+      %a{:href => "products.html#music-supply", :target => "_blank"}
+        %h1 Music Supply
       %ul
         %li Pro DJ Systems
         %li Background
@@ -296,6 +303,12 @@ crums:
       width: 125px;
       padding: 15px;
       position: absolute;
+    }
+    .exo-popup a{
+      color: white;
+    }
+    .exo-popup a:hover{
+      text-decoration: none;
     }
 #featured-products-showcase
   .column-30
