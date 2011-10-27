@@ -36,8 +36,8 @@ crums:
     .entity.transparent.people-forground
     .entity.transparent.center-tv-screen-yellow-glow
     .entity.transparent.right-tv-screen-yellow-glow
-    .bounding.center-tv-screen{'data-layer' => '.center-tv-screen-yellow-glow'}
-    .bounding.right-tv-screen{'data-layer'  => '.right-tv-screen-yellow-glow'}
+    .bounding.center-tv-screen{'data-layer' => '.center-tv-screen-yellow-glow', 'data-popup-trigger'=> true,  'data-href'=>'#tv-popup'}
+    .bounding.right-tv-screen{'data-layer'  => '.right-tv-screen-yellow-glow',  'data-popup-trigger'=> true,  'data-href'=>'#tv-popup'}
   #night-club.scene.hidden
     .entity.background.bg
     .entity.background-1.bg
@@ -181,6 +181,22 @@ crums:
     .entity.transparent.suitcase
     .entity.transparent.white_shirt_guy
     .entity.transparent.woman
+  #tv-popup.exo-popup{ 'data-popup-top' => '20'}
+    .exo-popup-header
+    .exo-popup-body
+      %h1 TV
+      %ul
+        %li Plasmas
+        %li LCD
+        %li Projectors
+    .exo-popup-footer
+  :css
+    .exo-popup{
+      display: none;
+      background: blue;
+      width: 100px;
+      position: absolute;
+    }
 #featured-products-showcase
   .column-30
     %h2 Featured Product
