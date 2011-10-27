@@ -52,22 +52,25 @@
   display: none;
 }
 
-#sports-bar .back-wall{                       background: url(/scenes/sports_bar/Back-Wall.png)              no-repeat; }
-#sports-bar .back-wall-front{                 background: url(/scenes/sports_bar/Back-Wall-Front.png)        no-repeat; }
-#sports-bar .ambient-lights-blue{             background: url(/scenes/sports_bar/Ambient-Lights-Blue.png)    no-repeat; }
-#sports-bar .ambient-lights-green{            background: url(/scenes/sports_bar/Ambient-Lights-Green.png)   no-repeat; }
-#sports-bar .ambient-lights-purple{           background: url(/scenes/sports_bar/Ambient-Lights-Purple.png)  no-repeat; }
-#sports-bar .ambient-lights-red{              background: url(/scenes/sports_bar/Ambient-Lights-Red.png)     no-repeat; }
-#sports-bar .bar{                             background: url(/scenes/sports_bar/Bar.png) }
-#sports-bar .bar-with-waitress{               background: url(/scenes/sports_bar/Bar-With-Waitress.png) }
-#sports-bar .bar-with-people{                 background: url(/scenes/sports_bar/Bar-With-People.png) }
-#sports-bar .lights{                          background: url(/scenes/sports_bar/Lights.png) }
-#sports-bar .people-background-with-theatre{  background: url(/scenes/sports_bar/People-Background-with-Theatre.png) }
-#sports-bar .people-balcony{                  background: url(/scenes/sports_bar/People-Balcony.png)                 }
-#sports-bar .waitress-middle-of-scene{        background: url(/scenes/sports_bar/Waitress-Middle-of-scene.png)}
-#sports-bar .people-forground{                background: url(/scenes/sports_bar/People-Foreground.png)}
-#sports-bar .center-tv-screen-yellow-glow{    background: url(/scenes/sports_bar/TV-Screen-Yellow-Glow.png)}
-#sports-bar .right-tv-screen-yellow-glow{     background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
+#sports-bar .back-wall{                         background: url(/scenes/sports_bar/Back-Wall.png)              no-repeat; }
+#sports-bar .back-wall-front{                   background: url(/scenes/sports_bar/Back-Wall-Front.png)        no-repeat; }
+#sports-bar .ambient-lights-blue{               background: url(/scenes/sports_bar/Ambient-Lights-Blue.png)    no-repeat; }
+#sports-bar .ambient-lights-green{              background: url(/scenes/sports_bar/Ambient-Lights-Green.png)   no-repeat; }
+#sports-bar .ambient-lights-purple{             background: url(/scenes/sports_bar/Ambient-Lights-Purple.png)  no-repeat; }
+#sports-bar .ambient-lights-red{                background: url(/scenes/sports_bar/Ambient-Lights-Red.png)     no-repeat; }
+#sports-bar .bar{                               background: url(/scenes/sports_bar/Bar.png) }
+#sports-bar .bar-with-waitress{                 background: url(/scenes/sports_bar/Bar-With-Waitress.png) }
+#sports-bar .bar-with-people{                   background: url(/scenes/sports_bar/Bar-With-People.png) }
+#sports-bar .lights{                            background: url(/scenes/sports_bar/Lights.png) }
+#sports-bar .people-background-with-theatre{    background: url(/scenes/sports_bar/People-Background-with-Theatre.png) }
+#sports-bar .people-balcony{                    background: url(/scenes/sports_bar/People-Balcony.png)                 }
+#sports-bar .waitress-middle-of-scene{          background: url(/scenes/sports_bar/Waitress-Middle-of-scene.png)}
+#sports-bar .people-forground{                  background: url(/scenes/sports_bar/People-Foreground.png)}
+#sports-bar .center-tv-screen-yellow-glow{      background: url(/scenes/sports_bar/TV-Screen-Yellow-Glow.png)}
+#sports-bar .right-tv-screen-yellow-glow{       background: url(/scenes/sports_bar/TV-Screen-Big-Monitor-Yellow-Glow.png)}
+#sports-bar .tv-farm-yellow-glow        {       background: url(/scenes/sports_bar/TV-Farm-Yellow-Glow-Both.png)}
+#sports-bar .computer-monitor-yellow-glow{      background: url(/scenes/sports_bar/Computer-Monitor-Yellow-Glow.png)}
+#sports-bar .soundog-bar-yellow-glow{           background: url(/scenes/sports_bar/Soundog-Bar-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
 
 .bounding{
@@ -87,6 +90,26 @@
   height: 100px;
   width: 133px;
 }
+#sports-bar .tv-farm {
+  top: 0px;
+  left: 188px;
+  height: 73px;
+  width: 286px;
+}
+#sports-bar .computer-monitor {
+  top: 129px;
+  left: 158px;
+  height: 39px;
+  width: 42px;
+}
+#sports-bar .soundog-bar {
+  top: 242px;
+  left: 158px;
+  height: 23px;
+  width: 24px;
+}
+
+
 
 #night-club {
 
