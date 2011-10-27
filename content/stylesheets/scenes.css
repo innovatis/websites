@@ -73,6 +73,8 @@
 #sports-bar .soundog-bar-yellow-glow{           background: url(/scenes/sports_bar/Soundog-Bar-Yellow-Glow.png)}
 #sports-bar .soundog-table-yellow-glow{         background: url(/scenes/sports_bar/Soundog-Yellow-Glow.png)}
 #sports-bar .speakers-yellow-glow{              background: url(/scenes/sports_bar/Speakers-Yellow-Glow.png)}
+#sports-bar .tv-bar-yellow-glow{                background: url(/scenes/sports_bar/TV-Bar-Screen-Yellow-Glow-Both.png)}
+#sports-bar .volume-yellow-glow{                background: url(/scenes/sports_bar/Volume-Yellow-Glow.png)}
 #sports-bar .ambient-lights     { opacity: 0 }
 
 .bounding{
@@ -121,6 +123,18 @@
   left: 18px;
   height: 55px;
   width: 610px
+}
+#sports-bar .tv-bar {
+  top: 115px;
+  left: 22px;
+  height: 66px;
+  width: 135px;
+}
+#sports-bar .volume {
+  top: 195px;
+  left: 220px;
+  height: 36px;
+  width: 35px;
 }
 
 
