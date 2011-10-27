@@ -67,7 +67,7 @@ Scene
   Patio Mouseovers
   -----
 
-  [ ] remove cables
+  [*] remove cables
   [ ] volume ?
 
   [*] mouse over of any relevant products
