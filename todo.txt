@@ -1,9 +1,9 @@
 Administrative
 ==============
 
-[ ] email links
-[ ] email reminder with what we need from then
-[ ] confirm friday
+[*] email links
+[*] email reminder with what we need from then
+[*] confirm friday
 
 Header
 ======

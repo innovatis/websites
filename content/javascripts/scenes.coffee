@@ -158,6 +158,7 @@ Onq ?=  {}
         after('@appear.rack',                 'appear', '.dj').
         after('@appear.rack',                 'appear', '.center-light-beam').
         after('@appear.dj',                   'appear', '.silhouette').
+        after('@appear.dj',                   'appear', '.laptop-white-glow').
         after('@appear.rack',                 'appear', '.left-light-beam-blue').
         after('@appear.left-light-beam-blue', 'appear', '.middle-light-beam-red').
         after('@appear.rack',                 'appear', '.right-light-beam-purple').
@@ -231,7 +232,6 @@ Onq ?=  {}
         after('@appear.side-dj', 'appear', '.laptop-cord').
         after('@appear.speakers', 'appear', '.side-dj').
         after('@appear.speakers', 'appear', '.mixer-1').
-
         after('@appear.side-dj', 'appear', '.people-dancing').
 
         after('@appear.people-dancing', 'appear', '.silhouette').
@@ -309,7 +309,7 @@ Onq ?=  {}
         shine = scene.discoShines[0]
         parent = arguments.callee
 
-        shine.op(1,1000, -> shine.op(0,2000, ->  setTimeout(parent,50)))
+        shine.op(1,1000, -> return if scene.stopped; shine.op(0,2000, ->  setTimeout(parent,50)))
       )()
 
       (->
@@ -317,7 +317,7 @@ Onq ?=  {}
         shine = scene.discoShines[1]
         parent = arguments.callee
 
-        shine.op(0,2000, -> shine.op(1,3000, ->  setTimeout(parent,50)))
+        shine.op(0,2000, -> return if scene.stopped;shine.op(1,3000, ->  setTimeout(parent,50)))
       )()
 
   class Onq.Scene.Patio extends Onq.Scene
