@@ -201,7 +201,7 @@
 #night-club .monitors-yellow-glow     { background: url(/scenes/night_club/Monitors-Glow-Yellow.png)    no-repeat; }
 #night-club .tv-screens-yellow-glow   { background: url(/scenes/night_club/TV-Screen-Glow-Yellow.png)    no-repeat; }
 
-#night-club .laptop-white-glow   { background: url(/scenes/night_club/laptop-glow-white.png)    no-repeat; }
+#night-club .laptop-no-glow       { background: url(/scenes/night_club/laptop-no-glow.png)    no-repeat; }
 #night-club .laptop-yellow-glow   { background: url(/scenes/night_club/laptop-glow-yellow.png)    no-repeat; }
 
 #night-club .mixers-glow {
