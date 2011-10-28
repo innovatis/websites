@@ -127,3 +127,8 @@ Scene
       - Pro DJ Systems
       - background
       - music and demand
+
+----------------------------------------------------------------
+[ ] Sportsbar, shave the back off the LCD, so its more.. timeles
+[*] Speakers 70 Volts
+[ ] contact form goes to -> sales@onqpro.com
