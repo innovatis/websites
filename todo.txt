@@ -7,7 +7,7 @@ Administrative
 
 Header
 ======
-[ ] New Header and sub header information
+[?] New Header and sub header information
   %h1 Professional Entertainment Solutions.
   * Something about providing audio to canadian... <fill in from glens paper>
   * something about doing local A/V installations  <fill in from glens paper>
