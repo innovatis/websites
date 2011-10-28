@@ -158,7 +158,7 @@ Onq ?=  {}
         after('@appear.rack',                 'appear', '.dj').
         after('@appear.rack',                 'appear', '.center-light-beam').
         after('@appear.dj',                   'appear', '.silhouette').
-        after('@appear.dj',                   'appear', '.laptop-white-glow').
+        after('@appear.dj',                   'appear', '.laptop-no-glow').
         after('@appear.rack',                 'appear', '.left-light-beam-blue').
         after('@appear.left-light-beam-blue', 'appear', '.middle-light-beam-red').
         after('@appear.rack',                 'appear', '.right-light-beam-purple').
