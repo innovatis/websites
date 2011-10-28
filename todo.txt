@@ -12,6 +12,8 @@ Header
   * Something about providing audio to canadian... <fill in from glens paper>
   * something about doing local A/V installations  <fill in from glens paper>
 
+[ ] Contact info (phone etc to the right of the header
+
 Products
 ========
 
