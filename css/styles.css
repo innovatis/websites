@@ -276,7 +276,7 @@ strong {
 }
 
 .call-to-action-container.small {
-  margin: -10px auto 0 auto;
+  margin: -3px auto 0 auto;
 }
 
 .call-to-action, .call-to-action:visited, .input-button {
@@ -302,7 +302,7 @@ strong {
   background: linear-gradient(top, #f7d020 0%,#ec7b13 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7d020', endColorstr='#ec7b13',GradientType=0 );
   position: relative;
-  z-index: 2;
+  z-index:4;
 }
   
 .call-to-action:hover {
@@ -372,13 +372,29 @@ strong {
   margin: 0 auto;
 }
 
-#bottom-ridge {
+#blue-bottom-ridge, #orange-bottom-ridge, #green-bottom-ridge, #beige-bottom-ridge {
   height: 10px;
-  background: url(../images/blue-bottom-ridge.png) repeat-x;
   position: relative;
   z-index: 3;
   margin-bottom:-10px;
 }
+
+#blue-bottom-ridge {
+  background: url(../images/blue-bottom-ridge.png) repeat-x;
+}
+
+#green-bottom-ridge {
+  background: url(../images/green-bottom-ridge.png) repeat-x;
+}
+
+#orange-bottom-ridge {
+  background: url(../images/orange-bottom-ridge.png) repeat-x;
+}
+
+#beige-bottom-ridge {
+  background: url(../images/beige-bottom-ridge.png) repeat-x;
+}
+
 
 .content h2.section-title {
   color: #fff;
