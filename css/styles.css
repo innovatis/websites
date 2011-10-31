@@ -464,6 +464,10 @@ strong {
   background: url(../images/email.png) left top no-repeat;
 }
 
+#footer .social {
+  margin: 25px 0 0 20px
+}
+
 #footer li.twitter {
   background: url(../images/twitter.png) left top no-repeat;
   margin-bottom: 5px;
