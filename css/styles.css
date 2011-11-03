@@ -275,6 +275,10 @@ strong {
   margin: 0 auto; 
 }
 
+.call-to-action-container.download {
+  margin: 50px auto; 
+}
+
 .call-to-action-container.small {
   margin: -3px auto 0 auto;
 }
@@ -317,7 +321,7 @@ strong {
   margin-top: 16px;
 }
 
-.call-to-action.large {
+.call-to-action.large, .call-to-action.download {
   padding: 14px 12px;
 }
 
