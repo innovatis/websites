@@ -328,6 +328,9 @@ strong {
 .call-to-action.small {
   padding: 14px 70px;
 }
+.call-to-action img.pdf {
+  margin-bottom:-10px;
+}
 
 #section-1, #section-2, #section-3, #section-4, #bottom-ridge {
   width: 100%;
