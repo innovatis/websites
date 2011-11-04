@@ -1,5 +1,9 @@
-.call-to-action, .call-to-action:visited, .input-button, .call-to-action-container {
+.call-to-action, .call-to-action:visited, .input-button {
   white-space: normal;
+}
+
+.call-to-action-container .download {
+  width: 440px;
 }
 
 .call-to-action.large {
