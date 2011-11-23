@@ -1,0 +1,15 @@
+h2#the-meyer-phone{
+   width: 49%;
+}
+
+.list-view-house li{
+   margin-bottom: -5px;
+   height: 34px;
+}
+/*.list-view-house li.last{
+   height: 44px;
+}*/
+
+ul#main-menu li.last{
+   width: 19%;
+}

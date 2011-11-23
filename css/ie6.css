@@ -1,0 +1,41 @@
+img, div, ul{
+   behavior: url(iepngfix.htc)
+}
+
+ul#main-menu li.last{
+   width: 19%;
+}
+
+ul#main-menu{
+   margin-bottom: 0;
+}
+
+#main-showcase{
+   background: transparent;
+}
+#main-showcase div{
+   background: url(../images/showcase_bkg.png) no-repeat center -35px;
+   height: 364px;
+   width: 900px;
+   margin: 0 auto;
+}
+#main-showcase-footer{
+   margin-top: -60px;
+}
+
+.main-with-sidebar a#listings{
+   float: left;
+   width: 49%;
+   text-align: right;
+   text-decoration: none;
+   font-size: 12px;
+   color: #888785;
+}
+
+.list-view-house li{
+   margin-bottom: -5px;
+   height: 34px;
+}
+.list-view-house li.last{
+   height: 48px;
+}
