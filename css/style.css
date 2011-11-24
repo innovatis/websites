@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background: url(../images/background_lighting.jpg) top no-repeat;
+  z-index: -2;
+  position: relative;
 }
 ol, ul {
   list-style: none;
@@ -56,7 +58,7 @@ h1 {
   text-shadow: 0 1px rgb(11,26,45);
 }
 
-h1 span.frstltr {font-size:20px;}
+h1 span.frstltr, h2 span.frstltr, h3 span.frstltr {font-size:20px;}
 
 h2, h3{
    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
@@ -72,7 +74,6 @@ p {
   font-family: 'Georgia', Palatino, Book Antiqua, times, serif;
   font-size: 14px;
   line-height: 18px;
-  color: #555555;
   margin:10px 0 20px;
 }
 
@@ -178,9 +179,10 @@ ul#main-menu li a {
   margin-top:76px;
   line-height:61px;
   text-decoration: none;
-  color: #A38766;
   font-size: 14px;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  color: rgb(40,62,83);
+  text-shadow: 0 1px 2px #FFFFFF;
 }
 ul#main-menu li a:hover{
    background-position: 0 -59px;
@@ -192,9 +194,6 @@ ul#main-menu li.middle a{
    background: transparent;
 }
 
-ul#main-menu li.phone a{
-   font-size: 16px;
-}
 
 
 
@@ -209,13 +208,23 @@ ul#main-menu li h1#logo a{
   height: 364px;
   margin-left: 17px;
   width: 904px;
-  background: #83BCD9;
+  background: url(../images/showcase_bkg.png) center no-repeat;
+  position: relative;
+  top: -27px;
+  z-index: -1;
+  left: -2px;
+}
+
+
+#main-showcase h2{
+
 }
 
 #main-showcase-footer{
   height: 63px;
   width: 937px;
-  margin-top:-22px;
+  margin-top:-57px;
+   margin-left:-2px;
   line-height: 78px;
   background: url(../images/banner.png) no-repeat top center;
 }
@@ -226,7 +235,6 @@ ul#main-menu li h1#logo a{
   text-align: left;
   color: white;
   font-size: 20px;
-  font-style: italic;
 }
 #the-meyers-team strong{
   font-weight: bold;
@@ -244,6 +252,7 @@ ul#main-menu li h1#logo a{
 .sidebar{
   width: 275px;
   float: left;
+  color: white;
 }
 
 .main-with-sidebar{
@@ -256,27 +265,30 @@ ul#main-menu li h1#logo a{
    width: 49%;
    text-align: left;
    font-size: 20px;
-   color: #960E0D;
    font-weight: bold;
    margin-bottom: 16px;
 }
 .main-with-sidebar>a{
    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
-   float: left;
-   width: 49%;
-   text-align: right;
+   float: right;
+   width: 150px;
+   text-align: center;
    text-decoration: none;
    font-size: 12px;
-   color: #888785;
+   height: 22px;
+   line-height: 24px;
+   display: block;
+   border-radius: 10px;
+   background: rgba(0,0,0,0.5)
 }
 #body{
    padding-top: 32px;
 }
-#body .sidebar h3{
+.sidebar h3{
    font-size: 20px;
    font-weight: bold;
 }
-#body .sidebar p{
+.sidebar p{
    width: 230px;
    font-size: 14px;
 }
@@ -284,11 +296,25 @@ ul#main-menu li h1#logo a{
   padding: 35px 0px 70px 0px;
    background: url(../images/footer_background_tile.jpg) repeat;
 }
+#footer h3{
+   font-size: 16px;
+   color: rgb(40,62,83);
+   text-shadow: none;
+}
+#footer h3 span.frstltr {font-size:18px;}
+
+#footer p{
+   font-family: arial, helvetica, sans-serif;
+   color: rgb(46,70,92);
+   font-size: 12px;
+   line-height: 16px;
+   margin: 8px 0 16px;
+}
 #footer .left-column{
    width: 400px;
    float: left;
 }
-#footer .left-column .marc{
+#footer .marc{
    border-bottom: 1px solid black;
    border-right: 1px solid black;
 }
@@ -299,8 +325,9 @@ ul#main-menu li h1#logo a{
 #footer .left-column span{
    line-height: 28px;
 }
-#footer .left-column .email-button{
+#footer .email-button{
    float: right;
+   margin-right: 12px;
    display: block;
    background: url(../images/button_email_sprite.png) 0 0 no-repeat;
    font-size: 12px;
@@ -308,6 +335,102 @@ ul#main-menu li h1#logo a{
    text-align: center;
    width: 99px;
    height: 28px;
+}
+#footer .email-button:active{
+   background-position: -100px 0;
+}
+#footer .deb{
+   padding-top: 20px;
+   border-right: 1px solid black;
+}
+#footer .center-column{
+   float: left;
+   width: 225px;
+}
+#footer .center-column .recent-news{
+   padding: 0px 40px 10px 20px;
+   border-bottom: 1px solid black;
+
+}
+#footer .center-column h3{
+   margin-bottom: 12px;
+}
+#footer .center-column h4{
+   font-size: 12px;
+   margin-bottom: 6px;
+}
+#footer .center-column p{
+   font-size: 12px;
+}
+
+#footer .recent-homes{
+   padding: 10px 40px 0px 20px;
+}
+#footer .recent-homes li{
+   clear: both;
+   height: 24px;
+   display: block;
+}
+#footer .center-column .house{
+   font-size: 12px;
+   float: left;
+}
+#footer .center-column .sale-status{
+   font-size: 12px;
+   float: right;
+}
+
+#footer .right-column{
+   width: 271px;
+   height: 493px;
+   float: left;
+   background: url(../images/footer_form_background.png) center no-repeat;
+   position: relative;
+   top: -67px;
+   left: -16px;
+}
+
+#footer .right-column label{
+   display: block;
+   font-size: 12px;
+   margin-bottom: 6px;
+}
+#footer .right-column input{
+   height: 24px;
+}
+#footer .right-column textarea{
+   height: 118px;
+}
+#footer input, #footer textarea{
+   width: 206px;
+   background: rgba(0,0,0,0.2);
+   border: 1px solid #8B8971;
+}
+
+
+#footer .right-column h3{
+   margin-left: 30px;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+#footer .right-column div{
+   margin-left: 30px;
+   margin-top: 16px;
+}
+#footer .right-column .submit{
+   margin-top: 5px;
+   background: url(../images/submit_button_sprite.png) 0 0 no-repeat;
+   border: 0;
+   width: 125px;
+   height: 40px;
+   line-height: 40px;
+   float: right;
+   position: relative;
+   left: -10px;
+   color: white;
+}
+#footer .right-column .submit:active{
+   background-position: 0 -41px;
 }
 .two-column{
   float: left;
@@ -366,16 +489,20 @@ form#contact-us-form textarea{
 
 }
 .list-view-house p{
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: arial, helvetica, sans-serif;
    font-size: 12px;
-   color: #818181;
+   color: #6F6F6F;
+   line-height: 16px;
+   margin-top: 10px;
 }
 .list-view-house img{
    border: 1px solid #BFBFBF;
    float: right;
 }
 .list-view-house h4{
-   color: #2B495D;
+  font-family: 'TeXGyrePagellaRegular', 'Palatino LT STD', 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
+  font-size: 16px;
+  color: rgb(40,70,92);
    margin-top: 9px;
 }
 .list-view-house .description{
@@ -403,23 +530,23 @@ form#contact-us-form textarea{
    height: 28px;
    background: #96CFEB;
    border-bottom: 1px solid #6592AF;
+   color: #001C40;
    line-height: 28px;
    padding-left: 10px;
    padding-right: 10px;
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: arial, helvetica, sans-serif;
+   line-height: 28px;
 }
 .list-view-house li.first{
    border-top: none;
 }
 .list-view-house li .left{
-   font-size: 12px;
-   color: #9A9997;
+   font-size: 11px;
    float: left;
    text-align: left;
 }
 .list-view-house li .right{
-   font-size: 14px;
-   color: black;
+   font-size: 12px;
    font-weight: bold;
    float: right;
    text-align: right;
@@ -438,32 +565,33 @@ form#contact-us-form textarea{
 
 .call-to-action{
    margin-top: 25px;
-   height: 150px;
-   width: 600px;
-   float: right;
+   float: left;
+   margin-left: 24px;
 }
 .call-to-action h3{
-   color: white;
    font-style: italic;
-   font-size: 28px;
+   font-size: 24px;
 }
 .call-to-action h2{
    margin-top: 5px;
-   color: white;
    font-weight: bold;
-   font-size: 32px;
+   font-size: 28px;
 }
-#mark{
-   background: url(../images/sabie-hummer-transparent.png) 0px 25px no-repeat;
-   margin-left: 20px;
-   width: 400px;
-   height: 350px;
+#marc{
+   margin-left: 10px;
+   width: 360px;
+   height: 290px;
+   background: url(../images/meyers_trans.png) center no-repeat;
+   float: left;
+
+   position: relative;
+   left: -30px;
+   top: 39px;
 }
 
 .quote{
    font-style: italic;
    font-weight: bold;
-   color: #990000;
 }
 .view-details {
   background: url(../images/view_details_button_sprite.png) no-repeat 0 0;
