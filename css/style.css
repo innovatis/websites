@@ -636,50 +636,133 @@ form#contact-us-form textarea{
    display: block;
 }
 
-.communities{
-   width: 800px;
-   margin: 0 auto;
+
+
+
+/* DETAILS PAGES */
+
+.info{
+   margin-bottom: 20px;
 }
-.communities h3{
-   font-size: 24px;
+.info ul{
+   padding-bottom: 10px;
+}
+.info ul li{
+   float: left;
+   margin-left: 30px;
+   font-size: 16px;
+   font-family: arial, helvetica, sans-serif;
+   font-weight: bold;
+}
+.info ul li.title{
+   margin-right: 200px;
+}
+.info h2{
+   text-align: left;
+   font-size: 20px;
+   font-weight: bold;
+}
+.details{
+   clear: both;
+   border-top:    1px solid #63839C;
+   padding-top: 40px;
+}
+.details div{
+   padding-bottom: 40px;
+
+}
+.details .left-column{
+   float: left;
+   width: 300px;
+   margin-right: 48px;
+}
+.details .left-column img{
+   display: block;
+   margin-bottom: 24px;
+}
+.details  h3{
+   color: white;
+   display: block;
+   font-weight: bold;
+   line-height: 24px;
+}
+.details .left-column h3{
+   text-align: right;
+
+}
+.details .left-column h3.price{
+   font-size: 22px;
+   color: rgb(169,203,231)
+}
+
+.details .center-column{
+   float: left;
+   width: 350px;
+   margin-right: 48px;
+}
+.details .right-column{
+   float: left;
+   width: 175px;
+}
+.details .right-column h3{
    margin-bottom: 12px;
 }
-
-.communities-row{
-   height: 277px;
-   width: 750px;
-   margin: 0 auto;
-   background: cyan;
+.details .right-column li{
+   width: 100%;
+   height: 30px;
+   line-height: 30px;
+   border-top: 1px solid #83AECF;
+   font-family: arial, helvetica, sans-serif;
 }
-.communities-row a{
-   width: 249px;
-   border-right: 1px solid yellow;
-   border-bottom: 1px solid green;
-   height: 276px;
-   display: block;
+.details .right-column li.last{
+   border-bottom: 1px solid #83AECF;
+}
+.details .right-column .left{
+   font-size: 11px;
+   font-weight: bold;
    float: left;
-   margin: 0;
-   background: green;
+   text-align: left;
+}
+.details .right-column .right{
+   font-size: 12px;
+   font-weight: bold;
+   float: right;
+   text-align: right;
 }
 
-.communities-row a.kildonan-green{
-   background: url(../images/kildonan_green.jpeg) center no-repeat;
+.property-footer{
+   clear: both;
+   padding-top: 20px;
+   border-top: 1px solid #63839C;
 }
-.communities-row a.canterbury{
-   background: url(../images/canterbury.jpeg) center no-repeat;
+.property-footer .back-to-listings{
+   float: left;
+   width: 182px;
+   height: 32px;
+   line-height: 32px;
+   display: block;
+   background: yellow;
 }
-.communities-row a.waterside-estates{
-   background: url(../images/waterside_estates.jpeg) center no-repeat;
+.property-footer .next-property{
+   float: right;
+   width: 165px;
+   height: 32px;
+   line-height: 32px;
+   display: block;
+   background: yellow;
 }
-.communities-row a.sage-creek{
-   background: url(../images/sage_creek.jpeg) center no-repeat;
+.property-footer h2{
+   line-height: 32px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 22px;
 }
-.communities-row a.bridgwater-forest{
-   background: url(../images/bridgwater_forest.jpeg) center no-repeat;
+.property-footer .phone{
+   color: white;
 }
-.communities-row a.river-park-south{
-   background: url(../images/river_park_south.jpeg) center no-repeat;
-}
+/* END DETAILS PAGES */
+
+
 
 
 
