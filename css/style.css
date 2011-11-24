@@ -356,11 +356,12 @@ ul#main-menu li h1#logo a{
    margin-bottom: 12px;
 }
 #footer .center-column h4{
-   font-size: 12px;
+   font-size: 14px;
    margin-bottom: 6px;
 }
 #footer .center-column p{
    font-size: 12px;
+   font-style: italic;
 }
 
 #footer .recent-homes{
@@ -372,12 +373,13 @@ ul#main-menu li h1#logo a{
    display: block;
 }
 #footer .center-column .house{
-   font-size: 12px;
+   font-size: 14px;
    float: left;
 }
 #footer .center-column .sale-status{
    font-size: 12px;
    float: right;
+   font-style: italic;
 }
 
 #footer .right-column{
@@ -787,7 +789,6 @@ form#contact-us-form textarea{
 .filters select{
    float: right;
 }
-/* END LISTINGS PAGE */
 
 .pagination{
    border-top: 1px solid #63839C;
@@ -803,7 +804,45 @@ form#contact-us-form textarea{
    display: inline;
    margin-right: 8px;
 }
+/* END LISTINGS PAGE */
 
+
+/* SERVICES PAGE */
+.services{
+   clear: both;
+   border-top: 1px solid #63839C;
+   padding-top: 40px;
+
+}
+
+.services .left-column{
+   width: 200px;
+   margin-right: 48px;
+   float: left;
+
+}
+.services .left-column .image-placeholder{
+   height: 275px;
+   background: lightblue;
+
+}
+
+.services .center-column{
+   width: 310px;
+   margin-right: 48px;
+   float: left;
+}
+.services .center-column p, .services .right-column p{
+   margin-top: 0;
+   color: white;
+}
+
+.services .right-column{
+   width: 310px;
+   float: left;
+}
+
+/* END SERVICES PAGE */
 
 #mailform-container {
   width: 250px;
