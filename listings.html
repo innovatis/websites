@@ -215,24 +215,47 @@
         </div>
         <div class="right-column">
           <h3>Contact Us</h3>
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name">
+          <form data-mailform="99925f3d9360008161629fbfbc15f71bb72d65ee" id="mailform" method="get"  novalidate='true'>
+            <div class="inputs">
+              <div class="input string">
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+              </div>
+              <div class="input string">
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone">
+              </div>
+              <div class='input string'>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email">
+              </div>
+              <div class='input string'>
+                <label for="question">Question:</label>
+                <textarea name="question"></textarea>
+              </div>
+            </div>
+            <div class="actions">
+              <input type="submit" class="submit" value="SUBMIT">
+            </div>
+            <div id="message-wrapper">
+              <div class="hidden mailform-loading"></div>
+              <div class="hidden mailform-error">
+                An error occured. Please try again.
+              </div>
+              <div class="hidden mailform-success">
+                <p>
+                  Your question has been submitted successfully.
+                </p>
+                <p>
+                  If your message requires a follow-up response, will will return your message as soon as we are able.
+                </p>
+                <p>
+                  Thank you for your time.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="phone">Phone:</label>
-            <input type="text" name="phone">
-          </div>
-          <div>
-            <label for="email">E-mail:</label>
-            <input type="text" name="email">
-          </div>
-          <div>
-            <label for="question">Question:</label>
-            <textarea name="question"></textarea>
-          </div>
-          <input type="submit" class="submit" value="SUBMIT">
-        </div>
+        </form>
         <br class="clear">
       </div>
     </div>

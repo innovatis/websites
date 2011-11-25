@@ -406,7 +406,7 @@ ul#main-menu li h1#logo a{
    height: 24px;
 }
 #footer .right-column textarea{
-   height: 118px;
+   height: 85px;
 }
 #footer input, #footer textarea{
    width: 206px;
@@ -419,8 +419,10 @@ ul#main-menu li h1#logo a{
    margin-top: 50px;
    margin-bottom: 20px;
 }
-#footer .right-column div{
+#footer .right-column form> div{
    margin-left: 30px;
+}
+#footer .right-column .inputs div{
    margin-top: 16px;
 }
 #footer .right-column .submit{
@@ -459,27 +461,6 @@ form#contact-us-form{
   padding: 40px;
   display: block;
 }
-
-form#contact-us-form label{
-  padding-top: 1em;
-  display: block;
-}
-
-form#contact-us-form input{
-  border: 1px solid #7A7A64;
-  background: #BABD70;
-  line-height: 24px;
-  height: 24px;
-  width: 185px;
-}
-form#contact-us-form textarea{
-  border: 1px solid #7A7A64;
-  background: #BABD70;
-  line-height: 16px;
-  height: 150px;
-  width: 185px;
-}
-
 
 .list-view-house{
    height: 155px;
@@ -618,28 +599,7 @@ form#contact-us-form textarea{
 }
 
 
-.contact span{
-   display: block;
-   margin-left: 200px;
-   margin-top: 24px;
-}
-.contact span.action{
-   margin-top: 12px;
-}
-.contact span input,
-.contact span textarea{
-   width: 442px;
-}
-.contact span textarea{
-   height: 50px;
-}
-.contact span.action input{
-   float: right;
-   width: auto;
-}
-.contact span label{
-   display: block;
-}
+
 
 
 
@@ -847,11 +807,11 @@ form#contact-us-form textarea{
 
 /* END SERVICES PAGE */
 
-#mailform-container {
+/*#mailform-container {
   width: 250px;
   height: 338px;
   background: #0069f9;
-/*  background-image: url(../images/form-background.png);*/
+/*  background-image: url(../images/form-background.png);
   padding: 0 25px;
     -webkit-border-radius-topright:  5px;
   -moz-border-radius-topright:     5px;
@@ -860,8 +820,9 @@ form#contact-us-form textarea{
   background: -moz-linear-gradient(top, #3e7898, #5d9bbd);
   background: linear-gradient(top, #3e7898, #5d9bbd);
   background-color: #3e7898;
-}
+}*/
 
+/*
 #mailform-container .message-error {
   float:right;
   color:red;
@@ -896,15 +857,24 @@ form#contact-us-form textarea{
   font-size:1.2em;
 }
 
-#mailform-container .mailform-error {
+*/
+#mailform .mailform-error {
   color:red;
   font-weight:600;
+  clear:both;
+  padding-top:8px;
+   width: 75%;
 }
-
-#mailform-container .mailform-success {
-  color:white;
+#mailform .mailform-success {
+   margin-top: 48px;
+   width: 75%;
 }
-
+#mailform .mailform-success p{
+   line-height: 18px;
+   margin-top: 24px;
+   font-size: 16px;
+}
+/*
 #mailform-container .input{
   margin:15px 0;
 }
@@ -934,24 +904,24 @@ form#contact-us-form textarea{
   -webkit-box-shadow: inset 0 0 3px #888;
   box-shadow: inner 0 0 3px #888;
 }
-
+*/
 .hidden {
   display: none;
 }
 
-#mailform-container .mailform-loading {
+#mailform .mailform-loading {
   background:url(../images/ajax-loader.gif) no-repeat 0 0;
   height:32px;
   width:32px;
   float:right;
 }
 
-.actions {
+/*.actions {
   height:30px;
   float:right;
-}
+}*/
 
-.button, .button:visited, .input-button {
+/*.button, .button:visited, .input-button {
   float:left;
   text-align:center;
   white-space:nowrap;
