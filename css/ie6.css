@@ -2,6 +2,10 @@ img, div, ul{
    behavior: url(iepngfix.htc)
 }
 
+#marc{
+   display: none;
+}
+
 ul#main-menu li.last{
    width: 19%;
 }
@@ -33,9 +37,18 @@ ul#main-menu{
 }
 
 .list-view-house li{
-   margin-bottom: -5px;
+   margin-bottom: -3px;
    height: 34px;
 }
 .list-view-house li.last{
-   height: 48px;
+   margin: 0;
+   padding: 0;
+
+}
+.list-view-house li.last a{
+   width: 175px;
+   left: 0px;
+}
+.list-view-house .description{
+   width: 266px;
 }

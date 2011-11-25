@@ -322,8 +322,13 @@ ul#main-menu li h1#logo a{
    float: left;
    margin-right: 12px;
 }
-#footer .left-column span{
+#footer .left-column div div span{
    line-height: 28px;
+   float: left;
+}
+#footer .left-column div div{
+   height: 30px;
+   padding-bottom: 20px;
 }
 #footer .email-button{
    float: right;
@@ -405,10 +410,9 @@ ul#main-menu li h1#logo a{
 }
 #footer input, #footer textarea{
    width: 206px;
-   background: rgba(0,0,0,0.2);
+   background: #BABC71;
    border: 1px solid #8B8971;
 }
-
 
 #footer .right-column h3{
    margin-left: 30px;
@@ -566,9 +570,8 @@ form#contact-us-form textarea{
 }
 
 .call-to-action{
-   margin-top: 25px;
+   margin-top: 75px;
    float: left;
-   margin-left: 24px;
 }
 .call-to-action h3{
    font-style: italic;
