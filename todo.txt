@@ -36,15 +36,19 @@ we can only really add the pictures for 4play here.
     [*] we have
     [ ] implemented
   [ ] Boston Pizza
+    [*] currently removed
     [ ] we have
     [ ] implemented
   [ ] Earls
+    [*] currently removed
     [ ] we have
     [ ] implemented
   [ ] Shaw
+    [ ] currently removed
     [ ] we have
     [ ] implemented
   [ ] Smitty's
+    [*] currently removed
     [ ] we have
     [ ] implemented
 </caleb>
