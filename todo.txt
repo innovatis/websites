@@ -40,9 +40,9 @@ we can only really add the pictures for 4play here.
     [ ] we have
     [ ] implemented
   [ ] Earls
-    [*] currently removed
+    [ ] currently removed
     [ ] we have
-    [ ] implemented
+    [*] implemented
   [ ] Shaw
     [ ] currently removed
     [ ] we have
