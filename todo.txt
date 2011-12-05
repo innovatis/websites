@@ -17,6 +17,7 @@ Administrative
 Contact
 =============
 <caleb>
+[*] test contact form goes to cmacdonald@innovatisinc.ca
 [ ] main contact form goes to -> sales@onqpro.com
 </caleb>
 
@@ -59,6 +60,7 @@ Footer
 [*] remove social media
 [*] add music/sound distribution to services
 <caleb>
+[*] test contact form goes to cmacdonald@innovatisinc.ca
 [ ] contact form should go to sales@onqpro.com
 </caleb>
 Scene
