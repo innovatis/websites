@@ -73,7 +73,7 @@ Scene
 
   [*] mouse over of any relevant products
   [*] popups
-  [ ] shave the back off the LCD, so its more.. timeles
+  [ ] shave the back off the LCD, so its more.. timeless
 
   Dance Club
   ----------
