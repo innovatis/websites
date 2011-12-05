@@ -22,15 +22,16 @@
       }
       return togglePopup(popup, button);
     };
-    togglePopup = function(popup, button) {
+    togglePopup = function(popup, button, teardown) {
       var closesOnClick, closesOnClickSelector, closesOnExternalClick, href, isNotAjax;
       closesOnClick = popup.is('[data-close-on-click]') || button.is('[data-close-on-click]');
       closesOnClickSelector = popup.data('closeOnClick') || button.data('closeOnClick');
       closesOnExternalClick = popup.is('[data-close-on-external-click]') || button.is('[data-close-on-external-click]');
       href = button.attr('href') || button.data('href');
       isNotAjax = href[0] === '#';
+      teardown = teardown || false;
       if (isNotAjax) {
-        if (button.data('popup') === 'initialized') {
+        if (teardown || button.data('popup') === 'initialized') {
           button.data('popup', '');
           popup.data('position-object').disable();
           return popup.hide();
@@ -38,13 +39,13 @@
           if (closesOnExternalClick) {
             $('body').one('click', function(e) {
               if (popup.find($(e.target)).length === 0) {
-                return togglePopup(popup, button);
+                return togglePopup(popup, button, true);
               }
             });
           }
           $('body').one('keydown', function(e) {
             if (e.keyCode === 27) {
-              return togglePopup(popup, button);
+              return togglePopup(popup, button, true);
             }
           });
           button.data('popup', 'initialized');
@@ -53,11 +54,11 @@
             if (closesOnClickSelector) {
               popup.find(closesOnClickSelector).one('click', function(e) {
                 e.preventDefault();
-                return togglePopup(popup, button);
+                return togglePopup(popup, button, true);
               });
             } else {
               popup.one('click', function() {
-                return togglePopup(popup, button);
+                return togglePopup(popup, button, true);
               });
             }
           }
