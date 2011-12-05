@@ -1,3 +1,12 @@
+Readme
+=====
+any todo item, which is not wrapped in <name></name> is free for the takening.
+
+Ill assume that I'll be doing any of the animation related work.
+
+We are still missing most of the product pictures and location pictures (other then 4play)
+
+
 Administrative
 ==============
 
@@ -9,15 +18,11 @@ Contact
 =============
 <caleb>
 [ ] main contact form goes to -> sales@onqpro.com
-[ ] footer contact from goes to -> sales@onqpro.com
 </caleb>
 
 Header
 ======
 [*] New Header and sub header information
-  %h1 Professional Entertainment Solutions.
-  * Something about providing audio to canadian... <fill in from glens paper>
-  * something about doing local A/V installations  <fill in from glens paper>
 
 Restaurants
 ===========
@@ -25,6 +30,7 @@ Restaurants
 [?] Persistant menu?
 
 <caleb>
+we can only really add the pictures for 4play here.
 [ ] new info + pictures from client
   [ ] 4play
     [*] we have
@@ -48,8 +54,9 @@ Footer
 
 [*] remove social media
 [*] add music/sound distribution to services
+<caleb>
 [ ] contact form should go to sales@onqpro.com
-
+</caleb>
 Scene
 ======
 
@@ -145,3 +152,4 @@ Scene
       - music and demand
 
 ----------------------------------------------------------------
+
