@@ -73,7 +73,11 @@ Scene
 
   [*] mouse over of any relevant products
   [*] popups
+<<<<<<< HEAD
   [*] shave the back off the LCD, so its more.. timeless
+=======
+  [ ] shave the back off the LCD, so its more.. timeless
+>>>>>>> 03098fe166e2b8b5531503bf07430f85ce318d2b
 
   Dance Club
   ----------
