@@ -80,13 +80,13 @@ Onq ?=  {}
 
     trigger: (event) ->
       if @triggered[event]
-        console.log(this,"[alreadyTriggered] No Trigger",event)
+        #console.log(this,"[alreadyTriggered] No Trigger",event)
       else
         @root.trigger(event) and this.didTrigger(event)
 
     didTrigger: (event) ->
       @triggered[event] = true
-      console.log(this,"[didTrigger]",event)
+      #console.log(this,"[didTrigger]",event)
       this
 
     appear: (selector,duration) ->
@@ -169,7 +169,7 @@ Onq ?=  {}
       @.$('.bg').fadeIn 1000, => this.trigger '@backgroundAppear'
 
     cycleBeams: ->
-      console.log 'hi'
+      #console.log 'hi'
       scene = @
       window.stefan = @
       cyclator = arguments.callee
