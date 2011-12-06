@@ -30,6 +30,8 @@ Onq ?=  {}
   $.fn.opOut = (speed,fcn) ->
     this.op 0, speed, fcn
 
+  $.fn.opCycle = (speed,fcn) ->
+    this.opIn speed, -> $(this).opOut speed, fcn
 
   Onq.Scenes = []
 
@@ -78,13 +80,13 @@ Onq ?=  {}
 
     trigger: (event) ->
       if @triggered[event]
-        #console.log(this,"[alreadyTriggered] No Trigger",event)
+        console.log(this,"[alreadyTriggered] No Trigger",event)
       else
         @root.trigger(event) and this.didTrigger(event)
 
     didTrigger: (event) ->
       @triggered[event] = true
-      #console.log(this,"[didTrigger]",event)
+      console.log(this,"[didTrigger]",event)
       this
 
     appear: (selector,duration) ->
@@ -94,7 +96,7 @@ Onq ?=  {}
     hide: (selector,duration) ->
       @$(selector or '*').opOut duration or 1000, =>
         # shouldnt be global
-        this.trigger 'hide.' + selector unless @stopped
+        this.trigger '@hide' + selector unless @stopped
 
     after: (event,action,selectorOrFcn,duration) ->
       this.bind event, =>
@@ -145,31 +147,36 @@ Onq ?=  {}
 
     start: ->
       super
-      @.after('@backgroundAppear',            'appear', '.bg-people').
-        after('@appear.bg-people',            'appear', '.balcony-people').
-        after('@appear.balcony-people',       'appear', '.people').
-        after('@appear.bg-people',            'appear', '.people-at-table').
-        after('@appear.bg-people',            'appear', '.table').
-        after('@appear.bg-people',            'appear', '.person-at-table-arm').
-        after('@appear.bg-people',            'appear', '.rack').
-        after('@appear.rack',                 'appear', '.monitors').
-        after('@appear.rack',                 'appear', '.dj-table').
-        after('@appear.rack',                 'appear', '.mixers').
-        after('@appear.rack',                 'appear', '.dj').
-        after('@appear.rack',                 'appear', '.center-light-beam').
-        after('@appear.dj',                   'appear', '.silhouette').
-        after('@appear.dj',                   'appear', '.laptop-no-glow').
-        after('@appear.rack',                 'appear', '.left-light-beam-blue').
-        after('@appear.left-light-beam-blue', 'appear', '.middle-light-beam-red').
-        after('@appear.rack',                 'appear', '.right-light-beam-purple').
-        after('@appear.center-light-beam',    'appear', '.scene-shine').
-        after('@appear.lights-blue',          'cycleLightBeams')
+      @.after('@backgroundAppear',         'appear', '.bg-people').
+        after('@appear.bg-people',         'appear', '.balcony-people').
+        after('@appear.balcony-people',    'appear', '.people').
+        after('@appear.bg-people',         'appear', '.people-at-table').
+        after('@appear.bg-people',         'appear', '.table').
+        after('@appear.bg-people',         'appear', '.person-at-table-arm').
+        after('@appear.bg-people',         'appear', '.rack').
+        after('@appear.rack',              'appear', '.monitors').
+        after('@appear.rack',              'appear', '.dj-table').
+        after('@appear.rack',              'appear', '.mixers').
+        after('@appear.rack',              'appear', '.dj').
+        after('@appear.rack',              'cycleBeams').
+        after('@appear.rack',              'appear', '.center-light-beam').
+        after('@appear.dj',                'appear', '.silhouette').
+        after('@appear.dj',                'appear', '.laptop-no-glow').
+        after('@appear.center-light-beam', 'appear', '.scene-shine')
+
 
       # star the whole animation
       @.$('.bg').fadeIn 1000, => this.trigger '@backgroundAppear'
 
-      this
-    cycleLightBeams: ->
+    cycleBeams: ->
+      console.log 'hi'
+      scene = @
+      window.stefan = @
+      cyclator = arguments.callee
+
+      scene.$('.light-beam-blue').opCycle 1000, ->
+          scene.$('.light-beam-red').opCycle 1000, ->
+                scene.$('.light-beam-purple').opCycle 1000, cyclator
 
   class Onq.Scene.Restaurant extends Onq.Scene
     constructor: -> super "#restaurant"
