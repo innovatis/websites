@@ -53,15 +53,15 @@ crums:
     .entity.transparent.speakers-yellow-glow
     .entity.transparent.tv-bar-yellow-glow
     .entity.transparent.volume-yellow-glow
-    .bounding.center-tv-screen{'data-layer' => '.center-tv-screen-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
-    .bounding.right-tv-screen{ 'data-layer' => '.right-tv-screen-yellow-glow',  'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
-    .bounding.tv-farm{         'data-layer' => '.tv-farm-yellow-glow',          'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
-    .bounding.computer-monitor{'data-layer' => '.computer-monitor-yellow-glow', 'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
-    .bounding.soundog-bar{     'data-layer' => '.soundog-bar-yellow-glow',      'data-popup-trigger' => true,  'data-href' => '#soundog-popup'}
-    .bounding.soundog-table{   'data-layer' => '.soundog-table-yellow-glow',    'data-popup-trigger' => true,  'data-href' => '#soundog-popup'}
-    .bounding.speakers{        'data-layer' => '.speakers-yellow-glow',         'data-popup-trigger' => true,  'data-href' => '#speaker-popup'}
-    .bounding.tv-bar{          'data-layer' => '.tv-bar-yellow-glow',           'data-popup-trigger' => true,  'data-href' => '#tv-popup'}
-    .bounding.volume{          'data-layer' => '.volume-yellow-glow',           'data-popup-trigger' => true,  'data-href' => '#volume-popup'}
+    .bounding.center-tv-screen{'data-layer' => '.center-tv-screen-yellow-glow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.right-tv-screen{ 'data-layer' => '.right-tv-screen-yellow-glow',  'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.tv-farm{         'data-layer' => '.tv-farm-yellow-glow',          'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup', 'data-popup-left' => 50}
+    .bounding.computer-monitor{'data-layer' => '.computer-monitor-yellow-glow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.soundog-bar{     'data-layer' => '.soundog-bar-yellow-glow',      'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#soundog-popup'}
+    .bounding.soundog-table{   'data-layer' => '.soundog-table-yellow-glow',    'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#soundog-popup'}
+    .bounding.speakers{        'data-layer' => '.speakers-yellow-glow',         'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup', 'data-popup-left' => 200}
+    .bounding.tv-bar{          'data-layer' => '.tv-bar-yellow-glow',           'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.volume{          'data-layer' => '.volume-yellow-glow',           'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#volume-popup'}
   #night-club.scene.hidden
     .entity.background.bg
     .entity.background-1.bg
@@ -109,10 +109,10 @@ crums:
     .entity.transparent.monitors-yellow-glow
     .entity.transparent.tv-screens-yellow-glow
     .entity.transparent.laptop-yellow-glow
-    .bounding.mixers-glow{     'data-layer' => '.mixers-yellow-glow',     'data-popup-trigger' => true, 'data-href' => '#music-supply-popup'}
-    .bounding.monitors-glow{   'data-layer' => '.monitors-yellow-glow',   'data-popup-trigger' => true, 'data-href' => '#tv-popup'}
-    .bounding.tv-screens-glow{ 'data-layer' => '.tv-screens-yellow-glow', 'data-popup-trigger' => true, 'data-href' => '#tv-popup'}
-    .bounding.laptop-glow{     'data-layer' => '.laptop-yellow-glow',     'data-popup-trigger' => true, 'data-href' => '#music-supply-popup'}
+    .bounding.mixers-glow{     'data-layer' => '.mixers-yellow-glow',     'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#music-supply-popup'}
+    .bounding.monitors-glow{   'data-layer' => '.monitors-yellow-glow',   'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.tv-screens-glow{ 'data-layer' => '.tv-screens-yellow-glow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.laptop-glow{     'data-layer' => '.laptop-yellow-glow',     'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#music-supply-popup'}
 
   #restaurant.scene.hidden
     .entity.background
@@ -132,9 +132,9 @@ crums:
     .entity.transparent.tv-yellow-glow
     .entity.volume-white-glow
     .entity.transparent.volume-yellow-glow
-    .bounding.speakers-glow{ 'data-layer' => '.speakers-yellow-glow', 'data-popup-trigger' => true, 'data-href' => '#speaker-popup'}
-    .bounding.tv-glow{       'data-layer' => '.tv-yellow-glow',       'data-popup-trigger' => true, 'data-href' => '#tv-popup'}
-    .bounding.volume-glow{   'data-layer' => '.volume-yellow-glow',   'data-popup-trigger' => true, 'data-href' => '#volume-popup'}
+    .bounding.speakers-glow{ 'data-layer' => '.speakers-yellow-glow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup', 'data-popup-left' => 200}
+    .bounding.tv-glow{       'data-layer' => '.tv-yellow-glow',       'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#tv-popup'}
+    .bounding.volume-glow{   'data-layer' => '.volume-yellow-glow',   'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#volume-popup'}
 
   #hallway.scene.hidden
     .entity.background3
@@ -191,12 +191,12 @@ crums:
     .entity.transparent.lights-glow-yellow
     .entity.transparent.laptop-glow-yellow
     .entity.transparent.back-speakers-glow-yellow
-    .bounding.speakers-glow{      'data-layer' => '.speakers-glow-yellow',      'data-popup-trigger' => true, 'data-href' => '#speaker-popup'}
-    .bounding.mixer-2-glow{       'data-layer' => '.mixer-2-glow-yellow',       'data-popup-trigger' => true, 'data-href' => '#music-supply-popup'}
-    .bounding.mixer-1-glow{       'data-layer' => '.mixer-1-glow-yellow',       'data-popup-trigger' => true, 'data-href' => '#music-supply-popup'}
-    .bounding.lights-glow{        'data-layer' => '.lights-glow-yellow',        'data-popup-trigger' => true, 'data-href' => '#lighting-popup'}
-    .bounding.laptop-glow{        'data-layer' => '.laptop-glow-yellow',        'data-popup-trigger' => true, 'data-href' => '#music-supply-popup'}
-    .bounding.back-speakers-glow{ 'data-layer' => '.back-speakers-glow-yellow', 'data-popup-trigger' => true, 'data-href' => '#speaker-popup'}
+    .bounding.speakers-glow{      'data-layer' => '.speakers-glow-yellow',      'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup', 'data-popup-left' => 100}
+    .bounding.mixer-2-glow{       'data-layer' => '.mixer-2-glow-yellow',       'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#music-supply-popup'}
+    .bounding.mixer-1-glow{       'data-layer' => '.mixer-1-glow-yellow',       'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#music-supply-popup'}
+    .bounding.lights-glow{        'data-layer' => '.lights-glow-yellow',        'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#lighting-popup', 'data-popup-left' => 250}
+    .bounding.laptop-glow{        'data-layer' => '.laptop-glow-yellow',        'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#music-supply-popup'}
+    .bounding.back-speakers-glow{ 'data-layer' => '.back-speakers-glow-yellow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup'}
   #patio.scene.hidden
     .entity.background
     .entity.transparent.black.hidden
@@ -226,8 +226,8 @@ crums:
     .entity.transparent.speakers-glow-Yellow-all
     .entity.volume-glow-white
     .entity.transparent.volume-glow-yellow
-    .bounding.speakers-glow-all{ 'data-layer' => '.speakers-glow-Yellow-all', 'data-popup-trigger' => true, 'data-href' => '#speaker-popup'}
-    .bounding.volume-glow{       'data-layer' => '.volume-glow-yellow',       'data-popup-trigger' => true, 'data-href' => '#volume-popup'}
+    .bounding.speakers-glow-all{ 'data-layer' => '.speakers-glow-Yellow-all', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup', 'data-popup-left' => 200}
+    .bounding.volume-glow{       'data-layer' => '.volume-glow-yellow',       'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#volume-popup'}
 
   #hotel.scene.hidden
     .entity.front_desk
@@ -244,8 +244,8 @@ crums:
     .entity.transparent.speakers-glow-yellow
     .entity.volume-glow-white
     .entity.transparent.volume-glow-yellow
-    .bounding.speakers-glow{ 'data-layer'     => '.speakers-glow-yellow', 'data-popup-trigger' => true, 'data-href' => '#speaker-popup'}
-    .bounding.volume-glow{   'data-layer'     => '.volume-glow-yellow',   'data-popup-trigger' => true, 'data-href' => '#volume-popup'}
+    .bounding.speakers-glow{ 'data-layer'     => '.speakers-glow-yellow', 'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#speaker-popup', 'data-popup-left' => 200}
+    .bounding.volume-glow{   'data-layer'     => '.volume-glow-yellow',   'data-popup-trigger' => true, 'data-close-on-external-click' => true, 'data-href' => '#volume-popup'}
   #tv-popup.exo-popup{ 'data-popup-top' => '20', 'data-close-on-click' => ".close-button"}
     .exo-popup-header
     .exo-popup-body

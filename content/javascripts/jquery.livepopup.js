@@ -1,92 +1,138 @@
-(function($) {
-  var actsAsPopup, postHandler, togglePopup;
-  postHandler = function(data, button) {
-    var popup, popupContent, shouldCacheAjax;
-    popupContent = data;
-    popup = button.data('popupElement');
-    shouldCacheAjax = button.is('[data-cache-ajax]');
-    if (!popup) {
-      popup = $(popupContent).hide();
-      popup.insertAfter(button);
-      button.data('popupElement', popup);
-    }
-    return togglePopup(popup, button);
-  };
-  togglePopup = function(popup, button) {
-    var closesOnClick, closesOnClickSelector, closesOnExternalClick;
-    closesOnClick = popup.is('[data-close-on-click]');
-    closesOnClickSelector = popup.data('closeOnClick');
-    closesOnExternalClick = popup.is('[data-close-on-external-click]');
-    if (closesOnExternalClick) {
-      $('body').one('click', function(e) {
-        if (popup.find($(e.target)).length === 0) {
-          return popup.hide();
+(function() {
+  (function($) {
+    var actsAsPopup, postHandler, togglePopup;
+    postHandler = function(data, button) {
+      var popup, popupContent, shouldCacheAjax, wrapperClass;
+      popupContent = data;
+      popup = button.data('popupElement');
+      shouldCacheAjax = button.is('[data-cache-ajax]');
+      wrapperClass = button.data('wrapperClass');
+      if (!popup) {
+        popup = $(popupContent);
+        if (!popup.is('.exo-popup')) {
+          popup = $("<div class='exo-popup'></div>").html(popup);
         }
-      });
-    }
-    if (button.data('popup') !== 'initialized') {
-      button.data('popup', 'initialized');
-      button.exoPositionRelative(popup);
-      if (closesOnClick) {
-        if (closesOnClickSelector) {
-          popup.find(closesOnClickSelector).click(function() {
-            return popup.toggle();
-          });
-        } else {
-          popup.click(function() {
-            return popup.toggle();
-          });
+        popup.hide();
+        if (wrapperClass) {
+          popup.addClass(wrapperClass);
         }
+        popup.insertAfter(button);
+        button.data('popupElement', popup);
+        button.trigger($.Event("popup:ajaxLoaded"), [popup]);
       }
-    }
-    return popup.toggle();
-  };
-  actsAsPopup = function(e) {
-    var ajaxIsCacheable, ajaxIsntCached, button, element, href, isAjax, popup, shouldMakeAjaxCall;
-    e.preventDefault();
-    button = $(e.target);
-    href = button.attr('href') || button.data('href');
-    element = button.data('popupElement');
-    isAjax = href[0] !== '#';
-    ajaxIsntCached = !element;
-    ajaxIsCacheable = button.is('[data-cache-ajax]');
-    shouldMakeAjaxCall = ajaxIsntCached || !ajaxIsCacheable;
-    if (!href) {
-      throw '[actsAsPopup]: href is empty';
-    }
-    if (isAjax && shouldMakeAjaxCall) {
-      return $.get(href, function(data) {
-        return postHandler(data, button);
-      });
-    } else {
-      popup = element || $(href);
       return togglePopup(popup, button);
-    }
-  };
-  $.fn.exoPopup = function() {
-    return this.live('click', actsAsPopup);
-  };
-  $.fn.exoPositionRelative = function(child, opts) {
-    var childLeft, childTop, offsetLeft, offsetTop, options, parent;
-    parent = this;
-    options = opts || {};
-    childTop = child.data('popupTop');
-    childLeft = child.data('popupLeft');
-    offsetTop = childTop || options.top || 0;
-    offsetLeft = childLeft || options.left || 0;
-    $(window).resize(function(e) {
-      var left, offset, top;
-      offset = parent.offset();
-      top = offset.top + offsetTop;
-      left = offset.left + offsetLeft;
-      return child.css({
-        left: left,
-        top: top
-      });
+    };
+    togglePopup = function(popup, button, teardown) {
+      var closesOnClick, closesOnClickSelector, closesOnExternalClick, href, isNotAjax;
+      closesOnClick = popup.is('[data-close-on-click]') || button.is('[data-close-on-click]');
+      closesOnClickSelector = popup.data('closeOnClick') || button.data('closeOnClick');
+      closesOnExternalClick = popup.is('[data-close-on-external-click]') || button.is('[data-close-on-external-click]');
+      href = button.attr('href') || button.data('href');
+      isNotAjax = href[0] === '#';
+      teardown = teardown || false;
+      if (isNotAjax) {
+        if (teardown || button.data('popup') === 'initialized') {
+          button.data('popup', '');
+          popup.data('position-object').disable();
+          return popup.hide();
+        } else {
+          if (closesOnExternalClick) {
+            $('body').one('click', function(e) {
+              if (popup.find($(e.target)).length === 0) {
+                return togglePopup(popup, button, true);
+              }
+            });
+          }
+          $('body').one('keydown', function(e) {
+            if (e.keyCode === 27) {
+              return togglePopup(popup, button, true);
+            }
+          });
+          button.data('popup', 'initialized');
+          button.positionRelative(popup);
+          if (closesOnClick) {
+            if (closesOnClickSelector) {
+              popup.find(closesOnClickSelector).one('click', function(e) {
+                e.preventDefault();
+                return togglePopup(popup, button, true);
+              });
+            } else {
+              popup.one('click', function() {
+                return togglePopup(popup, button, true);
+              });
+            }
+          }
+          return popup.show();
+        }
+      } else {
+        if (closesOnExternalClick) {
+          $('body').one('click', function(e) {
+            if (popup.find($(e.target)).length === 0) {
+              return popup.hide();
+            }
+          });
+        }
+        $('body').one('keydown', function(e) {
+          if (e.keyCode === 27) {
+            return popup.hide();
+          }
+        });
+        if (button.data('popup') !== 'initialized') {
+          button.data('popup', 'initialized');
+          button.exoPositionRelative(popup);
+          if (closesOnClick) {
+            if (closesOnClickSelector) {
+              popup.find(closesOnClickSelector).click(function(e) {
+                e.preventDefault();
+                return popup.toggle();
+              });
+            } else {
+              popup.click(function() {
+                return popup.toggle();
+              });
+            }
+          }
+        }
+        return popup.toggle();
+      }
+    };
+    actsAsPopup = function(e) {
+      var ajaxIsCacheable, ajaxIsntCached, ajaxSpinner, button, element, href, isAjax, popup, shouldMakeAjaxCall;
+      e.preventDefault();
+      button = $(this);
+      href = button.attr('href') || button.data('href');
+      element = button.data('popupElement');
+      isAjax = href[0] !== '#';
+      ajaxIsntCached = !element;
+      ajaxIsCacheable = button.is('[data-cache-ajax]');
+      shouldMakeAjaxCall = ajaxIsntCached || !ajaxIsCacheable;
+      if (!href) {
+        throw '[actsAsPopup]: href is empty';
+      }
+      if (isAjax && shouldMakeAjaxCall) {
+        ajaxSpinner = $("<div class='spinner'></div>");
+        button.after(ajaxSpinner);
+        button.exoPositionRelative(ajaxSpinner, {
+          left: 10,
+          top: "none"
+        });
+        return $.get(href, function(data) {
+          ajaxSpinner.remove();
+          return postHandler(data, button);
+        }).error(function() {
+          ajaxSpinner.remove();
+          return alert("There was an error retrieving the popup");
+        });
+      } else {
+        popup = element || $(href);
+        return togglePopup(popup, button);
+      }
+    };
+    $.fn.exoPopup = function() {
+      return this.live('click', actsAsPopup);
+    };
+    return $(function() {
+      return $('[data-popup-trigger]').exoPopup();
     });
-    return $(window).trigger('resize');
-  };
-  return $(function() {
-    return $('[data-popup-trigger]').exoPopup();
-  });
-})(jQuery);
+  })(jQuery);
+}).call(this);
