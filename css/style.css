@@ -171,7 +171,7 @@ h6 {
 }
 
 #search-parts {
-  height:204px; /* image height (259) minus padding (65)*/
+  height: 77px;
   width:235px;
   background-image: url(../images/search-parts-form-background.png);
   background-repeat: no-repeat;
@@ -209,13 +209,13 @@ select {
   height: 56px;
   display: block;
   text-indent: -9999px;
-  margin: 5px auto 0;
+  margin: 15px auto;
   outline:none;
   border:none;
   cursor:pointer;
 }
   .find-auto-parts:hover {background-position: 0 -56px;opacity:.95;}
-  .find-auto-parts:active {margin: 6px auto 0;opacity:.85;}
+  .find-auto-parts:active {opacity:.85;}
 
 #receive-updates {
   height:105px;
