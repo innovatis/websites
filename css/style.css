@@ -36,14 +36,14 @@ h2 {
   line-height: 18px;
 }
 h2.blue {
-  color:rgb(33,91,139);
+  color:#D28039;
   margin: 0 0 10px 0;
 }
 h3 {
   font-family: arial,sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color:rgb(7,121,191);
+  color:#D28039;
   line-height: 20px;
 }
 h4 {
@@ -118,7 +118,7 @@ h6 {
       color:rgb(39,53,65);
       }
     ul#main-menu a:hover {
-      color:rgb(7,121,191);
+      color:#D28039;
       }
 
 
@@ -265,7 +265,7 @@ ul#associations {
 }
 
 .association-list a:hover{
-  color:rgb(7,121,191);
+  color:#D28039;
 }
 
 .note li{
@@ -495,7 +495,7 @@ ul.new li {
 ul.new li img {
   width:190px;
   height:150px;
-  border:1px solid #2388c7;
+  border:1px solid #D28039;
 }
 .caption h1 {
   font-size:14px;
@@ -543,7 +543,7 @@ ul.new li img {
 
 .questions h1 {
   font-size:18px;
-  color:#215B8B;
+  color:#D28039;
   text-shadow: 0 1px white;
   line-height:16px;
   margin:15px 0 5px;
@@ -616,8 +616,8 @@ ul.new li img {
       text-shadow: 0px 1px rgb(70,70,70);
       }
     ul#footer-menu a:hover {
-      color:rgb(7,121,191);
-      text-shadow: 0px 0px 15px rgba(7,121,191,.8);
+      color:#D28039;
+      text-shadow: 0px 0px 15px rgba(248,134,64,.8);
       }
 
 a.orderform-download {
@@ -645,7 +645,7 @@ a.orderform-download {
   font-family: arial,sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color:#2388c7;
+  color:#D28039;
   text-shadow: 0 1px #222;
   line-height: 19px;
   display:block;
@@ -708,7 +708,7 @@ span.stronglabel {
   float:right;
   width:260px;
 }
-span.blue {color:#2388c7;text-shadow: 0 1px #333;  font-size: 22px;margin-bottom:5px;
+span.blue {color:#D28039;text-shadow: 0 1px #333;  font-size: 22px;margin-bottom:5px;
 }
 
 /*****************TYPEKIT FALLBACKS******************/
