@@ -57,6 +57,7 @@ Footer
 <caleb>
 [ ] contact form should go to sales@onqpro.com
 </caleb>
+
 Scene
 ======
 
@@ -67,7 +68,7 @@ Scene
 
   [*] mouse over of any relevant products
   [*] popups
-  [ ] shave the back off the LCD, so its more.. timeles
+  [*] shave the back off the LCD, so its more.. timeles
 
   Dance Club
   ----------
