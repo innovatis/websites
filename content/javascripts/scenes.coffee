@@ -174,9 +174,10 @@ Onq ?=  {}
       window.stefan = @
       cyclator = arguments.callee
 
+      # I need a good way to cycle stuff...
       scene.$('.light-beam-blue').opCycle 1000, ->
           scene.$('.light-beam-red').opCycle 1000, ->
-                scene.$('.light-beam-purple').opCycle 1000, cyclator
+                scene.$('.light-beam-purple').opCycle 1000, -> cyclator.call(scene)
 
   class Onq.Scene.Restaurant extends Onq.Scene
     constructor: -> super "#restaurant"
