@@ -76,7 +76,7 @@ Scene
   [*] DJ Missing
   [*] add Laptop  (same as from hall)
   [ ] chasing lights
-  [ ] flush lights
+  [*] flush lights
 
   [*] mouse over of any relevant products
   [*] popups
