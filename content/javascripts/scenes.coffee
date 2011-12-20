@@ -22,7 +22,7 @@ Onq ?=  {}
 
       element.css 'filter','alpha(opacity=100)'
     else
-      element.animate values,speed,fcn
+      element.animate values, speed, fcn
 
   $.fn.opIn = (speed,fcn) ->
     this.op 1, speed, fcn
@@ -298,14 +298,14 @@ Onq ?=  {}
         parent = arguments.callee
         lazer = scene.lazers[7]
 
-        lazer.op(0,1000, -> lazer.op(1,2000, ->  setTimeout(parent,50)))
+        lazer.op(0,1000, -> lazer.op(1,2000, -> setTimeout(parent,50)))
       )()
       (->
         return if scene.stopped
         parent = arguments.callee
         lazer = scene.lazers[6]
 
-        lazer.op(1,1000, -> lazer.op(0,2000, ->  setTimeout(parent,50)))
+        lazer.op(1,1000, -> lazer.op(0,2000, -> setTimeout(parent,50)))
       )()
 
     cycleDiscoBallShine: ->
@@ -317,15 +317,15 @@ Onq ?=  {}
         shine = scene.discoShines[0]
         parent = arguments.callee
 
-        shine.op(1,1000, -> return if scene.stopped; shine.op(0,2000, ->  setTimeout(parent,50)))
+        shine.op(1,1000, -> return if scene.stopped; shine.op(0,2000, -> setTimeout(parent,50)))
       )()
 
       (->
         return if scene.stopped
-        shine = scene.discoShines[1]
+        shine  = scene.discoShines[1]
         parent = arguments.callee
 
-        shine.op(0,2000, -> return if scene.stopped;shine.op(1,3000, ->  setTimeout(parent,50)))
+        shine.op(0,2000, -> return if scene.stopped;shine.op(1,3000, -> setTimeout(parent,50)))
       )()
 
   class Onq.Scene.Patio extends Onq.Scene
