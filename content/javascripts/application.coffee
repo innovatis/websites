@@ -3,6 +3,19 @@ extension: js
 filter:    coffeescript
 layout:    nil
 ---
+(->
+  # remove layerX and layerY
+  all = $.event.props
+  len = all.length
+  res = []
+
+  while len--
+    el = all[len]
+    if el isnt 'layerX' and el isnt 'layerY'
+      res.push el
+
+  $.event.props = res
+)()
 
 $ ->
   $('.bounding').
