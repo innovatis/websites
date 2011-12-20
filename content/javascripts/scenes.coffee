@@ -15,12 +15,18 @@ Onq ?=  {}
       opacity: max || value
 
     unless jQuery.support.opacity
-      # only IE (hopefully)
-      value   = value || 1
-      values  =
-        filter: 'alpha(opacity = 100);'
+      # only IE 8 or less (hopefully)
+      if value is 1
+        displayValue = 'block'
+      else
+        displayValue = 'none'
 
-      element.css 'filter','alpha(opacity=100)'
+      values  =
+        #filter: 'alpha(opacity = '+value+');'
+        display: displayValue
+
+      element.css values
+      setTimeout(fcn,speed) if fcn
     else
       element.animate values, speed, fcn
 
