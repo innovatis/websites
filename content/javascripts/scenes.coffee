@@ -111,18 +111,21 @@ Onq ?=  {}
 
       this
 
-    cycle: (trigger,effectName,collection) ->
+    cycle: (collection) ->#)trigger,effectName,collection) ->
       index = 0
-      Scene  = this
+      Scene = this
 
       (->
         callee     = arguments.callee
         current    = collection.eq(index)
-        newOpacity = if current.css('opacity') > 0.9 then 0 else 1
+        max        = (current.data('maxOpacity') or 1) - 0.01
+        oldOpacity = current.css('opacity')
+        # handle IE8
+        newOpacity = if oldOpacity >= max then 0 else 1
 
-        current.op newOpacity,1000, ->
+        current.op newOpacity, 1000, ->
           index = (index+1) % (collection.length)
-          index = 1 if index is 0
+          index = 1 if index is 0 and collection.length > 1
           callee() unless Scene.stopped
       )()
 
@@ -142,7 +145,7 @@ Onq ?=  {}
         after('@appear.bar-with-people',   'appear', '.waitress-middle-of-Scene').
         after('@appear.bar-with-people',   'appear', '.people-forground').
         after('@appear.people-forground',  'appear', '.lights').
-        cycle('@backWallFadeIn',           'cycle',  @ambientLights)
+        after('@backWallFadeIn',           'cycle',  @ambientLights)
 
       # star the whole animation
       @.$('.back-wall').fadeIn 1000, => this.trigger '@backWallFadeIn'
@@ -210,24 +213,24 @@ Onq ?=  {}
     constructor: ->
       super "#hallway"
       @discoBall = $ '.disco-ball'
-      @lazers =[$('.light-beam-blue-1')
-                $('.light-beam-blue-2')
-                $('.light-beam-blue-3')
-                $('.light-beam-blue-4')
-                $('.light-beam-green-1')
-                $('.light-beam-green-2')
-                $('.light-beam-green-3')
-                $('.light-beam-green-4')
-                $('.light-beam-purple-1')
-                $('.light-beam-purple-2')
-                $('.light-beam-purple-3')
-                $('.light-beam-purple-4')
-                $('.light-beam-red-1')
-                $('.light-beam-red-2')
-                $('.light-beam-red-3')
-                $('.light-beam-red-4')
-                $('.light-beam-white-1')
-                $('.light-beam-white-2')]
+      @lazers = [$('.light-beam-blue-1')
+                 $('.light-beam-blue-2')
+                 $('.light-beam-blue-3')
+                 $('.light-beam-blue-4')
+                 $('.light-beam-green-1')
+                 $('.light-beam-green-2')
+                 $('.light-beam-green-3')
+                 $('.light-beam-green-4')
+                 $('.light-beam-purple-1')
+                 $('.light-beam-purple-2')
+                 $('.light-beam-purple-3')
+                 $('.light-beam-purple-4')
+                 $('.light-beam-red-1')
+                 $('.light-beam-red-2')
+                 $('.light-beam-red-3')
+                 $('.light-beam-red-4')
+                 $('.light-beam-white-1')
+                 $('.light-beam-white-2')]
 
       @discoShines = [ $('.disco-ball-shine-1')
                        $('.disco-ball-shine-2')
@@ -286,35 +289,11 @@ Onq ?=  {}
         #after('@loadInBeams', 'cycleBeams').
         #after('@appear.light-beam-white', 'loadInBeams').
         after('@appear.darkness', 'cycleDiscoBallShine').
-        after('@appear.disco-ball', 'cycleLazers')
-
+        after('@appear.disco-ball',       'cycle', @lazers[6] ,3000).
+        after('@appear.darkness',         'cycle', @lazers[7] ,2000).
+        after('@appear.light-beam-white', 'cycle', @lazers[3],2400).
+        after('@appear.light-beam-white', 'cycle', @lazers[10],2400)
       @.$(':not(.transparent)').fadeIn 1000, => this.trigger '@backgroundAppear'
-
-    cycleLazers: ->
-      index = 0
-      scene  = this
-      (->
-        return if scene.stopped
-        parent = arguments.callee
-        lazer = scene.lazers[10]
-
-        lazer.op(0,1000, -> lazer.op(1,2000, ->  setTimeout(parent,50)))
-      )()
-
-      (->
-        return if scene.stopped
-        parent = arguments.callee
-        lazer = scene.lazers[7]
-
-        lazer.op(0,1000, -> lazer.op(1,2000, -> setTimeout(parent,50)))
-      )()
-      (->
-        return if scene.stopped
-        parent = arguments.callee
-        lazer = scene.lazers[6]
-
-        lazer.op(1,1000, -> lazer.op(0,2000, -> setTimeout(parent,50)))
-      )()
 
     cycleDiscoBallShine: ->
       index = 0
