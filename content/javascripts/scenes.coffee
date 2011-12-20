@@ -111,6 +111,21 @@ Onq ?=  {}
 
       this
 
+    cycle: (trigger,effectName,collection) ->
+      index = 0
+      Scene  = this
+
+      (->
+        callee     = arguments.callee
+        current    = collection.eq(index)
+        newOpacity = if current.css('opacity') > 0.9 then 0 else 1
+
+        current.op newOpacity,1000, ->
+          index = (index+1) % (collection.length)
+          index = 1 if index is 0
+          callee() unless Scene.stopped
+      )()
+
   class Onq.Scene.SportsBar extends Onq.Scene
     constructor: ->
       super "#sports-bar"
@@ -118,35 +133,22 @@ Onq ?=  {}
 
     start: ->
       super
-      @.after('@backWallFadeIn',           'cycleAmbientLights').
-        after('@backWallFadeIn',           'appear', '.bar').
+      #@.after('@backWallFadeIn',           'cycleAmbientLights').
+      @.after('@backWallFadeIn',           'appear', '.bar').
         after('@appear.bar',               'appear', '.bar-with-waitress').
         after('@appear.bar',               'appear', '.people-background-with-theatre').
         after('@appear.bar-with-waitress', 'appear', '.bar-with-people').
         after('@appear.bar-with-waitress', 'appear', '.people-balcony').
         after('@appear.bar-with-people',   'appear', '.waitress-middle-of-Scene').
         after('@appear.bar-with-people',   'appear', '.people-forground').
-        after('@appear.people-forground',  'appear', '.lights')
+        after('@appear.people-forground',  'appear', '.lights').
+        cycle('@backWallFadeIn',           'cycle',  @ambientLights)
 
       # star the whole animation
       @.$('.back-wall').fadeIn 1000, => this.trigger '@backWallFadeIn'
 
       this
 
-    cycleAmbientLights: ->
-      index = 0
-      Scene  = this
-
-      (->
-        callee     = arguments.callee
-        current    = Scene.ambientLights.eq(index)
-        newOpacity = if current.css('opacity') > 0.9 then 0 else 1
-
-        current.op newOpacity,1000, ->
-          index = (index+1) % (Scene.ambientLights.length)
-          index = 1 if index is 0
-          callee() unless Scene.stopped
-      )()
 
   class Onq.Scene.NightClub extends Onq.Scene
     constructor: -> super "#night-club"
